@@ -2,51 +2,112 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
+    <head>
+        {% block meta %}
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% endblock meta %}
 
-    {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% endblock meta %}
+        {% block extra_meta %}
+        {% endblock extra_meta %}
 
-    {% block extra_meta %}
-    {% endblock extra_meta %}
+        {% block core_css %}
+            <!-- Bootstrap CSS -->
+            <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+            <!-- Google Fonts -->
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+            <!-- Local CSS -->
+            <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        {% endblock core_css %}
 
-    {% block core_css %}
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    {% endblock core_css %}
+        {% block extra_css %}
+        {% endblock extra_css %}
 
-    {% block extra_css %}
-    {% endblock extra_css %}
+        {% block core_js %}
+            <!-- Font Awesome -->
+            <script src="{% static 'js/ace03ffe36.js' %}"></script>
+            <!-- jQuery -->
+            <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+            <!-- Bootstrap JS with Popper -->
+            <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        {% endblock core_js %}
 
-    {% block core_js %}
-        <!-- jquery -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <!-- Bootstrap JS with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    {% endblock core_js %}
+        {% block extra_js %}
+        {% endblock extra_js %}
 
-    {% block extra_js %}
-    {% endblock extra_js %}
+        <title>The Dice Lounge {% block extra_title %}{% endblock extra_title %}</title>
+    </head>
+    <body>
+        <div id="shade-background"></div>
+        <header class="container-fluid fixed-top">
+            <div id="topNav" class="row bg-white pt-lg-2 d-flex">
+                <nav class="navbar navbar-light col-12 my-auto py-1 py-lg-0 d-flex d-lg-none">
+                    <button class="navbar-toggler" id="navbarToggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideNav" aria-controls="side-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="d-flex d-lg-none mb-0">
+                        {% include 'includes/user-nav.html' %}
+                    </ul>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="sideNav" aria-labelledby="sideNavLabel">
+                        <div class="offcanvas-header">
+                            <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                                <h5 class="offcanvas-title" id="sideNavLabel">
+                                    {% include 'includes/logo.html' %}
+                                </h5>
+                            </a>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            {% include 'includes/product-nav.html' %}
+                        </div>
+                    </div>
+                    <div class="border-0 w-100 py-3 rounded-0 my-0 d-lg-none collapse" id="mobile-search-input" aria-labelledby="mobile-search">
+                        {% include 'includes/search-input-form.html' %}
+                    </div>
+                </nav>
+                <nav class="col-12 d-none d-lg-block">
+                    <div class="row">
+                        <div class="col-lg-4 my-auto py-1 py-lg-0 text-lg-start">
+                            <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                                <h3 class="my-0">
+                                    {% include 'includes/logo.html' %}
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 my-auto py-1 py-lg-0">
+                            {% include 'includes/search-input-form.html' %}
+                        </div>
+                        <div class="col-lg-4 my-auto py-1 py-lg-0">
+                            <ul class="list-inline list-unstyled text-center text-lg-end my-0">
+                                {% include 'includes/user-nav.html' %}
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <nav class="navbar navbar-expand navbar-light bg-white my-auto d-none d-lg-flex product-navbar">
+                {% include 'includes/product-nav.html' %}
+            </nav>
+            <div id="delivery-banner" class="row text-center">
+                <div class="col bg-black text-white">
+                    <h4 class="logo-font my-1">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>
+                </div>
+            </div>
+        </header>
 
-    <title>The Dice Lounge {% block extra_title %}{% endblock extra_title %}</title>
-  </head>
-  <body>
-    <header class="container-fluid fixed-top"></header>
+        {% if messages %}
+            <div class="message-container"></div>
+        {% endif %}
 
-    {% if messages %}
-        <div class="message-container"></div>
-    {% endif %}
+        {% block page_header %}
+        {% endblock page_header %}
 
-    {% block page_header %}
-    {% endblock page_header %}
+        {% block content %}
+        {% endblock content %}
 
-    {% block content %}
-    {% endblock content %}
-
-    {% block postload_js %}
-    {% endblock postload_js %}
-  </body>
+        {% block postload_js %}
+        {% endblock postload_js %}
+    </body>
 </html>
