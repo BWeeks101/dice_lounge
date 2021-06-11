@@ -42,7 +42,7 @@
     <body>
         <div id="shade-background"></div>
         <header class="container-fluid fixed-top">
-            <div id="topNav" class="row bg-white pt-lg-2 d-flex">
+            <div id="topNav" class="row bg-light pt-lg-2 d-flex">
                 <nav class="navbar navbar-light col-12 my-auto py-1 py-lg-0 d-flex d-lg-none">
                     <button class="navbar-toggler" id="navbarToggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideNav" aria-controls="side-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -63,7 +63,7 @@
                             {% include 'includes/product-nav.html' %}
                         </div>
                     </div>
-                    <div class="border-0 w-100 py-3 rounded-0 my-0 d-lg-none collapse" id="mobile-search-input" aria-labelledby="mobile-search">
+                    <div class="border-0 w-100 py-3 my-0 d-lg-none collapse" id="mobile-search-input" aria-labelledby="mobile-search">
                         {% include 'includes/search-input-form.html' %}
                     </div>
                 </nav>
@@ -87,12 +87,12 @@
                     </div>
                 </nav>
             </div>
-            <nav class="navbar navbar-expand navbar-light bg-white my-auto d-none d-lg-flex product-navbar">
+            <nav class="navbar navbar-expand navbar-light bg-light my-auto d-none d-lg-flex product-navbar">
                 {% include 'includes/product-nav.html' %}
             </nav>
             <div id="delivery-banner" class="row text-center">
-                <div class="col bg-black text-white">
-                    <h4 class="logo-font my-1">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>
+                <div class="col bg-dark text-light">
+                    <h4 class="text-uppercase my-1">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>
                 </div>
             </div>
         </header>
