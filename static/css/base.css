@@ -72,6 +72,29 @@ body * {
     color: #c60001 !important;
 }
 
+/* no box-shadow on navbar-toggler:focus */
+.navbar-toggler:focus {
+    box-shadow: initial !important;
+}
+
+/* red border on navbar-toggler:hover */
+.navbar-toggler:hover {
+    border-color: #c60001 !important;
+}
+
+/* navbar-toggler-icon red on hover */
+/* Copied from bootstrap and stroke color adjusted */
+.navbar-toggler:hover > .navbar-toggler-icon,
+.navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23c60001' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* sideNav close button red on hover */
+/* Copied from bootstrap and fill color adjusted */
+.btn-close:hover {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23c60001'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+}
+
 /* Inverts dropdown-toggle arrow */
 .dropdown-toggle-inverted::after {
     display: inline-block;
@@ -88,7 +111,6 @@ body * {
 #cta-container {
     max-width: 490px;
 }
-
 
 /* .shop-now-button, and active dropdown-item colors */
 .dropdown-item.active,
@@ -107,6 +129,22 @@ body * {
 .shop-now-button:focus {
 	outline: 0;
 	box-shadow: 0 0 0 .25rem rgba(210,62,62,.25);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 .25rem rgba(210,62,62,.25);
+}
+
+.search-input-container .form-control:focus {
+    box-shadow: initial;
+}
+
+.search-input-container-box-shadow {
+    box-shadow: 0 0 0 .25rem rgba(210,62,62,.25);
+}
+
+.btn.btn-dark {
+    padding: .375rem .375rem;
 }
 
 /* .header-container class from boutique ado sample project */
@@ -168,10 +206,6 @@ body * {
 
     #delivery-banner h4 {
         font-size: .9rem;
-    }
-
-    .btn.btn-dark {
-        padding: .375rem .375rem;
     }
 }
 
