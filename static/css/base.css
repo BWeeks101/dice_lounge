@@ -1,0 +1,242 @@
+html {
+    height: 100%;
+}
+
+body {
+	background: url('/media/cover/gw_covers/gw_cover_1080.webp') center top / cover no-repeat fixed;
+    height: calc(100vh - 164px);
+    color: #f8f9fa;
+    font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+    min-width: 280px;
+}
+
+body * {
+    border-radius: 0 !important;
+}
+
+/* Apply a filter to darken the body background image */
+#shade-background {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Adjust width of Bootstrap Offcanvas component (#sideNav) */
+.offcanvas-start {
+    width: calc(100% - 50px);
+    max-width: 400px;
+    min-width: 250px;
+}
+
+/* Absolutely position #sideNav close button to prevent adjustment if title wraps */
+.offcanvas-header .btn-close {
+    position: absolute;
+    right: 1rem;
+    top: 1.5874996185302734rem;
+}
+
+/* Add negative margins for .product-navbar */
+.product-navbar {
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+/* Add left margin for site logo icon */
+.site-logo > i {
+    margin-left: .15rem;
+}
+
+/* from Bulma via Boutique Ado sample project */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/* Helper class, and dropdown-item hover */
+.hover-background-red:hover,
+.dropdown-item:hover {
+    background: #c60001 !important;
+    color: #f8f9fa !important;
+}
+
+/* Helper classes, and dropdown-toggle hover */
+.icon-red,
+.hover-color-red:hover,
+.dropdown:hover .dropdown-toggle::after,
+.dropdown:hover .dropdown-toggle-inverted::after {
+    color: #c60001 !important;
+}
+
+/* Inverts dropdown-toggle arrow */
+.dropdown-toggle-inverted::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-bottom: .3em solid;
+    border-right: .3em solid transparent;
+    border-top: 0;
+    border-left: .3em solid transparent;
+}
+
+/* index.html cta container */
+#cta-container {
+    max-width: 490px;
+}
+
+
+/* .shop-now-button, and active dropdown-item colors */
+.dropdown-item.active,
+.shop-now-button {
+    background: #a00b0b;
+    color: #f8f9fa;
+}
+
+/* .shop-now-button width */
+.shop-now-button {
+    min-width: 224px;
+    width: 100%;
+}
+
+/* .shop-now-button focus shadow */
+.shop-now-button:focus {
+	outline: 0;
+	box-shadow: 0 0 0 .25rem rgba(210,62,62,.25);
+}
+
+/* .header-container class from boutique ado sample project */
+.header-spacer {
+    padding-top: 164px;
+}
+
+/* Translucent black background with white text */
+.darken {
+    background: rgba(0, 0, 0, 0.75);
+    color: #f8f9fa;
+}
+
+/* Translucent white background with black text */
+.lighten {
+    background: rgba(255, 255, 255, .89);
+    color: #212529;
+}
+
+/* --------------------------------- Media queries */
+
+/* 768p background image */
+@media (max-width: 1365px) {
+    body {
+        background: url('/media/cover/gw_covers/gw_cover_768.webp') center top / cover no-repeat fixed;
+    }
+}
+
+/* Large portrait background image */
+@media (max-width: 1024px) {
+    body {
+        background: url('/media/cover/gw_covers/gw_cover_1996.webp') center top / cover no-repeat fixed;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+/* altered from boutique ado sample project */
+@media (max-width: 991px) {
+    .header-spacer {
+        padding-top: 86px;
+    }
+
+    body {
+        height: calc(100vh - 86px);
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-dark {
+        padding: .375rem .375rem;
+    }
+}
+
+/* Portrait background image */
+@media (max-width: 768px) {
+    body {
+        background: url('/media/cover/gw_covers/gw_cover_1372-alt.webp') center top / cover no-repeat fixed;
+    }
+}
+
+/* Styling for narrow mobile devices */
+@media (max-width: 320px) {
+    .logo-break {
+        white-space: pre-line;
+    }
+
+    #topNav>nav {
+        margin-top: .25rem !important;
+    }
+
+    #topNav>nav>ul.d-lg-none {
+        padding-left: 0;
+        width: 100%;
+        margin-top: .5rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #topNav>nav>ul.d-lg-none>.list-inline-item {
+        margin: 0;
+    }
+
+    #topNav>nav>ul.d-lg-none > :first-child,
+    #topNav>nav>ul.d-lg-none > :last-child {
+        display: inline-flex;
+        flex: 1 0 0%;
+    }
+
+    #topNav>nav>ul.d-lg-none > :last-child {
+        justify-content: end;
+    }
+
+    #topNav>nav>ul.d-lg-none > :nth-child(2) {
+        display: inline-flex;
+        flex: 0 0 auto;
+        width: 50%;
+        justify-content: center;
+    }
+
+    #topNav>nav>ul.d-lg-none > :nth-child(2)>.dropdown-menu {
+        right: initial;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    #cta-container {
+        width: 91.6666666667%; /* .col-11 */
+    }
+}
+
+/* Slightly reduce calculated h1 font size for min supported screen width */
+@media (max-width: 285px) {
+    #cta-row h1 {
+        font-size: calc(1.35rem + 1.5vw);
+    }
+}
