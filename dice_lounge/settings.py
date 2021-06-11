@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 
+if os.path.exists("env.py"):
+    import env
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,9 +29,12 @@ s_key_suffix = 'qpk&r13_%-x5a1snqc_&b1xvj9o7u1yl@p-^=gz-u%-0zhs4sa'
 SECRET_KEY = s_key_prefix + s_key_suffix
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
+
+if DEBUG is True:
+    ALLOWED_HOSTS.append(os.environ.get("development_host"))
 
 
 # Application definition
