@@ -4,14 +4,18 @@ from django.db import models
 # Create your models here.
 # From boutique ado sample project
 class Category(models.Model):
+
+    class Meta:
+        verbose_name_plural = "Categories"
+
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
-        return self.name
-
-    def get_friendly_name(self):
         return self.friendly_name
+
+    def get_name(self):
+        return self.name
 
 
 class Genre(models.Model):
@@ -19,10 +23,10 @@ class Genre(models.Model):
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
-        return self.name
-
-    def get_friendly_name(self):
         return self.friendly_name
+
+    def get_name(self):
+        return self.name
 
 
 class Publisher(models.Model):
@@ -30,35 +34,44 @@ class Publisher(models.Model):
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
-        return self.name
-
-    def get_friendly_name(self):
         return self.friendly_name
+
+    def get_name(self):
+        return self.name
 
 
 class Stock_State(models.Model):
+    class Meta:
+        verbose_name = "Stock State"
+
     state = models.CharField(max_length=254)
     friendly_state = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
-        return self.state
-
-    def get_friendly_state(self):
         return self.friendly_state
+
+    def get_state(self):
+        return self.state
 
 
 class Reduced_Reason(models.Model):
+    class Meta:
+        verbose_name = "Reduced Price Reason"
+
     reason = models.CharField(max_length=254)
     friendly_reason = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
-        return self.reason
-
-    def get_friendly_reason(self):
         return self.friendly_reason
+
+    def get_reason(self):
+        return self.reason
 
 
 class Product_Line(models.Model):
+    class Meta:
+        verbose_name = "Product Line"
+
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
     description = models.TextField()
@@ -74,13 +87,16 @@ class Product_Line(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
 
     def __str__(self):
-        return self.name
-
-    def get_friendly_name(self):
         return self.friendly_name
+
+    def get_name(self):
+        return self.name
 
 
 class Sub_Product_Line(models.Model):
+    class Meta:
+        verbose_name = "Sub Product Line"
+
     product_line = models.ForeignKey(
         'Product_Line', null=True, blank=True, on_delete=models.SET_NULL
     )
@@ -90,10 +106,10 @@ class Sub_Product_Line(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
 
     def __str__(self):
-        return self.name
-
-    def get_friendly_name(self):
         return self.friendly_name
+
+    def get_name(self):
+        return self.name
 
 
 class Product(models.Model):
@@ -116,10 +132,10 @@ class Product(models.Model):
     stock = models.IntegerField(null=False, blank=False)
 
     def __str__(self):
-        return self.name
-
-    def get_friendly_name(self):
         return self.friendly_name
+
+    def get_name(self):
+        return self.name
 
     def get_stock(self):
         return {
