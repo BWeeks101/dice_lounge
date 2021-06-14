@@ -51,6 +51,7 @@ INSTALLED_APPS = [
 
     # dice_lounge apps
     'home',
+    'products',
 ]
 
 MIDDLEWARE = [
