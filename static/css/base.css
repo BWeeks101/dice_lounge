@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background: url('/media/cover/gw_covers/gw_cover_1080.webp') center top / cover no-repeat fixed;
+	background: url('/media/covers/gw/gw_cover_1080.webp') center top / cover no-repeat fixed;
     height: calc(100vh - 164px);
     color: #f8f9fa;
     font-family: "Noto Sans", "Noto Sans JP", sans-serif;
@@ -169,14 +169,14 @@ body * {
 /* 768p background image */
 @media (max-width: 1365px) {
     body {
-        background: url('/media/cover/gw_covers/gw_cover_768.webp') center top / cover no-repeat fixed;
+        background: url('/media/covers/gw/gw_cover_768.webp') center top / cover no-repeat fixed;
     }
 }
 
 /* Large portrait background image */
 @media (max-width: 1024px) {
     body {
-        background: url('/media/cover/gw_covers/gw_cover_1996.webp') center top / cover no-repeat fixed;
+        background: url('/media/covers/gw/gw_cover_1996.webp') center top / cover no-repeat fixed;
     }
 }
 
@@ -212,7 +212,7 @@ body * {
 /* Portrait background image */
 @media (max-width: 768px) {
     body {
-        background: url('/media/cover/gw_covers/gw_cover_1372-alt.webp') center top / cover no-repeat fixed;
+        background: url('/media/covers/gw/gw_cover_1372-alt.webp') center top / cover no-repeat fixed;
     }
 }
 
