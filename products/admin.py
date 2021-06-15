@@ -8,88 +8,100 @@ from .models import (
 # Classes
 class Product_LineAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
+        'name',
         'category',
         'genre',
         'publisher'
     )
 
-    ordering = ('friendly_name',)
+    ordering = ('name',)
 
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
-        'name'
+        'name',
+        'identifier'
     )
 
-    ordering = ('friendly_name',)
+    ordering = ('name',)
 
 
 class GenreAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
-        'name'
+        'name',
+        'identifier'
     )
 
-    ordering = ('friendly_name',)
+    ordering = ('name',)
 
 
 class PublisherAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
-        'name'
+        'name',
+        'identifier'
     )
 
-    ordering = ('friendly_name',)
+    ordering = ('name',)
 
 
 class Sub_Product_LineAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
+        'name',
         'product_line'
     )
 
-    ordering = ('friendly_name',)
+    ordering = ('name',)
 
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
-        'sub_product_line',
-        'get_product_line',
+        'name',
+        '_sub_product_line',
+        '_product_line',
         'price',
         'stock_state',
         'stock'
     )
 
-    # Get_Product_Line() based on the following example by Tim Kamanin:
+    # _sub_product_line() based on the following example by Tim Kamanin:
     # https://timonweb.com/django/how-to-sort-django-admin-list-column-by-a-value-from-a-related-model/
-    def get_product_line(self, obj):
+    def _sub_product_line(self, obj):
+        return obj.sub_product_line.name
+
+    _sub_product_line.admin_order_field = 'sub_product_line__name'
+    _sub_product_line.short_description = 'Sub Product Line'
+
+    # _product_line() based on the following example by Tim Kamanin:
+    # https://timonweb.com/django/how-to-sort-django-admin-list-column-by-a-value-from-a-related-model/
+    def _product_line(self, obj):
         return obj.sub_product_line.product_line
 
-    get_product_line.admin_order_field = 'sub_product_line__product_line'
-    get_product_line.short_description = 'Product Line'
+    _product_line.admin_order_field = 'sub_product_line__product_line'
+    _product_line.short_description = 'Product Line'
 
-    ordering = ('sub_product_line', 'friendly_name',)
+    ordering = (
+        'name',
+        _sub_product_line.admin_order_field,
+        _product_line.admin_order_field,
+    )
 
 
 class Stock_StateAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_state',
-        'state'
+        'state',
+        'identifier'
     )
 
-    ordering = ('friendly_state',)
+    ordering = ('state',)
 
 
 class Reduced_ReasonAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_reason',
-        'reason'
+        'reason',
+        'identifier'
     )
 
-    ordering = ('friendly_reason',)
+    ordering = ('reason',)
 
 
 # Register your models here.
