@@ -200,12 +200,11 @@ class Product_Line(models.Model):
     description = models.TextField(
         help_text='Please enter a description for this Product Line.'
     )
-    image_url = models.URLField(
-        max_length=1024,
+    image = models.ImageField(
         null=True,
         blank=True,
         help_text=(
-            '(Optional) Please enter an image URL for this Product Line.'
+            '(Optional) Please add an image for this Product Line.'
         )
     )
 
@@ -248,12 +247,11 @@ class Sub_Product_Line(models.Model):
     description = models.TextField(
         help_text='Please enter a description for this Sub Product Line'
     )
-    image_url = models.URLField(
-        max_length=1024,
+    image = models.ImageField(
         null=True,
         blank=True,
         help_text=(
-            '(Optional) Please enter an image URL for this Sub Product Line.'
+            '(Optional) Please add an image for this Sub Product Line.'
         )
     )
 
@@ -293,12 +291,11 @@ class Product(models.Model):
     description = models.TextField(
         help_text='Please enter a description for this Product.'
     )
-    image_url = models.URLField(
-        max_length=1024,
+    image = models.ImageField(
         null=True,
         blank=True,
         help_text=(
-            '(Optional) Please enter an image URL for this Product.'
+            '(Optional) Please add an image for this Product.'
         )
     )
     price = models.DecimalField(
