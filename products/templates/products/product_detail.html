@@ -107,13 +107,5 @@
 
 {% block postload_js %}
     {{ block.super }}
-    <script>
-        $(function() {
-            $('a.disabled').off('click');
-            $('a.disabled').on('click', (e) => {
-                e.preventDefault();
-                return;
-            });
-        });
-    </script>
+    <script src="{% static 'js/shopping-controls.js' %}"></script>
 {% endblock postload_js %}
