@@ -336,32 +336,47 @@ Requires:   dropDownToggler of type:
 function initInputBoxShadows() {
     $('.search-input-container input').on('focus', (e) => {
         $(e.currentTarget).closest('.search-input-container').
-            addClass('search-input-container-box-shadow');
+            addClass('input-container-box-shadow');
     });
 
     $('.search-input-container input').on('focusout', (e) => {
         $(e.currentTarget).closest('.search-input-container').
-            removeClass('search-input-container-box-shadow');
+            removeClass('input-container-box-shadow');
     });
 
     $('.search-input-container button').on('click', (e) => {
         $(e.currentTarget).closest('.search-input-container').
-            addClass('search-input-container-box-shadow');
+            addClass('input-container-box-shadow');
     });
 
     $('.page-input-container > .page-input').on('focus', (e) => {
         $(e.currentTarget).closest('.page-input-container').
-            addClass('page-input-container-box-shadow');
+            addClass('input-container-box-shadow');
     });
 
     $('.page-input-container > .page-input').on('focusout', (e) => {
         $(e.currentTarget).closest('.page-input-container').
-            removeClass('page-input-container-box-shadow');
+            removeClass('input-container-box-shadow');
     });
 
     $('.page-input-container > .page-input-btn').on('click', (e) => {
         $(e.currentTarget).closest('.page-input-container').
-            addClass('page-input-container-box-shadow');
+            addClass('input-container-box-shadow');
+    });
+
+    $('.qty-input-container > input[type=number]').on('focus', (e) => {
+        $(e.currentTarget).closest('.qty-input-container').
+            addClass('input-container-box-shadow');
+    });
+
+    $('.qty-input-container > input[type=number]').on('focusout', (e) => {
+        $(e.currentTarget).closest('.qty-input-container').
+            removeClass('input-container-box-shadow');
+    });
+
+    $('.qty-input-container > input[type=number]').on('click', (e) => {
+        $(e.currentTarget).closest('.qty-input-container').
+            addClass('input-container-box-shadow');
     });
 }
 

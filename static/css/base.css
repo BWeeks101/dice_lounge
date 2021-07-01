@@ -173,6 +173,7 @@ ul.pagination > li.page-item.active > .page-link:hover,
     border-color: var(--text-color);
 }
 
+.qty-input-container .form-control:focus,
 .search-input-container .form-control:focus {
     box-shadow: initial;
 }
@@ -182,7 +183,7 @@ ul.pagination > li.page-item.active > .page-link:hover,
     box-shadow: initial !important;
 }
 
-.search-input-container-box-shadow {
+.input-container-box-shadow {
     box-shadow: 0 0 0 .25rem var(--shadow-color);
 }
 
