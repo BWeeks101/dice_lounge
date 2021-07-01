@@ -13,4 +13,9 @@ urlpatterns = [
           views.products,
           name='products'
      ),
+     path(
+          'detail/<int:product_id>/',
+          views.product_detail,
+          name='product_detail'
+     ),
 ]

@@ -199,6 +199,15 @@ ul.pagination > li.page-item.active > .page-link:hover,
     padding: .375rem .375rem;
 }
 
+.btn.position-relative {
+    padding-left: 1.875rem;
+}
+
+.btn.position-relative > .icon {
+    position: absolute;
+    left: 0.21875rem;
+}
+
 /* modified .header-container class from boutique ado sample project */
 .header-spacer {
     padding-top: var(--adjust-for-header);
@@ -237,6 +246,20 @@ ul.pagination > li.page-item.active > .page-link:hover,
 .product-line-image {
     height: auto;
     width: auto;
+}
+
+.product-detail-image-container {
+    height: calc(calc(calc(100vh - var(--adjust-for-header)) - 3rem) / 2);
+}
+
+.product-detail-image {
+    max-height: calc(calc(100vh - var(--adjust-for-header) - 3rem) / 2);
+    height: auto;
+    width: auto;
+}
+
+.product-detail-col .card-body {
+    flex: initial;
 }
 
 .offset-end-1 {
@@ -523,6 +546,7 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 
 /* --------------------------------- Media queries */
 
+/* Bootstrap sm */
 @media (min-width: 576px) {
     .position-sm-absolute {
         position: absolute;
@@ -534,6 +558,7 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
     }
 }
 
+/* Bootstrap md */
 @media (min-width: 768px) {
     .pagination-py-md {
         padding: .375rem 0 !important;
@@ -542,8 +567,13 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
     .align-md-top {
         vertical-align: top !important;
     }
+
+    .qty-input-group {
+        min-width: 253px;
+    }
 }
 
+/* Bootstrap lg */
 @media (min-width: 992px) {
     .pagination-py-lg {
         padding: .375rem 0 !important;
@@ -552,8 +582,27 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
     .align-lg-top {
         vertical-align: top !important;
     }
+
+    .product-detail-image-container {
+        height: calc(calc(100vh - var(--adjust-for-header)) - 3rem);
+    }
+
+    .product-detail-image {
+        max-height: calc(100vh - var(--adjust-for-header) - 3rem);
+    }
+
+    /* .product-detail-col {
+        height: calc(calc(calc(100vh - var(--adjust-for-header)) - 3rem) / 2);
+    }
+
+    .shopping-controls-md-offset {
+        margin-top: calc(calc(calc(calc(100vh - var(--adjust-for-header)) - 3rem) / 2) - calc(calc(100vh - var(--adjust-for-header)) - 3rem));
+        z-index: 2;
+    } */
+
 }
 
+/* Bootstrap xl */
 @media (min-width: 1200px) {
     .pagination-py-xl {
         padding: .375rem 0 !important;
@@ -564,6 +613,14 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
     }
 }
 
+/* 768p background image */
+@media (max-width: 1365px) {
+    body {
+        background: url('/media/covers/gw/gw_cover_768.webp') center top / cover no-repeat fixed;
+    }
+}
+
+/* Bootstrap xxl */
 @media (min-width: 1400px) {
     .position-xxl-absolute {
         position: absolute;
@@ -576,13 +633,6 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 
     .pagination-py-xxl {
         padding: .375rem 0;
-    }
-}
-
-/* 768p background image */
-@media (max-width: 1365px) {
-    body {
-        background: url('/media/covers/gw/gw_cover_768.webp') center top / cover no-repeat fixed;
     }
 }
 
@@ -701,7 +751,7 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
     }
 }
 
-/* Slightly reduce calculated h1 font size for min supported screen width */
+/* Slightly reduce calculated h1 font size for very low screen widths */
 @media (max-width: 310px) {
     #cta-row h1 {
         font-size: calc(1.35rem + 1.5vw);
@@ -709,5 +759,14 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 
     .fs-5 {
         font-size: 1.15rem !important;
+    }
+}
+
+/* Minimum supported width */
+@media (max-width: 280px) {
+    .shopping-control-btn-row-min {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }

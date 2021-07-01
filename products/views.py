@@ -691,3 +691,21 @@ def products(request, product_line_id):
     )
 
     return render(request, 'products/products.html', context)
+
+
+# Show details of a given product
+def product_detail(request, product_id):
+    """
+        A view to show products details
+    """
+
+    if request.GET:
+        if 'q' in request.GET:
+            return redirect('/products/search_results/?q=' + request.GET['q'])
+
+    context = {
+        'view': 'product_detail',
+        'products': Product.objects.filter(id=product_id),
+    }
+
+    return render(request, 'products/product_detail.html', context)
