@@ -1,0 +1,115 @@
+<div class="row">
+    {% for product in products %}
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 {% if view == 'all_games' %}col-xxl-3{% else %}col-xxl-2{% endif %}">
+            <div class="card h-100 border-0">
+                <div class="{% if view == 'all_games' %}product-line-image-container{% else %}product-image-container{% endif %} d-flex flex-column justify-content-center align-items-center">
+                    {% if product.image %}
+                        <a href="{% if view == 'all_games' %}{% url 'products' product.id %} {% else %}{% endif %}">
+                            <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top img-fluid {% if view == 'all_games' %}product-line-image{% else %}product-image{% endif %}">
+                        </a>
+                    {% else %}
+                        <a href="{% if view == 'all_games' %}{% url 'products' product.id %} {% else %}{% endif %}">
+                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" class="card-img-top img-fluid {% if view == 'all_games' %}product-line-image{% else %}product-image{% endif %}">
+                        </a>
+                    {% endif %}
+                </div>
+                <div class="card-body pb-0 px-0">
+                </div>
+                <div class="card-footer bg-light pt-0 px-0 border-0 text-left">
+                    <div class="row">
+                        <div class="col">
+                            <p class="product-name mb-0 text-dark">{{ product.name }}</p>
+                            {% if product.genre %}
+                                <p class="small mt-1 mb-0">
+                                    <a href="" class="text-muted genre-filter-link" data-filter-value="{{ product.genre.identifier }}">
+                                        {{ product.genre.name }}
+                                    </a>
+                                </p>
+                            {% endif %}
+                            {% if product.category %}
+                                <p class="small mt-1 mb-0">
+                                    <a href="" class="text-muted category-filter-link" data-filter-value="{{ product.category.identifier }}">
+                                        {{ product.category.name }}
+                                    </a>
+                                </p>
+                            {% endif %}
+                            {% if product.publisher %}
+                                <p class="small mt-1 mb-0">
+                                    <a href="" class="text-muted publisher-filter-link" data-filter-value="{{ product.publisher.identifier }}">
+                                        {{ product.publisher.name }}
+                                    </a>
+                                </p>
+                            {% endif %}
+                            {% if product.price %}
+                                <p class="lead mb-0 text-left font-weight-bold text-dark">£{{ product.price }}</p>
+                            {% endif %}
+                            {% if product.stock_state %}
+                                <p class="small mt-1 mb-0">
+                                    <a href="" class="{% if product.stock > 0 %}text-success{% else %}text-muted{% endif %} stock-filter-link" data-filter-value="{{ product.stock_state.identifier }}">
+                                        {% if product.stock > 0 %}{{ product.stock }} {% endif %}{{ product.stock_state.state }}
+                                    </a>
+                                </p>
+                            {% endif %}
+                            {% if search_term %}
+                                {% if product.sub_product_line.product_line %}
+                                    <p class="small mt-1 mb-0">
+                                        <a href="" class="text-muted product-line-filter-link" data-filter-value="{{ product.sub_product_line.product_line.identifier }}">
+                                            {{ product.sub_product_line.product_line.name }}
+                                        </a>
+                                    </p>
+                                {% endif %}
+                            {% endif %}
+                            {% if product.sub_product_line %}
+                                <p class="small mt-1 mb-0">
+                                    {% if search_term %}<i class="fas fa-level-up-alt text-muted sub-arrow"></i>{% endif %}
+                                    <a href="" class="text-muted category-filter-link" data-filter-value="{{ product.sub_product_line.identifier }}">
+                                        {{ product.sub_product_line.name }}
+                                    </a>
+                                </p>
+                            {% endif %}
+                            {% if search_term %}
+                                <p class="small mt-1 mb-0">
+                                    <a href="" class="text-muted publisher-filter-link" data-filter-value="{{ product.sub_product_line.product_line.publisher.identifier }}">
+                                        {{ product.sub_product_line.product_line.publisher.name }}
+                                    </a>
+                                </p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% if forloop.counter|divisibleby:1 %}
+            <div class="col-12 d-sm-none mb-3 text-dark">
+                <hr>
+            </div>
+        {% endif %}
+
+        {% if forloop.counter|divisibleby:2 %}
+            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-3 text-dark">
+                <hr>
+            </div>
+        {% endif %}
+
+        {% if forloop.counter|divisibleby:3 %}
+            <div class="col-12 d-none d-lg-block d-xl-none mb-3 text-dark">
+                <hr>
+            </div>
+        {% endif %}
+
+        {% if forloop.counter|divisibleby:4 %}
+            <div class="col-12 d-none d-xl-block {% if not view == 'all_games' %}d-xxl-none{% endif %} mb-3 text-dark">
+                <hr>
+            </div>
+        {% endif %}
+
+        {% if not view == 'all_games' %}
+            {% if forloop.counter|divisibleby:6 %}
+                <div class="col-12 d-none d-xxl-block mb-3 text-dark">
+                    <hr>
+                </div>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>

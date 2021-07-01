@@ -247,6 +247,18 @@ class Sub_Product_Line(models.Model):
     description = models.TextField(
         help_text='Please enter a description for this Sub Product Line'
     )
+    core_set = models.BooleanField(
+        null=False,
+        blank=False,
+        default=False,
+        help_text='Does this Sub Product Line contain Core Sets/Rules?'
+    )
+    scenics = models.BooleanField(
+        null=False,
+        blank=False,
+        default=False,
+        help_text='Does this Sub Product Line contain Scenics and/or Terrain?'
+    )
     image = models.ImageField(
         null=True,
         blank=True,
