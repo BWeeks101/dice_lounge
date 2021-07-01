@@ -108,7 +108,19 @@
         {% endblock content %}
 
         {% block postload_js %}
-            <script src="{% static 'js/search-input-box-shadow.js' %}"></script>
+            <script src="{% static 'js/sort-filter-menu.js' %}"></script>
+            {% if applied_sort %}
+                <script>
+                    // When doc is ready, pass the applied_sort value to
+                    // initSortFilterMenus()
+                    $(function() {
+                        initSortFilterMenus('{{ applied_sort }}');
+                    });
+                </script>
+            {% endif %}
+            <script src="{% static 'js/pagination-controls.js' %}"></script>
+            <script src="{% static 'js/product-nav.js' %}"></script>
+            <script src="{% static 'js/script.js' %}"></script>
         {% endblock postload_js %}
     </body>
 </html>
