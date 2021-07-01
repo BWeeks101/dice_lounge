@@ -23,7 +23,10 @@ $(function() {
                             `${$(toggler).attr('id')}`).
                                 addClass('collapse').
                                     removeClass('dropdown-menu').
-                                        removeClass('show');
+                                        removeClass('border').
+                                            removeClass('border-dark').
+                                                removeClass('shadow-lg').
+                                                    removeClass('show');
 
                 // Invert arrow on toggler when clicked
                 $(toggler).on('click', () => {
@@ -73,8 +76,7 @@ $(function() {
             // On .product-navbar dropdown-item click, apply active class to
             // .product-navbar dropdown-item, and paired #sideNav dropdown-item
             $(dropDownItems).each((i, item) => {
-                $(item).on('click', (e) => {
-                    e.preventDefault();
+                $(item).on('click', () => {
                     addActiveClass(i);
                 });
             });
@@ -82,8 +84,7 @@ $(function() {
             // On #sideNav dropdown-item click, apply active class to #sideNav
             // dropdown-item, and paired .product-navbar dropdown-item
             $(sideNavCollapseItems).each((i, sideNavItem) => {
-                $(sideNavItem).on('click', (e) => {
-                    e.preventDefault();
+                $(sideNavItem).on('click', () => {
                     addActiveClass(i);
                 });
             });
