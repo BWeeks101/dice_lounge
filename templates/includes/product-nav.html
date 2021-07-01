@@ -1,57 +1,61 @@
 {% load static %}
 
 <ul class="navbar-nav product-nav-ul w-auto mx-auto">
-    <li class="nav-item dropdown">
-        <a class="text-uppercase fw-bold nav-link text-dark me-5 dropdown-toggle" href="#" id="all-games-toggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <li class="nav-item dropdown position-relative">
+        <a class="text-uppercase fw-bold nav-link text-dark me-4 dropdown-toggle" href="#" id="all-games-toggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             All Games
         </a>
-        <div class="dropdown-menu bg-light text-dark border-0" aria-labelledby="all-games-toggler">
-            <a href="" class="dropdown-item">By Category</a>
-            <a href="" class="dropdown-item">By Genre</a>
-            <a href="" class="dropdown-item">By Publisher</a>
+        <div class="dropdown-menu bg-light text-dark shadow-lg" aria-labelledby="all-games-toggler">
+            <a href="{% url 'all_games' %}?sort=category&direction=asc" class="dropdown-item {% if applied_sort == 'category_asc' %}active{% endif %}">By Category</a>
+            <a href="{% url 'all_games' %}?sort=genre&direction=asc" class="dropdown-item {% if applied_sort == 'genre_asc' %}active{% endif %}">By Genre</a>
+            <a href="{% url 'all_games' %}?sort=publisher&direction=asc" class="dropdown-item {% if applied_sort == 'publisher_asc' %}active{% endif %}">By Publisher</a>
         </div>
     </li>
 
-    <li class="nav-item dropdown">
-        <a class="text-uppercase fw-bold nav-link text-dark me-5 dropdown-toggle" href="#" id="table-top-games-toggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Table Top Games
+    <li class="nav-item dropdown position-relative">
+        <a class="text-uppercase fw-bold nav-link text-dark me-4 dropdown-toggle" href="#" id="table-top-games-toggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tabletop Games
         </a>
-        <div class="dropdown-menu bg-light text-dark border-0" aria-labelledby="table-top-games-toggler">
-            <a href="" class="dropdown-item">Age of Sigmar</a>
-            <a href="" class="dropdown-item">Necromunda</a>
-            <a href="" class="dropdown-item">Star Wars: Legion</a>
-            <a href="" class="dropdown-item">Star Wars: X-Wing</a>
-            <a href="" class="dropdown-item">Warcry</a>
-            <a href="" class="dropdown-item">Warhammer 40,000</a>
-            <a href="" class="dropdown-item">All Table Top Games</a>
+        <div class="dropdown-menu bg-light text-dark shadow-lg" aria-labelledby="table-top-games-toggler">
+            {% for tabletop_game in nav_menus.tabletop_games %}
+                <a href="{% url 'products' tabletop_game.id %}" class="dropdown-item {% if product_line.id == tabletop_game.id %}active{% endif %}">{{ tabletop_game.name }}</a>
+            {% endfor %}
+            <a href="{% url 'all_games' %}?category=tabletop,skirmish" class="dropdown-item {% if filters.categories and filters.categories|length == 2 %}{% if filters.categories.0.identifier == 'tabletop' and filters.categories.1.identifier == 'skirmish' %}active{% elif filters.categories.1.identifier == 'tabletop' and filters.categories.0.identifier == 'skirmish' %}active{% endif %}{% endif %}">All Tabletop Games</a>
         </div>
     </li>
 
-    <li class="nav-item dropdown">
-        <a class="text-uppercase fw-bold nav-link text-dark me-5 dropdown-toggle" href="#" id="card-games-toggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <li class="nav-item dropdown position-relative">
+        <a class="text-uppercase fw-bold nav-link text-dark me-4 dropdown-toggle" href="#" id="card-games-toggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Card Games
         </a>
-        <div class="dropdown-menu bg-light text-dark border-0" aria-labelledby="card-games-toggler">
-            <a href="" class="dropdown-item">Magic: The Gathering</a>
-            <a href="" class="dropdown-item">Marvel Champions</a>
-            <a href="" class="dropdown-item">All Card Games</a>
+        <div class="dropdown-menu bg-light text-dark shadow-lg" aria-labelledby="card-games-toggler">
+            {% for card_game in nav_menus.card_games %}
+                <a href="{% url 'products' card_game.id %}" class="dropdown-item {% if product_line.id == card_game.id %}active{% endif %}">{{ card_game.name }}</a>
+            {% endfor %}
+            <a href="{% url 'all_games' %}?category=card" class="dropdown-item {% if filters.categories and filters.categories|length == 1 %}{% for category in filters.categories %}{% if category.identifier == 'card' %}active{% endif %}{% endfor %}{% endif %}">All Card Games</a>
         </div>
     </li>
 
-    <li class="nav-item dropdown">
-        <a class="text-uppercase fw-bold nav-link text-dark dropdown-toggle" href="#" id="specials-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Hobby Supplies
+    <li class="nav-item dropdown position-relative">
+        <a class="text-uppercase fw-bold nav-link text-dark me-4 dropdown-toggle" href="#" id="brushes-and-paint-toggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Brushes and Paint
         </a>
-        <div class="dropdown-menu bg-light text-dark border-0" aria-labelledby="specials-link">
-            <a href="" class="dropdown-item">Brushes and Paints</a>
-            <a href="" class="dropdown-item">Glue</a>
-            <a href="" class="dropdown-item">Scenics</a>
-            <a href="" class="dropdown-item">Tools</a>
-            <a href="" class="dropdown-item">All Hobby Supplies</a>
+        <div class="dropdown-menu bg-light text-dark shadow-lg" aria-labelledby="brushes-and-paint-toggler">
+            {% for supply in nav_menus.brushes_and_paint %}
+                <a href="{% url 'products' supply.product_line_id %}?category={{ supply.identifier }}" class="dropdown-item {% if filters.categories %}{% for category in filters.categories %}{% if supply.identifier == category.identifier %}active{% endif %}{% endfor %}{% endif %}">{{ supply.name }}</a>
+            {% endfor %}
+        </div>
+    </li>
+
+    <li class="nav-item dropdown position-relative">
+        <a class="text-uppercase fw-bold nav-link text-dark dropdown-toggle" href="#" id="hobby-essentials-toggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Hobby Essentials
+        </a>
+        <div class="dropdown-menu bg-light text-dark shadow-lg" aria-labelledby="hobby-essentials-toggler">
+            {% for supply in nav_menus.hobby_essentials %}
+                <a href="{% url 'products' supply.product_line_id %}?category={{ supply.identifier }}" class="dropdown-item {% if filters.categories %}{% for category in filters.categories %}{% if supply.identifier == category.identifier %}active{% endif %}{% endfor %}{% endif %}">{{ supply.name }}</a>
+            {% endfor %}
+            <a href="{% url 'products' nav_menus.hobby_essentials_id %}" class="dropdown-item {% if not filters.categories and product_line.id == nav_menus.hobby_essentials_id %}active{% endif %}">All Hobby Essentials</a>
         </div>
     </li>
 </ul>
-
-{% block postload_js %}
-    <script src="{% static 'js/offcanvas-dropdown-to-collapse.js' %}"></script>
-{% endblock postload_js %}
