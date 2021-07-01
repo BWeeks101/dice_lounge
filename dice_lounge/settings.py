@@ -45,9 +45,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+
+    # allauth
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+
+    # crispy forms
+    'crispy_forms',
+    'crispy_bootstrap5',
 
     # dice_lounge apps
     'home',
@@ -66,6 +72,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'dice_lounge.urls'
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -81,7 +90,13 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # custom context_processor required by product-nav.html
+                'products.context_processors.pop_product_nav_menus',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
