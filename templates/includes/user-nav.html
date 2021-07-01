@@ -13,7 +13,7 @@
             <p class="my-0">My Account</p>
         </div>
     </a>
-    <div class="dropdown-menu border-0 dropdown-menu-end dropdown-menu-lg-start" aria-labelledby="user-options">
+    <div class="dropdown-menu shadow-lg dropdown-menu-end dropdown-menu-lg-start" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
                 <a href="" class="dropdown-item">Product Management</a>
