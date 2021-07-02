@@ -4,19 +4,28 @@ function initQuantityInput() {
 
     /* Rewritten from boutique ado sample project */
 
+
     // Disable +/- buttons when qty input value outside 2-9 range
-    const handleEnableDisable = (itemId) => {
-        $(`#qtyForm${itemId}`)[0].reportValidity();
-        let value = parseInt($(`#qtyInput${itemId}`).val());
-        $(`#decrementQty${itemId}`).prop('disabled', value < 2);
-        $(`#incrementQty${itemId}`).prop('disabled', value > 9);
+    const handleEnableDisable = (productId) => {
+        let forms = $(`.qty-form[data-product-id=${productId}]`);
+        $(forms).each((i) => {
+            let form = forms[i];
+            form.reportValidity();
+            let value = $(form).
+                find(`.qty-input[data-product-id=${productId}]`).
+                    val();
+            $(form).find(`.decrement-qty[data-product-id=${productId}]`).
+                prop('disabled', value < 2);
+            $(form).find(`.increment-qty[data-product-id=${productId}]`).
+                prop('disabled', value > 9);
+        });
     };
 
     // Set initial disabled state of +/- buttons
     const initInputStates = () => {
-        let allQtyInputs = $('.qty-input');
+        let allQtyInputs = $('.qty-form');
         $(allQtyInputs).each((i) => {
-            handleEnableDisable($(allQtyInputs[i]).attr('data-item-id'));
+            handleEnableDisable($(allQtyInputs[i]).attr('data-product-id'));
         });
     };
 
@@ -24,24 +33,29 @@ function initQuantityInput() {
     const addInputEventHandlers = () => {
         // Check enable/disable every time the qty input is changed
         $('.qty-input').on('input', (e) => {
-            handleEnableDisable($(e.currentTarget).attr('data-item-id'));
+            // Get the productId of the input element
+            let productId = $(e.currentTarget).attr('data-product-id');
+            $(`.qty-input[data-product-id=${productId}]`).
+                val($(e.currentTarget).val());
+            handleEnableDisable($(e.currentTarget).attr('data-product-id'));
         });
 
         // Increment/decrement qty input value when a +/- button is clicked
         $('.increment-qty, .decrement-qty').click((e) => {
             // Prevent the default click action
             e.preventDefault();
-            // Get the itemId of the clicked button
-            let itemId = $(e.currentTarget).attr('data-item-id');
-            // Get the qty input element
-            let qtyInput = $(`#qtyInput${itemId}`)[0];
+            // Get the productId of the clicked button
+            let productId = $(e.currentTarget).attr('data-product-id');
             // Get the value of the qty input element
-            let qtyInputVal = parseInt($(qtyInput).val());
+            let qtyInputVal = parseInt($(e.currentTarget).
+                closest('.qty-input-container').
+                    find(`.qty-input[data-product-id=${productId}]`).
+                        val());
             // If the current value of the input is NAN set the value to 1, then
             // update the enabled state of the +/- buttons and return
             if (Number.isNaN(qtyInputVal)) {
-                $(qtyInput).val(1);
-                handleEnableDisable(itemId);
+                $(`.qty-input[data-product-id=${productId}]`).val(1);
+                handleEnableDisable(productId);
                 return;
             }
             let modifier = 1;
@@ -58,9 +72,30 @@ function initQuantityInput() {
                 qtyInputVal = 10;
             }
             // Update the qty input value
-            $(qtyInput).val(qtyInputVal);
+            $(`.qty-input[data-product-id=${productId}]`).val(qtyInputVal);
             // Update the enabled state of the +/- buttons
-            handleEnableDisable(itemId);
+            handleEnableDisable(productId);
+        });
+
+        // Update item quantity
+        $('.update-link').click((e) => {
+            e.preventDefault();
+            $(e.currentTarget).closest('.qty-form')[0].submit();
+        });
+
+        // Remove item from basket and reload
+        $('.remove-item').click((e) => {
+            e.preventDefault();
+            let csrfToken = $('[name=csrfmiddlewaretoken]').val();
+            if (csrfToken === undefined) {
+                return;
+            }
+            let url = $(e.currentTarget).attr('data-remove-url');
+            let data = {'csrfmiddlewaretoken': csrfToken};
+
+            $.post(url, data).done(function() {
+                location.reload();
+            });
         });
     };
 

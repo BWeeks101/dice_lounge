@@ -91,11 +91,16 @@ ul.pagination > li.page-item.active > .page-link:hover,
 }
 
 /* Helper classes, and dropdown-toggle hover */
+.text-red,
 .icon-red,
 .hover-color-red:hover,
 .dropdown:hover .dropdown-toggle::after,
 .dropdown:hover .dropdown-toggle-inverted::after {
     color: var(--highlight-color) !important;
+}
+
+.text-active {
+    color: var(--active-color) !important;
 }
 
 /* no box-shadow on navbar-toggler:focus */
@@ -742,6 +747,8 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
     #cta-container {
         width: 91.6666666667%; /* .col-11 */
     }
+
+
 }
 
 @media (max-width: 319px) {
@@ -761,13 +768,8 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
     .fs-5 {
         font-size: 1.15rem !important;
     }
-}
 
-/* Minimum supported width */
-@media (max-width: 280px) {
-    .shopping-control-btn-row-min {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .shopping-control-btn-row-min > .btn {
+        font-size: .917rem;
     }
 }

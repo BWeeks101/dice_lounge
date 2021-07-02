@@ -27,12 +27,12 @@
     </div>
 </li>
 <li class="list-inline-item">
-    <a class="{% if grand_total %}text-primary fw-bold{% else %}text-dark{% endif %} nav-link hover-color-red" href="">
+    <a class="{% if basket.grand_total %}text-active fw-bold{% else %}text-dark{% endif %} nav-link hover-color-red" href="{% url 'view_basket' %}">
         <div class="text-center">
             <div><i class="fas fa-shopping-basket fa-lg"></i></div>
             <p class="my-0">
-                {% if grand_total %}
-                    £{{ grand_total|floatformat:2 }}
+                {% if basket.grand_total %}
+                    £{{ basket.grand_total|floatformat:2 }}
                 {% else %}
                     £0.00
                 {% endif %}

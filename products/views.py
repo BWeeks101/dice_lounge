@@ -535,7 +535,7 @@ def search_results(request):
 # Show all game product lines
 def all_games(request):
     """
-        A view to show all product lines,
+        A view to show all game product lines,
         including sorting, and redirect search queries
     """
 

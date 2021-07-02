@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     # dice_lounge apps
     'home',
     'products',
+    'basket',
 ]
 
 MIDDLEWARE = [
@@ -92,6 +93,8 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 # custom context_processor required by product-nav.html
                 'products.context_processors.pop_product_nav_menus',
+                # custom context_processor required by basket
+                'basket.context_processors.basket_contents',
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
@@ -180,6 +183,9 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+FREE_DELIVERY_THRESHOLD = 100
+STANDARD_DELIVERY_PERCENTAGE = 10
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

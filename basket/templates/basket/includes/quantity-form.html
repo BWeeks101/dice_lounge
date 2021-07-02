@@ -1,0 +1,24 @@
+<form class="form qty-form" method="POST" action="{% url 'adjust_basket' item.product.id %}" data-product-id="{{ item.product.id }}">
+    {% csrf_token %}
+    <div class="form-group">
+        <div class="input-group qty-input-container">
+            <div class="input-group-prepend">
+                <button class="decrement-qty btn btn-dark hover-background-red" data-product-id="{{ item.product.id }}">
+                    <span class="icon">
+                        <i class="fas fa-minus"></i>
+                    </span>
+                </button>
+            </div>
+            <input class="form-control form-control-sm qty-input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="10" data-product-id="{{ item.product.id }}" required>
+            <div class="input-group-append">
+                <button class="increment-qty btn btn-dark hover-background-red" data-product-id="{{ item.product.id }}">
+                    <span class="icon">
+                        <i class="fas fa-plus"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <a class="update-link text-info" href=""><small>Update</small></a>
+    <a class="remove-item text-danger float-right" data-product-id="{{ item.product.id }}" data-remove-url="{% url 'remove_from_basket' item.product.id %}" href=""><small>Remove</small></a>
+</form>
