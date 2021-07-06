@@ -40,6 +40,7 @@
         <title>The Dice Lounge {% block extra_title %}{% endblock extra_title %}</title>
     </head>
     <body>
+        <div id="scrollTopAnchor"></div>
         <div id="shade-background"></div>
         <header class="container-fluid fixed-top">
             <div id="topNav" class="row bg-light pt-lg-2 d-flex">
@@ -108,17 +109,12 @@
         {% endblock content %}
 
         {% block postload_js %}
-            <script src="{% static 'js/sort-filter-menu.js' %}"></script>
             {% if applied_sort %}
-                <script>
-                    // When doc is ready, pass the applied_sort value to
-                    // initSortFilterMenus()
-                    $(function() {
-                        initSortFilterMenus('{{ applied_sort }}');
-                    });
-                </script>
+                <script src="{% static 'js/sort-filter-menu.js' %}"></script>
             {% endif %}
-            <script src="{% static 'js/pagination-controls.js' %}"></script>
+            {% if pagination %}
+                <script src="{% static 'js/pagination-controls.js' %}"></script>
+            {% endif %}
             <script src="{% static 'js/product-nav.js' %}"></script>
             <script src="{% static 'js/script.js' %}"></script>
         {% endblock postload_js %}
