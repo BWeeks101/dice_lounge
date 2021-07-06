@@ -332,56 +332,161 @@ Requires:   dropDownToggler of type:
 //     addDropDownItemListeners();
 // }
 
+/* Create an intersection observer on the #scrollTopAnchor element, executing */
+/* callbacks when intersecting (at top of page) or not intersecting (not top) */
+/* Requires: */
+/*      notTopAction: function.  Callback function executed when scrolled */
+/*                    away from the top of the page */
+/*      topAction: function.  Callback function executed when scrolled to the */
+/*                 top of the page */
+/* https://css-tricks.com/styling-based-on-scroll-position/ */
+function initIntersectionObserver({notTopAction, topAction}) {
+    if (
+        "IntersectionObserver" in window &&
+        "IntersectionObserverEntry" in window &&
+        "intersectionRatio" in window.IntersectionObserverEntry.prototype
+    ) {
+        let observer = new IntersectionObserver((entries) => {
+            if (entries[0].boundingClientRect.y < 0) {
+                notTopAction();
+            } else {
+                topAction();
+            }
+        });
+        observer.observe(document.querySelector("#scrollTopAnchor"));
+    }
+}
+
+/* Create a resize listener on the window, passing the callback param */
+/* Requires: */
+/*      callback: callback function */
+// eslint-disable-next-line no-unused-vars
+function createResizeListener(callback) {
+    if (callback === undefined || typeof callback !== 'function') {
+        return;
+    }
+
+    let timer;
+
+    // Modified from https://css-tricks.com/snippets/jquery/done-resizing-event/
+    // On window resize, clear any existing timeout for the timer var, create
+    // a new timeout for the timer var with a delay of a 5th of a second,
+    // with callback() as a callback.  The callback will therefore
+    // only be executed if no window resize event is called within the
+    // timeout window.
+    $(window).on('resize', () => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            callback();
+        }, 200);
+    });
+}
+
+/* ensure .disabled links do not function */
+function disableLinks() {
+    // Remove existing click listeners
+    $('a.disabled').off('click');
+
+    /* Add click listener which prevents the default action */
+    $('a.disabled').on('click', (e) => {
+        e.preventDefault();
+    });
+}
+
 /* Add/remove box shadows for search/page input box containers */
 function initInputBoxShadows() {
+
+    /* search input focus */
     $('.search-input-container input').on('focus', (e) => {
         $(e.currentTarget).closest('.search-input-container').
             addClass('input-container-box-shadow');
     });
 
+    /* search input focusout */
     $('.search-input-container input').on('focusout', (e) => {
         $(e.currentTarget).closest('.search-input-container').
             removeClass('input-container-box-shadow');
     });
 
+    /* search button click */
     $('.search-input-container button').on('click', (e) => {
         $(e.currentTarget).closest('.search-input-container').
             addClass('input-container-box-shadow');
     });
 
+    /* page input focus */
     $('.page-input-container > .page-input').on('focus', (e) => {
         $(e.currentTarget).closest('.page-input-container').
             addClass('input-container-box-shadow');
     });
 
+    /* page input focusout */
     $('.page-input-container > .page-input').on('focusout', (e) => {
         $(e.currentTarget).closest('.page-input-container').
             removeClass('input-container-box-shadow');
     });
 
+    /* page input button click */
     $('.page-input-container > .page-input-btn').on('click', (e) => {
         $(e.currentTarget).closest('.page-input-container').
             addClass('input-container-box-shadow');
     });
 
-    $('.qty-input-container > input[type=number]').on('focus', (e) => {
-        $(e.currentTarget).closest('.qty-input-container').
-            addClass('input-container-box-shadow');
-    });
+    // /* qty input focus */
+    // $('.qty-input-container > input[type=number]').on('focus', (e) => {
+    //     $(e.currentTarget).closest('.qty-input-container').
+    //         addClass('input-container-box-shadow');
+    // });
 
-    $('.qty-input-container > input[type=number]').on('focusout', (e) => {
-        $(e.currentTarget).closest('.qty-input-container').
-            removeClass('input-container-box-shadow');
-    });
+    // /* qty input focusout */
+    // $('.qty-input-container > input[type=number]').on('focusout', (e) => {
+    //     $(e.currentTarget).closest('.qty-input-container').
+    //         removeClass('input-container-box-shadow');
+    // });
 
-    $('.qty-input-container > input[type=number]').on('click', (e) => {
-        $(e.currentTarget).closest('.qty-input-container').
-            addClass('input-container-box-shadow');
+    // /* qty input click */
+    // $('.qty-input-container > input[type=number]').on('click', (e) => {
+    //     $(e.currentTarget).closest('.qty-input-container').
+    //         addClass('input-container-box-shadow');
+    // });
+}
+
+/* Invert arrow on collapsible toggler click */
+/* Requires: */
+/*      selector: string.  collapsible toggler element selector. */
+// eslint-disable-next-line no-unused-vars
+function initCollapsibleTogglerArrows(selector) {
+    $(selector).on('click', (e) => {
+        if ($(e.currentTarget).hasClass('collapsed')) {
+            $(e.currentTarget).removeClass('dropdown-toggle-inverted').
+                addClass('dropdown-toggle');
+            return;
+        }
+        $(e.currentTarget).removeClass('dropdown-toggle').
+            addClass('dropdown-toggle-inverted');
     });
 }
 
 /* Add click listener to Back to Top button */
 function initBackToTopButton() {
+
+    // Show the btt button
+    const showBtt = () => {
+        $('button.btt-button').css('visibility', 'initial').
+            css('opacity', '1');
+    };
+
+    // Hide the btt button
+    const hideBtt = () => {
+        $('button.btt-button').css('visibility', 'hidden').
+            css('opacity', '0');
+    };
+
+    // Initialise an intersection observer to show/hide the btt button base on
+    // scroll position
+    initIntersectionObserver({notTopAction: showBtt, topAction: hideBtt});
+
+    /* Add click listener to btt buttons to scroll the page to the top */
     $('button.btt-button, button.filter-btt-button').on('click', () => {
         window.scrollTo(0, 0);
     });
@@ -389,9 +494,8 @@ function initBackToTopButton() {
 
 /* Set product card heights and create window resize listener to call again */
 function initProductCardHeightAdjust() {
-    let timer;
 
-    // Calculate and set heights for .product-name and .card-footer elements
+    /* Calculate and set heights for .product-name and .card-footer elements */
     const setProductCardHeights = () => {
         // Get the window width
         let windowWidth = window.outerWidth;
@@ -431,10 +535,10 @@ function initProductCardHeightAdjust() {
             return;
         }
 
-        // Populate the rows array with objects corresponding to rows of
-        // product cards as displayed
-        // Each object contains an array of product card footer and name elems
-        // in that row
+        /* Populate the rows array with objects corresponding to rows of */
+        /* product cards as displayed */
+        /* Each object contains an array of product card footer and name */
+        /* elems in that row */
         const buildRows = (colId) => {
             if (!colId) {
                 colId = 0;
@@ -445,7 +549,7 @@ function initProductCardHeightAdjust() {
                 'cols': []
             };
 
-            // Populate the cols array property of the current row object
+            /* Populate the cols array property of the current row object */
             const buildRow = () => {
                 // If the length of the cols property is less than the colCount:
                 // Add the element from the cards jq object that corresponds to
@@ -519,21 +623,15 @@ function initProductCardHeightAdjust() {
 
     setProductCardHeights();
 
-    // Modified from https://css-tricks.com/snippets/jquery/done-resizing-event/
-    // On window resize, clear any existing timeout for the timer var, create
-    // a new timeout for the timer var with a delay of a 5th of a second,
-    // with setProductCardHeights() as a callback.  The callback will therefore
-    // only be executed if no window resize event is called within the
-    // timeout window.
-    $(window).on('resize', () => {
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-            setProductCardHeights();
-        }, 200);
-    });
+    // Create a resize listener on the window, calling setProductCardHeights()
+    createResizeListener(setProductCardHeights);
 }
 
-$(function() {
+/* doc ready function */
+$(() => {
+    // Ensure disabled links do not function
+    disableLinks();
+
     // Add event listeners to search/page input box containers
     initInputBoxShadows();
 

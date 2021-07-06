@@ -1,9 +1,10 @@
 /*eslint func-style: ["error", "declaration", { "allowArrowFunctions": true }]*/
+/*global initCollapsibleTogglerArrows */
 
 /* Add click listener for sort/filter removal links */
-// eslint-disable-next-line no-unused-vars
 function addSortFilterListeners() {
-    // Remove filter when clicking filter badge
+
+    /* Remove filter when clicking filter badge */
     $('.filter-badge').on('click', (e) => {
         // prevent the default link click action
         e.preventDefault();
@@ -32,6 +33,7 @@ function addSortFilterListeners() {
         // Update the url
         currentUrl.searchParams.set(filter, currentVals);
 
+        // If currentVals is blank, remove the filter from the url
         if (!currentVals.length) {
             currentUrl.searchParams.delete(filter);
         }
@@ -40,7 +42,7 @@ function addSortFilterListeners() {
         window.location.replace(currentUrl);
     });
 
-    // Remove filter when clicking remove filter link/button
+    /* Remove filter when clicking remove filter link/button */
     $('#remove-filter-link, button.remove-filters').on('click', (e) => {
         // prevent the default link click action
         e.preventDefault();
@@ -59,7 +61,7 @@ function addSortFilterListeners() {
         window.location.replace(currentUrl);
     });
 
-    // Remove sort when clicking remove sort link
+    /* Remove sort when clicking remove sort link */
     $('#remove-sort-link').on('click', (e) => {
         // prevent the default link click action
         e.preventDefault();
@@ -75,7 +77,7 @@ function addSortFilterListeners() {
         window.location.replace(currentUrl);
     });
 
-    // Remove filter and sort when clicking remove filter/sort link
+    /* Remove filter and sort when clicking remove filter/sort link */
     $('#remove-filter-sort-link').on('click', (e) => {
         // prevent the default link click action
         e.preventDefault();
@@ -98,7 +100,32 @@ function addSortFilterListeners() {
         window.location.replace(currentUrl);
     });
 
-    // add/update/remove filters to/from apply-filters button data attributes
+    /* Get filter type from a filter checkbox/link element */
+    const getFilterType = (elem) => {
+        let elemType = 'link';
+        if ($(elem).attr('type') === 'checkbox') {
+            elemType = 'checkbox';
+        }
+
+        // Get the current filter type
+        let filterType = 'category';
+        if ($(elem).hasClass(`genre-filter-${elemType}`)) {
+            filterType = 'genre';
+        } else if ($(elem).hasClass(`publisher-filter-${elemType}`)) {
+            filterType = 'publisher';
+        } else if ($(elem).hasClass(`stock-filter-${elemType}`)) {
+            filterType = 'stock';
+        } else if ($(elem).
+                hasClass(`product-line-filter-${elemType}`)) {
+            filterType = 'product_line';
+        }
+
+        // return the filter type
+        return filterType;
+    };
+
+    /* Add/update/remove filters to/from apply-filters button data attributes */
+    /* Called when changing the state of a filter checkbox */
     const setFilterValue = (elem) => {
         // Get the checked state of the checkbox
         let isChecked = $(elem).prop('checked');
@@ -107,17 +134,7 @@ function addSortFilterListeners() {
         let filterVal = $(elem).attr('data-filter-value');
 
         // Get the current filter type
-        let filterType = 'category';
-        if ($(elem).hasClass('genre-filter-checkbox')) {
-            filterType = 'genre';
-        } else if ($(elem).hasClass('publisher-filter-checkbox')) {
-            filterType = 'publisher';
-        } else if ($(elem).hasClass('stock-filter-checkbox')) {
-            filterType = 'stock';
-        } else if ($(elem).hasClass(
-                'product-line-filter-checkbox')) {
-            filterType = 'product-line';
-        }
+        let filterType = getFilterType(elem);
 
         // Get the stored filter values from the apply button
         let currentVals = $('#applyFilters').
@@ -160,7 +177,7 @@ function addSortFilterListeners() {
             attr(`data-${filterType}-filters`, currentVals);
     };
 
-    // Check/uncheck all child-checks when parent-check is checked/unchecked
+    /* Check/uncheck all child-checks when parent-check is checked/unchecked */
     $('.parent-check').on('click', (e) => {
         // Get the checked state of the parent-check
         let isChecked = $(e.currentTarget).prop('checked');
@@ -179,8 +196,8 @@ function addSortFilterListeners() {
         });
     });
 
-    // Check parent-check when any child-check is checked, or uncheck it when
-    // all child-checks are unchecked
+    /* Check parent-check when any child-check is checked, or uncheck it when */
+    /* all child-checks are unchecked */
     $('.child-check').on('click', (e) => {
         // Get child-check checked states
         let childInputs = $(e.currentTarget).parent().
@@ -210,7 +227,7 @@ function addSortFilterListeners() {
         setFilterValue(parentInput);
     });
 
-    // Pass clicked filter checkbox elem to setFilterValue()
+    /* Pass clicked filter checkbox elem to setFilterValue() */
     let filterCheckboxSelector = '.category-filter-checkbox, ' +
         '.genre-filter-checkbox, .publisher-filter-checkbox, ' +
             '.stock-filter-checkbox, .product-line-filter-checkbox';
@@ -218,7 +235,7 @@ function addSortFilterListeners() {
         setFilterValue(e.currentTarget);
     });
 
-    // Apply filter when clicking filter links in product card
+    /* Apply filter when clicking filter links in product card */
     let filterLinkSelector = '.category-filter-link, .stock-filter-link, ' +
         '.product-line-filter-link, .publisher-filter-link, .genre-filter-link';
     $(filterLinkSelector).on('click', (e) => {
@@ -229,17 +246,7 @@ function addSortFilterListeners() {
         let filterVal = $(e.currentTarget).attr('data-filter-value');
 
         // Get the current filter type
-        let filterType = 'category';
-        if ($(e.currentTarget).hasClass('genre-filter-link')) {
-            filterType = 'genre';
-        } else if ($(e.currentTarget).hasClass('stock-filter-link')) {
-            filterType = 'stock';
-        } else if ($(e.currentTarget).
-                hasClass('product-line-filter-link')) {
-            filterType = 'product_line';
-        } else if ($(e.currentTarget).hasClass('publisher-filter-link')) {
-            filterType = 'publisher';
-        }
+        let filterType = getFilterType(e.currentTarget);
 
         // Get the current url
         let currentUrl = new URL(window.location);
@@ -254,7 +261,7 @@ function addSortFilterListeners() {
         window.location.replace(currentUrl);
     });
 
-    // Apply a sort when clicking on sort-radio inputs
+    /* Apply a sort when clicking on sort-radio inputs */
     $('.sort-radio').on('click', (e) => {
         // Get the current url
         let currentUrl = new URL(window.location);
@@ -291,7 +298,7 @@ function addSortFilterListeners() {
         window.location.replace(currentUrl);
     });
 
-    // Apply filters when clicking the apply filters button
+    /* Apply filters when clicking the apply filters button */
     $('button.apply-filters').on('click', () => {
         // Get the filter value from the data-filters property of the button
         let filters = {
@@ -352,25 +359,20 @@ function addSortFilterListeners() {
     // Invert arrow on filter/sort collapse toggler when clicked
     let filterTogglerSelector = '#filterCollapseToggler, #sortCollapseToggler' +
         '#filterCollapseToggler_offcanvas, #sortCollapseToggler_offcanvas';
-    $(filterTogglerSelector).on('click', (e) => {
-        if ($(e.currentTarget).hasClass('collapsed')) {
-            $(e.currentTarget).removeClass('dropdown-toggle-inverted').
-                addClass('dropdown-toggle');
-            return;
-        }
-        $(e.currentTarget).removeClass('dropdown-toggle').
-            addClass('dropdown-toggle-inverted');
-    });
+    initCollapsibleTogglerArrows(filterTogglerSelector);
 
-    // Get active filters from checkboxes, and apply the values to the data
-    // attributes of the apply filters button
+    /* Get active filters from checkboxes on load, and apply the values to */
+    /* the data attributes of the apply filters button */
     const getInitialFilters = () => {
+        // Get filter checkbox elements
         let selector = '.category-filter-checkbox[checked], ' +
             '.genre-filter-checkbox[checked], ' +
                 '.publisher-filter-checkbox[checked], ' +
                     '.stock-filter-checkbox[checked], ' +
                         '.product-line-filter-checkbox[checked]';
         let filterCheckboxes = $(selector);
+
+        // Create filters object
         let filters = {
             category: '',
             genre: '',
@@ -379,24 +381,13 @@ function addSortFilterListeners() {
             productLine: ''
         };
 
+        // For each filter object
         $(filterCheckboxes).each((i) => {
             // Get the filter value of the checkbox
             let filterVal = $(filterCheckboxes[i]).attr('data-filter-value');
 
             // Get the filter type
-            let filterType = 'category';
-            if ($(filterCheckboxes[i]).hasClass('genre-filter-checkbox')) {
-                filterType = 'genre';
-            } else if ($(filterCheckboxes[i]).
-                    hasClass('publisher-filter-checkbox')) {
-                filterType = 'publisher';
-            } else if ($(filterCheckboxes[i]).
-                    hasClass('stock-filter-checkbox')) {
-                filterType = 'stock';
-            } else if ($(filterCheckboxes[i]).
-                    hasClass('product-line-filter-checkbox')) {
-                filterType = 'productLine';
-            }
+            let filterType = getFilterType(filterCheckboxes[i]);
 
             // If the value for the current type is blank, set the initial
             // value and return
@@ -434,15 +425,13 @@ function addSortFilterListeners() {
 }
 
 /* Update unique property values for offcanvas elems to prevent duplication */
-/* Set the active radio */
+/* and set the active radio */
 // eslint-disable-next-line no-unused-vars
-function initSortFilterMenus(appliedSort) {
-    // Adjust unique attributes of .form-check-input elems within the
-    // OffCanvas mobile sort/filter menu
-    $('.offcanvas-body .form-check-input').each((i) => {
-        // get elem manually to avoid unused i variable linting error
-        let elem = $('.offcanvas-body .form-check-input')[i];
+function initSortFilterMenus() {
 
+    /* Adjust unique attributes of .form-check-input elems within the */
+    /* #sortFilterOffCanvas mobile sort/filter menu */
+    $('#sortFilterOffCanvas .form-check-input').each((i, elem) => {
         // get the element id
         let elemid = $(elem).attr('id');
 
@@ -467,25 +456,27 @@ function initSortFilterMenus(appliedSort) {
     });
 
     // Adjust ids/targets of offcanvas collapse and apply/remove button elements
-    $('.offcanvas-body #filterCollapse').attr('id', 'filterCollapse_offcanvas');
-    $('.offcanvas-body #filterCollapseToggler').
+    $('#sortFilterOffCanvas #filterCollapse').
+        attr('id', 'filterCollapse_offcanvas');
+    $('#sortFilterOffCanvas #filterCollapseToggler').
         attr('id', 'filterCollapseToggler_offcanvas').
             attr('data-bs-target', '#filterCollapse_offcanvas');
 
-    $('.offcanvas-body #applyFilters').attr('id', '#applyFilters_offcanvas');
-    $('.offcanvas-body #removeFilters').attr('id', '#removeFilters_offcanvas');
+    $('#sortFilterOffCanvas #applyFilters').
+        attr('id', '#applyFilters_offcanvas');
+    $('#sortFilterOffCanvas #removeFilters').
+        attr('id', '#removeFilters_offcanvas');
 
-    $('.offcanvas-body #sortCollapse').attr('id', 'sortCollapse_offcanvas');
-    $('.offcanvas-body #sortCollapseToggler').
+    $('#sortFilterOffCanvas #sortCollapse').
+        attr('id', 'sortCollapse_offcanvas');
+    $('#sortFilterOffCanvas #sortCollapseToggler').
         attr('id', 'sortCollapseToggler_offcanvas').
             attr('data-bs-target', '#sortCollapse_offcanvas');
 
-    // Iterate over radio buttons the value matches the applied_sort
-    // value, and ensure the element is checked
-    $(`.sort-radio[value="${appliedSort}"]`).each((i) => {
-        // get elem manually to avoid unused i variable linting error
-        let elem = $(`.sort-radio[value="${appliedSort}"]`)[i];
-
+    // Iterate over radio buttons where the value matches the applied_sort
+    // django template context value, and ensure the element is checked
+    let appliedSort = $('#sortCollapse').attr('data-applied-sort');
+    $(`.sort-radio[value="${appliedSort}"]`).each((i, elem) => {
         // If the element is already checked, return
         if ($(elem).attr('checked')) {
             return;
@@ -498,3 +489,8 @@ function initSortFilterMenus(appliedSort) {
     // Add listeners to sort/filter control elements
     addSortFilterListeners();
 }
+
+/* doc ready function */
+$(() => {
+    initSortFilterMenus();
+});

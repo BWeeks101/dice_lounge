@@ -2,7 +2,8 @@
 
 /* Add click listener to pagination controls */
 function initPaginationControls() {
-    // Load the specified page
+
+    /* Load the specified page */
     const loadPage = (page) => {
         // Get the current url
         let currentUrl = new URL(window.location);
@@ -19,7 +20,7 @@ function initPaginationControls() {
         window.location.replace(currentUrl);
     };
 
-    // Listen for .page-link click, and load the page
+    /* Listen for .page-link click, and load the page */
     $('.pagination > .page-item > .page-link').on('click', (e) => {
         // prevent the default link click action
         e.preventDefault();
@@ -31,7 +32,7 @@ function initPaginationControls() {
         loadPage(page);
     });
 
-    // Listen for enter keypress in .page-input, and load the page
+    /* Listen for enter keypress in .page-input, and load the page */
     $('.page-input').on('keyup', (e) => {
         // If Enter was pressed
         if (e.keyCode === 13) {
@@ -65,6 +66,7 @@ function initPaginationControls() {
     });
 }
 
-$(function() {
+/* doc ready function */
+$(() => {
     initPaginationControls();
 });
