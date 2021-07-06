@@ -7,18 +7,29 @@ from products.models import Product
 def basket_contents(request):
 
     basket_items = []
+    errors = 0
     total = 0
     product_count = 0
     basket = request.session.get('basket', {})
 
     for product_id, quantity in basket.items():
         product = get_object_or_404(Product, pk=product_id)
-        total += quantity * product.price
+        max_per_purchase = product.max_per_purchase
+        if max_per_purchase > product.stock:
+            max_per_purchase = product.stock
+        subtotal = quantity * product.price
+        total += subtotal
+        if quantity > product.stock:
+            errors += 1
         product_count += quantity
         basket_items.append({
             'product_id': product_id,
             'quantity': quantity,
-            'product': product
+            'product': product,
+            'max_per_purchase': max_per_purchase,
+            'stock': product.stock,
+            'stock_state': product.stock_state,
+            'subtotal': subtotal
         })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
@@ -33,6 +44,7 @@ def basket_contents(request):
     context = {
         'basket': {
             'items': basket_items,
+            'errors': errors,
             'total': total,
             'product_count': product_count,
             'delivery': delivery,
