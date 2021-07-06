@@ -441,6 +441,17 @@ def apply_pagination(context, dataset_key, page=1, num_products_per_page=12):
     return context
 
 
+# Adjust max_per_purchase by stock
+# NB: Converts a QuerySet into a List, and returns a List
+def adjust_max_per_purchase(products):
+    products = list(products)
+    for product in products:
+        if product.max_per_purchase > product.stock:
+            product.max_per_purchase = product.stock
+
+    return products
+
+
 # Return search results
 def search_results(request):
     """
@@ -703,9 +714,11 @@ def product_detail(request, product_id):
         if 'q' in request.GET:
             return redirect('/products/search_results/?q=' + request.GET['q'])
 
+    products = adjust_max_per_purchase(Product.objects.filter(id=product_id))
+
     context = {
         'view': 'product_detail',
-        'products': Product.objects.filter(id=product_id),
+        'products': products,
     }
 
     return render(request, 'products/product_detail.html', context)
