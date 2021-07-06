@@ -119,7 +119,7 @@
         <span class="fs-5 text-uppercase">Sort By...</span>
     </a>
 </div>
-<div class="collapse show" id="sortCollapse">
+<div class="collapse show" id="sortCollapse" data-applied-sort="{{ applied_sort }}">
     <hr>
     {% for option in sort_options.list %}
         <div class="form-check">
