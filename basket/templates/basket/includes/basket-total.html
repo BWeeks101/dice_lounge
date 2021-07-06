@@ -1,8 +1,12 @@
-<h6><strong>Basket Total: £{{ basket.total|floatformat:2 }}</strong></h6>
-<h6>Delivery: £{{ basket.delivery|floatformat:2 }}</h6>
-<h4 class="mt-4"><strong>Grand Total: £{{ basket.grand_total|floatformat:2 }}</strong></h4>
-{% if basket.free_delivery_delta > 0 %}
-    <p class="mb-1 text-danger">
-        Spend another <strong>£{{ basket.free_delivery_delta }}</strong> for free delivery!
-    </p>
+{% if basket.errors > 0 %}
+    <h6><strong class="text-red small-to-md">Please resolve any issues with your basket before proceeding to checkout.</strong></h6>
+{% else %}
+    <h6><strong>Basket Total: £{{ basket.total|floatformat:2 }}</strong></h6>
+    <h6>Delivery: £{{ basket.delivery|floatformat:2 }}</h6>
+    <h4 class="mt-4 mb-0"><strong>Grand Total: £{{ basket.grand_total|floatformat:2 }}</strong></h4>
+    {% if basket.free_delivery_delta > 0 %}
+        <p class="mb-0 mt-2 text-red">
+            Spend another <strong>£{{ basket.free_delivery_delta }}</strong> for free delivery!
+        </p>
+    {% endif %}
 {% endif %}

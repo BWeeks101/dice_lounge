@@ -1,1 +1,3 @@
-<img class="img-fluid" src="{% if item.product.image %}{{ item.product.image.url }}{% else %}{{ MEDIA_URL }}noimage.png{% endif %}" alt="{{ item.product.name }}">
+<a href="{% url 'product_detail' item.product.id %}">
+    <img class="img-fluid basket-image" src="{% if item.product.image %}{{ item.product.image.url }}{% else %}{{ MEDIA_URL }}noimage.png{% endif %}" alt="{{ item.product.name }}">
+</a>

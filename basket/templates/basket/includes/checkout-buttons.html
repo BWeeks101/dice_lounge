@@ -1,12 +1,14 @@
-<a href="{% url 'all_games' %}" class="btn btn-outline-dark text-dark hover-background-red btn-lg">
-    <span class="icon">
-        <i class="fas fa-chevron-left"></i>
-    </span>
-    <span class="text-uppercase">Keep Shopping</span>
-</a>
-<a href="" class="btn btn-dark text-light hover-background-red btn-lg">
-    <span class="text-uppercase">Secure Checkout</span>
-    <span class="icon">
-        <i class="fas fa-lock"></i>
-    </span>
-</a>
+<div class="checkout-buttons text-center text-md-end">
+    <a href="{% url 'all_games' %}" class="btn btn-outline-dark text-dark hover-background-red position-relative">
+        <span class="icon">
+            <i class="fas fa-chevron-left"></i>
+        </span>
+        <span class="text-uppercase">Keep Shopping</span>
+    </a>
+    <a {% if basket.errors == 0 %}href=""{% endif %} class="btn btn-dark text-light hover-background-red position-relative icon-end{% if basket.errors > 0 %} disabled{% endif %}">
+        <span class="text-uppercase">Checkout</span>
+        <span class="icon">
+            <i class="fas fa-lock"></i>
+        </span>
+    </a>
+</div>

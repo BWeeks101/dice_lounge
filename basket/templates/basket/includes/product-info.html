@@ -1,2 +1,10 @@
 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-<p class="my-0 small text-muted">ID: {{ item.product.id|upper }}</p>
+<p class="my-0 small text-muted d-inline-block">ID: {{ item.product.id|upper }}</p>
+<div class="{% if item.product.stock > 0 %}d-block{% else %}d-none d-md-block{% endif %}">
+    <p class="my-0 small {% if item.product.stock > 0 %}text-success{% else %}text-red{% endif %} d-inline-block">
+        {% if item.product.stock > 0 %}{{ item.product.stock }} {% endif %}
+        {{ item.product.stock_state }}
+    </p>
+</div>
+<p class="d-none d-md-block my-0 small text-muted">{{ item.product.sub_product_line.product_line.name }}</p>
+<p class="d-none d-md-block my-0 small text-muted">{{ item.product.sub_product_line.name }}</p>

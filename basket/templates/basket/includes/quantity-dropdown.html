@@ -1,0 +1,32 @@
+<form class="form qty-form" method="POST" action="{% url 'adjust_basket' item.product.id %}" data-product-id="{{ item.product.id }}">
+    {% csrf_token %}
+    {% if item.product.stock > 0 %}
+        <div class="dropdown-wrapper qty-dropdown d-inline-block">
+            <div class="dropdown qty-border position-relative d-inline-block mb-2">
+                <a class="text-dark dropdown-toggle text-decoration-none{% if item.quantity > item.product.stock %} text-red{% endif %}" href="#" id="productQty{{ item.product.id }}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ item.quantity }}
+                </a>
+                <div class="dropdown-menu bg-light text-dark shadow-lg" aria-labelledby="productQty{{ item.product.id }}">
+                    {% if item.product.stock > 0 %}
+                        {% for num in "n"|ljust:item.max_per_purchase %}
+                            <a href="#" data-value="{{ forloop.counter }}" class="dropdown-item{% if forloop.counter == item.quantity %} active{% endif %}">{{ forloop.counter }}</a>
+                        {% endfor %}
+                    {% else %}
+                        <a href="#" data-value="0" class="dropdown-item">0</a>
+                    {% endif %}
+                </div>
+            </div>
+            {% if item.quantity > item.product.stock %}
+                <span class="d-inline-block pagination-mt-1 align-top text-red small pagination-py py-md-0 stock-warning stock-warning-break">Insufficient Stock
+                    ({{ item.product.stock }} left)
+                </span>
+            {% endif %}
+        </div>
+    {% else %}
+        <p class="my-0 text-red out-of-stock">Out of Stock</p>
+    {% endif %}
+    <input type="hidden" name="quantity" value="{{ item.quantity }}">
+    <div class="d-block">
+        <a class="remove-item text-red text-decoration-none" data-product-id="{{ item.product.id }}" data-remove-url="{% url 'remove_from_basket' item.product.id %}" href=""><small>Remove <i class="fas fa-times"></i></small></a>
+    </div>
+</form>
