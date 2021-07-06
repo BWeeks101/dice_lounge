@@ -1,5 +1,7 @@
 from django.core.exceptions import ValidationError
+from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
+from django.shortcuts import get_object_or_404
 
 
 # Custom Validators here.
@@ -113,6 +115,14 @@ class Stock_State(models.Model):
         unique=True,
         verbose_name='Stock State',
         help_text='Please enter a descriptive name for this Stock State.'
+    )
+    available = models.BooleanField(
+        blank=False,
+        null=False,
+        default=False,
+        verbose_name='Available to Order?',
+        help_text='Does this Stock State indicate that items are available ' +
+        'to order?'
     )
 
     def __str__(self):
@@ -280,6 +290,7 @@ class Product(models.Model):
         null=False,
         blank=False,
         on_delete=models.CASCADE,
+        verbose_name='Sub-Product Line',
         help_text='Please assign this Product to a Sub Product Line.'
     )
     identifier = models.CharField(
@@ -295,12 +306,13 @@ class Product(models.Model):
         max_length=254,
         blank=False,
         null=False,
-        verbose_name='Product',
+        verbose_name='Product Name',
         help_text=(
             'Please enter a descriptive name for this Product.'
         )
     )
     description = models.TextField(
+        blank=True,
         help_text='Please enter a description for this Product.'
     )
     image = models.ImageField(
@@ -322,9 +334,13 @@ class Product(models.Model):
         null=False,
         blank=False,
         default=False,
+        verbose_name='Reduced?',
         help_text='Is the price of this item reduced?'
     )
     reduced_percentage = models.IntegerField(
+        validators=[MinValueValidator(0), MaxValueValidator(100)],
+        default=0,
+        verbose_name='Reduction %',
         help_text='Please enter the % to reduce the price by.'
     )
     reduced_reason = models.ForeignKey(
@@ -332,21 +348,34 @@ class Product(models.Model):
         null=True,
         blank=True,
         on_delete=models.SET_NULL,
+        verbose_name='Reason for Reduction',
         help_text='Why is this product reduced?'
     )
     stock_state = models.ForeignKey(
         'Stock_State',
         null=True,
-        blank=True,
+        blank=False,
         default=2,
         on_delete=models.SET_NULL,
+        verbose_name='Stock State',
         help_text='What is the stock status of this product?'
     )
     stock = models.IntegerField(
+        validators=[MinValueValidator(0)],
         null=False,
         blank=False,
         default=0,
+        verbose_name='Units in Stock',
         help_text='Please enter the number of units of this product in stock.'
+    )
+    max_per_purchase = models.IntegerField(
+        validators=[MinValueValidator(1), MaxValueValidator(10)],
+        null=False,
+        blank=False,
+        default=10,
+        verbose_name='Max Units Per Purchase',
+        help_text='Please enter the max number of units (1-10) available to ' +
+        'a single purchase'
     )
 
     def __str__(self):
@@ -360,3 +389,23 @@ class Product(models.Model):
             'stock_state': self.stock_state,
             'stock': self.stock
         }
+
+    # Ensure price reduction reason is set to on_sale if reduction is True
+    # (do not enforce reduction value)
+    # Ensure stock states are adjusted in line with stock value
+    def save(self, *args, **kwargs):
+        on_sale = get_object_or_404(Reduced_Reason, identifier='on_sale')
+        if self.reduced is True and self.reduced_reason is None:
+            self.reduced_reason = on_sale
+        elif self.reduced is False:
+            self.reduced_reason = None
+
+        in_stock = get_object_or_404(Stock_State, identifier='in_stock')
+        out_of_stock = get_object_or_404(
+            Stock_State, identifier='out_of_stock')
+        unavailable = Stock_State.objects.filter(available=False)
+        if self.stock < 1 and self.stock_state == in_stock:
+            self.stock_state = out_of_stock
+        elif self.stock > 0 and self.stock_state in unavailable:
+            self.stock_state = in_stock
+        super(Product, self).save(*args, **kwargs)
