@@ -1,163 +1,165 @@
-<div class="row g-0 d-none d-md-flex py-4 bg-light position-sticky" id="largePagination">
-    <div class="col-12 text-dark position-relative">
-        <div class="pagination-product-count-label position-absolute offset-1">
-            <span class="pagination-py d-block text-muted mt-2 mt-xxl-0 text-center text-xl-start">
-                {{ products|length }} / {{ pagination.num_products }} <span class="d-none d-xl-inline">Product{% if pagination.num_products > 1 %}s{% endif %}</span>
-            </span>
-            <span class="d-block d-xl-none text-muted text-center">
-                Product{% if pagination.num_products > 1 %}s{% endif %}
-            </span>
-        </div>
-        <nav aria-label="Pagination Controls">
-            <div class="dropdown-wrapper pagination-dropdown d-inline-block position-absolute offset-end-1">
-                <div class="dropdown pagination-border position-relative d-inline-block mb-2">
-                    <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="products-per-page-toggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        {{ pagination.num_products_per_page }}
-                    </a>
-                    <div class="dropdown-menu bg-light text-dark shadow-lg" aria-labelledby="products-per-page-toggler">
-                        {% for num_products_per_page_option in pagination.products_per_page_options %}
-                            <a href="#" data-value={{ num_products_per_page_option }} class="dropdown-item{% if pagination.num_products_per_page == num_products_per_page_option %} active{% endif %}">{{ num_products_per_page_option }}</a>
-                        {% endfor %}
-                    </div>
-                </div>
-                <span class="d-block pagination-mt-1 mt-xl-0 py-0 d-xl-inline-block align-xl-top text-muted pagination-py-xl">per page</span>
+{% if products|length > 0 %}
+    <div class="row g-0 d-none d-md-flex py-4 bg-light position-sticky" id="largePagination">
+        <div class="col-12 text-dark position-relative">
+            <div class="pagination-product-count-label position-absolute offset-1">
+                <span class="pagination-py d-block text-muted mt-2 mt-xxl-0 text-center text-xl-start">
+                    {{ products|length }} / {{ pagination.num_products }} <span class="d-none d-xl-inline">Product{% if pagination.num_products > 1 %}s{% endif %}</span>
+                </span>
+                <span class="d-block d-xl-none text-muted text-center">
+                    Product{% if pagination.num_products > 1 %}s{% endif %}
+                </span>
             </div>
-            <ul class="pagination mb-2 mt-2 mt-xxl-0 justify-content-center">
-                <li class="page-item {% if not products.has_previous %}disabled{% endif %}">
-                    <a class="page-link" {% if products.has_previous %}data-page={{ products.previous_page_number }}{% endif %} href="" aria-label="Previous"><i class="fas fa-angle-left"></i></a>
-                </li>
-                {% for i in pagination.page_control_range %}
-                    {% if forloop.counter == 1 and i > 1 %}
-                        <li class="page-item">
-                            <a class="page-link" data-page=1 href="">1</a>
-                        </li>
-                        {% if i > 2 %}
-                            <li class="page-item disabled"><span class='page-link border-0'>...</span></li>
-                        {% endif %}
-                    {% endif %}
-                    <li class="page-item {% if products.number == i %}active{% endif %}">
-                        <a class="page-link" {% if not products.number == i %}data-page={{ i }}{% endif %} href="">{{ i }}</a>
-                    </li>
-                    {% if forloop.counter < pagination.num_pages %}
-                        {% if forloop.last and i <= pagination.num_pages|add:"-1" %}
-                            {% if i < pagination.num_pages|add:"-1" %}
-                                <li class="page-item disabled"><span class='page-link border-0'>...</span></li>
-                            {% endif %}
-                            <li class="page-item">
-                                <a class="page-link" data-page={{ pagination.num_pages }} href="">{{ pagination.num_pages }}</a>
-                            </li>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-                <li class="page-item {% if not products.has_next %}disabled{% endif %}">
-                    <a class="page-link" {% if products.has_next %}data-page={{ products.next_page_number }}{% endif %} href="" aria-label="Next"><i class="fas fa-angle-right"></i></a>
-                </li>
-            </ul>
-            <div class="d-block w-100 text-center text-muted">
-                <span>Page </span><input class="page-input" type="text" value={{ pagination.page }}></input><span> / {{ pagination.num_pages }}</span>
-            </div>
-        </nav>
-    </div>
-</div>
-<div class="row g-0 d-md-none mt-4" id="smallPaginationProducts">
-    <div class="col-12 text-dark">
-        <span class="d-block text-muted text-center mb-2">
-            Showing {{ products|length }} of {{ pagination.num_products }} Product{% if pagination.num_products > 1 %}s{% endif %}
-        </span>
-        <nav class="pagination-nav" aria-label="Pagination Controls">
-            <div class="d-flex justify-content-center">
-                <div class="dropdown-wrapper pagination-dropdown d-inline-block">
-                    <div class="dropdown pagination-border position-relative d-inline-block">
-                        <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="small-products-per-page-toggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <nav aria-label="Pagination Controls">
+                <div class="dropdown-wrapper pagination-dropdown d-inline-block position-absolute offset-end-1">
+                    <div class="dropdown pagination-border position-relative d-inline-block mb-2">
+                        <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="products-per-page-toggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{ pagination.num_products_per_page }}
                         </a>
-                        <div class="dropdown-menu bg-light text-dark shadow-lg" aria-labelledby="small-products-per-page-toggler">
+                        <div class="dropdown-menu bg-light text-dark shadow-lg" aria-labelledby="products-per-page-toggler">
                             {% for num_products_per_page_option in pagination.products_per_page_options %}
                                 <a href="#" data-value={{ num_products_per_page_option }} class="dropdown-item{% if pagination.num_products_per_page == num_products_per_page_option %} active{% endif %}">{{ num_products_per_page_option }}</a>
                             {% endfor %}
                         </div>
                     </div>
-                    <span class="d-inline-block align-top text-muted pagination-py">per page</span>
+                    <span class="d-block pagination-mt-1 mt-xl-0 py-0 d-xl-inline-block align-xl-top text-muted pagination-py-xl">per page</span>
                 </div>
-            </div>
-        </nav>
-    </div>
-</div>
-<div class="row g-0 d-md-none pb-4 bg-light position-sticky" id="smallPaginationPages">
-    <div class="col-12">
-        <nav class="pagination-nav" aria-label="Pagination Controls">
-            <ul class="pagination my-2 justify-content-center">
-                <li class="page-item {% if not products.has_previous %}disabled{% endif %}">
-                    <a class="page-link" {% if products.has_previous %}data-page={{ products.previous_page_number }}{% endif %} href="" aria-label="Previous"><i class="fas fa-angle-left"></i></a>
-                </li>
-                {% for i in pagination.page_control_range %}
-                    {% if products.number == i %}
-                        {% if i == 1 %}
-                            {% if pagination.num_pages >= 3 %}
-                                <li class="page-item active">
-                                    <a class="page-link" data-page={{ i }} href="">{{ i }}</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" data-page={{ i|add:"1" }} href="">{{ i|add:"1" }}</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" data-page={{ i|add:"2" }} href="">{{ i|add:"2" }}</a>
-                                </li>
-                            {% elif pagination.num_pages == 2 %}
-                                <li class="page-item active">
-                                    <a class="page-link" data-page={{ i }} href="">{{ i }}</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" data-page={{ i|add:"1" }} href="">{{ i|add:"1" }}</a>
-                                </li>
-                            {% else %}
-                                <li class="page-item active">
-                                    <a class="page-link" data-page={{ i }} href="">{{ i }}</a>
-                                </li>
-                            {% endif %}
-                        {% elif i == pagination.num_pages %}
-                            {% if pagination.num_pages >= 3 %}
-                                <li class="page-item">
-                                    <a class="page-link" data-page={{ i|add:"-2" }} href="">{{ i|add:"-2" }}</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" data-page={{ i|add:"-1" }} href="">{{ i|add:"-1" }}</a>
-                                </li>
-                                <li class="page-item active">
-                                    <a class="page-link" data-page={{ i }} href="">{{ i }}</a>
-                                </li>
-                            {% elif pagination.num_pages == 2 %}
-                                <li class="page-item">
-                                    <a class="page-link" data-page={{ i|add:"-1" }} href="">{{ i|add:"-1" }}</a>
-                                </li>
-                                <li class="page-item active">
-                                    <a class="page-link" data-page={{ i }} href="">{{ i }}</a>
-                                </li>
-                            {% else %}
-                                <li class="page-item active">
-                                    <a class="page-link" data-page={{ i }} href="">{{ i }}</a>
-                                </li>
-                            {% endif %}
-                        {% else %}
+                <ul class="pagination mb-2 mt-2 mt-xxl-0 justify-content-center">
+                    <li class="page-item {% if not products.has_previous %}disabled{% endif %}">
+                        <a class="page-link" {% if products.has_previous %}data-page={{ products.previous_page_number }}{% endif %} href="" aria-label="Previous"><i class="fas fa-angle-left"></i></a>
+                    </li>
+                    {% for i in pagination.page_control_range %}
+                        {% if forloop.counter == 1 and i > 1 %}
                             <li class="page-item">
-                                <a class="page-link" data-page={{ i|add:"-1" }} href="">{{ i|add:"-1" }}</a>
+                                <a class="page-link" data-page=1 href="">1</a>
                             </li>
-                            <li class="page-item active">
-                                <a class="page-link" data-page={{ i }} href="">{{ i }}</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" data-page={{ i|add:"1" }} href="">{{ i|add:"1" }}</a>
-                            </li>
+                            {% if i > 2 %}
+                                <li class="page-item disabled"><span class='page-link border-0'>...</span></li>
+                            {% endif %}
                         {% endif %}
-                    {% endif %}
-                {% endfor %}
-                <li class="page-item {% if not products.has_next %}disabled{% endif %}">
-                    <a class="page-link" {% if products.has_next %}data-page={{ products.next_page_number }}{% endif %} href="" aria-label="Next"><i class="fas fa-angle-right"></i></a>
-                </li>
-            </ul>
-            <div class="d-block w-100 text-center text-muted">
-                <span>Page </span><input class="page-input" type="text" value={{ pagination.page }}></input><span> / {{ pagination.num_pages }}</span>
-            </div>
-        </nav>
+                        <li class="page-item {% if products.number == i %}active{% endif %}">
+                            <a class="page-link" {% if not products.number == i %}data-page={{ i }}{% endif %} href="">{{ i }}</a>
+                        </li>
+                        {% if forloop.counter < pagination.num_pages %}
+                            {% if forloop.last and i <= pagination.num_pages|add:"-1" %}
+                                {% if i < pagination.num_pages|add:"-1" %}
+                                    <li class="page-item disabled"><span class='page-link border-0'>...</span></li>
+                                {% endif %}
+                                <li class="page-item">
+                                    <a class="page-link" data-page={{ pagination.num_pages }} href="">{{ pagination.num_pages }}</a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                    <li class="page-item {% if not products.has_next %}disabled{% endif %}">
+                        <a class="page-link" {% if products.has_next %}data-page={{ products.next_page_number }}{% endif %} href="" aria-label="Next"><i class="fas fa-angle-right"></i></a>
+                    </li>
+                </ul>
+                <div class="d-block w-100 text-center text-muted">
+                    <span>Page </span><input class="page-input" type="text" value={{ pagination.page }}></input><span> / {{ pagination.num_pages }}</span>
+                </div>
+            </nav>
+        </div>
     </div>
-</div>
+    <div class="row g-0 d-md-none mt-4" id="smallPaginationProducts">
+        <div class="col-12 text-dark">
+            <span class="d-block text-muted text-center mb-2">
+                Showing {{ products|length }} of {{ pagination.num_products }} Product{% if pagination.num_products > 1 %}s{% endif %}
+            </span>
+            <nav class="pagination-nav" aria-label="Pagination Controls">
+                <div class="d-flex justify-content-center">
+                    <div class="dropdown-wrapper pagination-dropdown d-inline-block">
+                        <div class="dropdown pagination-border position-relative d-inline-block">
+                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="small-products-per-page-toggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ pagination.num_products_per_page }}
+                            </a>
+                            <div class="dropdown-menu bg-light text-dark shadow-lg" aria-labelledby="small-products-per-page-toggler">
+                                {% for num_products_per_page_option in pagination.products_per_page_options %}
+                                    <a href="#" data-value={{ num_products_per_page_option }} class="dropdown-item{% if pagination.num_products_per_page == num_products_per_page_option %} active{% endif %}">{{ num_products_per_page_option }}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <span class="d-inline-block align-top text-muted pagination-py">per page</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row g-0 d-md-none pb-4 bg-light position-sticky" id="smallPaginationPages">
+        <div class="col-12">
+            <nav class="pagination-nav" aria-label="Pagination Controls">
+                <ul class="pagination my-2 justify-content-center">
+                    <li class="page-item {% if not products.has_previous %}disabled{% endif %}">
+                        <a class="page-link" {% if products.has_previous %}data-page={{ products.previous_page_number }}{% endif %} href="" aria-label="Previous"><i class="fas fa-angle-left"></i></a>
+                    </li>
+                    {% for i in pagination.page_control_range %}
+                        {% if products.number == i %}
+                            {% if i == 1 %}
+                                {% if pagination.num_pages >= 3 %}
+                                    <li class="page-item active">
+                                        <a class="page-link" data-page={{ i }} href="">{{ i }}</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" data-page={{ i|add:"1" }} href="">{{ i|add:"1" }}</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" data-page={{ i|add:"2" }} href="">{{ i|add:"2" }}</a>
+                                    </li>
+                                {% elif pagination.num_pages == 2 %}
+                                    <li class="page-item active">
+                                        <a class="page-link" data-page={{ i }} href="">{{ i }}</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" data-page={{ i|add:"1" }} href="">{{ i|add:"1" }}</a>
+                                    </li>
+                                {% else %}
+                                    <li class="page-item active">
+                                        <a class="page-link" data-page={{ i }} href="">{{ i }}</a>
+                                    </li>
+                                {% endif %}
+                            {% elif i == pagination.num_pages %}
+                                {% if pagination.num_pages >= 3 %}
+                                    <li class="page-item">
+                                        <a class="page-link" data-page={{ i|add:"-2" }} href="">{{ i|add:"-2" }}</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" data-page={{ i|add:"-1" }} href="">{{ i|add:"-1" }}</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" data-page={{ i }} href="">{{ i }}</a>
+                                    </li>
+                                {% elif pagination.num_pages == 2 %}
+                                    <li class="page-item">
+                                        <a class="page-link" data-page={{ i|add:"-1" }} href="">{{ i|add:"-1" }}</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" data-page={{ i }} href="">{{ i }}</a>
+                                    </li>
+                                {% else %}
+                                    <li class="page-item active">
+                                        <a class="page-link" data-page={{ i }} href="">{{ i }}</a>
+                                    </li>
+                                {% endif %}
+                            {% else %}
+                                <li class="page-item">
+                                    <a class="page-link" data-page={{ i|add:"-1" }} href="">{{ i|add:"-1" }}</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a class="page-link" data-page={{ i }} href="">{{ i }}</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" data-page={{ i|add:"1" }} href="">{{ i|add:"1" }}</a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                    <li class="page-item {% if not products.has_next %}disabled{% endif %}">
+                        <a class="page-link" {% if products.has_next %}data-page={{ products.next_page_number }}{% endif %} href="" aria-label="Next"><i class="fas fa-angle-right"></i></a>
+                    </li>
+                </ul>
+                <div class="d-block w-100 text-center text-muted">
+                    <span>Page </span><input class="page-input" type="text" value={{ pagination.page }}></input><span> / {{ pagination.num_pages }}</span>
+                </div>
+            </nav>
+        </div>
+    </div>
+{% endif %}
