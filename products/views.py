@@ -460,13 +460,34 @@ def search_results(request):
     """
 
     if request.GET:
-        query = request.GET['q']
-        if not query:
-            messages.error(request, "You didn't enter any search criteria")
-            return redirect(reverse('all_games'))
+        # Strip leading/trailing whitespace, then get up to 254 chars of the
+        # query parameter
+        query = request.GET['q'].strip()[:254]
 
+        # If no query parameter, send a message and redirect
+        if not query:
+            messages.error(
+                request, "You didn't enter any search criteria", 'search')
+            redirect_url = request.GET.get('redirect_url')
+            if redirect_url is None:
+                return redirect(reverse('all_games'))
+            return redirect(redirect_url)
+
+        # Apply the query to the Product table, then sort the results
         sort_and_filter = apply_sort(
             apply_query(query), request)
+
+        # If no results, send a message and redirect
+        if len(sort_and_filter['dataset']) == 0:
+            messages.info(
+                request,
+                "No results found.  Please try another search term.",
+                'search'
+            )
+            redirect_url = request.GET.get('redirect_url')
+            if redirect_url is None:
+                return redirect(reverse('all_games'))
+            return redirect(redirect_url)
 
         sort_options = build_sort_options([
             'name',
@@ -552,7 +573,10 @@ def all_games(request):
 
     if request.GET:
         if 'q' in request.GET:
-            return redirect('/products/search_results/?q=' + request.GET['q'])
+            return redirect(
+                reverse('search_results') + '?q=' + request.GET['q'] +
+                '&redirect_url=' + request.GET.get('redirect_url')
+            )
 
     sort_options = build_sort_options(
         ['name', 'category', 'genre', 'publisher'])
@@ -628,7 +652,10 @@ def products(request, product_line_id):
 
     if request.GET:
         if 'q' in request.GET:
-            return redirect('/products/search_results/?q=' + request.GET['q'])
+            return redirect(
+                reverse('search_results') + '?q=' + request.GET['q'] +
+                '&redirect_url=' + request.GET.get('redirect_url')
+            )
 
     sort_options = build_sort_options(
         ['name', 'price::lh', 'category'])
@@ -712,7 +739,10 @@ def product_detail(request, product_id):
 
     if request.GET:
         if 'q' in request.GET:
-            return redirect('/products/search_results/?q=' + request.GET['q'])
+            return redirect(
+                reverse('search_results') + '?q=' + request.GET['q'] +
+                '&redirect_url=' + request.GET.get('redirect_url')
+            )
 
     products = adjust_max_per_purchase(Product.objects.filter(id=product_id))
 
