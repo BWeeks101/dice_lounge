@@ -109,6 +109,7 @@ function addSortFilterListeners() {
 
         // Get the current filter type
         let filterType = 'category';
+        let param;
         if ($(elem).hasClass(`genre-filter-${elemType}`)) {
             filterType = 'genre';
         } else if ($(elem).hasClass(`publisher-filter-${elemType}`)) {
@@ -117,11 +118,18 @@ function addSortFilterListeners() {
             filterType = 'stock';
         } else if ($(elem).
                 hasClass(`product-line-filter-${elemType}`)) {
-            filterType = 'product_line';
+            filterType = 'product-line';
+            param = 'product_line';
         }
 
+        if (param === undefined) {
+            param = filterType;
+        }
         // return the filter type
-        return filterType;
+        return {
+            type: filterType,
+            param
+        };
     };
 
     /* Add/update/remove filters to/from apply-filters button data attributes */
@@ -138,7 +146,7 @@ function addSortFilterListeners() {
 
         // Get the stored filter values from the apply button
         let currentVals = $('#applyFilters').
-            attr(`data-${filterType}-filters`);
+            attr(`data-${filterType.type}-filters`);
         if (!currentVals) {
             currentVals = '';
         }
@@ -174,7 +182,7 @@ function addSortFilterListeners() {
         // Overwrite the data-<filterType>-filters attribute of the
         // .apply-filters button with the new filter string
         $('#applyFilters').
-            attr(`data-${filterType}-filters`, currentVals);
+            attr(`data-${filterType.type}-filters`, currentVals);
     };
 
     /* Check/uncheck all child-checks when parent-check is checked/unchecked */
@@ -252,10 +260,10 @@ function addSortFilterListeners() {
         let currentUrl = new URL(window.location);
 
         // If there is a filter of this type present, remove it
-        currentUrl.searchParams.delete(filterType);
+        currentUrl.searchParams.delete(filterType.param);
 
         // Update the url with the new filter
-        currentUrl.searchParams.set(filterType, filterVal);
+        currentUrl.searchParams.set(filterType.param, filterVal);
 
         // Load the updated url
         window.location.replace(currentUrl);
@@ -300,54 +308,42 @@ function addSortFilterListeners() {
 
     /* Apply filters when clicking the apply filters button */
     $('button.apply-filters').on('click', () => {
-        // Get the filter value from the data-filters property of the button
-        let filters = {
-            category: $('#applyFilters').attr('data-category-filters'),
-            genre: $('#applyFilters').attr('data-genre-filters'),
-            publisher: $('#applyFilters').attr('data-publisher-filters'),
-            stock: $('#applyFilters').attr('data-stock-filters'),
-            productLine: $('#applyFilters').attr('data-product-line-filters')
-        };
+        // Get the filter values from the data-filters property of the button
+        let filters = [
+            {
+                value: $('#applyFilters').attr('data-product-line-filters'),
+                param: 'product_line'
+            },
+            {
+                value: $('#applyFilters').attr('data-genre-filters'),
+                param: 'genre'
+            },
+            {
+                value: $('#applyFilters').attr('data-publisher-filters'),
+                param: 'publisher'
+            },
+            {
+                value: $('#applyFilters').attr('data-category-filters'),
+                param: 'category'
+            },
+            {
+                value: $('#applyFilters').attr('data-stock-filters'),
+                param: 'stock'
+            }
+        ];
 
         // Get the current url
         let currentUrl = new URL(window.location);
 
-        // Remove the existing category/stock params from the url
-        currentUrl.searchParams.delete('category');
-        currentUrl.searchParams.delete('genre');
-        currentUrl.searchParams.delete('publisher');
-        currentUrl.searchParams.delete('stock');
-        currentUrl.searchParams.delete('product_line');
-
-        // If category filters contains a valid string
-        if (filters.category.length > 0) {
-            // update the url
-            currentUrl.searchParams.set('category', filters.category);
-        }
-
-        // If genre filters contains a valid string
-        if (filters.genre.length > 0) {
-            // update the url
-            currentUrl.searchParams.set('genre', filters.genre);
-        }
-
-        // If publisher filters contains a valid string
-        if (filters.publisher.length > 0) {
-            // update the url
-            currentUrl.searchParams.set('publisher', filters.publisher);
-        }
-
-        // If stock filters contains a valid string
-        if (filters.stock.length > 0) {
-            // update the url
-            currentUrl.searchParams.set('stock', filters.stock);
-        }
-
-        // If product-line filters contains a valid string
-        if (filters.productLine.length > 0) {
-            // update the url
-            currentUrl.searchParams.set('product_line', filters.productLine);
-        }
+        // Iterate over the filters array
+        filters.forEach((filter) => {
+            // Remove the existing filter from the url
+            currentUrl.searchParams.delete(filter.param);
+            // If the filter value exists, update the url
+            if (filter.value.length > 0) {
+                currentUrl.searchParams.set(filter.param, filter.value);
+            }
+        });
 
         // Reset to page 1 of the results
         currentUrl.searchParams.delete('page');
@@ -373,52 +369,40 @@ function addSortFilterListeners() {
         let filterCheckboxes = $(selector);
 
         // Create filters object
-        let filters = {
-            category: '',
-            genre: '',
-            publisher: '',
-            stock: '',
-            productLine: ''
-        };
+        let filters = {};
 
         // For each filter object
-        $(filterCheckboxes).each((i) => {
+        $(filterCheckboxes).each((i, elem) => {
             // Get the filter value of the checkbox
-            let filterVal = $(filterCheckboxes[i]).attr('data-filter-value');
+            let filterVal = $(elem).attr('data-filter-value');
 
             // Get the filter type
-            let filterType = getFilterType(filterCheckboxes[i]);
+            let filterType = getFilterType(elem);
 
             // If the value for the current type is blank, set the initial
             // value and return
-            if (filters[filterType] === '' ||
-                    filters[filterType] === undefined) {
-                filters[filterType] = filterVal;
+            if (filters[filterType.type] === '' ||
+                    filters[filterType.type] === undefined) {
+                filters[filterType.type] = filterVal;
                 return;
             }
 
             // Split the current filter values into an array
-            let currentVals = filters[filterType].split(',');
+            let currentVals = filters[filterType.type].split(',');
 
             // Locate the filterVal in the array of currentVals
             let filterValIndex = currentVals.indexOf(filterVal);
 
             // If the filterVal is not present, add it
             if (filterValIndex === -1) {
-                filters[filterType] += ',' + filterVal;
+                filters[filterType.type] += ',' + filterVal;
             }
         });
 
-        // Add the filter values to the apply filters button data attributes
-        $('#applyFilters').
-            attr('data-category-filters', filters.category).
-                attr('data-genre-filters', filters.genre).
-                    attr('data-publisher-filters', filters.publisher).
-                        attr('data-stock-filters', filters.stock).
-                            attr(
-                                'data-product-line-filters',
-                                filters.productLine
-                            );
+        Object.entries(filters).forEach(([filter, value]) => {
+            $('#applyFilters').
+                attr(`data-${filter}-filters`, value);
+        });
     };
 
     getInitialFilters();
