@@ -100,7 +100,11 @@
                     {% include 'products/includes/pagination-controls.html' %}
                     <div class="row g-0">
                         <div class="product-container col-10 offset-1">
-                            {% include 'products/includes/product_cards.html'%}
+                            {% if products|length > 0 %}
+                                {% include 'products/includes/product_cards.html'%}
+                            {% else %}
+                                <p class="text-dark fs-5 mt-4 text-center">No results found.</p>
+                            {% endif %}
                         </div>
                     </div>
             </div>
