@@ -1,4 +1,5 @@
 /*eslint func-style: ["error", "declaration", { "allowArrowFunctions": true }]*/
+/*global bootstrap */
 
 /* Initialise the Sort dropdown */
 /*
@@ -627,6 +628,36 @@ function initProductCardHeightAdjust() {
     createResizeListener(setProductCardHeights);
 }
 
+/* Initialise Toasts */
+function initToasts() {
+    // Create a toast instance for each .toast element and store them in an
+    // array
+    let toasts = [].slice.call(document.querySelectorAll('.toast')).
+        map((toastEl) => new bootstrap.Toast(toastEl));
+
+    // Iterate over the toasts array
+    toasts.forEach((toast) => {
+        // show the toast
+        toast.show();
+
+        /* Add an event listener to the hidden event for each toast. */
+        /* When a toast is hidden, hide each other toast with the same */
+        /* data-toast-id attribute value */
+        // eslint-disable-next-line no-underscore-dangle
+        toast._element.addEventListener('hidden.bs.toast', (e) => {
+            // Get the data-toast-id value from the hidden element
+            let toastId = $(e.currentTarget).attr('data-toast-id');
+
+            // For each element with a matching data-toast-id and the .show
+            // class, get the bootstrap toast instance and call the hide()
+            // function
+            $(`.toast[data-toast-id=${toastId}].show`).each((i, elem) => {
+                bootstrap.Toast.getInstance(elem).hide();
+            });
+        });
+    });
+}
+
 /* doc ready function */
 $(() => {
     // Ensure disabled links do not function
@@ -640,4 +671,7 @@ $(() => {
 
     // Set product card heights, and create resize listener to call again
     initProductCardHeightAdjust();
+
+    // Initialise Toasts
+    initToasts();
 });

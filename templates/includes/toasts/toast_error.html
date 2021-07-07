@@ -1,0 +1,10 @@
+<div class="toast border-top-0 bg-light shadow-lg" data-bs-autohide="false" data-toast-id="{{ message.extra_tags}}_{{ forloop.counter }}">
+    <div class="w-100 toast-capper bg-danger"></div>
+    <div class="toast-header bg-light text-dark">
+        <h6 class="me-auto">Error<span class="icon text-danger"><i class="fas fa-exclamation-circle"></i></span></h6>
+        <button type="button" class="ms-2 mb-1 btn-close text-dark" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body bg-light">
+        {{ message }}
+    </div>
+</div>

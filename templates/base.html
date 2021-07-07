@@ -44,13 +44,14 @@
         <div id="shade-background"></div>
         <header class="container-fluid fixed-top">
             <div id="topNav" class="row bg-light pt-lg-2 d-flex">
-                <nav class="navbar navbar-light col-12 my-auto py-1 py-lg-0 d-flex d-lg-none">
+                <nav class="navbar navbar-light col-12 my-auto py-1 py-lg-0 d-flex d-lg-none mobile-nav">
                     <button class="navbar-toggler" id="navbarToggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideNav" aria-controls="side-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <ul class="d-flex d-lg-none mb-0">
                         {% include 'includes/user-nav.html' %}
                     </ul>
+                    {% include 'includes/basket_toast_container.html' %}
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="sideNav" aria-labelledby="sideNavLabel">
                         <div class="offcanvas-header">
                             <a href="{% url 'home' %}" class="nav-link main-logo-link">
@@ -67,6 +68,7 @@
                     <div class="border-0 w-100 py-3 my-0 d-lg-none collapse" id="mobile-search-input" aria-labelledby="mobile-search">
                         {% include 'includes/search-input-form.html' %}
                     </div>
+                    {% include 'includes/search_toast_container.html' %}
                 </nav>
                 <nav class="col-12 d-none d-lg-block">
                     <div class="row">
@@ -79,11 +81,13 @@
                         </div>
                         <div class="col-lg-4 my-auto py-1 py-lg-0">
                             {% include 'includes/search-input-form.html' %}
+                            {% include 'includes/search_toast_container.html' %}
                         </div>
                         <div class="col-lg-4 my-auto py-1 py-lg-0">
                             <ul class="list-inline list-unstyled text-center text-lg-end my-0">
                                 {% include 'includes/user-nav.html' %}
                             </ul>
+                            {% include 'includes/basket_toast_container.html' %}
                         </div>
                     </div>
                 </nav>
@@ -99,7 +103,23 @@
         </header>
 
         {% if messages %}
-            <div class="message-container"></div>
+            <div class="message-container">
+                {% for message in messages %}
+                    {% if message.extra_tags != 'search' and '_basket' not in message.extra_tags %}
+                        {% with message.level as level %}
+                            {% if level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+                                {% include 'includes/toasts/toast_error.html' %}
+                            {% elif level == DEFAULT_MESSAGE_LEVELS.WARNING %}
+                                {% include 'includes/toasts/toast_warning.html' %}
+                            {% elif level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+                                {% include 'includes/toasts/toast_success.html' %}
+                            {% else %}
+                                {% include 'includes/toasts/toast_info.html' %}
+                            {% endif %}
+                        {% endwith %}
+                    {% endif %}
+                {% endfor %}
+            </div>
         {% endif %}
 
         {% block page_header %}

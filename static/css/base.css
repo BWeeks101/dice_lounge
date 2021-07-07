@@ -360,6 +360,34 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
     color: #6c757d; /* text-muted */
 }
 
+/* Messages container for Bootstrap Toasts */
+/* from boutique ado sample project */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.message-container.search-message {
+    top: .25rem;
+    right: initial;
+}
+
+.message-container.basket-message {
+    top: .25rem;
+    right: 0;
+}
+
+.mobile-nav .message-container.basket-message {
+    top: .6rem;
+    right: 0;
+}
+
+.toast-capper {
+    height: 3px;
+}
+
 /* --------------------------------- Custom styled .dropdown */
 .dropdown-wrapper > .dropdown {
     width: 100%;
