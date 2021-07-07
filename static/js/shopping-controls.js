@@ -135,7 +135,7 @@ function initQuantityDropdown() {
         $(elem).addClass('active');
 
         // return the csrf token, submission url and qty value
-        return {url, 'postData': {csrfmiddlewaretoken, quantity}};
+        return {form, url, 'postData': {csrfmiddlewaretoken, quantity}};
     };
 
     /* Add click listeners to dropdown items to update quantity (no POST) */
@@ -168,10 +168,8 @@ function initQuantityDropdown() {
             return;
         }
 
-        // Send the POST request, then reload the page
-        $.post(data.url, data.postData).done(() => {
-            location.reload();
-        });
+        // Submit the form instead of sending a POST request.
+        $(data.form)[0].submit();
     });
 
     /* Add click listener to remove-item links to remove item from basket and */
@@ -197,7 +195,7 @@ function initQuantityDropdown() {
         }
 
         // Send the POST request, then reload the page
-        $.post(url, {csrfmiddlewaretoken}).done(function() {
+        $.post(url, {csrfmiddlewaretoken}).done(() => {
             location.reload();
         });
     });
