@@ -15,7 +15,7 @@
     <hr>
     {% if search_term %}
         <h6>Search Results For: </h6>
-        <span class="fs6 ps-4">{{ search_term }}</span>
+        <span class="fs-6 ps-4 d-block text-truncate">{{ search_term }}</span>
     {% elif product_line.name %}
         <h6>{{ product_line.name }}</h6>
     {% else %}
@@ -26,7 +26,7 @@
         <h6>Stock</h6>
         {% for state in stock_states %}
             <div class="form-check">
-                <input class="form-check-input stock-filter-checkbox" type="checkbox" value="" data-filter-value={{ state.identifier }} id="stock_filter_{{ state.identifier }}" {% for stock_state in filters.stock %}{% if stock_state.identifier == state.identifier %}checked{% endif %}{% endfor %}>
+                <input class="form-check-input stock-filter-checkbox" type="checkbox" value="" data-filter-value={{ state.identifier }} id="stock_filter_{{ state.identifier }}" {% for stock_state in applied_filters.stock %}{% if stock_state.identifier == state.identifier %}checked{% endif %}{% endfor %}>
                 <label class="form-check-label" for="stock_filter_{{ state.identifier }}">{{ state.state }}</label>
             </div>
         {% endfor %}
