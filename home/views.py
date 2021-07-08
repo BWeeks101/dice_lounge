@@ -14,4 +14,8 @@ def index(request):
                 '&redirect_url=' + request.GET.get('redirect_url')
             )
 
-    return render(request, 'home/index.html')
+    context = {
+        'view': 'index'
+    }
+
+    return render(request, 'home/index.html', context)
