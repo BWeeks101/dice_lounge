@@ -16,7 +16,11 @@ def view_basket(request):
                 '&redirect_url=' + request.GET.get('redirect_url')
             )
 
-    return render(request, 'basket/basket.html')
+    context = {
+        'view': 'basket'
+    }
+
+    return render(request, 'basket/basket.html', context)
 
 
 def add_to_basket(request, product_id):
@@ -32,7 +36,7 @@ def add_to_basket(request, product_id):
         messages.error(
             request,
             'Unable to update basket.  Product not found.',
-            'add_to_basket'
+            'sender_add_to_basket'
         )
 
     if product is not None:
@@ -49,7 +53,7 @@ def add_to_basket(request, product_id):
                             request,
                             f'No more than {max_per_purchase} of ' +
                             f'{product.name} may be added to an order.',
-                            'add_to_basket'
+                            f'sender_add_to_basket,id_{product_id}'
                         )
                     else:
                         basket[product_id] += quantity
@@ -61,14 +65,14 @@ def add_to_basket(request, product_id):
                                 f'{product.name} may be added to an order.  ' +
                                 f'Increased {product.name} quantity to ' +
                                 f'{basket[product_id]}.',
-                                'add_to_basket'
+                                f'sender_add_to_basket,id_{product_id}'
                             )
                         else:
                             messages.success(
                                 request,
                                 f'Increased {product.name} quantity to ' +
                                 f'{basket[product_id]}.',
-                                'add_to_basket'
+                                f'sender_add_to_basket,id_{product_id}'
                             )
                 else:
                     if quantity > max_per_purchase:
@@ -79,14 +83,14 @@ def add_to_basket(request, product_id):
                             f'{product.name} may be added to an order.  ' +
                             f'Added {quantity}x {product.name} to your ' +
                             'basket.',
-                            'add_to_basket'
+                            f'sender_add_to_basket,id_{product_id}'
                         )
                     else:
                         messages.success(
                             request,
                             f'Added {quantity}x {product.name} to your ' +
                             'basket.',
-                            'add_to_basket'
+                            f'sender_add_to_basket,id_{product_id}'
                         )
                     basket[product_id] = quantity
                 request.session['basket'] = basket
@@ -95,14 +99,14 @@ def add_to_basket(request, product_id):
                     request,
                     'Unable to update basket.  You may not add a quantity ' +
                     'of less than 1.',
-                    'add_to_basket'
+                    f'sender_add_to_basket,id_{product_id}'
                 )
         else:
             messages.info(
                 request,
                 f'Unable to add {product.name} to basket.  Insufficient ' +
                 'stock.',
-                'add_to_basket'
+                f'sender_add_to_basket,id_{product_id}'
             )
     if redirect_url is None:
         return redirect(reverse('view_basket'))
@@ -120,7 +124,7 @@ def remove_from_basket(request, product_id):
         messages.error(
             request,
             'Product not found.',
-            'remove_from_basket'
+            'sender_remove_from_basket'
         )
 
     basket = request.session.get('basket', {})
@@ -133,19 +137,29 @@ def remove_from_basket(request, product_id):
             if product is not None:
                 msg = f'Removed {qty}x {product.name} from your basket.'
 
-            messages.success(request, msg, 'remove_from_basket')
+            messages.success(
+                request,
+                msg,
+                f'sender_remove_from_basket,id_{product_id}'
+            )
 
             request.session['basket'] = basket
+            request.session['removed_item'] = {
+                'product_id': product_id,
+                'qty': qty
+            }
             status = 200
         except Exception as e:
             messages.error(
-                request, f'Error removing product: {e}.', 'remove_from_basket')
+                request,
+                f'Error removing product: {e}.',
+                f'sender_remove_from_basket,id_{product_id}')
             status = 500
     else:
         msg = 'Item is not in your basket.'
         if product is not None:
             msg = f'{product.name} is not in your basket.'
-        messages.info(request, msg, 'remove_from_basket')
+        messages.info(request, msg, 'sender_remove_from_basket')
         status = 200
 
     return HttpResponse(status=status)
@@ -163,7 +177,7 @@ def adjust_basket(request, product_id):
         messages.error(
             request,
             'Product not found.',
-            'adjust_basket'
+            'sender_adjust_basket'
         )
 
     basket = request.session.get('basket', {})
@@ -181,7 +195,7 @@ def adjust_basket(request, product_id):
                     request,
                     f'Your basket already contains {quantity}x ' +
                     f'{product.name}.',
-                    'adjust_basket'
+                    f'sender_adjust_basket,id_{product_id}'
                 )
             else:
                 if quantity > max_per_purchase:
@@ -192,7 +206,7 @@ def adjust_basket(request, product_id):
                         ' may be added to an order.  ' +
                         f'Adjusted {product.name} quantity to ' +
                         f'{quantity}.',
-                        'adjust_basket'
+                        f'sender_adjust_basket,id_{product_id}'
                     )
                 else:
                     adjustment = 'Increased'
@@ -202,7 +216,7 @@ def adjust_basket(request, product_id):
                         request,
                         f'{adjustment} {product.name} quantity to ' +
                         f'{quantity}.',
-                        'adjust_basket'
+                        f'sender_adjust_basket,id_{product_id}'
                     )
                 basket[product_id] = quantity
         elif quantity < 1:
@@ -212,7 +226,7 @@ def adjust_basket(request, product_id):
                 request,
                 f'Removed {qty}x {product.name} from your ' +
                 'basket.',
-                'adjust_basket'
+                f'sender_adjust_basket,id_{product_id}'
             )
         elif max_per_purchase < 1:
             basket.pop(product_id)
@@ -220,7 +234,7 @@ def adjust_basket(request, product_id):
                 request,
                 f'Unable to update quantity of {product.name} due to ' +
                 'insufficient stock.',
-                'adjust_basket'
+                f'sender_adjust_basket,id_{product_id}'
             )
     else:
         if product_id in basket:
@@ -229,7 +243,7 @@ def adjust_basket(request, product_id):
                 request,
                 f'Removed non-existant product {product_id} from your ' +
                 'basket.',
-                'adjust_basket'
+                f'sender_adjust_basket,id_{product_id}'
             )
 
     request.session['basket'] = basket

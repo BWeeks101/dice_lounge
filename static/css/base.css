@@ -13,6 +13,19 @@
     --adjust-for-basket-total-and-checkout-buttons: 201.633px;
 }
 
+/* Bootstrap Class Colour Overrides */
+.border-info {
+    border-color: #fd7e14 !important;
+}
+
+.text-info {
+    color: #fd7e14 !important;
+}
+
+.bg-info {
+    background-color: #fd7e14 !important;
+}
+
 html {
     height: 100%;
 }
@@ -297,6 +310,11 @@ ul.pagination > li.page-item.active > .page-link:hover,
     max-width: 150px !important;
 }
 
+.basket-summary-image {
+    max-height: 50px;
+    max-width: 50px;
+}
+
 .table-responsive table tbody tr td p:first-of-type {
     margin-top: .375rem !important;
 }
@@ -387,6 +405,33 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 .toast-capper {
     height: 3px;
 }
+
+.toast-header-hr {
+    bottom: 0;
+    width: calc(100% - 1.5rem);
+}
+
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0;
+    height: 0;
+    top: -9.392px;
+    border-left: 6px solid transparent !important;
+    border-right: 6px solid transparent !important;
+    border-bottom: 10.392px solid black;
+}
+
+.search-arrow {
+    left: 50%;
+    transform: translateX((-50%));
+}
+
+.basket-notification-wrapper {
+    max-height: 120px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 
 /* --------------------------------- Custom styled .dropdown */
 .dropdown-wrapper > .dropdown {

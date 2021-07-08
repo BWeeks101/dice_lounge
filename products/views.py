@@ -467,7 +467,10 @@ def search_results(request):
         # If no query parameter, send a message and redirect
         if not query:
             messages.error(
-                request, "You didn't enter any search criteria", 'search')
+                request,
+                "You didn't enter any search criteria",
+                'sender_search'
+            )
             redirect_url = request.GET.get('redirect_url')
             if redirect_url is None:
                 return redirect(reverse('all_games'))
@@ -482,7 +485,7 @@ def search_results(request):
             messages.info(
                 request,
                 "No results found.  Please try another search term.",
-                'search'
+                'sender_search'
             )
             redirect_url = request.GET.get('redirect_url')
             if redirect_url is None:

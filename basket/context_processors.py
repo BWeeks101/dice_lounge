@@ -54,4 +54,19 @@ def basket_contents(request):
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD
     }
 
+    if 'removed_item' in request.session:
+        session_removed_item = request.session.get('removed_item', {})
+        request.session.pop('removed_item')
+        removed_product = get_object_or_404(
+            Product, pk=session_removed_item['product_id'])
+        removed_subtotal = session_removed_item['qty'] * removed_product.price
+        removed_item = {
+            'product_id': session_removed_item['product_id'],
+            'quantity': session_removed_item['qty'],
+            'product': removed_product,
+            'subtotal': removed_subtotal
+        }
+
+        context['basket']['removed_item'] = removed_item
+
     return context

@@ -468,6 +468,35 @@ function initCollapsibleTogglerArrows(selector) {
     });
 }
 
+/* Adjust basket-arrow elems to remain central to basket icon */
+function initBasketArrowPositionAdjuster() {
+
+    /* Adjust the right css property of .basket-arrow elems to keep them */
+    /* centralised against their respective basket-item icons */
+    const adjustBasketArrow = () => {
+        // Iterate over .basket-arrow elems
+        $('.basket-arrow').each((i, elem) => {
+            // Get the width of the nearest basket-item icon
+            let basketWidth = $(elem).closest('nav').
+                find('.basket-item a').
+                    outerWidth();
+
+            // If the width is 0, the icon is hidden, so don't bother updating
+            if (basketWidth > 0) {
+                // Set the right css property of the arrow to align with the
+                // center of the icon
+                $(elem).css('right', (basketWidth / 2)).
+                    css('transform', 'translateX(50%)');
+            }
+        });
+    };
+
+    adjustBasketArrow();
+
+    // Add a resize listener to the window with adjustBasketArrow() as callback
+    createResizeListener(adjustBasketArrow);
+}
+
 /* Add click listener to Back to Top button */
 function initBackToTopButton() {
 
@@ -656,6 +685,9 @@ function initToasts() {
             });
         });
     });
+
+    // Adjust basket-toast arrows inline with basket width
+    initBasketArrowPositionAdjuster();
 }
 
 /* doc ready function */
