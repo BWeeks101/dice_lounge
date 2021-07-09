@@ -688,6 +688,17 @@ function initToasts() {
 
     // Adjust basket-toast arrows inline with basket width
     initBasketArrowPositionAdjuster();
+
+    // When the mobile nav search collapsible is collapsed, hide any search
+    // toasts
+    let searchCollapsible = document.getElementById('mobile-search-input');
+    searchCollapsible.addEventListener('hide.bs.collapse', () => {
+        // Get search toasts and hide them
+        $('.toast[data-is-search-toast=true]').each((i, elem) => {
+            bootstrap.Toast.getInstance(elem).hide();
+        });
+    });
+
 }
 
 /* doc ready function */

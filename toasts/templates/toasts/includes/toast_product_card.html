@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-3 my-1 pe-0 d-flex flex-col justify-content-center align-items-center">
+        <img class="img-fluid basket-summary-image" src="{% if item_image %}{{ item_image_url }}{% else %}{{ MEDIA_URL }}noimage.png{% endif %}" alt="{{ item_name }}">
+    </div>
+    <div class="col-9">
+        <p class="my-0"><strong>{{ item_name }}</strong></p>
+        <p class="my-0 small text-muted">Qty: {{ item_quantity }}</p>
+        <p class="my-0 small text-muted">Subtotal: £{{ item_subtotal }}</p>
+    </div>
+</div>

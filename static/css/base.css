@@ -388,7 +388,12 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 }
 
 .message-container.search-message {
-    top: .25rem;
+    top: .75rem;
+    right: initial;
+}
+
+.mobile-nav .message-container.search-message {
+    top: -.25rem;
     right: initial;
 }
 

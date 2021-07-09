@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'basket',
+    'toasts',
 ]
 
 MIDDLEWARE = [
@@ -96,6 +97,8 @@ TEMPLATES = [
                 'products.context_processors.pop_product_nav_menus',
                 # custom context_processor required by basket
                 'basket.context_processors.basket_contents',
+                # custom context_processor requires for toasts
+                'toasts.context_processors.queue_messages',
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',

@@ -1,0 +1,87 @@
+{% load subtraction_filter %}
+
+
+<div class="toast border-top-0 bg-light shadow-lg" data-bs-autohide="false" data-toast-id="{{ message.id }}" data-is-search-toast="{% if arrow_class == 'search' %}true{% else %}false{% endif %}">
+    {% if arrow_class %}
+        <div class="position-absolute arrow-up border-{{ colour }} {{ arrow_class }}-arrow"></div>
+    {% endif %}
+    <div class="toast-content-wrapper bg-light">
+        <div class="w-100 toast-capper bg-{{ colour }}"></div>
+        <div class="toast-header bg-light text-dark">
+            <h6 class="me-auto">{{ title }}<span class="icon text-{{ colour }}"><i class="fas fa-{{ icon }}-circle"></i></span></h6>
+            <button type="button" class="ms-2 mb-1 btn-close text-dark" data-bs-dismiss="toast" aria-label="Close"></button>
+            <hr class="toast-header-hr position-absolute mb-0 text-dark">
+        </div>
+        <div class="toast-body bg-light">
+            <div class="row">
+                <div class="col">
+                    {{ message }}
+            {% if '_basket' in message.message_from and message.product_id and basket.grand_total and not on_profile_page %}
+                        <hr class="mt-1 mb-3">
+                    </div>
+                </div>
+                    {% if 'remove_from_basket' not in message.message_from %}
+                            {% for item in basket.items %}
+                                {% if item.product.id == message.product_id %}
+                                    <p class="bg-light text-dark py-1">Your Basket Contains...</p>
+
+                                    <div class="basket-notification-wrapper border border-1 border-{{ colour }}">
+                                        {% with item_image=item.product.image item_image_url=item.product.image.url item_name=item.product.name item_quantity=item.quantity item_subtotal=item.subtotal %}
+                                            {% include 'toasts/includes/toast_product_card.html' %}
+                                        {% endwith %}
+                                    </div>
+
+                                    {% if basket.product_count|subtract:item.quantity > 0 %}
+                                        <p class="bg-light text-dark mb-0 py-1 text-end">...and {{ basket.product_count|subtract:item.quantity }} more items</p>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                    {% elif 'remove_from_basket' in message.message_from and basket.removed_item %}
+                        {% with item_image=basket.removed_item.product.image item_image_url=basket.removed_item.product.image.url item_name=basket.removed_item.product.name item_quantity=basket.removed_item.quantity item_subtotal=basket.removed_item.subtotal %}
+                            <div class="basket-notification-wrapper border border-1 border-danger">
+                                {% include 'toasts/includes/toast_product_card.html' %}
+                            </div>
+                        {% endwith %}
+                    {% else %}
+                        <p class="bg-light text-dark py-1">Your Basket ({{ basket.product_count }} items)</p>
+
+                        <div class="basket-notification-wrapper">
+                            {% for item in basket.items %}
+                                {% with item_image=item.product.image item_image_url=item.product.image.url item_name=item.product.name item_quantity=item.quantity item_subtotal=item.subtotal %}
+                                    {% include 'toasts/includes/toast_product_card.html' %}
+                                {% endwith %}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    <div class="row">
+                        <div class="col">
+                            <strong><p class="mt-3 mb-0 text-dark">
+                                Basket Total{% if basket.free_delivery_delta > 0 %} (Exc. delivery){% endif %}: £{{ basket.total|floatformat:2 }}
+                            </p></strong>
+                            {% if basket.free_delivery_delta > 0 %}
+                                <p class="mt-1 mb-0 text-dark">
+                                    Delivery: £{{ basket.delivery|floatformat:2 }}
+                                </p>
+                            {% endif %}
+                            {% if basket.free_delivery_delta > 0 %}
+                                <p class="mb-0 mt-1 p-2 bg-info shadow-sm text-dark text-center">
+                                    Spend another <strong>£{{ basket.free_delivery_delta }}</strong> to get free delivery!
+                                </p>
+                            {% endif %}
+                            {% if view != 'basket' %}
+                                <a href="{% url 'view_basket' %}" class="w-100 mt-1 btn btn-dark text-light btn-block hover-background-red">
+                                    <span class="text-uppercase">View Basket</span>
+                                    <span class="icon">
+                                        <i class="fas fa-shopping-basket"></i>
+                                    </span>
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+            {% else %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+    {% with colour='danger' title='Error' icon='exclamation' %}
+        {% include 'toasts/includes/toast.html' %}
+    {% endwith %}
+{% elif message.level == DEFAULT_MESSAGE_LEVELS.WARNING %}
+    {% with color='warning' title='Warning' icon='exclamation' %}
+        {% include 'toasts/includes/toast.html' %}
+    {% endwith %}
+{% elif message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+    {% with colour='success' title='Success' icon='check' %}
+        {% include 'toasts/includes/toast.html' %}
+    {% endwith %}
+{% else %}
+    {% with colour='info' title='Info' icon='info' %}
+        {% include 'toasts/includes/toast.html' %}
+    {% endwith %}
+{% endif %}
