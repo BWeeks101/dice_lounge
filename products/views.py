@@ -469,7 +469,7 @@ def search_results(request):
             messages.error(
                 request,
                 "You didn't enter any search criteria",
-                'sender_search'
+                'from__search'
             )
             redirect_url = request.GET.get('redirect_url')
             if redirect_url is None:
@@ -485,7 +485,7 @@ def search_results(request):
             messages.info(
                 request,
                 "No results found.  Please try another search term.",
-                'sender_search'
+                'from__search'
             )
             redirect_url = request.GET.get('redirect_url')
             if redirect_url is None:
