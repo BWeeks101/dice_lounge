@@ -1,3 +1,4 @@
+# ...................................................Modified Boutique-Ado Code
 from django.urls import path
 from . import views
 
@@ -8,3 +9,4 @@ urlpatterns = [
     path('remove/<product_id>/',
          views.remove_from_basket, name='remove_from_basket')
 ]
+# ...............................................End Modified Boutique-Ado Code
