@@ -119,8 +119,7 @@ def order_history(request, order_number):
     context = {
         'view': 'order_history',
         'order': order,
-        'country_name': get_country(order.delivery_country)['name'],
-        'from_profile': True,
+        'country_name': get_country(order.delivery_country)['name']
     }
 
     return render(request, 'checkout/order_details.html', context)

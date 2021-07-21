@@ -178,7 +178,7 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-8 offset-lg-2 text-end">
-                {% if from_profile %}
+                {% if view == 'order_history' %}
                     <a href="{% url 'profile' %}" class="btn btn-dark my-2 hover-background-red">
                         <span class="icon me-2">
                             <i class="fas fa-angle-left"></i>
