@@ -1,15 +1,28 @@
 <div class="row">
     {% for product in products %}
-        <div class="{% if view == 'product_detail' %}col-12 col-lg-10 offset-lg-1 mt-5{% else %}col-sm-6 col-md-6 col-lg-4 col-xl-3 {% if view == 'all_games' %}col-xxl-3{% else %}col-xxl-2{% endif %}{% endif %}">
-            <div class="card h-100 border-0">
+        <div class="{% if view == 'product_detail' %}col-12 col-lg-10 offset-lg-1 mt-5{% else %}col-sm-6 col-md-6 col-lg-4 col-xxl-3 mb-sm-4 {% if view == 'all_games' %}col-xxl-3{% else %}col-xxxl-2{% endif %}{% endif %}">
+            <div class="card h-100 {% if view != 'product_detail' %}shadow-sm-lg border-sm-1 p-sm-3{% else %}border-0{% endif %}">
                 {% if view == 'product_detail' %}
                 <div class="row g-0">
                     <div class="col-12 col-lg-6">
                 {% endif %}
-                <div class="{% if view == 'all_games' %}product-line-image-container{% elif view == 'product_detail' %}product-detail-image-container pe-lg-3{% else %}product-image-container{% endif %} d-flex flex-column justify-content-center align-items-center">
+                <div class="{% if view == 'all_games' %}product-line-image-container{% elif view == 'product_detail' %}product-detail-image-container pe-lg-3{% else %}product-image-container{% endif %}{% if view != 'product_detail' %} py-sm-3 border-sm-bottom{% endif %} position-relative d-flex flex-column justify-content-center align-items-center">
                     <a href="{% if view == 'all_games' %}{% url 'products' product.id %}{% else %}{% url 'product_detail' product.id %}{% endif %}" {% if view == 'product_detail'%}class="disabled text-decoration-none pe-none" tab-index="-1" aria-disabled="true"{% endif %}>
                         <img src="{% if product.image %}{{ product.image.url }}{% else %}{{ MEDIA_URL }}noimage.png{% endif %}" alt="{{ product.name }}" class="card-img-top img-fluid {% if view == 'all_games' %}product-line-image{% elif view == 'product_detail' %}product-detail-image{% else %}product-image{% endif %}">
                     </a>
+                    {% if view != 'product_detail' and product.stock > 0 %}
+                        <form action="{% url 'add_to_basket' product.id %}" method="POST" data-product-id="{{ product.id }}" class="form quick-add-form position-absolute top-1 end-0">
+                            {% csrf_token %}
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}{% if request.META.QUERY_STRING|length > 0 %}?{{ request.META.QUERY_STRING }}{% endif %}">
+                            <input type="hidden" name="quantity" value="1">
+                            <button href="" type="submit" class="quick-add btn btn-light text-red hover-background-red" value="">
+                                <span class="icon position-relative">
+                                    <i class="fas fa-shopping-basket"></i>
+                                    <i class="fas fa-plus position-absolute fs-6-half"></i>
+                                </span>
+                            </button>
+                        </form>
+                    {% endif %}
                 </div>
                 {% if view == 'product_detail' %}
                     </div>
@@ -90,45 +103,16 @@
                     </div>
                 </div>
                 {% if view == 'product_detail' %}
-                    {% include 'products/includes/shopping-controls.html' %}
+                    {% include 'products/includes/shopping_controls.html' %}
                     </div>
                 </div>
                 {% endif %}
             </div>
         </div>
-
         {% if not view == 'product_detail' %}
-            {% if forloop.counter|divisibleby:1 %}
-                <div class="col-12 d-sm-none mb-3 text-dark">
-                    <hr>
-                </div>
-            {% endif %}
-
-            {% if forloop.counter|divisibleby:2 %}
-                <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-3 text-dark">
-                    <hr>
-                </div>
-            {% endif %}
-
-            {% if forloop.counter|divisibleby:3 %}
-                <div class="col-12 d-none d-lg-block d-xl-none mb-3 text-dark">
-                    <hr>
-                </div>
-            {% endif %}
-
-            {% if forloop.counter|divisibleby:4 %}
-                <div class="col-12 d-none d-xl-block {% if not view == 'all_games' %}d-xxl-none{% endif %} mb-3 text-dark">
-                    <hr>
-                </div>
-            {% endif %}
-
-            {% if not view == 'all_games' %}
-                {% if forloop.counter|divisibleby:6 %}
-                    <div class="col-12 d-none d-xxl-block mb-3 text-dark">
-                        <hr>
-                    </div>
-                {% endif %}
-            {% endif %}
+            <div class="col-12 d-sm-none my-3 text-dark">
+                <hr>
+            </div>
         {% endif %}
     {% endfor %}
 </div>
