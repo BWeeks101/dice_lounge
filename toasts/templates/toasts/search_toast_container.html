@@ -1,6 +1,6 @@
 <div class="message-container search-message w-100 d-flex flex-row justify-content-center position-relative">
     <div class="toast-container position-absolute top-0">
-        {% for message in messages.search_messages %}
+        {% for message in message_queues.search_messages %}
             {% with arrow_class='search' %}
                 {% include 'toasts/includes/toast_init.html' %}
             {% endwith %}

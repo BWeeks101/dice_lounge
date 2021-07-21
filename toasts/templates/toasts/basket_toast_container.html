@@ -1,6 +1,6 @@
 <div class="message-container basket-message w-100 d-flex flex-row justify-content-end position-relative">
     <div class="toast-container position-absolute top-0 text-start">
-        {% for message in messages.basket_messages %}
+        {% for message in message_queues.basket_messages %}
             {% with arrow_class='basket' %}
                 {% include 'toasts/includes/toast_init.html' %}
             {% endwith %}

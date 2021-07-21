@@ -1,0 +1,9 @@
+<div class="message-container profile-message w-100 d-flex flex-row justify-content-end position-relative">
+    <div class="toast-container position-absolute top-0 text-start">
+        {% for message in message_queues.profile_messages %}
+            {% with arrow_class='profile' %}
+                {% include 'toasts/includes/toast_init.html' %}
+            {% endwith %}
+        {% endfor %}
+    </div>
+</div>
