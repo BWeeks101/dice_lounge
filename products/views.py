@@ -207,14 +207,14 @@ def apply_sort(dataset, request, view=None):
         'stock': 'stock_state__state',
         'product_line': 'sub_product_line__product_line__name',
         'genre': 'genre__identifier',
-        'category': 'category__identifier',
-        'publisher': 'publisher__identifier'
+        'category': 'sub_product_line__name',
+        'publisher': 'sub_product_line__product_line__publisher__name'
     }
 
-    if view == 'search':
+    if view == 'all_games':
         sortkeys.update({
-            'category': 'sub_product_line__name',
-            'publisher': 'sub_product_line__product_line__publisher__name'
+            'category': 'category__identifier',
+            'publisher': 'publisher__identifier'
         })
 
     sort_key = sortkeys.get(sortkey)
@@ -452,14 +452,52 @@ def adjust_max_per_purchase(products):
     return products
 
 
+# format request for redirection to search_results
+def get_search_request(request):
+    url = reverse('search_results') + '?q=' + request.GET['q']
+
+    redirect_url = request.GET.get('redirect_url')
+    if redirect_url is None:
+        return url
+
+    url += '&redirect_url=' + redirect_url
+
+    redirect_params = request.GET.get('redirect_params')
+    if redirect_params is not None and len(redirect_params) > 0:
+        url += '&' + redirect_params
+
+    return url
+
+
 # Return search results
 def search_results(request):
     """
         A view to show all products in a set of search results,
-        including sorting and filtering
+        including sorting, filtering and pagination
     """
 
     if request.GET:
+
+        # format redirection url
+        def get_redirect_url(request=request):
+            url = request.GET.get('redirect_url')
+
+            if url is None:
+                return reverse('all_games')
+
+            redirect_params = request.GET.getlist('redirect_params')
+
+            if len(redirect_params) == 0:
+                return url
+
+            params = f'?{redirect_params[0]}'
+            for param in range(1, len(redirect_params)):
+                params += '&' + redirect_params[param]
+
+            url += params
+
+            return url
+
         # Strip leading/trailing whitespace, then get up to 254 chars of the
         # query parameter
         query = request.GET['q'].strip()[:254]
@@ -471,10 +509,7 @@ def search_results(request):
                 "You didn't enter any search criteria",
                 'from__search'
             )
-            redirect_url = request.GET.get('redirect_url')
-            if redirect_url is None:
-                return redirect(reverse('all_games'))
-            return redirect(redirect_url)
+            return redirect(get_redirect_url())
 
         # Apply the query to the Product table, then sort the results
         sort_and_filter = apply_sort(
@@ -487,10 +522,7 @@ def search_results(request):
                 "No results found.  Please try another search term.",
                 'from__search'
             )
-            redirect_url = request.GET.get('redirect_url')
-            if redirect_url is None:
-                return redirect(reverse('all_games'))
-            return redirect(redirect_url)
+            return redirect(get_redirect_url())
 
         sort_options = build_sort_options([
             'name',
@@ -570,16 +602,13 @@ def search_results(request):
 # Show all game product lines
 def all_games(request):
     """
-        A view to show all game product lines,
-        including sorting, and redirect search queries
+        A view to show all game product lines and redirect search queries,
+        including sorting, filtering and pagination
     """
 
     if request.GET:
         if 'q' in request.GET:
-            return redirect(
-                reverse('search_results') + '?q=' + request.GET['q'] +
-                '&redirect_url=' + request.GET.get('redirect_url')
-            )
+            return redirect(get_search_request(request))
 
     sort_options = build_sort_options(
         ['name', 'category', 'genre', 'publisher'])
@@ -649,16 +678,13 @@ def all_games(request):
 # Show all products for a given product line
 def products(request, product_line_id):
     """
-        A view to show all products within a line,
-        including sorting, and redirect search queries
+        A view to show all products within a line and redirect search queries,
+        including sorting, filtering and pagination
     """
 
     if request.GET:
         if 'q' in request.GET:
-            return redirect(
-                reverse('search_results') + '?q=' + request.GET['q'] +
-                '&redirect_url=' + request.GET.get('redirect_url')
-            )
+            return redirect(get_search_request(request))
 
     sort_options = build_sort_options(
         ['name', 'price::lh', 'category'])
@@ -737,15 +763,12 @@ def products(request, product_line_id):
 # Show details of a given product
 def product_detail(request, product_id):
     """
-        A view to show products details
+        A view to show products details and redirect search queries
     """
 
     if request.GET:
         if 'q' in request.GET:
-            return redirect(
-                reverse('search_results') + '?q=' + request.GET['q'] +
-                '&redirect_url=' + request.GET.get('redirect_url')
-            )
+            return redirect(get_search_request(request))
 
     products = adjust_max_per_purchase(Product.objects.filter(id=product_id))
 
