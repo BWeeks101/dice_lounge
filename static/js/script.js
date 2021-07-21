@@ -1,338 +1,6 @@
 /*eslint func-style: ["error", "declaration", { "allowArrowFunctions": true }]*/
 /*global bootstrap */
 
-/* Initialise the Sort dropdown */
-/*
-Requires:   dropDownToggler of type:
-                String: element id based selector for the dropdown-toggler elem
-            OR:
-                Object: dropdown-toggler DOM elem object or jQuery object
-*/
-// function initSortDropdown(dropDownToggler) {
-
-//     // If dropDownToggler is neither an object or string, return false
-//     if (typeof dropDownToggler !== 'object' &&
-//             typeof dropDownToggler !== 'string') {
-//         return false;
-//     }
-
-//     /* Validate an object */
-//     /*
-//     Requires:   obj: Object to be validated
-//     Returns:    false: Object is null, or a 0 length jQuery object
-//                 true: Object is a jQuery object with length > 0
-//                 dom: Object is not null, and not a jQuery object
-//     */
-//     const validObj = (obj) => {
-//         // Object is null
-//         if (obj === null) {
-//             return false;
-//         }
-
-//         // JQ Object
-//         if (length in obj) {
-
-//             // 0 length
-//             if (!obj.length) {
-//                 return false;
-//             }
-
-//             // valid length
-//             return true;
-//         }
-
-//         // Otherwise valid DOM object
-//         return 'dom';
-//     };
-
-//     // If dropDownToggler is a string, ensure that it is formatted as an id
-//     // based selector, including the dropdown-toggle class. Then create a
-//     // jQuery object with this selector
-//     if (typeof dropDownToggler === 'string') {
-//         // Expecting an id, so ensure the first character is a #
-//         if (dropDownToggler[0] !== '#') {
-//             dropDownToggler = '#' + dropDownToggler;
-//         }
-//         // Object requires the .dropdown-toggle class, so ensure it is
-//         // included
-//         if (dropDownToggler.indexOf('.dropdown-toggle') === -1) {
-//             dropDownToggler += '.dropdown-toggle';
-//         }
-//         // Create a jq object using the string as a selector
-//         dropDownToggler = $(dropDownToggler);
-//     }
-
-//     let isValid;
-//     // If dropDownToggler is an object, ensure that it is a valid jQuery
-//     // object with the dropdown-toggle class
-//     if (typeof dropDownToggler === 'object') {
-//         isValid = validObj(dropDownToggler);
-
-//         // If dropDownToggler is not valid, return false
-//         if (!isValid) {
-//             return false;
-//         }
-
-//         // If dropDownToggler is a DOM object, convert it to a JQ object
-//         if (isValid === 'dom') {
-//             dropDownToggler = $(dropDownToggler);
-//         }
-
-//         // Otherwise we have a valid JQ object so check it is a
-//         // dropdown-toggler
-//         dropDownToggler = $(dropDownToggler).filter('.dropdown-toggle');
-
-//         // Final test for validation after filtering for .dropdown-toggle
-//         // class
-//         if (!validObj(dropDownToggler)) {
-//             return false;
-//         }
-//     }
-
-//     // Get the dropdown-wrapper ancestor
-//     let dropDownWrapper = $(dropDownToggler).closest('.dropdown-wrapper');
-//     // If no dropdown-menu is found, return false
-//     if (!validObj(dropDownWrapper)) {
-//         return false;
-//     }
-
-//     // Get the dropdown-menu sibling
-//     let dropDownMenu = $(dropDownToggler).siblings('.dropdown-menu');
-//     // If no dropdown-menu is found, return false
-//     if (!validObj(dropDownMenu)) {
-//         return false;
-//     }
-
-//     // Get the dropdown-items child elements from the dropdown-menu
-//     let dropDownItems = $(dropDownMenu).children('.dropdown-item');
-//     // If no dropdown-items are found, return false
-//     if (!validObj(dropDownItems)) {
-//         return false;
-//     }
-
-//     /* Set the dropdown text based on the active dropdown-item */
-//     const setDropDownTogglerText = () => {
-//         // Get the active dropdown item (if it exists)
-//         let active = $(dropDownItems).filter('.active');
-//         if (validObj(active)) {
-//             // Set the visible text of the toggler to that of the active
-//             // dropdown item
-//             $(dropDownToggler).html($(active).html());
-//         }
-//     };
-
-//     /* Add click listeners to dropdown items to apply sort */
-//     const addDropDownItemListeners = () => {
-//         $(dropDownItems).on('click', (e) => {
-//             // prevent the default link click action
-//             e.preventDefault();
-
-//             // Get the current url
-//             let currentUrl = new URL(window.location);
-
-//             // Get the filter data
-//             let selectedVal = $(e.currentTarget).attr('data-value');
-
-//             // If the reset filter is selected update the url and refresh
-//             if (selectedVal === 'None_None') {
-//                 // Delete the sort and delete params from the url
-//                 currentUrl.searchParams.delete('sort');
-//                 currentUrl.searchParams.delete('direction');
-
-//                 // Reset the results to page 1
-//                 currentUrl.searchParams.delete('page');
-
-//                 // Load the updated url
-//                 window.location.replace(currentUrl);
-//                 return;
-//             }
-
-//             // Not the reset filter, so get the filter sort and direction
-//             let sort = selectedVal.slice(0, selectedVal.lastIndexOf('_'));
-//             let direction = selectedVal.
-//                    slice(selectedVal.lastIndexOf('_') + 1);
-
-//             // Update the url
-//             currentUrl.searchParams.set('sort', sort);
-//             currentUrl.searchParams.set('direction', direction);
-
-//             // Reset the results to page 1
-//             currentUrl.searchParams.delete('page');
-
-//             // Load the updated url
-//             window.location.replace(currentUrl);
-//         });
-//     };
-
-//     /* Resize the dropdown elements to maintain consistent size */
-//     /*
-//     Optional:   refreshTogglerText (Boolean).
-//                 If true, calls setDropDownTogglerText() (default = false)
-//     */
-//     const resizeDropDownToggler = (refreshTogglerText = false) => {
-
-//         // If refreshTogglerText is true, call setDropDownTogglerText()
-//         if (refreshTogglerText) {
-//             setDropDownTogglerText();
-//         }
-//         // console.log('refreshTogglerText: ' + refreshTogglerText);
-
-
-//         /* Get the index of the widest dropdown-item */
-//         /* Set dropdown-toggler text = widest dropdown-item text */
-//         /* Return the width of the dropdown-toggler and reset the text */
-//         const getDropDownTogglerWidth = () => {
-//             let scrollWidth;
-//             let outerWidth;
-//             let currentText;
-
-//             /* Get the id of the widest dropdown-item */
-//             const getWidestDropDownItem = () => {
-//                 let widestItemWidth;
-//                 let widestItem;
-
-//                 // Ensure the dropdown-menu is visible to allow accurate
-//                 // calculation of child element widths
-//                 $(dropDownMenu).addClass('force-show');
-
-//                 // Ensure the dropdown-items are inline-block with no width
-//                 // value to allow accurate calculation of their widths
-//                 $(dropDownItems).addClass('fit-content');
-
-//                 // For each dropdown-item, get the larger value of the
-//                 // scrollWidth and the jQuery calculated outerWidth.  Store
-//                 // the largest overall value from all dropdown-items, and the
-//                 // item index.
-//                 $(dropDownItems).each((i) => {
-//                     if (!widestItemWidth) {
-//                         widestItemWidth = 0;
-//                     }
-//                     scrollWidth = dropDownItems[i].scrollWidth;
-//                     outerWidth = $(dropDownItems[i]).outerWidth();
-//                     if (scrollWidth > outerWidth) {
-//                         outerWidth = scrollWidth;
-//                     }
-//                     if (outerWidth > widestItemWidth) {
-//                         widestItemWidth = outerWidth;
-//                         widestItem = i;
-//                     }
-//                 });
-
-//                 // Remove extra classes
-//                 $(dropDownItems).removeClass('fit-content');
-//                 $(dropDownMenu).removeClass('force-show');
-
-//                 // Return the index of the widest dropdown-item
-//                 return widestItem;
-//             };
-//             let widestItem = getWidestDropDownItem();
-
-//             // If we have a widestItem, store the current dropdown-toggler
-//             // text, then set the text of the dropdown-toggler to that of the
-//             // widest item
-//             if (widestItem) {
-//                 currentText = $(dropDownToggler).html();
-//                 $(dropDownToggler).html($(dropDownItems[widestItem]).html());
-//             }
-
-//             // Ensure the dropdown-toggler is visible, inline-block and with
-//             // no width value to allow accurate width calculation
-//             $(dropDownToggler).addClass('force-show fit-content');
-
-//             // Get the scrollWidth and the jQuery calculated outerWidth
-//             scrollWidth = dropDownToggler[0].scrollWidth;
-//             outerWidth = $(dropDownToggler).outerWidth();
-
-//             // Remove extra classes
-//             $(dropDownToggler).removeClass('force-show fit-content');
-
-//             // If currentText is populated, reset the dropdown-toggler text
-//             // to currentText
-//             if (currentText) {
-//                 $(dropDownToggler).html(currentText);
-//             }
-
-//             // Return the larger value of the scrollWidth and the jQuery
-//             // calculated outerWidth
-//             if (scrollWidth > outerWidth) {
-//                 outerWidth = scrollWidth;
-//             }
-//             return outerWidth;
-//         };
-//         let dropDownTogglerWidth = getDropDownTogglerWidth();
-//         // console.log('t: ' + dropDownTogglerWidth);
-
-//         // Set the maximum possible width = dropdown-wrapper parent width
-//         let maxWidth = $(dropDownWrapper).parent().
-//             width();
-//         // console.log('mw: ' + maxWidth);
-
-//         // Get combined dropdown-menu left + right border width
-//         let dropDownMenuBorder = parseFloat(
-//             $(dropDownMenu).css('border-left-width'));
-//         dropDownMenuBorder += parseFloat(
-//             $(dropDownMenu).css('border-right-width'));
-//         // console.log('mb: ' + dropDownMenuBorder);
-
-//         // Ensure dropdown-toggler width + dropdown-menu border does not
-//         // exceed maxWidth
-//         if ((dropDownTogglerWidth + dropDownMenuBorder) > maxWidth) {
-//             dropDownTogglerWidth = (maxWidth - dropDownMenuBorder);
-//         }
-//         // console.log('nt: ' + dropDownTogglerWidth);
-
-//         // Set dropdown-menu innerWidth to width of dropdown-toggler
-//         $(dropDownMenu).innerWidth(dropDownTogglerWidth + 'px');
-
-//         // Get dropdown-menu outerWidth after innerWidth resize
-//         let dropDownMenuWidth = $(dropDownMenu).outerWidth();
-//         // console.log('m: ' + dropDownMenuWidth);
-
-//         // Set dropdown-wrapper outerWidth = dropdown-menu outerWidth
-//         $(dropDownWrapper).outerWidth(dropDownMenuWidth + 'px');
-
-//         // Get dropdown-wrapper width after resize (debug only)
-//         // let dropDownWrapperWidth = $(dropDownWrapper).outerWidth();
-//         // console.log('w: ' + dropDownWrapperWidth);
-//     };
-
-//     // Observe dropdown-items for innerHtml change and call resizeToggler()
-//     const addResizeObservers = () => {
-//         let observer = new MutationObserver(
-//             () => resizeDropDownToggler(true));
-//         $(dropDownItems).each((i) => {
-//             observer.observe($(dropDownItems)[i], {
-//                 childList: true,
-//                 subtree: true,
-//                 characterData: true
-//             });
-//         });
-//     };
-
-//     // Add an onresize handler to the window calling resizeToggler()
-//     const addResizeListener = () => {
-//         $(window).on('resize', () => {
-//             resizeDropDownToggler();
-//         });
-//     };
-
-//     // Display the dropdown-wrapper
-//     const displayDropDownWrapper = () => {
-//         $(dropDownWrapper).removeClass('d-none');
-//     };
-
-//     // Display the dropdown-wrapper
-//     displayDropDownWrapper();
-//     // Perform an initial resize of the dropdown-toggler and set the text
-//     resizeDropDownToggler(true);
-//     // Initialise the dropdown-item mutation observers
-//     addResizeObservers();
-//     // Initialise the window resize event handler
-//     addResizeListener();
-//     // Add click listeners to dropdown-items
-//     addDropDownItemListeners();
-// }
-
 /* Create an intersection observer on the #scrollTopAnchor element, executing */
 /* callbacks when intersecting (at top of page) or not intersecting (not top) */
 /* Requires: */
@@ -361,7 +29,6 @@ function initIntersectionObserver({notTopAction, topAction}) {
 /* Create a resize listener on the window, passing the callback param */
 /* Requires: */
 /*      callback: callback function */
-// eslint-disable-next-line no-unused-vars
 function createResizeListener(callback) {
     if (callback === undefined || typeof callback !== 'function') {
         return;
@@ -381,6 +48,95 @@ function createResizeListener(callback) {
             callback();
         }, 200);
     });
+}
+
+/* Check if an object is a valid dom element. */
+/* Refactored from the original source: */
+/* http://stackoverflow.com/questions/28287499/ddg#28287642 */
+/* Authored by: */
+/* https://stackoverflow.com/users/1680836/war10ck */
+function isDomElem(obj) {
+
+    /* If elem is a jQuery object with length > 0, or an HTMLElement, return */
+    /* true.  Otherwise return false. */
+    const checkInstance = (elem = obj) => {
+        if ((elem instanceof jQuery && elem.length) ||
+                elem instanceof HTMLElement) {
+            return true;
+        }
+        return false;
+    };
+
+    /* Iterate over an HTMLCollection.  Pass each object in the collection to */
+    /* checkInstance().  If any return false, then false.  Otherwise return */
+    /* true. */
+    const iterateCollection = (i = 0) => {
+        // If object at position i returns false, then return false
+        if (!checkInstance(obj[i])) {
+            return false;
+        }
+        // Increment i
+        i += 1;
+        // If not at the end of the collection check the next object
+        if (i < obj.length) {
+            return iterateCollection(i);
+        }
+        // Otherwise return true
+        return true;
+    };
+
+    // If obj is an HTMLCollection with a length > 0, return the result of
+    // iterateCollection()
+    if (obj instanceof HTMLCollection && obj.length) {
+        return iterateCollection();
+    }
+
+    // return the result of checkInstance()
+    return checkInstance();
+}
+
+/* Returns a string containing error message html, formatted for */
+/* checkout/profile payment/address forms */
+/* Requires: */
+/*  msg: String containing error text */
+// eslint-disable-next-line no-unused-vars
+function getValidationErrorHtml(msg) {
+    let icon = `
+        <span class="icon" role="alert">
+            <i class="fas fa-times"></i>
+        </span>
+    `;
+    msg = `<span>${msg}</span>`;
+    return icon + msg;
+}
+
+/* Create a resize observer on an element, passing the callback param */
+/* Requires: */
+/*  elem: element to observe */
+/*  callback: callback function */
+function createResizeObserver(elem, callback) {
+    if (callback === undefined || typeof callback !== 'function' ||
+            isDomElem(elem) === false) {
+        return;
+    }
+
+    let timer;
+
+    // Modified from https://css-tricks.com/snippets/jquery/done-resizing-event/
+    // On element resize, clear any existing timeout for the timer var, create
+    // a new timeout for the timer var with a delay of a 5th of a second,
+    // with callback() as a callback.  The callback will therefore
+    // only be executed if no element resize event is called within the
+    // timeout window.
+    let observer = new ResizeObserver(() => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            callback();
+        }, 200);
+    });
+
+    // Begin observing the element
+    observer.observe(elem);
 }
 
 /* ensure .disabled links do not function */
@@ -432,24 +188,6 @@ function initInputBoxShadows() {
         $(e.currentTarget).closest('.page-input-container').
             addClass('input-container-box-shadow');
     });
-
-    // /* qty input focus */
-    // $('.qty-input-container > input[type=number]').on('focus', (e) => {
-    //     $(e.currentTarget).closest('.qty-input-container').
-    //         addClass('input-container-box-shadow');
-    // });
-
-    // /* qty input focusout */
-    // $('.qty-input-container > input[type=number]').on('focusout', (e) => {
-    //     $(e.currentTarget).closest('.qty-input-container').
-    //         removeClass('input-container-box-shadow');
-    // });
-
-    // /* qty input click */
-    // $('.qty-input-container > input[type=number]').on('click', (e) => {
-    //     $(e.currentTarget).closest('.qty-input-container').
-    //         addClass('input-container-box-shadow');
-    // });
 }
 
 /* Invert arrow on collapsible toggler click */
@@ -468,33 +206,76 @@ function initCollapsibleTogglerArrows(selector) {
     });
 }
 
-/* Adjust basket-arrow elems to remain central to basket icon */
-function initBasketArrowPositionAdjuster() {
+/* Adjust toast arrow elems to remain central to relevant nav elems */
+function initArrowPositionAdjuster() {
 
-    /* Adjust the right css property of .basket-arrow elems to keep them */
-    /* centralised against their respective basket-item icons */
-    const adjustBasketArrow = () => {
+    /* Adjust the right css property of arrow elems to keep them centralised */
+    /* against their respective nav item icons */
+    const adjustArrow = (type) => {
         // Iterate over .basket-arrow elems
-        $('.basket-arrow').each((i, elem) => {
-            // Get the width of the nearest basket-item icon
-            let basketWidth = $(elem).closest('nav').
-                find('.basket-item a').
+        $(`.${type}-arrow`).each((i, elem) => {
+            // Get the width of the nearest nav item icon
+            let liWidth = $(elem).closest('nav').
+                find(`.${type}-item a`).
                     outerWidth();
 
+            let widthAdjust = 0;
+            let basketWidth = 0;
+            let profileMargin = 0;
+            let profileLiWidth = 0;
+            // If we are adjusting a profile-arrow
+            if (type === 'profile') {
+                // Get the width of the nearest basket-item
+                basketWidth = $(elem).closest('nav').
+                    find('.basket-item').
+                        outerWidth();
+
+                // Get the margin-right of the nearest profile-item
+                profileMargin = parseInt($(elem).closest('nav').
+                    find('.profile-item').
+                        css('margin-right'));
+
+                // If profileMargin is NaN, set it to 0
+                if (profileMargin === 'NaN') {
+                    profileMargin = 0;
+                }
+
+                // Get the width of the nearest profile-item
+                profileLiWidth = $(elem).closest('nav').
+                    find(`.${type}-item`).
+                        outerWidth();
+
+                // If the profile-item width is greater than the profile-item
+                // icon width, use the profile-item width instead
+                if (profileLiWidth > liWidth) {
+                    liWidth = profileLiWidth;
+                }
+
+                // Otherwise further adjust the width by the sum of the
+                // basket-item width + profile right margin
+                widthAdjust = (basketWidth + profileMargin);
+            }
+
             // If the width is 0, the icon is hidden, so don't bother updating
-            if (basketWidth > 0) {
+            if (liWidth > 0) {
                 // Set the right css property of the arrow to align with the
                 // center of the icon
-                $(elem).css('right', (basketWidth / 2)).
+                $(elem).css('right', (liWidth / 2) + widthAdjust).
                     css('transform', 'translateX(50%)');
             }
         });
     };
 
-    adjustBasketArrow();
+    /* Adjust all arrow positions */
+    const adjustArrows = () => {
+        adjustArrow('basket');
+        adjustArrow('profile');
+    };
+
+    adjustArrows();
 
     // Add a resize listener to the window with adjustBasketArrow() as callback
-    createResizeListener(adjustBasketArrow);
+    createResizeListener(adjustArrows);
 }
 
 /* Add click listener to Back to Top button */
@@ -502,17 +283,26 @@ function initBackToTopButton() {
 
     // Show the btt button
     const showBtt = () => {
+        // Remove the inline height property from the .btt-row
+        $('.btt-row').css('height', '');
+        // Show the button
         $('button.btt-button').css('visibility', 'initial').
             css('opacity', '1');
     };
 
     // Hide the btt button
     const hideBtt = () => {
+        // Hide the button
         $('button.btt-button').css('visibility', 'hidden').
             css('opacity', '0');
+        // Wait .5s for the opacity and visibility button transitions to
+        // complete, then set the row height to 0
+        setTimeout(() => {
+            $('.btt-row').css('height', '0');
+        }, 500);
     };
 
-    // Initialise an intersection observer to show/hide the btt button base on
+    // Initialise an intersection observer to show/hide the btt button based on
     // scroll position
     initIntersectionObserver({notTopAction: showBtt, topAction: hideBtt});
 
@@ -686,24 +476,32 @@ function initToasts() {
         });
     });
 
-    // Adjust basket-toast arrows inline with basket width
-    initBasketArrowPositionAdjuster();
+    // Adjust toast arrows inline with relevant nav width
+    initArrowPositionAdjuster();
 
-    // When the mobile nav search collapsible is collapsed, hide any search
-    // toasts
-    let searchCollapsible = document.getElementById('mobile-search-input');
-    searchCollapsible.addEventListener('hide.bs.collapse', () => {
-        // Get search toasts and hide them
-        $('.toast[data-is-search-toast=true]').each((i, elem) => {
+    // When a nav element is clicked, hide any toasts
+    let navSelector = 'nav a, nav input, nav button, .btt-button';
+    $(navSelector).on('click', () => {
+        $('.toast').each((i, elem) => {
             bootstrap.Toast.getInstance(elem).hide();
         });
     });
+}
 
+function initHeaderSpacer() {
+    const adjustSpacer = () => {
+        // Update the height of the --adjust-for-header css var inline with the
+        // height of the header (including padding/margins)
+        $(':root').css('--adjust-for-header', $('header').outerHeight() + 'px');
+    };
+
+    // Create a resize observer for the header, and adjust the spacer to match
+    createResizeObserver($('header')[0], adjustSpacer);
 }
 
 /* doc ready function */
 $(() => {
-    // Ensure disabled links do not function
+    // Ensure any disabled links do not function
     disableLinks();
 
     // Add event listeners to search/page input box containers
@@ -717,4 +515,7 @@ $(() => {
 
     // Initialise Toasts
     initToasts();
+
+    // Initialise header-spacer resize adjustment
+    initHeaderSpacer();
 });
