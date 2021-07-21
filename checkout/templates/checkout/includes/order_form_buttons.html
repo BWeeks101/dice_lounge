@@ -1,0 +1,18 @@
+<a href="{% url 'view_basket' %}" class="btn btn-outline-dark text-dark hover-background-red position-relative">
+    <span class="icon">
+        <i class="fas fa-chevron-left"></i>
+    </span>
+    <span class="text-uppercase">View Basket</span>
+</a>
+<button type="submit" form="payment-form" class="btn btn-dark text-light hover-background-red position-relative icon-end">
+    <span class="text-uppercase">Place Order</span>
+    <span class="icon">
+        <i class="fas fa-lock"></i>
+    </span>
+</button>
+<p class="small text-danger my-0">
+    <span class="icon">
+        <i class="fas fa-exclamation circle"></i>
+    </span>
+    <span>Your card will be charged <strong>£{{ basket.grand_total|floatformat:2 }}</strong></span>
+</p>

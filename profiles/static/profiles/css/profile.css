@@ -1,0 +1,25 @@
+/* ................................................Modified Boutique-Ado Code */
+#profile-update-form .form-control {
+    color: var(--text-color);
+}
+
+#profile-update-form input::placeholder {
+    color: var(--muted-text-color);
+}
+
+.order-history-col {
+    border: none;
+    border-color: rgba(33, 37, 41, 0.25) !important;  /* Bootstrap 5 HR */
+}
+
+/* Bootstrap lg */
+@media (min-width: 992px) {
+    .order-history-col {
+        border-left: 1px solid;
+    }
+
+    .default-address-col {
+        padding-right: 1.5625rem;
+    }
+}
+/* ............................................End Modified Boutique-Ado Code */

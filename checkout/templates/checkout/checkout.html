@@ -1,0 +1,223 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock extra_css %}
+
+{% block page_header %}
+    <div class="header-spacer"></div>
+{% endblock page_header %}
+
+
+{% block content %}
+    <div class="h-100 w-100 bg-light position-fixed top-0 left-0 z-index-bottom"></div>
+    <div class="container">
+        <div class="row bg-light pt-3">
+            <div class="col-12 bg-light">
+                <h2 class="text-uppercase mb-4 text-center">Checkout</h2>
+                <hr class="mb-0">
+            </div>
+        </div>
+        <div class="row pt-3 bg-light position-sticky">
+            <div class="d-none bg-light d-lg-flex col-lg-6">
+                {% include "checkout/includes/order_form_header.html" %}
+            </div>
+            <div class="d-none bg-light d-lg-flex col-lg-6">
+                {% include "checkout/includes/order_summary_header.html" %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6 order-lg-last">
+                <div class="d-block d-lg-none">
+                    {% include "checkout/includes/order_summary_header.html" %}
+                </div>
+                <div class="row">
+                    <div class="col-7 offset-2">
+                        <p class="mb-1 mt-0 small text-muted">Item</p>
+                    </div>
+                    <div class="col-3 ps-0 text-end">
+                        <p class="mb-1 mt-0 small text-muted">Subtotal</p>
+                    </div>
+                </div>
+                {% for item in basket.items %}
+                    <div class="row checkout-product-details">
+                        <div class="col-2 pe-0 mb-1 d-flex flex-column justify-content-center align-items-center">
+                            <a href="{% url 'product_detail' item.product.id %}">
+                                <img src="{% if item.product.image %}{{ item.product.image.url }}{% else %}{{ MEDIA_URL }}noimage.png{% endif %}" alt="{{ product.name }}" class="w-100 img-fluid checkout-image">
+                            </a>
+                        </div>
+                        <div class="col-7">
+                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                        </div>
+                        <div class="col-3 ps-0 text-end">
+                            <p class="my-0 small text-muted">£{{ item.subtotal }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+                <hr class="d-block d-lg-none">
+                <div class="d-flex d-lg-none row text-dark text-end">
+                    {% include "checkout/includes/order_summary_footer.html" %}
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <hr class="d-block d-lg-none">
+                <div class="d-block d-lg-none">
+                    {% include "checkout/includes/order_form_header.html" %}
+                </div>
+                <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                    {% csrf_token %}
+                    <fieldset class="mb-3">
+                        <legend class="fieldset-label small text-dark px-2 w-auto">Details</legend>
+                        <div class="row g-0">
+                            <div class="col-12 col-lg-6 pe-lg-2">
+                                {{ order_form.first_name | as_crispy_field }}
+                            </div>
+                            <div class="col-12 col-lg-6 ps-lg-2">
+                                {{ order_form.last_name | as_crispy_field }}
+                            </div>
+                        </div>
+                        {{ order_form.email | as_crispy_field }}
+                        {{ order_form.phone_number | as_crispy_field }}
+                    </fieldset>
+                    <fieldset class="mb-3">
+                        <legend class="fieldset-label small text-dark px-2 w-auto">Billing Address</legend>
+                        {{ order_form.street_address1 | as_crispy_field }}
+                        {{ order_form.street_address2 | as_crispy_field }}
+                        {{ order_form.town_or_city | as_crispy_field }}
+                        {{ order_form.county | as_crispy_field }}
+                        {{ order_form.postcode | as_crispy_field }}
+                        <div class="mb-3 text-danger" id="postcode-errors" role="alert" data-isvalid="true"></div>
+
+                        {% load countries %}
+                        {% get_countries as countries %}
+                        <div class="mb-3">
+                            <div class="dropdown-wrapper country-dropdown d-block w-100">
+                                <div class="dropdown position-relative border border-1 border-dark mb-2">
+                                    <input type="hidden" name="country" value="{{ selected_country.code }}" id="id_country" data-isvalid="true">
+                                    <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="countryToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        {{ selected_country.name }}
+                                    </a>
+                                    <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="countryToggler">
+                                        {% for country in countries %}
+                                            <a href="#" data-value='{{ country.code }}' class="dropdown-item{% if country.code == selected_country.code %} active{% endif %}">{{ country.name }}</a>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-danger" id="country-errors" role="alert"></div>
+
+                        <div class="form-check form-check-inline float-end me-0">
+                            {% if user.is_authenticated %}
+                                <label for="id-save-info" class="form-check-label">Save this address to my profile</label>
+                                <input type="checkbox" id="id-save-info" name="save-info" class="form-check-input">
+                            {% else %}
+                                <label for="id-save-info" class="form-check-label">
+                                    <a href="{% url 'account_signup' %}" class="text-red">Create an account</a> or
+                                    <a href="{% url 'account_login' %}" class="text-red">login</a> to save this information
+                                </label>
+                            {% endif %}
+                        </div>
+                    </fieldset>
+                    <fieldset class="mb-3" id='deliveryAddressFieldset'>
+                        <legend class="fieldset-label small text-dark px-2 w-auto">Delivery Address</legend>
+                        <div class="form-check form-check-line text-start mb-3">
+                            <label for="id-use-billing-address" class="form-check-label">Use billing address for delivery</label>
+                            <input type="checkbox" id="id-use-billing-address" name="use-billing-address" class="form-check-input">
+                        </div>
+                        <div class="row g-0 d-none" id="deliveryNameRow">
+                            <div class="col-12 col-lg-6 pe-lg-2">
+                                {{ order_form.delivery_first_name | as_crispy_field }}
+                            </div>
+                            <div class="col-12 col-lg-6 ps-lg-2">
+                                {{ order_form.delivery_last_name | as_crispy_field }}
+                            </div>
+                        </div>
+                        {{ order_form.delivery_address1 | as_crispy_field }}
+                        {{ order_form.delivery_address2 | as_crispy_field }}
+                        {{ order_form.delivery_town_or_city | as_crispy_field }}
+                        {{ order_form.delivery_county | as_crispy_field }}
+                        {{ order_form.delivery_postcode | as_crispy_field }}
+                        <div class="mb-3 text-danger" id="delivery_postcode-errors" role="alert"></div>
+
+                        {% load countries %}
+                        {% get_countries as countries %}
+                        <div class="mb-3 d-none" id='deliveryCountryContainer'>
+                            <div class="dropdown-wrapper country-dropdown d-block w-100">
+                                <div class="dropdown position-relative border border-1 border-dark mb-2">
+                                    <input type="hidden" name="delivery_country" value="{{ selected_country.code }}" id="id_delivery_country" disabled>
+                                    <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="deliveryCountryToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        {{ selected_country.name }}
+                                    </a>
+                                    <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="deliveryCountryToggler">
+                                        {% for country in countries %}
+                                            <a href="#" data-value='{{ country.code }}' class="dropdown-item{% if country.code == selected_country.code %} active{% endif %}">{{ country.name }}</a>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-danger" id="delivery_country-errors" role="alert"></div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="fieldset-label small text-dark px-2 w-auto">Payment</legend>
+                        <!-- A Stripe card element will go here -->
+                        <div class="mb-3" id="card-element"></div>
+
+                        <!-- Used to display form errors -->
+                        <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+                        <input type="hidden" value="{{ client_secret }}" name="client_secret">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="row g-0 d-flex d-lg-none position-sticky btt-row pe-none">
+            <div class="col-12 text-end">
+                {% include "includes/btt_button.html" %}
+            </div>
+        </div>
+        <div class="row d-flex d-lg-none">
+            <div class="col-12">
+                <div class="d-block d-lg-none submit-button checkout-buttons text-end pt-3 pb-2">
+                    {% include "checkout/includes/order_form_buttons.html" %}
+                </div>
+            </div>
+        </div>
+        <div class="row d-none d-lg-flex position-sticky bottom-0">
+            <div class="col-12 text-end position-relative btt-row mt-0 bottom-0 h-0 checkout-lg-btt pe-none">
+                {% include "includes/btt_button.html" %}
+            </div>
+            <div class="bg-light col-lg-6 pb-2">
+                <hr>
+                <div class="bg-light submit-button checkout-buttons text-end mt-3 mb-2">
+                    {% include "checkout/includes/order_form_buttons.html" %}
+                </div>
+            </div>
+            <div class="bg-light col-lg-6 pb-2">
+                <hr>
+                <div class="row g-0 bg-light text-dark text-end">
+                    {% include "checkout/includes/order_summary_footer.html" %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loading-overlay">
+        <h1 class="text-light text-uppercase loading-spinner">
+            <span class="icon">
+                <i class="fas fa-3x fa-sync-alt fa-spin"></i>
+            </span>
+        </h1>
+    </div>
+
+{% endblock content %}
+
+{% block postload_js %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'checkout/js/postcode_input.js' %}" type="text/javascript"></script>
+    <script src="{% static 'checkout/js/country_dropdown.js' %}" type="text/javascript"></script>
+    <script src="{% static 'checkout/js/stripe_elements.js' %}" type="text/javascript"></script>
+{% endblock postload_js %}

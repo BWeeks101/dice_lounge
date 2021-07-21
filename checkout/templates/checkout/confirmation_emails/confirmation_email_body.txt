@@ -1,0 +1,38 @@
+Hello {{ order.first_name }}!
+
+This is a confirmation of your order at The Dice Lounge. Your order information is below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+{% for item in order.lineitems.all %}
+{{ item.name }} x{{ item.quantity }} (£{{ item.lineitem_total }})
+{% endfor %}
+
+Order Total: £{{ order.order_total }}
+Delivery: £{{ order.delivery_cost }}
+Grand Total: £{{ order.grand_total }}
+
+(All prices include VAT)
+
+Your order will be delivered to:
+
+{{ order.delivery_first_name }} {{ order.delivery_last_name}}
+{{ order.delivery_address1 }}
+{% if order.delivery_address2 %}
+{{ order.delivery_address2 }}
+{% endif %}
+{{ order.delivery_town_or_city }}
+{% if order.delivery_county %}
+{{ order.delivery_county }}
+{% endif %}
+{{ order.delivery_postcode }}
+{{ order.delivery_country }}
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+Thank you for your order!
+
+Sincerely,
+
+The Dice Lounge

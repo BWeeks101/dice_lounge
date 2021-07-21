@@ -15,6 +15,7 @@ from pathlib import Path
 
 if os.path.exists("env.py"):
     import env
+    __all__ = ['env']
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -55,11 +56,16 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
 
+    # django-countries
+    'django_countries',
+
     # dice_lounge apps
     'home',
     'products',
     'basket',
     'toasts',
+    'profiles',
+    'checkout'
 ]
 
 MIDDLEWARE = [
@@ -93,11 +99,11 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                # custom context_processor required by product-nav.html
+                # custom context_processor required by product_nav.html
                 'products.context_processors.pop_product_nav_menus',
                 # custom context_processor required by basket
                 'basket.context_processors.basket_contents',
-                # custom context_processor requires for toasts
+                # custom context_processor required by message toasts
                 'toasts.context_processors.queue_messages',
             ],
             'builtins': [
@@ -170,9 +176,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-gb'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'GMT'
 
 USE_I18N = True
 
@@ -192,6 +198,17 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 FREE_DELIVERY_THRESHOLD = 100
 STANDARD_DELIVERY_PERCENTAGE = 10
+
+# Stripe
+STRIPE_CURRENCY = 'gbp'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+DEFAULT_FROM_EMAIL = 'thedicelounge@example.com'
+
+# Django Countries
+COUNTRIES_ONLY = ['GB']
+DEFAULT_COUNTRY = 'GB'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock extra_css %}
+
+{% block page_header %}
+    <div class="header-spacer"></div>
+{% endblock page_header %}
+
+{% block content %}
+    <div class="h-100 w-100 bg-light position-fixed top-0 left-0 z-index-bottom"></div>
+    <div class="container mt-3 mb-2">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-uppercase mb-4">My Profile</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6 default-address-col">
+                <p class="text-muted">Default Contact and Address Information</p>
+                <form action="{% url 'profile' %}" method="POST" id="profile-update-form" class="mt-3">
+                    {% csrf_token %}
+                    <legend class="fieldset-label small text-dark px-2 w-auto">Details</legend>
+                    <div class="row g-0">
+                        <div class="col-12 col-lg-6 pe-lg-2">
+                            {{ user_form.first_name | as_crispy_field }}
+                        </div>
+                        <div class="col-12 col-lg-6 ps-lg-2">
+                            {{ user_form.last_name | as_crispy_field }}
+                        </div>
+                    </div>
+                    {{ user_form.email | as_crispy_field }}
+                    {% if email_address_change_pending %}
+                        <div class="mb-3 text-info small" id="email-change-pending" role="alert">
+                            <span class="fas fa-info-circle"></span>
+                            <span>Email address change request{% if pending_email_addresses|length > 1 %}s{% endif %} pending for </span>
+                            {% for email in pending_email_addresses %}
+                                {% if not forloop.last %}
+                                    <span>{{ email }}, </span>
+                                {% else %}
+                                    <span>{{ email }}</span>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    {{ profile_form.default_phone_number | as_crispy_field }}
+                    <legend class="fieldset-label small text-dark px-2 w-auto">Billing Address</legend>
+                    {{ profile_form.default_street_address1 | as_crispy_field }}
+                    {{ profile_form.default_street_address2 | as_crispy_field }}
+                    {{ profile_form.default_town_or_city | as_crispy_field }}
+                    {{ profile_form.default_county | as_crispy_field }}
+                    {{ profile_form.default_postcode | as_crispy_field }}
+                    <div class="mb-3 text-danger" id="postcode-errors" role="alert"></div>
+
+                    {% load countries %}
+                    {% get_countries as countries %}
+                    <div class="mb-3">
+                        <div class="dropdown-wrapper country-dropdown d-block w-100">
+                            <div class="dropdown position-relative border border-1 border-dark mb-2">
+                                <input type="hidden" name="default_country" value="{{ selected_country.code }}" id="id_default_country">
+                                <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="countryToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    {{ selected_country.name }}
+                                </a>
+                                <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="countryToggler">
+                                    {% for country in countries %}
+                                        <a href="#" data-value='{{ country.code }}' class="dropdown-item{% if country.code == selected_country.code %} active{% endif %}">{{ country.name }}</a>
+                                    {% endfor %}
+                                        <a href="#" data-value='12' class="dropdown-item">Australia</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 text-danger" id="country-errors" role="alert"></div>
+                    <button class="btn btn-dark text-uppercase float-end hover-background-red">Update Information</button>
+                </form>
+            </div>
+            <div class="col-12 col-lg-6 order-history-col">
+                <hr class="d-lg-none">
+                <p class="text-muted">Order History</p>
+                {% if orders|length > 0 %}
+                    <div class="order-history table-responsive">
+                        <table class="table table-sm table-borderless">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Date</th>
+                                    <th>Items</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for order in orders %}
+                                    <tr>
+                                        <td>
+                                            <a href="{% url 'order_history' order.order_number %}" title="View Order: {{ order.order_number }}" class="d-inline-block text-red hover-background-red">
+                                            <span class="icon">
+                                                    <i class="fas fa-info"></i>
+                                            </span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            {{ order.date|date:"d M Y" }}
+                                        </td>
+                                        <td>
+                                            <ul class="list-unstyled">
+                                                {% for item in order.lineitems.all %}
+                                                    <li class="small">
+                                                        {{ item.product }} x{{ item.quantity }}
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            £{{ order.grand_total }}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                {% else %}
+                <p class="text-dark small">You have not yet placed any orders.</p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="position-sticky text-end btt-row pe-none">
+            {% include "includes/btt_button.html" %}
+        </div>
+    </div>
+
+
+{% endblock content %}
+
+{% block postload_js %}
+    {{ block.super }}
+    <script src="{% static 'checkout/js/postcode_input.js' %}" type="text/javascript"></script>
+    <script src="{% static 'checkout/js/country_dropdown.js' %}" type="text/javascript"></script>
+    <script src="{% static 'profiles/js/update_profile_details.js' %}" type="text/javascript"></script>
+{% endblock postload_js %}

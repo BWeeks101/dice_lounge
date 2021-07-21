@@ -1,0 +1,10 @@
+<div class="col-6 col-sm-7 offset-2">
+    <p class="my-0">Order Total:</p>
+    <p class="my-0">Delivery:</p>
+    <p class="my-0">Grand Total:</p>
+</div>
+<div class="col-4 col-sm-3 ps-0">
+    <p class="my-0">£{{ basket.total | floatformat:2 }}</p>
+    <p class="my-0">£{{ basket.delivery | floatformat:2 }}</p>
+    <p class="my-0"><strong>£{{ basket.grand_total | floatformat:2 }}</strong></p>
+</div>
