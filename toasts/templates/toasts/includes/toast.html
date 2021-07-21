@@ -15,8 +15,8 @@
         <div class="toast-body bg-light">
             <div class="row">
                 <div class="col">
-                    {{ message }}
-            {% if '_basket' in message.message_from and message.product_id and basket.grand_total and not on_profile_page %}
+                    <span>{{ message|linebreaksbr }}</span>
+            {% if '_basket' in message.message_from and message.product_id and basket.grand_total %}
                         <hr class="mt-1 mb-3">
                     </div>
                 </div>
@@ -32,7 +32,9 @@
                                     </div>
 
                                     {% if basket.product_count|subtract:item.quantity > 0 %}
-                                        <p class="bg-light text-dark mb-0 py-1 text-end">...and {{ basket.product_count|subtract:item.quantity }} more items</p>
+                                        {% with basket.product_count|subtract:item.quantity as other_items %}
+                                            <p class="bg-light text-dark mb-0 py-1 text-end">...and {{ other_items }} other item{% if other_items > 1 %}s{% endif %}</p>
+                                        {% endwith %}
                                     {% endif %}
                                 {% endif %}
                             {% endfor %}
@@ -68,13 +70,32 @@
                                     Spend another <strong>£{{ basket.free_delivery_delta }}</strong> to get free delivery!
                                 </p>
                             {% endif %}
-                            {% if view != 'basket' %}
-                                <a href="{% url 'view_basket' %}" class="w-100 mt-1 btn btn-dark text-light btn-block hover-background-red">
-                                    <span class="text-uppercase">View Basket</span>
+                            {% if view == 'basket' %}
+                                <a {% if basket.errors == 0 %}href="{% url 'checkout' %}"{% endif %} class="w-100 mt-1 btn btn-dark text-light btn-block hover-background-red{% if basket.errors > 0 %} disabled{% endif %}">
+                                    <span class="text-uppercase">Checkout</span>
                                     <span class="icon">
-                                        <i class="fas fa-shopping-basket"></i>
+                                        <i class="fas fa-lock"></i>
                                     </span>
                                 </a>
+                            {% else %}
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 pe-sm-1">
+                                        <a href="{% url 'view_basket' %}" class="w-100 mt-1 btn btn-dark text-light btn-block hover-background-red position-sm-relative icon-end">
+                                            <span class="text-uppercase">Basket</span>
+                                            <span class="icon">
+                                                <i class="fas fa-shopping-basket"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-sm-6 ps-sm-1">
+                                        <a {% if basket.errors == 0 %}href="{% url 'checkout' %}"{% endif %} class="w-100 mt-1 btn btn-dark text-light btn-block hover-background-red position-sm-relative icon-end{% if basket.errors > 0 %} disabled{% endif %}">
+                                            <span class="text-uppercase">Checkout</span>
+                                            <span class="icon">
+                                                <i class="fas fa-lock"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
                             {% endif %}
                         </div>
                     </div>
