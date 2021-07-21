@@ -1,21 +1,19 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect
+from products.views import get_search_request
 
 
 # Create your views here.
-def index(request):
+def home(request):
     """
-        A view to return the index page or redirect a search
+        A view to return the home page or redirect a search
     """
 
     if request.GET:
         if 'q' in request.GET:
-            return redirect(
-                reverse('search_results') + '?q=' + request.GET['q'] +
-                '&redirect_url=' + request.GET.get('redirect_url')
-            )
+            return redirect(get_search_request(request))
 
     context = {
-        'view': 'index'
+        'view': 'home'
     }
 
     return render(request, 'home/index.html', context)
