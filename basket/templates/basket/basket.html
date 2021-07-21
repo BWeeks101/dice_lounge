@@ -22,14 +22,14 @@
                         <div class="row w-100 g-0">
                             <div class="col d-flex flex-column align-items-center">
                                 <div class="d-inline-block" id="total-mobile-block">
-                                    {% include "basket/includes/basket-total.html" %}
+                                    {% include "basket/includes/basket_total.html" %}
                                 </div>
                             </div>
                         </div>
                         <div class="row g-0 w-100 bg-light position-sticky pt-3" id="checkoutRow">
                             <div class="col-12 mb-3 d-flex flex-column align-items-center">
                                 <div class="d-inline-block" id="checkout-buttons-mobile-block">
-                                    {% include "basket/includes/checkout-buttons.html" %}
+                                    {% include "basket/includes/basket_buttons.html" %}
                                 </div>
                             </div>
                         </div>
@@ -41,12 +41,12 @@
                         {% for item in basket.items %}
                             <div class="row w-100 checkout-product-row">
                                 <div class="col-12 col-sm-6 mb-2 text-center">
-                                    {% include "basket/includes/product-image.html" %}
+                                    {% include "basket/includes/product_image.html" %}
                                 </div>
                                 <div class="col-12 col-sm-6 mb-2">
-                                    {% include "basket/includes/product-info.html" %}
+                                    {% include "basket/includes/product_info.html" %}
                                     <div class="mb-0 mt-2">
-                                        {% include "basket/includes/quantity-dropdown.html" %}
+                                        {% include "basket/includes/quantity_dropdown.html" %}
                                     </div>
                                     <p class="mb-0 mt-2">Price Each: £{{ item.product.price }}</p>
                                     <p{% if item.quantity > item.product.stock %} class="text-red"{% endif %}><strong>Subtotal: </strong>£{{ item.subtotal }}</p>
@@ -69,19 +69,19 @@
                             <tbody>
                                 {% for item in basket.items %}
                                     <tr>
-                                        <td class="p-3 w-25 text-center align-middle">
-                                            {% include "basket/includes/product-image.html" %}
+                                        <td class="p-3 ps-0 w-25 text-center align-middle">
+                                            {% include "basket/includes/product_image.html" %}
                                         </td>
                                         <td class="py-3">
-                                            {% include "basket/includes/product-info.html" %}
+                                            {% include "basket/includes/product_info.html" %}
                                         </td>
                                         <td class="py-3">
                                             <p class="my-0">£{{ item.product.price }}</p>
                                         </td>
                                         <td class="py-3">
-                                            {% include "basket/includes/quantity-dropdown.html" %}
+                                            {% include "basket/includes/quantity_dropdown.html" %}
                                         </td>
-                                        <td class="py-3">
+                                        <td class="py-3 pe-0">
                                             <p class="my-0{% if item.quantity > item.product.stock %} text-red{% endif %}">£{{ item.subtotal }}</p>
                                         </td>
                                     </tr>
@@ -89,27 +89,23 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="row g0 position-sticky btt-row">
+                    <div class="row position-sticky btt-row pe-none">
                         <div class="col-12 text-end">
-                            <button class="button btn btn-dark btt-button shadow-sm text-light border border-light hover-background-red">
-                                <span class="icon">
-                                    <i class="fas fa-arrow-up mx-auto my-auto"></i>
-                                </span>
-                            </button>
+                            {% include "includes/btt_button.html" %}
                         </div>
                     </div>
                     <div class="d-none d-md-flex row g0 pt-3">
                         <div class="col-12 text-end">
-                            {% include "basket/includes/basket-total.html" %}
+                            {% include "basket/includes/basket_total.html" %}
                         </div>
                     </div>
-                    <div class="d-none d-md-flex row g0 mt-2">
+                    <div class="d-none d-md-flex row g0 mt-2 mb-3">
                         <div class="col-12 text-end">
-                            {% include "basket/includes/checkout-buttons.html" %}
+                            {% include "basket/includes/basket_buttons.html" %}
                         </div>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your basket is empty.</p>
+                    <p class="lead mb-3">Your basket is empty.</p>
                     <a href="{% url 'all_games' %}" class="btn btn-outline-dark text-dark hover-background-red btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
@@ -124,6 +120,5 @@
 
 {% block postload_js %}
     {{ block.super }}
-    <script src="{% static 'js/shopping-controls.js' %}"></script>
-
+    <script src="{% static 'basket/js/shopping_controls.js' %}"></script>
 {% endblock postload_js %}

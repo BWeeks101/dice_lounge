@@ -5,7 +5,7 @@
         </span>
         <span class="text-uppercase">Keep Shopping</span>
     </a>
-    <a {% if basket.errors == 0 %}href=""{% endif %} class="btn btn-dark text-light hover-background-red position-relative icon-end{% if basket.errors > 0 %} disabled{% endif %}">
+    <a {% if basket.errors == 0 %}href="{% url 'checkout' %}"{% endif %} class="btn btn-dark text-light hover-background-red position-relative icon-end{% if basket.errors > 0 %} disabled{% endif %}">
         <span class="text-uppercase">Checkout</span>
         <span class="icon">
             <i class="fas fa-lock"></i>
