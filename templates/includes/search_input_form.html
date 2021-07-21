@@ -1,6 +1,6 @@
 {% load strip_redirect_url %}
 
-<form class="form" method="GET" action="">
+<form class="form search-form" method="GET">
     <div class="input-group w-100 search-input-container">
         <input class="form-control border border-dark" type="text" name="q" placeholder="Search our site" maxlength="254">
         <div class="input-group-append">
@@ -11,5 +11,6 @@
             </button>
         </div>
     </div>
-    <input type="hidden" name="redirect_url" value="{{ request.path }}{% if view == 'search' %}?{{ request|strip_redirect_url }}{% else %}{% if request.META.QUERY_STRING|length > 0 %}?{{ request.META.QUERY_STRING }}{% endif %}{% endif %}">
+    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+    <input type="hidden" name="redirect_params" value="{% if view == 'search' %}{{ request|strip_redirect_url }}{% else %}{{ request|format_redirect_params }}{% endif %}">
 </form>
