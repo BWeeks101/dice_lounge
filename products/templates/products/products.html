@@ -6,56 +6,12 @@
 {% endblock page_header %}
 
 
-{% comment %}
-    <div class="row g-0">
-        <div class="col-10 offset-1">
-            <div class="row mt-1 mb-2">
-                <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
-                    <div class="dropdown-wrapper d-none d-flex justify-content-center justify-content-md-start">
-                        <div class="dropdown border border-dark">
-                            <a class="text-uppercase fw-bold text-dark dropdown-toggle text-decoration-none" href="#" id="all-games-sort-toggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Sort by...
-                            </a>
-                            <div class="dropdown-menu bg-light text-dark border border-top-0 border-dark shadow-lg dropdown-menu-center" aria-labelledby="all-games-sort-toggler">
-                                {% if sort_options.reset %}
-                                    <a href="#" data-value="{{ sort_options.reset.value }}" class="dropdown-item {% if applied_sort == sort_options.reset.value %}active{% endif %}">{{ sort_options.reset.text }}</a>
-                                {% endif %}
-                                {% for option in sort_options.list %}
-                                    <a href="#" data-value="{{ option.a.value }}" class="dropdown-item {% if applied_sort == option.a.value %}active{% endif %}">{{ option.a.text }}</a>
-                                    <a href="#" data-value="{{ option.b.value }}" class="dropdown-item {% if applied_sort == option.b.value %}active{% endif %}">{{ option.b.text }}</a>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 order-md-first">
-                    <p class="text-muted mt-3 text-center text-md-start">
-                        {% if filters.stock or filters.categories or applied_sort != 'None_None' %}
-                            <span class="small">
-                                {% if applied_sort and applied_sort != 'None_None' %}
-                                    Remove <a href="#" id="remove-sort-link">Sort</a> |
-                                {% endif %}
-                            </span>
-                        {% endif %}
-                        Showing {{ products|length }} of {{ pagination.num_products }} Product{% if pagination.num_products > 1 %}s{% endif %}
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-{% endcomment %}
-
 {% block content %}
     <div class="h-100 w-100 bg-light position-fixed top-0 left-0 z-index-bottom"></div>
     <div class="container-fluid">
         <div class="row">
             <nav class="d-none d-lg-flex flex-column col-lg-3 bg-dark text-light p-3 product-filter-container">
-                {% include 'products/includes/sort-filter-menu.html' %}
-                <button class="btn btn-light filter-btt-button shadow-sm text-dark border border-light hover-background-red w-100">
-                    <span class="icon">
-                        <i class="fas fa-arrow-up mx-auto my-auto"></i>
-                    </span>
-                </button>
+                {% include 'products/includes/sort_filter_menu.html' %}
             </nav>
             <nav class="d-block d-lg-none bg-dark text-light py-0 px-0 mobile-sort-filter-button">
                 <a class="btn-dark text-light hover-background-red h-100 w-100 d-block" data-bs-toggle="offcanvas" data-bs-target="#sortFilterOffCanvas" aria-controls="sortFilterOffCanvas" href="">
@@ -75,12 +31,13 @@
                     <button type="button" class="btn-close btn-light-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    {% include 'products/includes/sort-filter-menu.html' %}
+                    {% include 'products/includes/sort_filter_menu.html' %}
                 </div>
             </div>
             <div class="col col-lg-9 col-xl g-0" id="productContainer">
                     <div class="row g-0">
-                        <div class="col-12">
+                        <div class="col spacer-col"></div>
+                        <div class="col-10 mw-1500">
                             <div class="row g-0">
                                 <div class="col text-center mt-3">
                                     {% if search_term %}
@@ -96,25 +53,30 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col spacer-col"></div>
                     </div>
-                    {% include 'products/includes/pagination-controls.html' %}
+                    {% include 'products/includes/pagination_controls.html' %}
                     <div class="row g-0">
-                        <div class="product-container col-10 offset-1">
+                        <div class="col spacer-col"></div>
+                        <div class="product-container col-10 mw-1500">
                             {% if products|length > 0 %}
                                 {% include 'products/includes/product_cards.html'%}
                             {% else %}
                                 <p class="text-dark fs-5 mt-4 text-center">No results found.</p>
                             {% endif %}
                         </div>
+                        <div class="col spacer-col"></div>
                     </div>
             </div>
         </div>
     </div>
 
-    <button class="button d-lg-none btn btn-dark btt-button shadow-sm text-light border border-light hover-background-red">
-        <span class="icon">
-            <i class="fas fa-arrow-up mx-auto my-auto"></i>
-        </span>
-    </button>
+    {% include "includes/btt_button.html" %}
 
 {% endblock content %}
+
+{% block postload_js %}
+    {{ block.super }}
+    <script src="{% static 'products/js/sort_filter_menu.js' %}"></script>
+    <script src="{% static 'products/js/pagination_controls.js' %}"></script>
+{% endblock postload_js %}

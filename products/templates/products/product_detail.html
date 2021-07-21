@@ -8,7 +8,7 @@
 
 {% block content %}
     <div class="h-100 w-100 bg-light position-fixed top-0 left-0 z-index-bottom"></div>
-    <div class="container-fluid">
+    <div class="container">
         {% if products|length > 0 %}
             {% include 'products/includes/product_cards.html' %}
         {% else %}
@@ -45,5 +45,5 @@
 
 {% block postload_js %}
     {{ block.super }}
-    <script src="{% static 'js/shopping-controls.js' %}"></script>
+    <script src="{% static 'basket/js/shopping_controls.js' %}"></script>
 {% endblock postload_js %}

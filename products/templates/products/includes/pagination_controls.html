@@ -1,7 +1,8 @@
 {% if products|length > 0 %}
     <div class="row g-0 d-none d-md-flex py-4 bg-light position-sticky" id="largePagination">
-        <div class="col-12 text-dark position-relative">
-            <div class="pagination-product-count-label position-absolute offset-1">
+        <div class="col spacer-col"></div>
+        <div class="col-10 mw-1500 text-dark position-relative">
+            <div class="pagination-product-count-label position-absolute start-0">
                 <span class="pagination-py d-block text-muted mt-2 mt-xxl-0 text-center text-xl-start">
                     {{ products|length }} / {{ pagination.num_products }} <span class="d-none d-xl-inline">Product{% if pagination.num_products > 1 %}s{% endif %}</span>
                 </span>
@@ -10,7 +11,7 @@
                 </span>
             </div>
             <nav aria-label="Pagination Controls">
-                <div class="dropdown-wrapper pagination-dropdown d-inline-block position-absolute offset-end-1">
+                <div class="dropdown-wrapper pagination-dropdown d-inline-block position-absolute end-0">
                     <div class="dropdown pagination-border position-relative d-inline-block mb-2">
                         <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="products-per-page-toggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{ pagination.num_products_per_page }}
@@ -59,6 +60,7 @@
                 </div>
             </nav>
         </div>
+        <div class="col spacer-col"></div>
     </div>
     <div class="row g-0 d-md-none mt-4" id="smallPaginationProducts">
         <div class="col-12 text-dark">
