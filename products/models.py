@@ -13,7 +13,6 @@ def validate_whitespace(value):
 
 
 # Create your models here.
-# From boutique ado sample project
 class Category(models.Model):
     class Meta:
         verbose_name_plural = "Categories"
