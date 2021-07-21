@@ -1,6 +1,7 @@
 from django.shortcuts import redirect, render, reverse, HttpResponse
 from django.contrib import messages
 from products.models import Product
+from products.views import get_search_request
 
 
 # Create your views here.
@@ -11,10 +12,7 @@ def view_basket(request):
 
     if request.GET:
         if 'q' in request.GET:
-            return redirect(
-                reverse('search_results') + '?q=' + request.GET['q'] +
-                '&redirect_url=' + request.GET.get('redirect_url')
-            )
+            return redirect(get_search_request(request))
 
     context = {
         'view': 'basket'
