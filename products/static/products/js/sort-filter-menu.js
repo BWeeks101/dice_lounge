@@ -4,53 +4,15 @@
 /* Add click listener for sort/filter removal links */
 function addSortFilterListeners() {
 
-    /* Remove filter when clicking filter badge */
-    $('.filter-badge').on('click', (e) => {
+    /* Remove filter when clicking remove filter button */
+    $('button.remove-filters').on('click', (e) => {
         // prevent the default link click action
         e.preventDefault();
 
         // Get the current url
         let currentUrl = new URL(window.location);
 
-        // Get the filter and value
-        let filter = $(e.currentTarget).attr('data-filter');
-        let filterVal = $(e.currentTarget).attr('data-filter-value');
-
-        // Locate the filter in the Url
-        let currentVals = currentUrl.searchParams.get(filter).split(',');
-
-        // Remove the filterVal from the list of values for the filter
-        currentVals.splice(currentVals.indexOf(filterVal), 1);
-
-        // Convert the list to a comma separated string
-        currentVals = currentVals.toString();
-
-        // Remove trailing comma
-        if (currentVals.endsWith(',')) {
-            currentVals = currentVals.substr(0, currentVals.length - 1);
-        }
-
-        // Update the url
-        currentUrl.searchParams.set(filter, currentVals);
-
-        // If currentVals is blank, remove the filter from the url
-        if (!currentVals.length) {
-            currentUrl.searchParams.delete(filter);
-        }
-
-        // Load the updated url
-        window.location.replace(currentUrl);
-    });
-
-    /* Remove filter when clicking remove filter link/button */
-    $('#remove-filter-link, button.remove-filters').on('click', (e) => {
-        // prevent the default link click action
-        e.preventDefault();
-
-        // Get the current url
-        let currentUrl = new URL(window.location);
-
-        // Delete the sort and direction params from the url
+        // Delete the filter params from the url
         currentUrl.searchParams.delete("stock");
         currentUrl.searchParams.delete("category");
         currentUrl.searchParams.delete("genre");
@@ -61,44 +23,112 @@ function addSortFilterListeners() {
         window.location.replace(currentUrl);
     });
 
-    /* Remove sort when clicking remove sort link */
-    $('#remove-sort-link').on('click', (e) => {
-        // prevent the default link click action
-        e.preventDefault();
+    /* Get filter values from the data-filters property of the apply button */
+    const getFilters = () => {
+        let filters = [
+            {
+                value: $('#applyFilters').attr('data-product-line-filters'),
+                param: 'product_line'
+            },
+            {
+                value: $('#applyFilters').attr('data-genre-filters'),
+                param: 'genre'
+            },
+            {
+                value: $('#applyFilters').attr('data-publisher-filters'),
+                param: 'publisher'
+            },
+            {
+                value: $('#applyFilters').attr('data-category-filters'),
+                param: 'category'
+            },
+            {
+                value: $('#applyFilters').attr('data-stock-filters'),
+                param: 'stock'
+            }
+        ];
+
+        return filters;
+    };
+
+    /* Set apply-filters button enabled/disabled */
+    const setApplyFiltersButtonState = (enabled) => {
+        // If enabled is true, remove the disabled class from .apply-filters
+        // buttons
+        if (enabled === true) {
+            $('.apply-filters').removeClass('disabled');
+            return;
+        }
+
+        // Add the disabled class to .apply-filters buttons
+        $('.apply-filters').addClass('disabled');
+    };
+
+    /* Check for unapplied filter values.  Returns true if there are */
+    /* unapplied filters, otherwise false. */
+    const checkFilters = () => {
+        // Get filter values from the data-filters property of the apply button
+        let filters = getFilters();
 
         // Get the current url
         let currentUrl = new URL(window.location);
 
-        // Delete the sort and direction params from the url
-        currentUrl.searchParams.delete("sort");
-        currentUrl.searchParams.delete("direction");
+        // Set a variable to indicate whether any filters are unapplied
+        let unapplied = false;
 
-        // Load the updated url
-        window.location.replace(currentUrl);
-    });
+        // Iterate over the filters array, comparing each filter value against
+        // the same filter in the currentUrl.  If any do not match, set
+        // unapplied = true.
+        filters.forEach((filter) => {
+            // Get the applied filter value from the url
+            let appliedFilter = currentUrl.searchParams.get(filter.param);
+            // Get the current filter from the filters array
+            let currentFilter = filter.value;
 
-    /* Remove filter and sort when clicking remove filter/sort link */
-    $('#remove-filter-sort-link').on('click', (e) => {
-        // prevent the default link click action
-        e.preventDefault();
+            // If we have not yet found an unapplied filter
+            if (unapplied === false) {
+                // If the url filter value is not null, has a value length > 0
+                // and the current filter has a length > 0
+                if (appliedFilter !== null &&
+                        appliedFilter.length > 0 && currentFilter.length > 0) {
 
-        // Get the current url
-        let currentUrl = new URL(window.location);
+                    // Convert both filter values into arrays, alphabetically
+                    // sort them, then turn them back into strings
+                    appliedFilter = currentUrl.searchParams.get(filter.param).
+                        split(',').
+                            sort().
+                                toString();
+                    currentFilter = filter.value.split(',').
+                        sort().
+                            toString();
 
-        // Delete the sort and direction params from the url
-        currentUrl.searchParams.delete("stock");
-        currentUrl.searchParams.delete("category");
-        currentUrl.searchParams.delete("genre");
-        currentUrl.searchParams.delete("product_line");
-        currentUrl.searchParams.delete("publisher");
+                    // If the strings do not match after sorting then we have
+                    // unapplied filters.  Set unapplied to true and return.
+                    if (appliedFilter !== currentFilter) {
+                        unapplied = true;
+                    }
+                    return;
+                }
 
-        // Delete the sort and direction params from the url
-        currentUrl.searchParams.delete("sort");
-        currentUrl.searchParams.delete("direction");
+                // if the url filter does not exist but the current filter does
+                // then set unapplied to true and return.
+                if (appliedFilter === null && currentFilter.length > 0) {
+                    unapplied = true;
+                    return;
+                }
 
-        // Load the updated url
-        window.location.replace(currentUrl);
-    });
+                // If the url filter exists, but the length does not match the
+                // length of the current filter (which should be 0 at this
+                // point), set unapplied to true.
+                if (appliedFilter !== null &&
+                        appliedFilter.length !== currentFilter.length) {
+                    unapplied = true;
+                }
+            }
+        });
+
+        return unapplied;
+    };
 
     /* Get filter type from a filter checkbox/link element */
     const getFilterType = (elem) => {
@@ -140,6 +170,15 @@ function addSortFilterListeners() {
 
         // Get the filter value of the checkbox
         let filterVal = $(elem).attr('data-filter-value');
+
+        // Set the checked state of any checkbox elements with the same
+        // filterVal to match this element
+        let pairedElems = $(`[type=checkbox][data-filter-value=${filterVal}]`);
+        $(pairedElems).each((i, pElem) => {
+            if (pElem !== elem && $(pElem).prop('checked') !== isChecked) {
+                $(pElem).prop('checked', isChecked);
+            }
+        });
 
         // Get the current filter type
         let filterType = getFilterType(elem);
@@ -183,6 +222,8 @@ function addSortFilterListeners() {
         // .apply-filters button with the new filter string
         $('#applyFilters').
             attr(`data-${filterType.type}-filters`, currentVals);
+
+        setApplyFiltersButtonState(checkFilters());
     };
 
     /* Check/uncheck all child-checks when parent-check is checked/unchecked */
@@ -269,10 +310,42 @@ function addSortFilterListeners() {
         window.location.replace(currentUrl);
     });
 
-    /* Apply a sort when clicking on sort-radio inputs */
-    $('.sort-radio').on('click', (e) => {
+    /* Update the current url with any unapplied filters, and return the */
+    /* updated url */
+    const addFiltersToUrl = () => {
         // Get the current url
         let currentUrl = new URL(window.location);
+
+        // If there are no filters to apply, return the url
+        if (checkFilters() === false) {
+            return currentUrl;
+        }
+
+        // Get the filter values from the data-filters property of the button
+        let filters = getFilters();
+
+        // Iterate over the filters array
+        filters.forEach((filter) => {
+            // Remove the existing filter from the url
+            currentUrl.searchParams.delete(filter.param);
+            // If the filter value exists, update the url
+            if (filter.value.length > 0) {
+                currentUrl.searchParams.set(filter.param, filter.value);
+            }
+        });
+
+        // Reset to page 1 of the results
+        currentUrl.searchParams.delete('page');
+
+        return currentUrl;
+    };
+
+    /* Apply a sort and any unapplied filters when clicking on sort-radio */
+    /* inputs */
+    $('.sort-radio').on('click', (e) => {
+
+        // Get the current url and apply any unapplied filters
+        let currentUrl = addFiltersToUrl();
 
         // Get the sort data
         let selectedVal = $(e.currentTarget).attr('value');
@@ -308,53 +381,22 @@ function addSortFilterListeners() {
 
     /* Apply filters when clicking the apply filters button */
     $('button.apply-filters').on('click', () => {
-        // Get the filter values from the data-filters property of the button
-        let filters = [
-            {
-                value: $('#applyFilters').attr('data-product-line-filters'),
-                param: 'product_line'
-            },
-            {
-                value: $('#applyFilters').attr('data-genre-filters'),
-                param: 'genre'
-            },
-            {
-                value: $('#applyFilters').attr('data-publisher-filters'),
-                param: 'publisher'
-            },
-            {
-                value: $('#applyFilters').attr('data-category-filters'),
-                param: 'category'
-            },
-            {
-                value: $('#applyFilters').attr('data-stock-filters'),
-                param: 'stock'
-            }
-        ];
+        // If there are no filters to apply, return
+        if (checkFilters() === false) {
+            return;
+        }
 
-        // Get the current url
-        let currentUrl = new URL(window.location);
-
-        // Iterate over the filters array
-        filters.forEach((filter) => {
-            // Remove the existing filter from the url
-            currentUrl.searchParams.delete(filter.param);
-            // If the filter value exists, update the url
-            if (filter.value.length > 0) {
-                currentUrl.searchParams.set(filter.param, filter.value);
-            }
-        });
-
-        // Reset to page 1 of the results
-        currentUrl.searchParams.delete('page');
+        //Update the filters in the current url
+        let currentUrl = addFiltersToUrl();
 
         // Load the updated url
         window.location.replace(currentUrl);
     });
 
     // Invert arrow on filter/sort collapse toggler when clicked
-    let filterTogglerSelector = '#filterCollapseToggler, #sortCollapseToggler' +
-        '#filterCollapseToggler_offcanvas, #sortCollapseToggler_offcanvas';
+    let filterTogglerSelector = '#filterCollapseToggler, ' +
+        '#sortCollapseToggler, #filterCollapseToggler_offcanvas, ' +
+        '#sortCollapseToggler_offcanvas';
     initCollapsibleTogglerArrows(filterTogglerSelector);
 
     /* Get active filters from checkboxes on load, and apply the values to */
@@ -399,9 +441,16 @@ function addSortFilterListeners() {
             }
         });
 
+        // For each filter in the filters array, set the matching filter
+        // data attribute value on the #applyFilters button.  If any value
+        // length is > 0 then we have at least one applied filter, so remove
+        // the disabled class from .remove-filters buttons
         Object.entries(filters).forEach(([filter, value]) => {
             $('#applyFilters').
                 attr(`data-${filter}-filters`, value);
+            if (value.length > 0) {
+                $('.remove-filters').removeClass('disabled');
+            }
         });
     };
 
@@ -472,6 +521,12 @@ function initSortFilterMenus() {
 
     // Add listeners to sort/filter control elements
     addSortFilterListeners();
+
+    // Iterate over all sort/filter inputs, and enable them
+    let sortFilterSelector = '#filterCollapse .form-check-input, ' +
+        '#sortCollapse .form-check-input, ' +
+        '#sortFilterOffCanvas .form-check-input';
+    $(sortFilterSelector).attr('disabled', false);
 }
 
 /* doc ready function */
