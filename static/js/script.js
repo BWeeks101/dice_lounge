@@ -327,13 +327,15 @@ function initProductCardHeightAdjust() {
 
         // Determine the number of columns in a row
         // (widths based on bootstrap breakpoints)
-        if (windowWidth >= 1400) { // xxl
+        if (windowWidth >= 1920) { // xxxl
             colCount = 6;
             if ($('#productContainer h2[data-view="all_games"]').length) {
                 colCount = 4;
             }
-        } else if (windowWidth >= 1200) { // xl
+        } else if (windowWidth >= 1400) { // xxl
             colCount = 4;
+        } else if (windowWidth >= 1200) { // xl
+            colCount = 3;
         } else if (windowWidth >= 992) { // lg
             colCount = 3;
         } else if (windowWidth >= 768) { // md
@@ -345,10 +347,12 @@ function initProductCardHeightAdjust() {
         }
 
         // If colCount is 1, remove any inline height value for all
-        // .product-name and .card-footer elements, and return
+        // .product-name, .card-footer and .reduce-reason elements, then return
         if (colCount === 1) {
             $(cards).each((i) => {
-                $(cards[i]).find($('.product-name, .product-line-name')).
+                let selector = '.product-name, .product-line-name, ' +
+                    '.reduced-reason';
+                $(cards[i]).find($(selector)).
                     css('height', '');
                 $(cards[i]).css('height', '');
             });
@@ -403,6 +407,7 @@ function initProductCardHeightAdjust() {
         // Iterate over the rows array
         rows.forEach((row) => {
             let nameHeight = 0;
+            let reductionHeight = 0;
             let footerHeight = 0;
             // Iterate over the cols array in the current row, getting the
             // height of the tallest .product-name and .card-footer in the row
@@ -419,6 +424,17 @@ function initProductCardHeightAdjust() {
                     nameHeight = nHeight;
                 }
 
+                // Locate the reduced reason elem for this col, remove any
+                // inline height value, then get the height + padding
+                let rHeight = $(col).find($('.reduced-reason')).
+                    css('height', '').
+                        innerHeight();
+                // If the height is greater than the value of reductionHeight,
+                // update the value of reductionHeight
+                if (rHeight > reductionHeight) {
+                    reductionHeight = rHeight;
+                }
+
                 // Remove any inline height value for the .card-footer, then get
                 // the height + padding (minus the .product-name height)
                 let fHeight = $(col).css('height', '').
@@ -431,12 +447,15 @@ function initProductCardHeightAdjust() {
             });
 
             // Iterate over the cols array in the current row, setting the
-            // height of each product name and card-footer elem to that of the
-            // largest recorded value for each
+            // height of each product name, reduced-reason and card-footer elem
+            // to that of the largest recorded value for each
             row.cols.forEach((col) => {
                 $(col).find($('.product-name, .product-line-name')).
                     css('height', nameHeight);
-                $(col).css('height', footerHeight + nameHeight);
+                $(col).find($('.reduced-reason')).
+                    css('height', reductionHeight);
+                let colHeight = footerHeight + reductionHeight + nameHeight;
+                $(col).css('height', colHeight);
             });
         });
     };
@@ -488,15 +507,172 @@ function initToasts() {
     });
 }
 
+/* Initialise dynamic header spacer size adjustment */
 function initHeaderSpacer() {
     const adjustSpacer = () => {
         // Update the height of the --adjust-for-header css var inline with the
         // height of the header (including padding/margins)
-        $(':root').css('--adjust-for-header', $('header').outerHeight() + 'px');
+        let header = parseFloat($('header').outerHeight(true));
+        $(':root').css('--adjust-for-header', header + 'px');
     };
 
-    // Create a resize observer for the header, and adjust the spacer to match
+    // Create a debounced resize observer for the header, and adjust the spacer
+    // to match
     createResizeObserver($('header')[0], adjustSpacer);
+
+    // Create a second, non-debounced resize observer for the collapsible
+    // mobile-search-input to more frequently adjust the header spacer during
+    // collapse/expand
+    let observer = new ResizeObserver(adjustSpacer);
+
+    // Start observing when the mobile-search-input starts to expand/collapse
+    $('#mobile-search-input').on('show.bs.collapse hide.bs.collapse', () => {
+        observer.observe($('#mobile-search-input')[0]);
+    });
+
+    // Stop observing when the mobile search-input completes expand/collapse
+    $('#mobile-search-input').
+        on('shown.bs.collapse hidden.bs.collapse', () => {
+            // Add an additional short delay before disconnection to smooth the
+            // transition
+            setTimeout(() => {
+                observer.disconnect();
+            }, 50);
+        });
+}
+
+/* Initialise dropdown-menu position adjustment */
+function initDropdownPositionAdjust() {
+    // Iterate over each .dropdown-menu within a .dropdown-wrapper
+    $('.dropdown-wrapper .dropdown-menu').each((i, elem) => {
+
+        /* Adjust the translateX value by -1, and the translateY value by */
+        /* +1/-1 depending whether the value is positive or negative */
+        /* Requires: */
+        /*  matrix: String.  contains matrix string of transform css values */
+        /* Returns: */
+        /*  Object with the following properties: */
+        /*      x: Adjusted translateX value */
+        /*      y: Adjusted translateY value */
+        /*      matrix: Updated matrix string */
+        const transformAdjust = (matrix) => {
+            // If the matrix string is none, invalid or < 24 characters in
+            // length, return
+            if (matrix === 'none' ||
+                    matrix === undefined ||
+                        matrix.length < 24) {
+                return;
+            }
+
+            // Convert the matrix to an array
+            let matrixArray = matrix.split(',');
+
+            // Adjust transformX by -1px
+            matrixArray[4] = parseFloat(matrixArray[4]) - 1;
+
+            // Get a valid transformY value (remove trailing bracket)
+            matrixArray[5] = parseFloat(
+                matrixArray[5].substring(0, (matrixArray[5].length - 1)));
+
+            // Assume a negative value by default and adjust it by +1px
+            let y = matrixArray[5] + 1;
+            // If the transformY value is positive, adjust it by -1px
+            if (matrixArray[5] > 0) {
+                y = matrixArray[5] - 1;
+            }
+            // update the transformY property value
+            matrixArray[5] = y;
+
+            // Clear the matrix string
+            matrix = '';
+
+            /* Iterate over the matrixArray and rebuild a valid matrix string */
+            const rebuildMatrix = (i = 0) => {
+                // If we haven't reached the end of the the array
+                if (i < matrixArray.length) {
+                    // Add the value of the current array element to the string
+                    matrix += matrixArray[i];
+
+                    // If this is not the final element, append a comma to the
+                    // string
+                    if (i < (matrixArray.length - 1)) {
+                        matrix += ', ';
+                    }
+
+                    // Recursively call self, and increment the index
+                    return rebuildMatrix(i += 1);
+                }
+
+                // Otherwise, append a closing bracket
+                matrix += ')';
+            };
+
+            rebuildMatrix();
+
+            // return an object containing the adjusted translateX/translateY
+            // values and the updated matrix string
+            return {x: matrixArray[4], y: matrixArray[5], matrix};
+        };
+
+        /* Start the observer, monitoring for style attribute changes */
+        const startObserver = (observer) => {
+            observer.observe(elem, {
+                attributes: true,
+                attributeFilter: ['style']
+            });
+        };
+
+        // Create a mutation observer for the current dropdown-menu
+        let observer = new MutationObserver(() => {
+            // Get and adjust the transform values for this dropdown-menu
+            let transformMatrix = transformAdjust($(elem).css('transform'));
+
+            // If there are no updated values, return
+            if (transformMatrix === undefined) {
+                return;
+            }
+
+            // disconnect the observer
+            observer.disconnect();
+
+            // update the transform css property
+            $(elem).css('transform', transformMatrix.matrix);
+
+            // If the transformY value is positive, apply the 'below' class,
+            // remove the 'above' class, restart the observer and return
+            if (transformMatrix.y > 0) {
+                $(elem).addClass('below').
+                    removeClass('above');
+                startObserver(observer);
+                return;
+            }
+
+            // Otherwise apply the 'above' class, remove the 'below' class and
+            // restart the observer
+            $(elem).addClass('above').
+                removeClass('below');
+            startObserver(observer);
+        });
+
+        // Start the observer, monitoring for style attribute changes
+        startObserver(observer);
+
+    });
+}
+
+/* Close offcanvas elements on window resize */
+function initCloseOffCanvasOnResize() {
+    const closeOffCanvas = () => {
+        if ($('#sideNav').hasClass('show')) {
+            $('#sideNav .btn-close').click();
+        }
+
+        if ($('#sortFilterOffCanvas').hasClass('show')) {
+            $('#sortFilterOffCanvas .btn-close').click();
+        }
+    };
+
+    createResizeListener(closeOffCanvas);
 }
 
 /* doc ready function */
@@ -518,4 +694,11 @@ $(() => {
 
     // Initialise header-spacer resize adjustment
     initHeaderSpacer();
+
+    // Initialise dropdown position adjustment
+    initDropdownPositionAdjust();
+
+    // Close offcanvas elems on window resize to prevent unintentional
+    // scroll lock
+    initCloseOffCanvasOnResize();
 });
