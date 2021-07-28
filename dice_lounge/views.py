@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.conf import settings
 
 
 def custom_error_403(request, exception):
@@ -23,10 +24,10 @@ def custom_error_404(request, exception):
 def custom_error_500(request):
     context = {
         'title': 'Well this is embarrassing...',
-        'error': 'It looks like a bug crept into the system!  It either ate a \
-            record, got stuck in a relay or otherwise made a nuisance of \
+        'error': f'It looks like a bug crept into the system!  It either ate \
+            a record, got stuck in a relay or otherwise made a nuisance of \
                 itself.  Please refresh the page and try again.  If the \
                     problem persists, please contact us: \
-                        support@thedicelounge.com'
+                        {settings.DEFAULT_SUPPORT_EMAIL}'
     }
     return render(request, 'error.html', context)

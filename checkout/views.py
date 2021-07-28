@@ -550,7 +550,8 @@ def checkout_success(request, order_number):
         messages.error(
             request,
             f'Unable to locate order with order number:\n{order_number}\n \
-            Please contact us for assistance ASAP.',
+            Please contact us for assistance ASAP.\
+                \n{settings.DEFAULT_SUPPORT_EMAIL}',
             'from__checkout_success_basket'
         )
     # If we got the order...
