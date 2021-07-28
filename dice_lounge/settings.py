@@ -244,7 +244,6 @@ if 'USE_AWS' in os.environ:
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
 # Email
-DEFAULT_FROM_EMAIL = 'TheDiceLounge@the-dice-lounge.com'
 DEFAULT_SUPPORT_EMAIL = 'Support@the-dice-lounge.com'
 if 'USE_GMAIL' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -253,8 +252,10 @@ if 'USE_GMAIL' in os.environ:
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    DEFAULT_FROM_EMAIL = 'TheDiceLounge@the-dice-lounge.com'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
