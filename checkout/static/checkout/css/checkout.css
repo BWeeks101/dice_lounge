@@ -7,15 +7,14 @@
     border: 1px solid transparent;
     border-radius: 0px;
     background-color: var(--background-color);
-    box-shadow: 0 1px 3px 0 var(--nav-border-color);
-    -webkit-transition: box-shadow 150ms ease;
-    transition: box-shadow 150ms ease;
+    /* Bootstrap 5 .form-control transition */
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.StripeElement--focus,
-.stripe-style-input:focus,
-.stripe-style-input:active {
-    box-shadow: 0 0 0 .25rem var(--shadow-color);
+.StripeElement--focus:not([disabled=disabled]),
+.stripe-style-input:focus:not([disabled=disabled]),
+.stripe-style-input:active:not([disabled=disabled]) {
+    box-shadow: 0 0 0 .25rem var(--bootstrap-input-box-shadow);
 }
 
 .StripeElement--webkit-autofill {
