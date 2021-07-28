@@ -667,11 +667,12 @@ def search_results(request):
             }
             filters.append(filter)
 
-        stock_states = Stock_State.objects.filter(
-            id__in=sort_and_filter['dataset'].values(
-                'stock_state__id')).values('id').order_by(
-                    'id').distinct().values(
-                        'identifier', 'state').order_by('state')
+        stock_states = Stock_State.objects.exclude(
+            identifier='no_longer_available').filter(
+                id__in=sort_and_filter['dataset'].values(
+                    'stock_state__id')).values('id').order_by(
+                        'id').distinct().values(
+                            'identifier', 'state').order_by('state')
 
         reduced_reasons = Reduced_Reason.objects.filter(
             id__in=sort_and_filter['dataset'].values(
@@ -847,8 +848,9 @@ def products(request, product_line_id):
             id__in=Product.objects.filter(
                 sub_product_line__product_line__id=product_line_id).values(
                     'stock_state_id').order_by(
-                        'stock_state_id').distinct()).values(
-                            'identifier', 'state').order_by('state'),
+                        'stock_state_id').distinct()).exclude(
+                            identifier='no_longer_available').values(
+                                'identifier', 'state').order_by('state'),
         'reduced_reasons': Reduced_Reason.objects.filter(
             id__in=Product.objects.filter(
                 sub_product_line__product_line__id=product_line_id).values(
