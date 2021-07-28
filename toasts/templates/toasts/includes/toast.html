@@ -26,8 +26,12 @@
                                     <p class="bg-light text-dark py-1">Your Basket Contains...</p>
 
                                     <div class="basket-notification-wrapper border border-1 border-{{ colour }}">
-                                        {% with item_image=item.product.image item_image_url=item.product.image.url item_name=item.product.name item_quantity=item.quantity item_subtotal=item.subtotal %}
-                                            {% include 'toasts/includes/toast_product_card.html' %}
+                                        {% with item_name=item.product.name item_quantity=item.quantity item_subtotal=item.subtotal %}
+                                            {% if item.product.image %}
+                                                {% include 'toasts/includes/toast_product_card.html' with item_image=item.product.image item_image_url=item.product.image.url %}
+                                            {% else %}
+                                                {% include 'toasts/includes/toast_product_card.html' %}
+                                            {% endif %}
                                         {% endwith %}
                                     </div>
 
@@ -39,18 +43,26 @@
                                 {% endif %}
                             {% endfor %}
                     {% elif 'remove_from_basket' in message.message_from and basket.removed_item %}
-                        {% with item_image=basket.removed_item.product.image item_image_url=basket.removed_item.product.image.url item_name=basket.removed_item.product.name item_quantity=basket.removed_item.quantity item_subtotal=basket.removed_item.subtotal %}
-                            <div class="basket-notification-wrapper border border-1 border-danger">
-                                {% include 'toasts/includes/toast_product_card.html' %}
-                            </div>
-                        {% endwith %}
+                        <div class="basket-notification-wrapper border border-1 border-danger">
+                            {% with item_name=basket.removed_item.product.name item_quantity=basket.removed_item.quantity item_subtotal=basket.removed_item.subtotal %}
+                                {% if basket.removed_item.product.image %}
+                                    {% include 'toasts/includes/toast_product_card.html' with item_image=basket.removed_item.product.image item_image_url=basket.removed_item.product.image.url %}
+                                {% else %}
+                                    {% include 'toasts/includes/toast_product_card.html' %}
+                                {% endif %}
+                            {% endwith %}
+                        </div>
                     {% else %}
                         <p class="bg-light text-dark py-1">Your Basket ({{ basket.product_count }} items)</p>
 
                         <div class="basket-notification-wrapper">
                             {% for item in basket.items %}
-                                {% with item_image=item.product.image item_image_url=item.product.image.url item_name=item.product.name item_quantity=item.quantity item_subtotal=item.subtotal %}
-                                    {% include 'toasts/includes/toast_product_card.html' %}
+                                {% with item_name=item.product.name item_quantity=item.quantity item_subtotal=item.subtotal %}
+                                    {% if item.product.image %}
+                                        {% include 'toasts/includes/toast_product_card.html' with item_image=item.product.image item_image_url=item.product.image.url %}
+                                    {% else %}
+                                        {% include 'toasts/includes/toast_product_card.html' %}
+                                    {% endif %}
                                 {% endwith %}
                             {% endfor %}
                         </div>
@@ -99,6 +111,26 @@
                             {% endif %}
                         </div>
                     </div>
+            {% elif 'remove_from_basket' in message.message_from and basket.removed_item %}
+                        <hr class="mt-1 mb-3">
+                    </div>
+                </div>
+                <div class="basket-notification-wrapper border border-1 border-danger">
+                    {% with item_name=basket.removed_item.product.name item_quantity=basket.removed_item.quantity item_subtotal=basket.removed_item.subtotal %}
+                        {% if basket.removed_item.product.image %}
+                            {% include 'toasts/includes/toast_product_card.html' with item_image=basket.removed_item.product.image item_image_url=basket.removed_item.product.image.url %}
+                        {% else %}
+                            {% include 'toasts/includes/toast_product_card.html' %}
+                        {% endif %}
+                    {% endwith %}
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <strong><p class="mt-3 mb-0 text-dark">
+                            Your Basket is now empty.
+                        </p></strong>
+                    </div>
+                </div>
             {% else %}
                     </div>
                 </div>
