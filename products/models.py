@@ -8,6 +8,7 @@ from decimal import Decimal
 
 
 # Custom Validators here.
+# Prevent whitespace from being included in a field
 def validate_whitespace(value):
     if " " in value:
         raise ValidationError('No Spaces Allowed')
@@ -244,14 +245,14 @@ class Product_Line(models.Model):
         'Category',
         null=False,
         blank=False,
-        on_delete=models.CASCADE,
+        on_delete=models.RESTRICT,
         help_text='Please select a category for this Product Line.'
     )
     genre = models.ForeignKey(
         'Genre',
         null=False,
         blank=False,
-        on_delete=models.CASCADE,
+        on_delete=models.RESTRICT,
         help_text='Please select a genre for this Product Line.'
     )
     publisher = models.ForeignKey(
@@ -270,6 +271,7 @@ class Product_Line(models.Model):
     image = models.ImageField(
         null=True,
         blank=True,
+        max_length=2000,
         upload_to=product_line_image_path,
         help_text=(
             '(Optional) Please add an image for this Product Line.'
@@ -346,6 +348,7 @@ class Sub_Product_Line(models.Model):
     image = models.ImageField(
         null=True,
         blank=True,
+        max_length=2000,
         upload_to=sub_product_line_image_path,
         help_text=(
             '(Optional) Please add an image for this Sub Product Line.'
@@ -417,6 +420,7 @@ class Product(models.Model):
     image = models.ImageField(
         null=True,
         blank=True,
+        max_length=2000,
         upload_to=product_image_path,
         help_text=(
             '(Optional) Please add an image for this Product.'
@@ -445,7 +449,7 @@ class Product(models.Model):
         'Reduced_Reason',
         null=True,
         blank=True,
-        on_delete=models.SET_NULL,
+        on_delete=models.RESTRICT,
         verbose_name='Reason for Reduction',
         help_text='Why is this product reduced?'
     )
@@ -476,7 +480,7 @@ class Product(models.Model):
         null=True,
         blank=False,
         default=2,
-        on_delete=models.SET_NULL,
+        on_delete=models.RESTRICT,
         verbose_name='Stock State',
         help_text='What is the stock status of this product?'
     )
