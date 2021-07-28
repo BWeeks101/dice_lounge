@@ -66,11 +66,6 @@ class OrderForm(forms.ModelForm):
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
 
-            if field == 'email':
-                self.fields[field].disabled = True
-                classes_str = ' text-muted pe-none'
-                self.fields[field].widget.attrs['class'] += classes_str
-
             if field.startswith("delivery_"):
                 self.fields[field].widget.attrs['class'] += ' d-none'
                 self.fields[field].widget.attrs['disabled'] = True

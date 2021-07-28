@@ -139,7 +139,7 @@ class StripeWH_Handler:
                     sub_product_line = product_obj.sub_product_line.name
                     product_line = (
                         product_obj.sub_product_line.product_line.name)
-                    item_price = product_obj.price
+                    item_price = product_obj.get_price()['price']
                     order_line_item = OrderLineItem(
                         order=order,
                         product_id=product_id,
