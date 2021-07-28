@@ -48,7 +48,7 @@
                                     <div class="mb-0 mt-2">
                                         {% include "basket/includes/quantity_dropdown.html" %}
                                     </div>
-                                    <p class="mb-0 mt-2">Price Each: £{{ item.product.price }}</p>
+                                    <p class="mb-0 mt-2">Price Each: £{{ item.product.get_price.price }}</p>
                                     <p{% if item.quantity > item.product.stock %} class="text-red"{% endif %}><strong>Subtotal: </strong>£{{ item.subtotal }}</p>
                                 </div>
                             </div>
@@ -76,7 +76,7 @@
                                             {% include "basket/includes/product_info.html" %}
                                         </td>
                                         <td class="py-3">
-                                            <p class="my-0">£{{ item.product.price }}</p>
+                                            <p class="my-0">£{{ item.product.get_price.price }}</p>
                                         </td>
                                         <td class="py-3">
                                             {% include "basket/includes/quantity_dropdown.html" %}

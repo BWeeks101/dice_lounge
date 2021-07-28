@@ -2,6 +2,7 @@ from django.conf import settings
 from decimal import Decimal
 from django.contrib import messages
 from products.models import Product
+from products.views import is_product_hidden, set_product_instance_unavailable
 
 
 def basket_contents(request):
@@ -24,10 +25,13 @@ def basket_contents(request):
             )
 
         if product is not None:
+            if is_product_hidden(product) is True:
+                product = set_product_instance_unavailable(product)
+                errors += 1
             max_per_purchase = product.max_per_purchase
             if max_per_purchase > product.stock:
                 max_per_purchase = product.stock
-            subtotal = quantity * product.price
+            subtotal = quantity * Decimal(product.get_price()['price'])
             total += subtotal
             if quantity > product.stock:
                 errors += 1
@@ -83,12 +87,10 @@ def basket_contents(request):
         }
 
         if removed_product is not None:
-            removed_subtotal = (
-                session_removed_item['qty'] * removed_product.price
-            )
+            removed_item_price = Decimal(removed_product.get_price()['price'])
             removed_item.update({
                 'product': removed_product,
-                'subtotal': removed_subtotal
+                'subtotal': removed_item['quantity'] * removed_item_price
             })
 
         context['basket']['removed_item'] = removed_item

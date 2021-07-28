@@ -1,7 +1,8 @@
 from django.shortcuts import redirect, render, reverse, HttpResponse
 from django.contrib import messages
 from products.models import Product
-from products.views import get_search_request
+from products.views import (get_search_request, is_product_hidden,
+                            set_product_instance_unavailable)
 
 
 # Create your views here.
@@ -38,6 +39,8 @@ def add_to_basket(request, product_id):
         )
 
     if product is not None:
+        if is_product_hidden(product) is True:
+            product = set_product_instance_unavailable(product)
         if product.stock > 0:
             quantity = request.POST.get('quantity')
             if quantity is not None:
@@ -199,6 +202,8 @@ def adjust_basket(request, product_id):
         if quantity is not None:
             quantity = int(quantity)
 
+        if is_product_hidden(product) is True:
+            product = set_product_instance_unavailable(product)
         max_per_purchase = product.max_per_purchase
         if max_per_purchase > product.stock:
             max_per_purchase = product.stock
