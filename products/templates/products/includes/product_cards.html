@@ -1,6 +1,6 @@
 <div class="row">
     {% for product in products %}
-        <div class="{% if view == 'product_detail' %}col-12 col-lg-10 offset-lg-1 mt-5{% else %}col-sm-6 col-md-6 col-lg-4 col-xxl-3 mb-sm-4 {% if view == 'all_games' %}col-xxl-3{% else %}col-xxxl-2{% endif %}{% endif %}">
+        <div class="{% if view == 'product_detail' %}col-12 col-lg-10 offset-lg-1 mt-5{% else %}col-sm-6 col-lg-4 col-xxl-3 mb-sm-4 {% if view == 'all_games' %}col-xxl-3{% else %}col-xxxl-2{% endif %}{% endif %}">
             <div class="card h-100 {% if view != 'product_detail' %}shadow-sm-lg border-sm-1 p-sm-3{% else %}border-0{% endif %}">
                 {% if view == 'product_detail' %}
                 <div class="row g-0">
@@ -10,6 +10,13 @@
                     <a href="{% if view == 'all_games' %}{% url 'products' product.id %}{% else %}{% url 'product_detail' product.id %}{% endif %}" {% if view == 'product_detail'%}class="disabled text-decoration-none pe-none" tab-index="-1" aria-disabled="true"{% endif %}>
                         <img src="{% if product.image %}{{ product.image.url }}{% else %}{{ MEDIA_URL }}noimage.png{% endif %}" alt="{{ product.name }}" class="card-img-top img-fluid {% if view == 'all_games' %}product-line-image{% elif view == 'product_detail' %}product-detail-image{% else %}product-image{% endif %}">
                     </a>
+                    {% if request.user.is_authenticated and request.user.is_staff and not view == 'product_detail' %}
+                        <a href="{% if view == 'all_games' %}{% url 'edit' 'product_line' product.id %}{% else %}{% url 'edit' 'product' product.id %}{% endif %}" type="button" class="edit-product btn btn-light text-red hover-background-red position-absolute top-1 start-0" value="">
+                            <span class="icon">
+                                <i class="fas fa-edit"></i>
+                            </span>
+                        </a>
+                    {% endif %}
                     {% if view != 'product_detail' and product.stock > 0 %}
                         <form action="{% url 'add_to_basket' product.id %}" method="POST" data-product-id="{{ product.id }}" class="form quick-add-form position-absolute top-1 end-0">
                             {% csrf_token %}
@@ -29,6 +36,15 @@
                     <div class="col-12 col-lg-6 ps-lg-3 product-detail-col d-flex flex-column justify-content-center">
                 {% endif %}
                 <div class="card-body pb-0 px-0">
+                    {% if request.user.is_authenticated and request.user.is_staff and view == 'product_detail' %}
+                    <div class="w-100 text-end">
+                        <a href="{% url 'edit' 'product' product.id %}" type="button" class="edit-product btn btn-light text-red hover-background-red" value="">
+                            <span class="icon">
+                                <i class="fas fa-edit"></i>
+                            </span>
+                        </a>
+                    </div>
+                    {% endif %}
                     {% if view == 'product_detail' %}
                         <h4 class="product-name text-dark">{{ product.name }}</h4>
                         <hr>
@@ -66,12 +82,22 @@
                                 </p>
                             {% endif %}
                             {% if product.price %}
-                                <p class="lead mb-0 text-left font-weight-bold text-dark">£{{ product.price }}</p>
+                                    <p class="reduced-reason mb-0 text-left d-flex flex-column justify-content-end">
+                                    {% if product.reduced %}
+                                        <a href="" class="text-danger {% if view == 'product_detail' %}disabled text-decoration-none pe-none {% endif %}reduced-reason-filter-link" {% if view == 'product_detail' %}tab-index="-1" aria-disabled="true"{% else %}data-filter-value="{{ product.reduced_reason.identifier }}"{% endif %}>
+                                            {{ product.reduced_reason }}!
+                                        </a>
+                                    {% endif %}
+                                    </p>
+                                <p class="mb-0 text-left">
+                                    <span class="lead font-weight-bold text-dark">£{{ product.get_price.price }}</span>
+                                    {% if product.reduced %}<span class="small text-danger text-decoration-line-through">£{{ product.get_price.base_price }}</span>{% endif %}
+                                </p>
                             {% endif %}
                             {% if product.stock_state %}
                                 <p class="small mt-1 mb-0">
-                                    <a href="" class="{% if product.stock > 0 %}text-success{% else %}text-muted{% endif %} {% if view == 'product_detail' %}disabled text-decoration-none pe-none {% endif %}stock-filter-link" {% if view == 'product_detail' %}tab-index="-1" aria-disabled="true"{% else %}data-filter-value="{{ product.stock_state.identifier }}"{% endif %}>
-                                        {% if product.stock > 0 %}{{ product.stock }} {% endif %}{{ product.stock_state.state }}
+                                    <a href="" class="{% if product.stock > 0 and product.stock <= 5 %}text-info{% elif product.stock > 5 %}text-success{% else %}text-muted{% endif %} {% if view == 'product_detail' %}disabled text-decoration-none pe-none {% endif %}stock-filter-link" {% if view == 'product_detail' %}tab-index="-1" aria-disabled="true"{% else %}data-filter-value="{{ product.stock_state.identifier }}"{% endif %}>
+                                        {% if product.stock > 0 and product.stock <= 5 %}Only {{ product.stock }} {% elif product.stock > 5 %}{{ product.stock }} {% endif %}{{ product.stock_state.state }}
                                     </a>
                                 </p>
                             {% endif %}

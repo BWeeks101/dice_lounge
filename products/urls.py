@@ -18,4 +18,23 @@ urlpatterns = [
           views.product_detail,
           name='product_detail'
      ),
+     path(
+          'get_lookup/<lookup_type>/',
+          views.get_lookup,
+          name='get_lookup'
+     ),
+     path(
+          'product_management/',
+          views.product_management,
+          name='product_management'),
+     path(
+          'add/<request_config_key>/',
+          views.add,
+          name='add'
+     ),
+     path(
+          'edit/<request_config_key>/<int:object_id>/',
+          views.edit,
+          name='edit'
+     )
 ]

@@ -1,5 +1,5 @@
 /*eslint func-style: ["error", "declaration", { "allowArrowFunctions": true }]*/
-/*global initCollapsibleTogglerArrows */
+/*global initCollapsibleTogglerArrows, createResizeObserver */
 
 /* Add click listener for sort/filter removal links */
 function addSortFilterListeners() {
@@ -18,6 +18,7 @@ function addSortFilterListeners() {
         currentUrl.searchParams.delete("genre");
         currentUrl.searchParams.delete("product_line");
         currentUrl.searchParams.delete("publisher");
+        currentUrl.searchParams.delete("reduced_reason");
 
         // Load the updated url
         window.location.replace(currentUrl);
@@ -45,6 +46,10 @@ function addSortFilterListeners() {
             {
                 value: $('#applyFilters').attr('data-stock-filters'),
                 param: 'stock'
+            },
+            {
+                value: $('#applyFilters').attr('data-reduced-reason-filters'),
+                param: 'reduced_reason'
             }
         ];
 
@@ -146,10 +151,12 @@ function addSortFilterListeners() {
             filterType = 'publisher';
         } else if ($(elem).hasClass(`stock-filter-${elemType}`)) {
             filterType = 'stock';
-        } else if ($(elem).
-                hasClass(`product-line-filter-${elemType}`)) {
+        } else if ($(elem).hasClass(`product-line-filter-${elemType}`)) {
             filterType = 'product-line';
             param = 'product_line';
+        } else if ($(elem).hasClass(`reduced-reason-filter-${elemType}`)) {
+            filterType = 'reduced-reason';
+            param = 'reduced_reason';
         }
 
         if (param === undefined) {
@@ -279,14 +286,16 @@ function addSortFilterListeners() {
     /* Pass clicked filter checkbox elem to setFilterValue() */
     let filterCheckboxSelector = '.category-filter-checkbox, ' +
         '.genre-filter-checkbox, .publisher-filter-checkbox, ' +
-            '.stock-filter-checkbox, .product-line-filter-checkbox';
+            '.stock-filter-checkbox, .product-line-filter-checkbox, ' +
+                '.reduced-reason-filter-checkbox';
     $(filterCheckboxSelector).on('click', (e) => {
         setFilterValue(e.currentTarget);
     });
 
     /* Apply filter when clicking filter links in product card */
     let filterLinkSelector = '.category-filter-link, .stock-filter-link, ' +
-        '.product-line-filter-link, .publisher-filter-link, .genre-filter-link';
+        '.product-line-filter-link, .publisher-filter-link, ' +
+            '.genre-filter-link, .reduced-reason-filter-link';
     $(filterLinkSelector).on('click', (e) => {
         // prevent the default link click action
         e.preventDefault();
@@ -393,12 +402,6 @@ function addSortFilterListeners() {
         window.location.replace(currentUrl);
     });
 
-    // Invert arrow on filter/sort collapse toggler when clicked
-    let filterTogglerSelector = '#filterCollapseToggler, ' +
-        '#sortCollapseToggler, #filterCollapseToggler_offcanvas, ' +
-        '#sortCollapseToggler_offcanvas';
-    initCollapsibleTogglerArrows(filterTogglerSelector);
-
     /* Get active filters from checkboxes on load, and apply the values to */
     /* the data attributes of the apply filters button */
     const getInitialFilters = () => {
@@ -407,7 +410,8 @@ function addSortFilterListeners() {
             '.genre-filter-checkbox[checked], ' +
                 '.publisher-filter-checkbox[checked], ' +
                     '.stock-filter-checkbox[checked], ' +
-                        '.product-line-filter-checkbox[checked]';
+                        '.product-line-filter-checkbox[checked],' +
+                            '.reduced-reason-filter-checkbox[checked]';
         let filterCheckboxes = $(selector);
 
         // Create filters object
@@ -455,6 +459,26 @@ function addSortFilterListeners() {
     };
 
     getInitialFilters();
+
+    // Invert arrow on filter/sort collapse toggler when clicked
+    let filterTogglerSelector = '#filterCollapseToggler, ' +
+        '#sortCollapseToggler, #filterCollapseToggler_offcanvas, ' +
+        '#sortCollapseToggler_offcanvas';
+    initCollapsibleTogglerArrows(filterTogglerSelector);
+
+    // Add position-sticky to filter button rows after shown event, and remove
+    // it on collapse event (shown fires once the collapsible has finished
+    // expanding, collapse fires immediately before the collapsible collapses);
+    let filterCollapseSelector = '#filterCollapse, #filterCollapse_offcanvas';
+    $(filterCollapseSelector).on('shown.bs.collapse', (e) => {
+        $(e.currentTarget).find('.filter-button-row').
+            addClass('position-sticky');
+    });
+
+    $(filterCollapseSelector).on('hide.bs.collapse', (e) => {
+        $(e.currentTarget).find('.filter-button-row').
+            removeClass('position-sticky');
+    });
 }
 
 /* Update unique property values for offcanvas elems to prevent duplication */
@@ -495,6 +519,9 @@ function initSortFilterMenus() {
         attr('id', 'filterCollapseToggler_offcanvas').
             attr('data-bs-target', '#filterCollapse_offcanvas');
 
+    $('#sortFilterOffCanvas #filterButtonRow').
+        attr('id', 'filterButtonRow_offcanvas');
+
     $('#sortFilterOffCanvas #applyFilters').
         attr('id', '#applyFilters_offcanvas');
     $('#sortFilterOffCanvas #removeFilters').
@@ -518,6 +545,53 @@ function initSortFilterMenus() {
         // Otherwise ensure the element is checked
         $(elem).attr('checked', true);
     });
+
+    /* Set the top value for the sticky filter button row */
+    const adjustStickyFilterButtonTop = () => {
+        // Get the height of the header
+        let header = parseFloat($('header').outerHeight(true));
+        // Get the height of the first hr within the filter button row (sits
+        // above the buttons)
+        let filterHr = parseFloat($('#filterButtonRow > hr:first-of-type').
+            outerHeight(true));
+        // Set the top = header height - filter button row hr height (hr scrolls
+        // out of view, buttons remain visible)
+        $('#filterButtonRow').css('top', (header - filterHr) + 'px');
+    };
+
+    adjustStickyFilterButtonTop();
+
+    // Create a debounced resize observer for the header, and adjust the
+    // filterButtonRow top value
+    createResizeObserver($('header')[0], adjustStickyFilterButtonTop);
+
+    /* Set the top value for the sticky offcanvas filter button row */
+    const adjustOffCanvasStickyFilterButtonTop = () => {
+        // Get the height of the offcanvas header
+        let offCanvasHeader = parseFloat(
+            $('#sortFilterOffCanvas .offcanvas-header').outerHeight(true));
+        // Get the height of the offcanvas filter toggler
+        let filterTogglerOffCanvas = parseFloat(
+            $('#filterCollapseToggler_offcanvas').outerHeight(true));
+        // Set the top = offCanvasHeader - filterTogglerOffCanvas (will be a
+        // negative value, which offsets the toggler having relative position)
+        $('#filterButtonRow_offcanvas').
+            css('top', (offCanvasHeader - filterTogglerOffCanvas) + 'px');
+    };
+
+    adjustOffCanvasStickyFilterButtonTop();
+
+    // Create a debounced resize observer for the offcanvas header, and adjust
+    // the filterButtonRow top value
+    createResizeObserver(
+        $('#sortFilterOffCanvas .offcanvas-header')[0],
+        adjustStickyFilterButtonTop
+    );
+
+    // Create a debounced resize observer for the offcanvas filter toggler,
+    // and adjust the filterButtonRow top value
+    createResizeObserver(
+        $('#filterCollapseToggler_offcanvas')[0], adjustStickyFilterButtonTop);
 
     // Add listeners to sort/filter control elements
     addSortFilterListeners();

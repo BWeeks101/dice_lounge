@@ -8,16 +8,18 @@ def pop_product_nav_menus(request):
         dropdown menus.
     '''
     # Tabletop + Skirmish games
-    tabletop_games = Product_Line.objects.filter(
+    tabletop_games = Product_Line.objects.exclude(hidden=True).filter(
         category__identifier__in=['tabletop', 'skirmish']).order_by('name')
     # Card games
-    card_games = Product_Line.objects.filter(
+    card_games = Product_Line.objects.exclude(hidden=True).filter(
         category__identifier='card').order_by('name')
     # Brushes and paint
-    brushes_and_paint = Sub_Product_Line.objects.filter(
-        product_line__identifier='brushes_and_paint').order_by('name')
+    brushes_and_paint = Sub_Product_Line.objects.exclude(hidden=True).exclude(
+        product_line__hidden=True).filter(
+            product_line__identifier='brushes_and_paint').order_by('name')
     # Glue, Scenics and Tools
-    hobby_essentials = Sub_Product_Line.objects.filter(
+    hobby_essentials = Sub_Product_Line.objects.exclude(hidden=True).exclude(
+        product_line__hidden=True).filter(
             product_line__identifier='hobby_essentials').order_by('name')
     hobby_essentials_id = list(
         hobby_essentials.values(

@@ -1,0 +1,261 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock extra_css %}
+
+{% block page_header %}
+    <div class="header-spacer"></div>
+{% endblock page_header %}
+
+{% block content %}
+    <div class="h-100 w-100 bg-light position-fixed top-0 left-0 z-index-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-3">
+                <h2 class="logo-font mt-3 mb-4 text-center">Product Management</h2>
+                <h5 class="text-muted text-center">Select an area to manage</h5>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-3">
+                {% csrf_token %}
+                <div class="row g-0 my-3">
+                    <div class="col-12">
+                        <h5 class="text-muted">Product Lines</h5>
+                        <hr>
+                        <!-- Product Line -->
+                        <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                            <div class="dropdown position-relative border border-1 border-dark">
+                                <input type="hidden" name="product_line" value="" id="id_product_line_solo" data-isvalid="true" disabled>
+                                <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="productLineSoloToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                                <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="productLineSoloToggler">
+                                    <div class="dropdown-items-container"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3 text-danger dropdown-error-message d-none" id="productLineSoloErrors" role="alert"></div>
+                            <small id="hint_id_product_line_solo" class="form-text text-muted dropdown-help-text">Select a Product Line to edit</small>
+                        </div>
+                        <div class="text-end">
+                            <a class="btn btn-outline-dark text-dark hover-background-red edit-btn" href="{% url 'edit' 'product_line' '0' %}" data-target="#id_product_line_solo">Edit Selected</a>
+                            <a class="btn btn-dark text-light hover-background-red" href="{% url 'add' 'product_line' %}">Add New</a>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row g-0 mb-3">
+                    <div class="col-12">
+                        <h5 class="text-muted">Sub Product Lines</h5>
+                        <hr>
+                        <!-- Product Line -->
+                        <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                            <div class="dropdown position-relative border border-1 border-dark">
+                                <input type="hidden" name="product_line" value="" id="id_product_line" data-isvalid="true" disabled>
+                                <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="productLineToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                                <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="productLineToggler">
+                                    <div class="dropdown-items-container"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3 text-danger dropdown-error-message d-none" id="productLineErrors" role="alert"></div>
+                            <small id="hint_id_product_line" class="form-text text-muted dropdown-help-text">Select a Product Line to filter Sub Product Lines</small>
+                        </div>
+                        <!-- Sub Product Line -->
+                        <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                            <div class="dropdown position-relative border border-1 border-dark">
+                                <input type="hidden" name="sub_product_line" value="" id="id_sub_product_line" data-isvalid="true" disabled>
+                                <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="subProductLineToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                                <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="subProductLineToggler">
+                                    <div class="dropdown-items-container"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3 text-danger dropdown-error-message d-none" id="productLineErrors" role="alert"></div>
+                            <small id="hint_id_sub_product_line" class="form-text text-muted dropdown-help-text">Select a Sub Product Line to edit</small>
+                        </div>
+                        <div class="text-end">
+                            <a class="btn btn-outline-dark text-dark hover-background-red edit-btn" href="{% url 'edit' 'sub_product_line' '0' %}" data-target="#id_sub_product_line">Edit Selected</a>
+                            <a class="btn btn-dark text-light hover-background-red" href="{% url 'add' 'sub_product_line' %}">Add New</a>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row g-0 mb-3">
+                    <div class="col-12">
+                        <h5 class="text-muted">Products</h5>
+                        <hr>
+                        <!-- Product Line -->
+                        <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                            <div class="dropdown position-relative border border-1 border-dark">
+                                <input type="hidden" name="product_line" value="" id="id_product_line_for_products" data-isvalid="true" disabled>
+                                <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="productLineForProductsToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                                <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="productLineForProductsToggler">
+                                    <div class="dropdown-items-container"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3 text-danger dropdown-error-message d-none" id="productLineForProductsErrors" role="alert"></div>
+                            <small id="hint_id_product_line_for_products" class="form-text text-muted dropdown-help-text">Select a Product Line to filter Sub Product Lines</small>
+                        </div>
+                        <!-- Sub Product Line -->
+                        <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                            <div class="dropdown position-relative border border-1 border-dark">
+                                <input type="hidden" name="sub_product_line" value="" id="id_sub_product_line_for_products" data-isvalid="true" disabled>
+                                <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="subProductLineForProductsToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                                <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="subProductLineForProductsToggler">
+                                    <div class="dropdown-items-container"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3 text-danger dropdown-error-message d-none" id="productLineForProductsErrors" role="alert"></div>
+                            <small id="hint_id_sub_product_line_for_products" class="form-text text-muted dropdown-help-text">Select a Sub Product Line to filter Products</small>
+                        </div>
+                        <!-- Product List -->
+                        <div class="list-wrapper d-block w-100 mb-3">
+                            <div class="list-group admin-list border border-dark" id='productList'>
+                            </div>
+                            <div class="mb-3 text-danger list-error-message d-none" id="productListErrors" role="alert"></div>
+                            <small id="hint_id_sub_product_list" class="form-text text-muted list-help-text">Select a Product to edit</small>
+                        </div>
+                        <div class="text-end">
+                            <a class="btn btn-outline-dark text-dark hover-background-red edit-btn" href="{% url 'edit' 'product' 0 %}" data-target="#productList">Edit Selected</a>
+                            <a class="btn btn-dark text-light hover-background-red" href="{% url 'add' 'product' %}">Add New</a>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row g-0 mb-3">
+                    <div class="col-12">
+                        <h5 class="text-muted">Categories</h5>
+                        <hr>
+                        <!-- Category -->
+                        <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                            <div class="dropdown position-relative border border-1 border-dark">
+                                <input type="hidden" name="category" value="" id="id_category" data-isvalid="true" disabled>
+                                <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="categoryToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                                <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="categoryToggler">
+                                    <div class="dropdown-items-container"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3 text-danger dropdown-error-message d-none" id="categoryErrors" role="alert"></div>
+                            <small id="hint_id_category" class="form-text text-muted dropdown-help-text">Select a Category to edit</small>
+                        </div>
+                        <div class="text-end">
+                            <a class="btn btn-outline-dark text-dark hover-background-red edit-btn" href="{% url 'edit' 'category' 0 %}" data-target="#id_category">Edit Selected</a>
+                            <a class="btn btn-dark text-light hover-background-red" href="{% url 'add' 'category' %}">Add New</a>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row g-0 mb-3">
+                    <div class="col-12">
+                        <h5 class="text-muted">Genres</h5>
+                        <hr>
+                        <!-- Genre -->
+                        <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                            <div class="dropdown position-relative border border-1 border-dark">
+                                <input type="hidden" name="genre" value="" id="id_genre" data-isvalid="true" disabled>
+                                <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="genreToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                                <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="genreToggler">
+                                    <div class="dropdown-items-container"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3 text-danger dropdown-error-message d-none" id="genreErrors" role="alert"></div>
+                            <small id="hint_id_genre" class="form-text text-muted dropdown-help-text">Select a Genre to edit</small>
+                        </div>
+                        <div class="text-end">
+                            <a class="btn btn-outline-dark text-dark hover-background-red edit-btn" href="{% url 'edit' 'genre' 0 %}" data-target="#id_genre">Edit Selected</a>
+                            <a class="btn btn-dark text-light hover-background-red" href="{% url 'add' 'genre' %}">Add New</a>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row g-0 mb-3">
+                    <div class="col-12">
+                        <h5 class="text-muted">Publishers</h5>
+                        <hr>
+                         <!-- Publisher -->
+                        <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                            <div class="dropdown position-relative border border-1 border-dark">
+                                <input type="hidden" name="publisher" value="" id="id_publisher" data-isvalid="true" disabled>
+                                <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="publisherToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                                <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="publisherToggler">
+                                    <div class="dropdown-items-container"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3 text-danger dropdown-error-message d-none" id="publisherErrors" role="alert"></div>
+                            <small id="hint_id_publisher" class="form-text text-muted dropdown-help-text">Select a Publisher to edit</small>
+                        </div>
+                        <div class="text-end">
+                            <a class="btn btn-outline-dark text-dark hover-background-red edit-btn" href="{% url 'edit' 'publisher' 0 %}" data-target="#id_publisher">Edit Selected</a>
+                            <a class="btn btn-dark text-light hover-background-red" href="{% url 'add' 'publisher' %}">Add New</a>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row g-0 mb-3">
+                    <div class="col-12">
+                        <h5 class="text-muted">Reduced Reasons</h5>
+                        <hr>
+                        <!-- Reason for reduction -->
+                        <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                            <div class="dropdown position-relative border border-1 border-dark">
+                                <input type="hidden" name="reduced_reason" value="" id="id_reduced_reason_solo" data-isvalid="true" disabled>
+                                <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="reducedReasonToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                                <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="reducedReasonToggler">
+                                    <div class="dropdown-items-container"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3 text-danger dropdown-error-message d-none" id="reducedReasonErrors" role="alert"></div>
+                            <small id="hint_id_reduced_reason" class="form-text text-muted dropdown-help-text">Select a Reduced Reason to edit</small>
+                        </div>
+                        <div class="text-end">
+                            <a class="btn btn-outline-dark text-dark hover-background-red edit-btn" href="{% url 'edit' 'reduced_reason' 0 %}" data-target="#id_reduced_reason_solo">Edit Selected</a>
+                            <a class="btn btn-dark text-light hover-background-red" href="{% url 'add' 'reduced_reason' %}">Add New</a>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row g-0 mb-3">
+                    <div class="col-12">
+                        <h5 class="text-muted">Stock States</h5>
+                        <hr>
+                        <!-- Stock state -->
+                        <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                            <div class="dropdown position-relative border border-1 border-dark">
+                                <input type="hidden" name="stock_state" value="" id="id_stock_state" data-isvalid="true" disabled>
+                                <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="stockStateToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                                <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="stockStateToggler">
+                                    <div class="dropdown-items-container"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3 text-danger dropdown-error-message d-none" id="stockStateErrors" role="alert"></div>
+                            <small id="hint_id_stock_state" class="form-text text-muted dropdown-help-text">Select a Stock State to edit</small>
+                        </div>
+                        <div class="text-end">
+                            <a class="btn btn-outline-dark text-dark hover-background-red edit-btn" href="{% url 'edit' 'stock_state' 0 %}" data-target="#id_stock_state">Edit Selected</a>
+                            <a class="btn btn-dark text-light hover-background-red" href="{% url 'add' 'stock_state' %}">Add New</a>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block postload_js %}
+    {{ block.super }}
+    <script src="{% static 'products/js/admin_list.js' %}"></script>
+    <script src="{% static 'products/js/admin_dropdown.js' %}"></script>
+    <script src="{% static 'products/js/admin_input_masks.js' %}"></script>
+    <script src="{% static 'products/js/admin.js' %}"></script>
+{% endblock postload_js %}

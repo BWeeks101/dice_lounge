@@ -1,7 +1,7 @@
 {% if products|length > 0 %}
     <div class="row g-0 d-none d-md-flex py-4 bg-light position-sticky" id="largePagination">
         <div class="col spacer-col"></div>
-        <div class="col-10 mw-1500 text-dark position-relative">
+        <div class="col-10 product-center-col text-dark position-relative">
             <div class="pagination-product-count-label position-absolute start-0">
                 <span class="pagination-py d-block text-muted mt-2 mt-xxl-0 text-center text-xl-start">
                     {{ products|length }} / {{ pagination.num_products }} <span class="d-none d-xl-inline">Product{% if pagination.num_products > 1 %}s{% endif %}</span>

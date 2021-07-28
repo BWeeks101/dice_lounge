@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock extra_css %}
+
+{% block page_header %}
+    <div class="header-spacer"></div>
+{% endblock page_header %}
+
+{% block content %}
+    <div class="h-100 w-100 bg-light position-fixed top-0 left-0 z-index-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-3">
+                <h2 class="logo-font mt-3 mb-4 text-center">Product Management</h2>
+                <h5 class="text-muted text-center">{% if view == 'add_stock_state' %}Add a Stock State{% elif view == 'edit_stock_state' %}Edit Stock State{% endif %}</h5>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-3">
+                <form method="POST" id="stockStateAdminForm" action="{% if view == 'add_stock_state' %}{% url 'add' 'stock_state' %}{% else %}{% url 'edit' 'stock_state' stock_state_id %}{% endif %}" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <!-- Identifier -->
+                    {{ stock_state_form.identifier | as_crispy_field }}
+                    <!-- Stock State -->
+                    {{ stock_state_form.state | as_crispy_field }}
+                    <!-- Available to order? -->
+                    {{ stock_state_form.available | as_crispy_field }}
+                    <div class="text-end">
+                        <hr>
+                        <a class="btn btn-outline-dark text-dark hover-background-red" href="{% url 'product_management' %}">Cancel</a>
+                        <button class="btn btn-dark text-light hover-background-red" type="submit">{% if view == 'add_product' %}Add Sub Product Line{% else %}Save Changes{% endif %}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block postload_js %}
+    {{ block.super }}
+    <script src="{% static 'products/js/admin_dropdown.js' %}"></script>
+    <script src="{% static 'products/js/admin_input_masks.js' %}"></script>
+    <script src="{% static 'products/js/admin.js' %}"></script>
+{% endblock postload_js %}

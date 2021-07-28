@@ -1,0 +1,107 @@
+.admin-dropdown > .dropdown > .dropdown-toggle {
+    padding: .375rem .75rem !important;
+    height: 100%;
+}
+
+.admin-dropdown:hover > .dropdown > .dropdown-toggle[disabled=disabled]::after {
+    color: var(--muted-text-color) !important;
+}
+
+.admin-dropdown:hover > .dropdown > .dropdown-toggle[disabled=disabled] {
+    pointer-events: none !important;
+}
+
+.admin-dropdown > .dropdown > .dropdown-toggle[disabled=disabled],
+.admin-dropdown > .dropdown > .dropdown-toggle[disabled=disabled]::after {
+    color: var(--muted-text-color) !important;
+}
+
+.admin-dropdown > .dropdown {
+    height: 40px;
+    width: initial;
+}
+
+.admin-dropdown > .dropdown > .dropdown-menu > .dropdown-items-container {
+    max-height: 380px;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+}
+
+.admin-image {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.invalid-feedback,
+.invalid-feedback > strong {
+    font-weight: 400 !important;
+}
+
+.form-control[disabled=disabled] {
+    border-color: var(--muted-text-color) !important;
+    box-shadow: none !important;
+}
+
+.stripe-style-input.textarea {
+    height: initial !important;
+}
+
+/* .checkboxinput.form-check-input {
+    border-color: var(--text-color) !important;
+} */
+
+.input-mask {
+    height: 0;
+    visibility: hidden;
+}
+
+.input-mask .input-mask-positioner {
+    height: initial !important;
+}
+
+.input-mask .input-mask-value {
+    visibility: initial;
+}
+
+#priceInputMask,
+#percentageInputMask {
+    margin-left: .75rem;
+    margin-right: 2rem;
+}
+
+#reducedPrice {
+    margin-top: -1rem;
+}
+
+:root {
+    --adjust-start-padding-for-mask: 0px;
+}
+
+.adjust-start-padding-for-mask {
+    padding-left: var(--adjust-start-padding-for-mask) !important;
+}
+
+.stock-icon {
+    margin-left: 0.125rem;
+}
+
+.admin-list {
+    max-height: 380px;
+    overflow-y: scroll;
+    overscroll-behavior-y: contain;
+}
+
+.admin-list .list-group-item {
+    padding: .375rem .75rem;
+}
+
+.admin-list .list-group-item:focus {
+    box-shadow: none !important;
+}
+
+.admin-list .list-group-item.active,
+.admin-list .list-group-item:active {
+    background: var(--active-color);
+    color: var(--alt-text-color);
+    border-color: var(--active-color);
+}

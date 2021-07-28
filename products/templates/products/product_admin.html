@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock extra_css %}
+
+{% block page_header %}
+    <div class="header-spacer"></div>
+{% endblock page_header %}
+
+{% block content %}
+    <div class="h-100 w-100 bg-light position-fixed top-0 left-0 z-index-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-3">
+                <h2 class="logo-font mt-3 mb-4 text-center">Product Management</h2>
+                <h5 class="text-muted text-center">{% if view == 'add_product' %}Add a Product{% else %}Edit Product{% endif %}</h5>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-3">
+                <form method="POST" id="productAdminForm" action="{% if view == 'add_product' %}{% url 'add' 'product' %}{% else %}{% url 'edit' 'product' product_id %}{% endif %}" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <!-- Product Line -->
+                    <!-- Not stored in the model.  Used to populate the Sub Product Line dropdown. -->
+                    <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                        <div class="dropdown position-relative border border-1 border-dark">
+                            <input type="hidden" name="product_line" value="{{ product_line }}" id="id_product_line" data-isvalid="true" disabled>
+                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="productLineToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                            <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="productLineToggler">
+                                <div class="dropdown-items-container"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-danger dropdown-error-message d-none" id="productLineErrors" role="alert"></div>
+                        <small id="hint_id_product_line" class="form-text text-muted dropdown-help-text">Please select a Product Line</small>
+                    </div>
+                    <!-- Sub Product Line -->
+                    <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                        <div class="dropdown position-relative border border-1 border-dark">
+                            <input type="hidden" name="sub_product_line" value="{{ product_form.sub_product_line.value }}" id="id_sub_product_line" data-isvalid="true" disabled>
+                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="subProductLineToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                            <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="subProductLineToggler">
+                                <div class="dropdown-items-container"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-danger dropdown-error-message d-none" id="productLineErrors" role="alert"></div>
+                        <small id="hint_id_sub_product_line" class="form-text text-muted dropdown-help-text">{{ product_form.sub_product_line.help_text }}</small>
+                    </div>
+                    <!-- Identifier -->
+                    {{ product_form.identifier | as_crispy_field }}
+                    <!-- Name -->
+                    {{ product_form.name | as_crispy_field }}
+                    <!-- Description -->
+                    {{ product_form.description | as_crispy_field }}
+                    <!-- Image -->
+                    {{ product_form.image }}
+                    <!-- Base Price -->
+                    {{ product_form.price | as_crispy_field }}
+                    <!-- Is the product reduced? -->
+                    {{ product_form.reduced | as_crispy_field }}
+                    <!-- Reason for reduction -->
+                    <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                        <div class="dropdown position-relative border border-1 border-dark">
+                            <input type="hidden" name="reduced_reason" value="{{ product_form.reduced_reason.value }}" id="id_reduced_reason" data-isvalid="true" disabled>
+                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="reducedReasonToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                            <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="reducedReasonToggler">
+                                <div class="dropdown-items-container"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-danger dropdown-error-message d-none" id="reducedReasonErrors" role="alert"></div>
+                        <small id="hint_id_reduced_reason" class="form-text text-muted dropdown-help-text">{{ product_form.reduced_reason.help_text }}</small>
+                    </div>
+                    <!-- Percentage to reduce by -->
+                    {{ product_form.reduced_percentage | as_crispy_field }}
+                    <!-- Calculated price after reduction -->
+                    <div class="mb-3 text-muted small d-none" id="reducedPrice" role="alert">
+                        Adjusted Price: <span class="price-currency text-success">£</span><span class="text-success price-display"></span>
+                    </div>
+                    <!-- Stock state -->
+                    <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                        <div class="dropdown position-relative border border-1 border-dark">
+                            <input type="hidden" name="stock_state" value="{{ product_form.stock_state.value }}" id="id_stock_state" data-isvalid="true" disabled>
+                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="stockStateToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                            <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="stockStateToggler">
+                                <div class="dropdown-items-container"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-danger dropdown-error-message d-none" id="stockStateErrors" role="alert"></div>
+                        <small id="hint_id_stock_state" class="form-text text-muted dropdown-help-text">{{ product_form.stock_state.help_text }}</small>
+                    </div>
+                    <!-- Number of units in stock -->
+                    {{ product_form.stock | as_crispy_field }}
+                    <!-- Assuming stock availability, the max that may be applied to a single order -->
+                    <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                        <div class="dropdown position-relative border border-1 border-dark">
+                            <input type="hidden" name="max_per_purchase" data-max-per-purchase="{{ default_max_per_purchase }}" value="{% if product_form.max_per_purchase.value %}{{ product_form.max_per_purchase.value }}{% else %}{{ default_max_per_purchase }}{% endif %}" id="id_max_per_purchase" data-isvalid="true">
+                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="maxPerPurchaseToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {% if product_form.max_per_purchase.value %}{{ product_form.max_per_purchase.value }}{% else %}{{ default_max_per_purchase }}{% endif %}
+                            </a>
+                            <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="maxPerPurchaseToggler">
+                                <div class="dropdown-items-container">
+                                    {% for num in "n"|ljust:default_max_per_purchase %}
+                                        <a href="#!" data-value="{{ forloop.counter }}" class="dropdown-item{% if forloop.counter == product_form.max_per_purchase.value %} active{% endif %}">{{ forloop.counter }}</a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-danger dropdown-error-message d-none" id="maxPerPurchaseErrors" role="alert"></div>
+                        <small id="hint_id_max_per_purchase" class="form-text text-muted dropdown-help-text">{{ product_form.max_per_purchase.help_text }}</small>
+                    </div>
+                    <!-- Hidden -->
+                    {{ product_form.hidden | as_crispy_field }}
+                    <div class="text-end">
+                        <hr>
+                        <a class="btn btn-outline-dark text-dark hover-background-red" href="{% url 'product_management' %}">Cancel</a>
+                        <button class="btn btn-dark text-light hover-background-red" type="submit">{% if view == 'add_product' %}Add Product{% else %}Save Changes{% endif %}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block postload_js %}
+    {{ block.super }}
+    <script src="{% static 'products/js/admin_dropdown.js' %}"></script>
+    <script src="{% static 'products/js/admin_input_masks.js' %}"></script>
+    <script src="{% static 'products/js/admin.js' %}"></script>
+{% endblock postload_js %}

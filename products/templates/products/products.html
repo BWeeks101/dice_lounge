@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock extra_css %}
+
 {% block page_header %}
     <div class="header-spacer"></div>
 {% endblock page_header %}
@@ -26,23 +30,23 @@
                 </a>
             </nav>
             <div class="offcanvas offcanvas-start bg-dark text-light p-0 d-lg-none" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="sortFilterOffCanvas" aria-labelledby="sortFilterOffCanvasLabel">
-                <div class="offcanvas-header h-0 pb-0 bg-dark">
+                <div class="offcanvas-header py-0 bg-dark">
                     <h5 class="d-none offcanvas-title" id="sortFilterOffCanvasLabel">Sort and Filter Side Menu</h5>
                     <button type="button" class="btn-close btn-light-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
+                <div class="offcanvas-body pt-0">
                     {% include 'products/includes/sort_filter_menu.html' %}
                 </div>
             </div>
             <div class="col col-lg-9 col-xl g-0" id="productContainer">
                     <div class="row g-0">
                         <div class="col spacer-col"></div>
-                        <div class="col-10 mw-1500">
+                        <div class="col-10 product-center-col">
                             <div class="row g-0">
                                 <div class="col text-center mt-3">
-                                    {% if search_term %}
+                                    {% if view == 'search' %}
                                         <h2 class="text-uppercase text-dark" data-view="{{ view }}">Search Results</h2>
-                                    {% elif product_line.name %}
+                                    {% elif view == 'products' %}
                                         <h2 class="text-uppercase text-dark" data-view="{{ view }}">{{ product_line.name }}</h2>
                                     {% else %}
                                         <h2 class="text-uppercase text-dark" data-view="{{ view }}">All Games</h2>
@@ -58,11 +62,11 @@
                     {% include 'products/includes/pagination_controls.html' %}
                     <div class="row g-0">
                         <div class="col spacer-col"></div>
-                        <div class="product-container col-10 mw-1500">
+                        <div class="product-container col-10 product-center-col">
                             {% if products|length > 0 %}
                                 {% include 'products/includes/product_cards.html'%}
                             {% else %}
-                                <p class="text-dark fs-5 mt-4 text-center">No results found.</p>
+                                <p class="text-dark fs-5 mt-4 text-center">Nothing to display.  Please adjust your filters, or try another search.</p>
                             {% endif %}
                         </div>
                         <div class="col spacer-col"></div>

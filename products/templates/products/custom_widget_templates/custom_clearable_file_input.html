@@ -1,0 +1,30 @@
+{% if widget.is_initial %}
+    <p>{{ widget.initial_text }}:</p>
+    <a href="{{ widget.value.url }}">
+        <img width="96" height="96" class="shadow-sm img-fluid" src="{{ widget.value.url }}">
+    </a>
+    {% if not widget.required %}
+        <div class="form-check mt-2">
+            <input class="checkboxinput form-check-input" type="checkbox" name="{{ widget.checkbox_name }}" id="{{ widget.checkbox_id }}"{% if widget.attrs.disabled %} disabled{% endif %}>
+            <label class="text-danger" for="{{ widget.checkbox_id }}">{{ widget.clear_checkbox_label }}</label>
+        </div>
+    {% endif %}
+    <br>
+    {{ widget.input_text }}
+{% endif %}
+<button class="btn btn-dark hover-background-red" id="new-image-button">Select Image</button>
+<input class="d-none" id="new-image" type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
+<small><p class="text-muted" id="filename"></p></small>
+<script type="text/javascript">
+    $(() => {
+        $('#new-image-button').on('click', (e) => {
+            e.preventDefault();
+            $('#new-image').click();
+        });
+
+        $('#new-image').change(() => {
+            let file = $('#new-image')[0].files[0];
+            $('#filename').text(`Image will be set to: ${file.name}`);
+        });
+    });
+</script>

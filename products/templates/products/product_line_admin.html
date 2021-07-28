@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock extra_css %}
+
+{% block page_header %}
+    <div class="header-spacer"></div>
+{% endblock page_header %}
+
+{% block content %}
+    <div class="h-100 w-100 bg-light position-fixed top-0 left-0 z-index-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-3">
+                <h2 class="logo-font mt-3 mb-4 text-center">Product Management</h2>
+                <h5 class="text-muted text-center">{% if view == 'add_product_line' %}Add a Product Line{% else %}Edit Product Line{% endif %}</h5>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-3">
+                <form method="POST" id="productLineAdminForm" action="{% if view == 'add_product_line' %}{% url 'add' 'product_line' %}{% else %}{% url 'edit' 'product_line' product_line_id %}{% endif %}" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <!-- Identifier -->
+                    {{ product_line_form.identifier | as_crispy_field }}
+                    <!-- Name -->
+                    {{ product_line_form.name | as_crispy_field }}
+                    <!-- Category -->
+                    <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                        <div class="dropdown position-relative border border-1 border-dark">
+                            <input type="hidden" name="category" value="{{ product_line_form.category.value }}" id="id_category" data-isvalid="true" disabled>
+                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="categoryToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                            <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="categoryToggler">
+                                <div class="dropdown-items-container"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-danger dropdown-error-message d-none" id="categoryErrors" role="alert"></div>
+                        <small id="hint_id_category" class="form-text text-muted dropdown-help-text">{{ product_line_form.category.help_text }}</small>
+                    </div>
+                    <!-- Genre -->
+                    <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                        <div class="dropdown position-relative border border-1 border-dark">
+                            <input type="hidden" name="genre" value="{{ product_line_form.genre.value }}" id="id_genre" data-isvalid="true" disabled>
+                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="genreToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                            <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="genreToggler">
+                                <div class="dropdown-items-container"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-danger dropdown-error-message d-none" id="genreErrors" role="alert"></div>
+                        <small id="hint_id_genre" class="form-text text-muted dropdown-help-text">{{ product_line_form.genre.help_text }}</small>
+                    </div>
+                    <!-- Publisher -->
+                    <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
+                        <div class="dropdown position-relative border border-1 border-dark">
+                            <input type="hidden" name="publisher" value="{{ product_line_form.publisher.value }}" id="id_publisher" data-isvalid="true" disabled>
+                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="publisherToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                            <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="publisherToggler">
+                                <div class="dropdown-items-container"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-danger dropdown-error-message d-none" id="publisherErrors" role="alert"></div>
+                        <small id="hint_id_publisher" class="form-text text-muted dropdown-help-text">{{ product_line_form.publisher.help_text }}</small>
+                    </div>
+                    <!-- Description -->
+                    {{ product_line_form.description | as_crispy_field }}
+                    <!-- Image -->
+                    {{ product_line_form.image }}
+                    <!-- Hidden -->
+                    {{ product_line_form.hidden | as_crispy_field }}
+                    <div class="text-end">
+                        <hr>
+                        <a class="btn btn-outline-dark text-dark hover-background-red" href="{% url 'product_management' %}">Cancel</a>
+                        <button class="btn btn-dark text-light hover-background-red" type="submit">{% if view == 'add_product' %}Add Product Line{% else %}Save Changes{% endif %}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block postload_js %}
+    {{ block.super }}
+    <script src="{% static 'products/js/admin_dropdown.js' %}"></script>
+    <script src="{% static 'products/js/admin_input_masks.js' %}"></script>
+    <script src="{% static 'products/js/admin.js' %}"></script>
+{% endblock postload_js %}

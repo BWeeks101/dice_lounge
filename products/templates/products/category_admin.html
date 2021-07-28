@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock extra_css %}
+
+{% block page_header %}
+    <div class="header-spacer"></div>
+{% endblock page_header %}
+
+{% block content %}
+    <div class="h-100 w-100 bg-light position-fixed top-0 left-0 z-index-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-3">
+                <h2 class="logo-font mt-3 mb-4 text-center">Product Management</h2>
+                <h5 class="text-muted text-center">{% if view == 'add_category' %}Add a Category{% elif view == 'edit_category' %}Edit Category{% endif %}</h5>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-3">
+                <form method="POST" id="categoryAdminForm" action="{% if view == 'add_category' %}{% url 'add' 'category' %}{% else %}{% url 'edit' 'category' category_id %}{% endif %}" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <!-- Identifier -->
+                    {{ category_form.identifier | as_crispy_field }}
+                    <!-- Name -->
+                    {{ category_form.name | as_crispy_field }}
+                    <div class="text-end">
+                        <hr>
+                        <a class="btn btn-outline-dark text-dark hover-background-red" href="{% url 'product_management' %}">Cancel</a>
+                        <button class="btn btn-dark text-light hover-background-red" type="submit">{% if view == 'add_product' %}Add Sub Product Line{% else %}Save Changes{% endif %}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block postload_js %}
+    {{ block.super }}
+    <script src="{% static 'products/js/admin_dropdown.js' %}"></script>
+    <script src="{% static 'products/js/admin_input_masks.js' %}"></script>
+    <script src="{% static 'products/js/admin.js' %}"></script>
+{% endblock postload_js %}
