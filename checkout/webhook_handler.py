@@ -168,12 +168,6 @@ class StripeWH_Handler:
         """
             Handle the payment_intent.payment_failed webhook from Stripe
         """
-        send_mail(
-            'test',
-            'test',
-            settings.DEFAULT_FROM_EMAIL,
-            ['sitim82008@hyprhost.com']
-        )
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
             status=200)

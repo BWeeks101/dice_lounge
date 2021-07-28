@@ -32,4 +32,4 @@ urlpatterns = [
 
 handler403 = 'dice_lounge.views.custom_error_403'
 handler404 = 'dice_lounge.views.custom_error_404'
-handler500 = 'dice_lounge.views.custom_error_500'
+# handler500 = 'dice_lounge.views.custom_error_500'
