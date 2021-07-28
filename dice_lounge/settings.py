@@ -20,7 +20,6 @@ if os.path.exists("env.py"):
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -30,7 +29,7 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['*']
 
 if DEBUG is True:
     ALLOWED_HOSTS.append(os.environ.get("development_host"))
@@ -196,9 +195,6 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-FREE_DELIVERY_THRESHOLD = 100
-STANDARD_DELIVERY_PERCENTAGE = 10
-
 # Stripe
 STRIPE_CURRENCY = 'gbp'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
@@ -209,6 +205,13 @@ DEFAULT_FROM_EMAIL = 'thedicelounge@example.com'
 # Django Countries
 COUNTRIES_ONLY = ['GB']
 DEFAULT_COUNTRY = 'GB'
+
+# Dice Lounge
+FREE_DELIVERY_THRESHOLD = 100
+STANDARD_DELIVERY_PERCENTAGE = 10
+DEFAULT_MAX_PER_PURCHASE = 10
+MAX_PERCENTAGE_REDUCTION = 75
+DEFAULT_PERCENTAGE_REDUCTION = 5
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
