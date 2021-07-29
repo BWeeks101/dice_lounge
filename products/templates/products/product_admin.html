@@ -29,8 +29,8 @@
                     <!-- Not stored in the model.  Used to populate the Sub Product Line dropdown. -->
                     <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
                         <div class="dropdown position-relative border border-1 border-dark">
-                            <input type="hidden" name="product_line" value="{{ product_line }}" id="id_product_line" data-isvalid="true" disabled>
-                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="productLineToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                            <input type="hidden" name="product_line" value="{{ product_line }}" id="id_product_line" data-isvalid="true">
+                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="productLineToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
                             <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="productLineToggler">
                                 <div class="dropdown-items-container"></div>
                             </div>
@@ -41,13 +41,13 @@
                     <!-- Sub Product Line -->
                     <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
                         <div class="dropdown position-relative border border-1 border-dark">
-                            <input type="hidden" name="sub_product_line" value="{{ product_form.sub_product_line.value }}" id="id_sub_product_line" data-isvalid="true" disabled>
-                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="subProductLineToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                            <input type="hidden" name="sub_product_line" value="{{ product_form.sub_product_line.value }}" id="id_sub_product_line" data-isvalid="true">
+                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="subProductLineToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
                             <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="subProductLineToggler">
                                 <div class="dropdown-items-container"></div>
                             </div>
                         </div>
-                        <div class="mb-3 text-danger dropdown-error-message d-none" id="productLineErrors" role="alert"></div>
+                        <div class="mb-3 text-danger dropdown-error-message d-none" id="subProductLineErrors" role="alert"></div>
                         <small id="hint_id_sub_product_line" class="form-text text-muted dropdown-help-text">{{ product_form.sub_product_line.help_text }}</small>
                     </div>
                     <!-- Identifier -->
@@ -65,8 +65,8 @@
                     <!-- Reason for reduction -->
                     <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
                         <div class="dropdown position-relative border border-1 border-dark">
-                            <input type="hidden" name="reduced_reason" value="{{ product_form.reduced_reason.value }}" id="id_reduced_reason" data-isvalid="true" disabled>
-                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="reducedReasonToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                            <input type="hidden" name="reduced_reason" value="{{ product_form.reduced_reason.value }}" id="id_reduced_reason" data-isvalid="true">
+                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="reducedReasonToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
                             <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="reducedReasonToggler">
                                 <div class="dropdown-items-container"></div>
                             </div>
@@ -83,8 +83,8 @@
                     <!-- Stock state -->
                     <div class="dropdown-wrapper admin-dropdown d-block w-100 mb-3">
                         <div class="dropdown position-relative border border-1 border-dark">
-                            <input type="hidden" name="stock_state" value="{{ product_form.stock_state.value }}" id="id_stock_state" data-isvalid="true" disabled>
-                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="stockStateToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled></a>
+                            <input type="hidden" name="stock_state" value="{{ product_form.stock_state.value }}" id="id_stock_state" data-isvalid="true">
+                            <a class="text-dark dropdown-toggle text-decoration-none" href="#" id="stockStateToggler" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
                             <div class="dropdown-menu bg-light text-dark shadow-lg border border-1 border-dark" aria-labelledby="stockStateToggler">
                                 <div class="dropdown-items-container"></div>
                             </div>
