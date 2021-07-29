@@ -89,7 +89,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="row position-sticky btt-row pe-none">
+                    <div class="row position-sticky btt-row d-none d-md-flex pe-none">
                         <div class="col-12 text-end">
                             {% include "includes/btt_button.html" %}
                         </div>
@@ -115,6 +115,10 @@
                 {% endif %}
             </div>
         </div>
+    </div>
+
+    <div class="d-inline d-md-none pe-none">
+        {% include "includes/btt_button.html" %}
     </div>
 {% endblock content %}
 
