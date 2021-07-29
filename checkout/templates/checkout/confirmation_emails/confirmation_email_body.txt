@@ -6,7 +6,7 @@ Order Number: {{ order.order_number }}
 Order Date: {{ order.date }}
 
 {% for item in order.lineitems.all %}
-{{ item.name }} x{{ item.quantity }} (£{{ item.lineitem_total }})
+{{ item.product }} x{{ item.quantity }} (£{{ item.lineitem_total }})
 {% endfor %}
 
 Order Total: £{{ order.order_total }}
