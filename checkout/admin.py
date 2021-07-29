@@ -7,12 +7,16 @@ from .models import Order, OrderLineItem
 class OrderLineItemAdminInLine(admin.TabularInline):
     model = OrderLineItem
     readonly_fields = (
+        'lineitem_total',
+    )
+
+    fields = (
+        'product'
         'product',
         'sub_product_line',
         'product_line',
         'item_price',
-        'quantity',
-        'lineitem_total'
+        'quantity'
     )
 
 
