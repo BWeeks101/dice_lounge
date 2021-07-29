@@ -106,29 +106,27 @@ class OrderLineItem(models.Model):
         related_name='lineitems'
     )
     product_id = models.CharField(
-        max_length=254, blank=False, null=False, editable=False)
+        max_length=254, blank=False, null=False)
     product = models.CharField(
-        max_length=254, blank=False, null=False, editable=False)
+        max_length=254, blank=False, null=False)
     sub_product_line = models.CharField(
-        max_length=254, blank=False, null=False, editable=False)
+        max_length=254, blank=False, null=False)
     product_line = models.CharField(
-        max_length=254, blank=False, null=False, editable=False)
+        max_length=254, blank=False, null=False)
     quantity = models.IntegerField(
-        null=False, blank=False, default=0, editable=False)
+        null=False, blank=False, default=0)
     item_price = models.DecimalField(
         max_digits=6,
         decimal_places=2,
         null=False,
-        blank=False,
-        editable=False
+        blank=False
     )
     lineitem_total = models.DecimalField(
         max_digits=6,
         decimal_places=2,
         null=False,
         blank=False,
-        default=0.00,
-        editable=False
+        default=0.00
     )
 
     def save(self, *args, **kwargs):
