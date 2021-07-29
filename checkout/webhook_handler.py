@@ -112,7 +112,7 @@ class StripeWH_Handler:
                     delivery_postcode__iexact=(
                         delivery_details.address.postal_code),
                     delivery_country__iexact=delivery_details.address.country,
-                    grand_total__iexact=grand_total,
+                    grand_total=grand_total,
                     original_basket=basket,
                     stripe_pid=pid,
                 )
