@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* Define variables */
 :root {
     --active-color: #a00b0b;
@@ -123,9 +130,15 @@ body * {
 
 /* from Bulma via Boutique Ado sample project */
 .icon {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
 }
@@ -142,7 +155,8 @@ ul.pagination > li.page-item.active > .page-link:hover,
 
 .hover-background-red:focus,
 .hover-background-red:active {
-    box-shadow: 0 0 0 .25rem var(--shadow-color) !important;
+    -webkit-box-shadow: 0 0 0 .25rem var(--shadow-color) !important;
+            box-shadow: 0 0 0 .25rem var(--shadow-color) !important;
 }
 
 /* Helper classes, and dropdown-toggle hover */
@@ -168,7 +182,8 @@ ul.pagination > li.page-item.active > .page-link:hover,
 
 /* no box-shadow on navbar-toggler:focus */
 .navbar-toggler:focus {
-    box-shadow: initial !important;
+    -webkit-box-shadow: initial !important;
+            box-shadow: initial !important;
 }
 
 /* red border on navbar-toggler:hover */
@@ -239,11 +254,13 @@ ul.pagination > li.page-item.active > .page-link:hover,
 /* .shop-now-button focus shadow */
 .shop-now-button:focus {
 	outline: 0;
-	box-shadow: 0 0 0 .25rem var(--shadow-color);
+	-webkit-box-shadow: 0 0 0 .25rem var(--shadow-color);
+	        box-shadow: 0 0 0 .25rem var(--shadow-color);
 }
 
 :not(input):not(textarea).form-control:focus {
-    box-shadow: 0 0 0 .25rem var(--shadow-color);
+    -webkit-box-shadow: 0 0 0 .25rem var(--shadow-color);
+            box-shadow: 0 0 0 .25rem var(--shadow-color);
 }
 
 .form-control:focus {
@@ -252,27 +269,36 @@ ul.pagination > li.page-item.active > .page-link:hover,
 
 .qty-input-container .form-control:focus,
 .search-input-container .form-control:focus {
-    box-shadow: initial;
+    -webkit-box-shadow: initial;
+            box-shadow: initial;
 }
 
 .search-input-container button:focus,
 .search-input-container button:active {
-    box-shadow: initial !important;
+    -webkit-box-shadow: initial !important;
+            box-shadow: initial !important;
 }
 
 .input-container-box-shadow {
-    box-shadow: 0 0 0 .25rem var(--bootstrap-input-box-shadow);
+    -webkit-box-shadow: 0 0 0 .25rem var(--bootstrap-input-box-shadow);
+            box-shadow: 0 0 0 .25rem var(--bootstrap-input-box-shadow);
      /* Bootstrap 5 .form-control transition */
+     -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+     transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+     -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
 
 .mobile-sort-filter-button a:focus,
 .mobile-sort-filter-button a:active {
-    box-shadow: initial !important;
+    -webkit-box-shadow: initial !important;
+            box-shadow: initial !important;
 }
 
 .btn-close:focus {
-    box-shadow: initial !important;
+    -webkit-box-shadow: initial !important;
+            box-shadow: initial !important;
 }
 
 .btn {
@@ -306,14 +332,18 @@ ul.pagination > li.page-item.active > .page-link:hover,
     position: absolute;
     left: 0.21875rem;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .btn.position-relative.icon-end > .icon {
     position: absolute;
     right: 0.21875rem;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .btn.position-relative:not(.btn-file) > span.text-uppercase {
@@ -411,7 +441,9 @@ ul.pagination > li.page-item.active > .page-link:hover,
 }
 
 .product-detail-col .card-body {
-    flex: initial;
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
 }
 
 .offset-end-1 {
@@ -420,7 +452,9 @@ ul.pagination > li.page-item.active > .page-link:hover,
 }
 
 .sub-arrow {
-	transform: rotate(90deg) translateY(-4.75px);
+	-webkit-transform: rotate(90deg) translateY(-4.75px);
+	    -ms-transform: rotate(90deg) translateY(-4.75px);
+	        transform: rotate(90deg) translateY(-4.75px);
 	margin-right: .25rem;
 }
 
@@ -459,6 +493,22 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 
 .allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
+}
+
+.allauth-form-inner-content input::-webkit-input-placeholder {
+    color: #6c757d; /* text-muted */
+}
+
+.allauth-form-inner-content input::-moz-placeholder {
+    color: #6c757d; /* text-muted */
+}
+
+.allauth-form-inner-content input:-ms-input-placeholder {
+    color: #6c757d; /* text-muted */
+}
+
+.allauth-form-inner-content input::-ms-input-placeholder {
+    color: #6c757d; /* text-muted */
 }
 
 .allauth-form-inner-content input::placeholder {
@@ -517,7 +567,9 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 
 .search-arrow {
     left: 50%;
-    transform: translateX((-50%));
+    -webkit-transform: translateX((-50%));
+        -ms-transform: translateX((-50%));
+            transform: translateX((-50%));
 }
 
 .basket-notification-wrapper {
@@ -534,7 +586,8 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 
 .dropdown-wrapper > .dropdown > .dropdown-menu {
     width: 100%;
-    box-sizing: initial;
+    -webkit-box-sizing: initial;
+            box-sizing: initial;
 }
 
 .dropdown-wrapper,
@@ -575,7 +628,8 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 
 .dropdown-wrapper > .dropdown > .dropdown-menu.shadow-lg.above {
     /* vertically inverted bootstrap 5 shadow-lg */
-    box-shadow: 0 -1rem 3rem rgba(0,0,0,.175) !important;
+    -webkit-box-shadow: 0 -1rem 3rem rgba(0,0,0,.175) !important;
+            box-shadow: 0 -1rem 3rem rgba(0,0,0,.175) !important;
 }
 
 .dropdown-wrapper > .dropdown > .dropdown-menu.below {
@@ -587,7 +641,8 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 .dropdown-wrapper > .dropdown > .dropdown-toggle,
 .dropdown-wrapper > .dropdown > .dropdown-menu > a {
     overflow: hidden;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
     white-space: nowrap;
 }
 
@@ -610,7 +665,8 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 .form-check-input:focus {
 	border-color: var(--highlight-color);
 	outline: 0;
-    box-shadow: 0 0 0 .25rem var(--shadow-color);
+    -webkit-box-shadow: 0 0 0 .25rem var(--shadow-color);
+            box-shadow: 0 0 0 .25rem var(--shadow-color);
 }
 
 .form-check-input[type="radio"] {
@@ -639,7 +695,8 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 	color: var(--highlight-color);
 	background-color: var(--background-color);
 	outline: 0;
-	box-shadow: 0 0 0 .25rem var(--shadow-color);
+	-webkit-box-shadow: 0 0 0 .25rem var(--shadow-color);
+	        box-shadow: 0 0 0 .25rem var(--shadow-color);
 }
 
 .page-label {
@@ -658,7 +715,11 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 	-moz-appearance: none;
 	appearance: none;
 	border-radius: .25rem;
+	-webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+	transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+	-o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 	text-align: center;
 	width: 45px;
 }
@@ -769,7 +830,8 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 }
 
 .mobile-sort-filter-button > .btn-dark[data-bs-toggle]:focus {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 /* modified .btt-button class from boutique ado sample project */
@@ -779,6 +841,8 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
     right: 1.75rem;
     visibility: hidden;
     opacity: 0;
+    -webkit-transition: opacity .5s, visibility .5s;
+    -o-transition: opacity .5s, visibility .5s;
     transition: opacity .5s, visibility .5s;
 }
 
@@ -798,7 +862,9 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 }
 
 .btt-row.checkout-lg-btt .btt-button {
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
 }
 
 #bttTarget {
@@ -846,7 +912,8 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
     }
 
     .shadow-sm-lg {
-        box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+        -webkit-box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+                box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
     }
 
     .basket-image {
@@ -866,14 +933,18 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
         position: absolute;
         left: 0.21875rem;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
     }
 
     .btn.position-sm-relative.icon-end > .icon {
         position: absolute;
         right: 0.21875rem;
         top: 50%;
-        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
     }
 
     .btn.position-sm-relative > span.text-uppercase {
@@ -1014,7 +1085,9 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 /* 1080p */
 @media (min-width: 1920px) {
     .col-xxxl-2 {
-        flex: 0 0 auto;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
         width: 16.6666666667%;
     }
 
@@ -1074,7 +1147,9 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 @media (max-width: 767px) {
     .dropdown-menu-center {
         left: 50% !important;
-        transform: translate(-50%, 25px) !important;
+        -webkit-transform: translate(-50%, 25px) !important;
+            -ms-transform: translate(-50%, 25px) !important;
+                transform: translate(-50%, 25px) !important;
     }
 
     .stock-warning-break {
@@ -1123,28 +1198,47 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 
     #topNav>nav>ul.d-lg-none > :first-child,
     #topNav>nav>ul.d-lg-none > :last-child {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
         display: inline-flex;
-        flex-direction: column;
-        flex: 1 0 0%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 0%;
+                flex: 1 0 0%;
     }
 
     #topNav>nav>ul.d-lg-none > :last-child {
-        justify-content: end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: end;
     }
 
     #topNav>nav>ul.d-lg-none > :nth-child(2) {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
         display: inline-flex;
-        flex-direction: column;
-        flex: 0 0 auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
         width: 50%;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     #topNav>nav>ul.d-lg-none > :nth-child(2)>.dropdown-menu {
         right: initial;
         left: 50%;
         -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     }
 
     #cta-container {

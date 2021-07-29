@@ -1,6 +1,29 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* ................................................Modified Boutique-Ado Code */
 #profile-update-form .form-control {
     color: var(--text-color);
+}
+
+#profile-update-form input::-webkit-input-placeholder {
+    color: var(--muted-text-color);
+}
+
+#profile-update-form input::-moz-placeholder {
+    color: var(--muted-text-color);
+}
+
+#profile-update-form input:-ms-input-placeholder {
+    color: var(--muted-text-color);
+}
+
+#profile-update-form input::-ms-input-placeholder {
+    color: var(--muted-text-color);
 }
 
 #profile-update-form input::placeholder {

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .admin-dropdown > .dropdown > .dropdown-toggle {
     padding: .375rem .75rem !important;
     height: 100%;
@@ -39,16 +46,13 @@
 
 .form-control[disabled=disabled] {
     border-color: var(--muted-text-color) !important;
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
 }
 
 .stripe-style-input.textarea {
     height: initial !important;
 }
-
-/* .checkboxinput.form-check-input {
-    border-color: var(--text-color) !important;
-} */
 
 .input-mask {
     height: 0;
@@ -96,7 +100,8 @@
 }
 
 .admin-list .list-group-item:focus {
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
 }
 
 .admin-list .list-group-item.active,

@@ -1,24 +1,53 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* ................................................Modified Boutique-Ado Code */
 .StripeElement,
 .stripe-style-input {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     height: 40px;
     padding: 10px 12px;
     border: 1px solid transparent;
     border-radius: 0px;
     background-color: var(--background-color);
     /* Bootstrap 5 .form-control transition */
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
 
 .StripeElement--focus:not([disabled=disabled]),
 .stripe-style-input:focus:not([disabled=disabled]),
 .stripe-style-input:active:not([disabled=disabled]) {
-    box-shadow: 0 0 0 .25rem var(--bootstrap-input-box-shadow);
+    -webkit-box-shadow: 0 0 0 .25rem var(--bootstrap-input-box-shadow);
+            box-shadow: 0 0 0 .25rem var(--bootstrap-input-box-shadow);
 }
 
 .StripeElement--webkit-autofill {
     background-color: var(--background-color) !important;
+}
+
+.stripe-style-input::-webkit-input-placeholder {
+    color: var(--muted-text-color);
+}
+
+.stripe-style-input::-moz-placeholder {
+    color: var(--muted-text-color);
+}
+
+.stripe-style-input:-ms-input-placeholder {
+    color: var(--muted-text-color);
+}
+
+.stripe-style-input::-ms-input-placeholder {
+    color: var(--muted-text-color);
 }
 
 .stripe-style-input::placeholder {
@@ -58,9 +87,15 @@ select option[value=""] {
 }
 
 .loading-spinner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0;
     height: 100%;
 }
