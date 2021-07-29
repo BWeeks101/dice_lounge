@@ -31,8 +31,13 @@
                     {{ reduced_reason_form.reason | as_crispy_field }}
                     <!-- Default Reduction Percentage -->
                     {{ reduced_reason_form.default_reduction_percentage | as_crispy_field }}
+                    <hr>
+                    <div class="row position-sticky btt-row pe-none mb-1">
+                        <div class="col-12 text-end">
+                            {% include "includes/btt_button.html" %}
+                        </div>
+                    </div>
                     <div class="text-end">
-                        <hr>
                         <a class="btn btn-outline-dark text-dark hover-background-red" href="{% url 'product_management' %}">Cancel</a>
                         <button class="btn btn-dark text-light hover-background-red" type="submit">{% if view == 'add_product' %}Add Sub Product Line{% else %}Save Changes{% endif %}</button>
                     </div>
