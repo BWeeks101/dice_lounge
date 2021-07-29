@@ -31,7 +31,7 @@
             <!-- jQuery -->
             <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
             <!-- Bootstrap JS with Popper -->
-            <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+            <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
             <!-- Stripe -->
             <script src="https://js.stripe.com/v3/"></script>
         {% endblock core_js %}
@@ -43,15 +43,18 @@
     </head>
     <body>
         <div id="scrollTopAnchor"></div>
-        <div id="shade-background"></div>
-        <header class="container-fluid fixed-top">
+        <div id="shade-background" class="position-fixed"></div>
+        <header class="container-fluid fixed-top bg-light">
             <div id="topNav" class="row bg-light pt-lg-2 d-flex">
                 <nav class="navbar navbar-light col-12 my-auto py-1 py-lg-0 d-flex d-lg-none mobile-nav">
-                    <button class="navbar-toggler" id="navbarToggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideNav" aria-controls="side-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" id="navbarToggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideNav" aria-controls="sideNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <ul class="d-flex d-lg-none mb-0">
-                        {% include 'includes/user_nav.html' %}
+                        {% include 'includes/user_nav_mobile_search.html' %}
+                        {% with user_option_id="mobileUserOption"%}
+                            {% include 'includes/user_nav.html' %}
+                        {% endwith %}
                     </ul>
                     {% if message_queues.profile_messages %}
                         {% include 'toasts/profile_toast_container.html' %}
@@ -69,7 +72,9 @@
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
-                            {% include 'includes/product_nav.html' %}
+                            {% with mode="sideNav" toggle="collapse" target="collapsible" %}
+                                {% include 'includes/product_nav.html' %}
+                            {% endwith %}
                         </div>
                     </div>
                     <div class="border-0 w-100 py-3 my-0 d-lg-none collapse{% if message_queues.search_messages %} show{% endif %}" id="mobile-search-input" aria-labelledby="mobile-search">
@@ -125,8 +130,32 @@
         {% block page_header %}
         {% endblock page_header %}
 
-        {% block content %}
-        {% endblock content %}
+        <div class="main-body-content">
+            {% block content %}
+            {% endblock content %}
+        </div>
+
+        <footer class="bg-dark text-light footer">
+            <div class="row g-0">
+                <div class="col-6 offset-3 fs-0 d-flex flex-row justify-content-center">
+                    <a class="text-decoration-none text-light fs-4 me-3" href="https://www.facebook.com" target="_blank">
+                        <span class="icon hover-background-red">
+                            <i class="fab fa-facebook fa-fw"></i>
+                        </span>
+                    </a>
+                    <a class="text-decoration-none text-light fs-4 me-3" href="https://www.instagram.com" target="_blank">
+                        <span class="icon hover-background-red">
+                            <i class="fab fa-instagram fa-fw"></i>
+                        </span>
+                    </a>
+                    <a class="text-decoration-none text-light fs-4" href="mailto://support@the-dice-lounge.com">
+                        <span class="icon hover-background-red">
+                            <i class="fas fa-envelope fa-fw"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </footer>
 
         {% block postload_js %}
             <script src="{% static 'js/product_nav.js' %}"></script>

@@ -65,7 +65,26 @@ body {
     height: calc(100vh - 164px);
     color: var(--text-color);
     font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+    height: 100%;
     min-width: 280px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.main-body-content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+}
+
+.footer {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 
 body * {
@@ -141,6 +160,11 @@ body * {
             justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+footer .icon {
+    height: 2rem;
+    width: 2rem;
 }
 
 /* Helper class, and dropdown-item hover */
@@ -1110,10 +1134,6 @@ li.nav-item.dropdown.position-relative > a.nav-link.me-4 ~ .dropdown-menu {
 /* pad the top a bit when navbar is collapsed on mobile */
 /* altered from boutique ado sample project */
 @media (max-width: 991px) {
-    body {
-        height: calc(100vh - 86px);
-    }
-
     .nav-link {
         padding: 0.15rem;
     }
