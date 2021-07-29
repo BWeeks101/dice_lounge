@@ -11,7 +11,6 @@ class OrderLineItemAdminInLine(admin.TabularInline):
     )
 
     fields = (
-        'product'
         'product',
         'sub_product_line',
         'product_line',
