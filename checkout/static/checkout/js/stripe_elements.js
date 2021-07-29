@@ -142,6 +142,19 @@ function initPaymentForm(stripeObjs) {
         // Get the payment form element
         let form = document.getElementById('payment-form');
 
+        // Get billing and delivery names from the form
+        billing_first_name = $.trim(form.first_name.value);
+        billing_last_name = $.trim(form.last_name.value);
+        delivery_first_name = $.trim(form.first_name.value);
+        delivery_last_name = $.trim(form.last_name.value);
+
+        if ($('#id-use-billing-address').prop('checked') === false) {
+            delivery_first_name = (
+                $.trim(form.delivery_first_name.value));
+            delivery_last_name = (
+                $.trim(form.delivery_last_name.value));
+        }
+
         // Create the data object to pass values on submission
         let data = {
             // csrf token
@@ -150,7 +163,15 @@ function initPaymentForm(stripeObjs) {
             'client_secret': $('#id_client_secret').text().
                 slice(1, -1),
             // checked state of save-info checkbox expressed as boolean
-            'save_info': Boolean($('#id-save-info').attr('checked'))
+            'save_info': Boolean($('#id-save-info').attr('checked')),
+            // billing/delivery name data - we will use this to aid the webhook
+            // in finding/creating the order object. (Stripe otherwise only
+            // holds a combined name field, which we would have to guess at how
+            // to split.  This is more accurate.)
+            billing_first_name,
+            billing_last_name,
+            delivery_first_name,
+            delivery_last_name
         };
 
         // Post the data object to update the stripe payment intent with cached
@@ -180,7 +201,6 @@ function initPaymentForm(stripeObjs) {
                 };
 
         /* ....................................End Modified Boutique-Ado Code */
-
                 // By default, delivery name and address match billing details
                 details.shipping = {
                     name: details.payment_method.billing_details.name,
