@@ -127,6 +127,7 @@ class OrderLineItem(models.Model):
         decimal_places=2,
         null=False,
         blank=False,
+        default=0.00,
         editable=False
     )
 
