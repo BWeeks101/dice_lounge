@@ -1,5 +1,6 @@
 /*eslint func-style: ["error", "declaration", { "allowArrowFunctions": true }]*/
-/*global isDomElem, updateReducedPrice, hideMask, submitListRequest */
+/*global isDomElem, updateReducedPrice, hideMask, submitListRequest,
+bootstrap */
 
 /* Ensure the clicked element was a dropdown-item */
 function isDropdownClickValid(elem) {
@@ -110,10 +111,13 @@ function initAdminDropdowns() {
 function disableDropdown(hiddenInput) {
     // Disable the hidden input
     $(hiddenInput).attr('disabled', true);
+    // Get the dropdown toggler
+    let toggler = $(hiddenInput).closest('.dropdown').
+        find('.dropdown-toggle')[0];
     // Disable the dropdown toggler
-    $(hiddenInput).closest('.dropdown').
-        find('.dropdown-toggle').
-            attr('disabled', true);
+    $(toggler).attr('disabled', true);
+    // If the dropdown menu is shown, hide it
+    bootstrap.Dropdown.getOrCreateInstance(toggler).hide();
 }
 
 /* Enable a dropdown */
