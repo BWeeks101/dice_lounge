@@ -11,6 +11,7 @@ class OrderLineItemAdminInLine(admin.TabularInline):
     )
 
     fields = (
+        'product_id',
         'product',
         'sub_product_line',
         'product_line',
@@ -59,11 +60,44 @@ class OrderAdmin(admin.ModelAdmin):
     list_display = (
         'order_number',
         'date',
-        'first_name',
-        'last_name',
+        'user_profile',
+        'email',
+        'phone_number',
+        'delivery_first_name',
+        'delivery_last_name',
+        'delivery_postcode',
         'order_total',
         'delivery_cost',
         'grand_total'
+    )
+
+    search_fields = (
+        'order_number',
+        'date',
+        'user_profile__user__username',
+        'user_profile__user__first_name',
+        'user_profile__user__last_name',
+        'user_profile__user__email',
+        'first_name',
+        'last_name',
+        'email',
+        'phone_number',
+        'street_address1',
+        'street_address2',
+        'town_or_city',
+        'county',
+        'postcode',
+        'country',
+        'delivery_first_name',
+        'delivery_last_name',
+        'delivery_address1',
+        'delivery_address2',
+        'delivery_town_or_city',
+        'delivery_county',
+        'delivery_postcode',
+        'delivery_country',
+        'order_total',
+        'grand_total',
     )
 
     ordering = ('-date',)
