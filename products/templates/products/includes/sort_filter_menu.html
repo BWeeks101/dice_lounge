@@ -1,16 +1,16 @@
 <div class="nav-item dropdown">
-    <a class="nav-link px-0 text-light dropdown-toggle-inverted" id="filterCollapseToggler" href="" data-bs-toggle="collapse" data-bs-target="#filterCollapse" aria-expanded="true">
+    <a class="nav-link px-0 text-light dropdown-toggle-inverted" id="filterCollapseToggler{% if mode %}_{{ mode }}{% endif %}" href="" data-bs-toggle="collapse" data-bs-target="#filterCollapse{% if mode %}_{{ mode }}{% endif %}" aria-expanded="true">
         <span class="icon"><i class="fas fa-filter"></i></span>
         <span class="fs-5 text-uppercase">Filter Products</span>
     </a>
 </div>
-<div class="collapse show" id="filterCollapse">
-    <div class="row g-0 bg-dark position-sticky filter-button-row" id="filterButtonRow">
+<div class="collapse show" id="filterCollapse{% if mode %}_{{ mode }}{% endif %}">
+    <div class="row g-0 bg-dark position-sticky filter-button-row" id="filterButtonRow{% if mode %}_{{ mode }}{% endif %}">
         <hr>
-        <button class="btn btn-sm btn-light shadow-sm text-dark border border-light hover-background-red mb-3 w-100 remove-filters disabled" id="removeFilters">
+        <button class="btn btn-sm btn-light shadow-sm text-dark border border-light hover-background-red mb-3 w-100 remove-filters disabled" id="removeFilters{% if mode %}_{{ mode }}{% endif %}">
             Remove Filters
         </button>
-        <button class="btn btn-sm btn-light shadow-sm text-dark border border-light hover-background-red w-100 apply-filters disabled" id="applyFilters" data-category-filters='' data-genre-filters='' data-publisher-filters='' data-stock-filters='' data-product-line-filters='' data-reduced-reason-filters=''>
+        <button class="btn btn-sm btn-light shadow-sm text-dark border border-light hover-background-red w-100 apply-filters disabled" id="applyFilters{% if mode %}_{{ mode }}{% endif %}" data-category-filters='' data-genre-filters='' data-publisher-filters='' data-stock-filters='' data-product-line-filters='' data-reduced-reason-filters=''>
             Apply Filters
         </button>
         <hr>
@@ -28,8 +28,8 @@
         <h6>Stock</h6>
         {% for state in stock_states %}
             <div class="form-check">
-                <input class="form-check-input stock-filter-checkbox" type="checkbox" value="" data-filter-value={{ state.identifier }} id="stock_filter_{{ state.identifier }}" {% for stock_state in applied_filters.stock %}{% if stock_state.identifier == state.identifier %}checked{% endif %}{% endfor %} disabled>
-                <label class="form-check-label" for="stock_filter_{{ state.identifier }}">{{ state.state }}</label>
+                <input class="form-check-input stock-filter-checkbox" type="checkbox" value="" data-filter-value={{ state.identifier }} id="stock_filter_{{ state.identifier }}{% if mode %}_{{ mode }}{% endif %}" {% for stock_state in applied_filters.stock %}{% if stock_state.identifier == state.identifier %}checked{% endif %}{% endfor %} disabled>
+                <label class="form-check-label" for="stock_filter_{{ state.identifier }}{% if mode %}_{{ mode }}{% endif %}">{{ state.state }}</label>
             </div>
         {% endfor %}
         <hr>
@@ -38,8 +38,8 @@
         <h6>On Offer</h6>
         {% for reason in reduced_reasons %}
             <div class="form-check">
-                <input class="form-check-input reduced-reason-filter-checkbox" type="checkbox" value="" data-filter-value={{ reason.identifier }} id="reduced_reason_filter_{{ reason.identifier }}" {% for reduced_reason in applied_filters.reduced_reasons %}{% if reduced_reason.identifier == reason.identifier %}checked{% endif %}{% endfor %} disabled>
-                <label class="form-check-label" for="reduced_reason_filter_{{ reason.identifier }}">{{ reason.reason }}</label>
+                <input class="form-check-input reduced-reason-filter-checkbox" type="checkbox" value="" data-filter-value={{ reason.identifier }} id="reduced_reason_filter_{{ reason.identifier }}{% if mode %}_{{ mode }}{% endif %}" {% for reduced_reason in applied_filters.reduced_reasons %}{% if reduced_reason.identifier == reason.identifier %}checked{% endif %}{% endfor %} disabled>
+                <label class="form-check-label" for="reduced_reason_filter_{{ reason.identifier }}{% if mode %}_{{ mode }}{% endif %}">{{ reason.reason }}</label>
             </div>
         {% endfor %}
         <hr>
@@ -50,8 +50,8 @@
                 <h6>Categories</h6>
                 {% for category in filter.categories %}
                     <div class="form-check">
-                        <input class="form-check-input category-filter-checkbox" type="checkbox" value="" data-filter-value={{ category.identifier }} id="category_filter_{{ category.identifier }}" {% for applied_filters_category in applied_filters.categories %}{% if applied_filters_category.identifier == category.identifier %}checked{% endif %}{% endfor %} disabled>
-                        <label class="form-check-label" for="category_filter_{{ category.identifier }}">{{ category.name }}</label>
+                        <input class="form-check-input category-filter-checkbox" type="checkbox" value="" data-filter-value={{ category.identifier }} id="category_filter_{{ category.identifier }}{% if mode %}_{{ mode }}{% endif %}" {% for applied_filters_category in applied_filters.categories %}{% if applied_filters_category.identifier == category.identifier %}checked{% endif %}{% endfor %} disabled>
+                        <label class="form-check-label" for="category_filter_{{ category.identifier }}{% if mode %}_{{ mode }}{% endif %}">{{ category.name }}</label>
                     </div>
                 {% endfor %}
                 <hr>
@@ -60,8 +60,8 @@
                 <h6>Genres</h6>
                 {% for genre in filter.genres %}
                     <div class="form-check">
-                        <input class="form-check-input genre-filter-checkbox" type="checkbox" value="" data-filter-value={{ genre.identifier }} id="genre_filter_{{ genre.identifier }}" {% for applied_filters_genre in applied_filters.genres %}{% if applied_filters_genre.identifier == genre.identifier %}checked{% endif %}{% endfor %} disabled>
-                        <label class="form-check-label" for="genre_filter_{{ genre.identifier }}">{{ genre.name }}</label>
+                        <input class="form-check-input genre-filter-checkbox" type="checkbox" value="" data-filter-value={{ genre.identifier }} id="genre_filter_{{ genre.identifier }}{% if mode %}_{{ mode }}{% endif %}" {% for applied_filters_genre in applied_filters.genres %}{% if applied_filters_genre.identifier == genre.identifier %}checked{% endif %}{% endfor %} disabled>
+                        <label class="form-check-label" for="genre_filter_{{ genre.identifier }}{% if mode %}_{{ mode }}{% endif %}">{{ genre.name }}</label>
                     </div>
                 {% endfor %}
                 <hr>
@@ -70,15 +70,15 @@
                 <h6>Publishers</h6>
                 {% for publisher in filter.publishers %}
                     <div class="form-check">
-                        <input class="form-check-input publisher-filter-checkbox" type="checkbox" value="" data-filter-value={{ publisher.identifier }} id="publisher_filter_{{ publisher.identifier }}" {% for applied_filters_publisher in applied_filters.publishers %}{% if applied_filters_publisher.identifier == publisher.identifier %}checked{% endif %}{% endfor %} disabled>
-                        <label class="form-check-label" for="publisher_filter_{{ publisher.identifier }}">{{ publisher.name }}</label>
+                        <input class="form-check-input publisher-filter-checkbox" type="checkbox" value="" data-filter-value={{ publisher.identifier }} id="publisher_filter_{{ publisher.identifier }}{% if mode %}_{{ mode }}{% endif %}" {% for applied_filters_publisher in applied_filters.publishers %}{% if applied_filters_publisher.identifier == publisher.identifier %}checked{% endif %}{% endfor %} disabled>
+                        <label class="form-check-label" for="publisher_filter_{{ publisher.identifier }}{% if mode %}_{{ mode }}{% endif %}">{{ publisher.name }}</label>
                     </div>
                 {% endfor %}
             {% endif %}
             {% if view == 'search' %}
                 <div class="form-check">
-                    <input class="form-check-input parent-check product-line-filter-checkbox" type="checkbox" value="" data-filter-value={{ filter.product_line.identifier }} id="product_line_filter_{{ filter.product_line.identifier }}" {% for applied_filters_product_line in applied_filters.product_lines %}{% if applied_filters_product_line.identifier == filter.product_line.identifier %}checked{% endif %}{% endfor %} disabled>
-                    <label class="form-check-label" for="product_line_filter_{{ filter.product_line.identifier }}">{{ filter.product_line.name }}</label>
+                    <input class="form-check-input parent-check product-line-filter-checkbox" type="checkbox" value="" data-filter-value={{ filter.product_line.identifier }} id="product_line_filter_{{ filter.product_line.identifier }}{% if mode %}_{{ mode }}{% endif %}" {% for applied_filters_product_line in applied_filters.product_lines %}{% if applied_filters_product_line.identifier == filter.product_line.identifier %}checked{% endif %}{% endfor %} disabled>
+                    <label class="form-check-label" for="product_line_filter_{{ filter.product_line.identifier }}{% if mode %}_{{ mode }}{% endif %}">{{ filter.product_line.name }}</label>
                 </div>
                 <div class="filter-group">
             {% endif %}
@@ -89,8 +89,8 @@
                 {% for core_set in filter.core_sets %}
                     <div class="form-check {% if view == 'search' %}check-sub-arrow{% endif %}">
                         {% if view == 'search' %}<i class="fas fa-level-up-alt text-muted sub-arrow"></i>{% endif %}
-                        <input class="form-check-input category-filter-checkbox {% if view == 'search' %}child-check{% endif %}" type="checkbox" value="" data-filter-value={{ core_set.identifier }} id="category_filter_{{ core_set.identifier }}" {% for applied_filters_category in applied_filters.categories %}{% if applied_filters_category.identifier == core_set.identifier %}checked{% endif %}{% endfor %} disabled>
-                        <label class="form-check-label" for="category_filter_{{ core_set.identifier }}">{{ core_set.name }}</label>
+                        <input class="form-check-input category-filter-checkbox {% if view == 'search' %}child-check{% endif %}" type="checkbox" value="" data-filter-value={{ core_set.identifier }} id="category_filter_{{ core_set.identifier }}{% if mode %}_{{ mode }}{% endif %}" {% for applied_filters_category in applied_filters.categories %}{% if applied_filters_category.identifier == core_set.identifier %}checked{% endif %}{% endfor %} disabled>
+                        <label class="form-check-label" for="category_filter_{{ core_set.identifier }}{% if mode %}_{{ mode }}{% endif %}">{{ core_set.name }}</label>
                     </div>
                 {% endfor %}
                 {% if not filter.scenics and not view == 'search' %}
@@ -104,8 +104,8 @@
                 {% for scenics in filter.scenics %}
                     <div class="form-check {% if view == 'search' %}check-sub-arrow{% endif %}">
                         {% if view == 'search' %}<i class="fas fa-level-up-alt text-muted sub-arrow"></i>{% endif %}
-                        <input class="form-check-input category-filter-checkbox {% if view == 'search' %}child-check{% endif %}" type="checkbox" value="" data-filter-value={{ scenics.identifier }} id="category_filter_{{ scenics.identifier }}" {% for applied_filters_category in applied_filters.categories %}{% if applied_filters_category.identifier == scenics.identifier %}checked{% endif %}{% endfor %} disabled>
-                        <label class="form-check-label" for="category_filter_{{ scenics.identifier }}">{{ scenics.name }}</label>
+                        <input class="form-check-input category-filter-checkbox {% if view == 'search' %}child-check{% endif %}" type="checkbox" value="" data-filter-value={{ scenics.identifier }} id="category_filter_{{ scenics.identifier }}{% if mode %}_{{ mode }}{% endif %}" {% for applied_filters_category in applied_filters.categories %}{% if applied_filters_category.identifier == scenics.identifier %}checked{% endif %}{% endfor %} disabled>
+                        <label class="form-check-label" for="category_filter_{{ scenics.identifier }}{% if mode %}_{{ mode }}{% endif %}">{{ scenics.name }}</label>
                     </div>
                 {% endfor %}
                 {% if not view == 'search' %}
@@ -115,8 +115,8 @@
             {% for category in filter.sub_product_lines %}
                 <div class="form-check {% if view == 'search' %}check-sub-arrow{% endif %}">
                     {% if view == 'search' %}<i class="fas fa-level-up-alt text-muted sub-arrow"></i>{% endif %}
-                    <input class="form-check-input category-filter-checkbox {% if view == 'search' %}child-check{% endif %}" type="checkbox" value="" data-filter-value={{ category.identifier }} id="category_filter_{{ category.identifier }}" {% for applied_filters_category in applied_filters.categories %}{% if applied_filters_category.identifier == category.identifier %}checked{% endif %}{% endfor %} disabled>
-                    <label class="form-check-label" for="category_filter_{{ category.identifier }}">{{ category.name }}</label>
+                    <input class="form-check-input category-filter-checkbox {% if view == 'search' %}child-check{% endif %}" type="checkbox" value="" data-filter-value={{ category.identifier }} id="category_filter_{{ category.identifier }}{% if mode %}_{{ mode }}{% endif %}" {% for applied_filters_category in applied_filters.categories %}{% if applied_filters_category.identifier == category.identifier %}checked{% endif %}{% endfor %} disabled>
+                    <label class="form-check-label" for="category_filter_{{ category.identifier }}{% if mode %}_{{ mode }}{% endif %}">{{ category.name }}</label>
                 </div>
             {% endfor %}
             {% if view == 'search' %}</div>{% endif %}
@@ -126,23 +126,23 @@
 </div>
 
 <div class="nav-item dropdown">
-    <a class="nav-link px-0 text-light dropdown-toggle-inverted" id="sortCollapseToggler" href="" data-bs-toggle="collapse" data-bs-target="#sortCollapse" aria-expanded="true">
+    <a class="nav-link px-0 text-light dropdown-toggle-inverted" id="sortCollapseToggler{% if mode %}_{{ mode }}{% endif %}" href="" data-bs-toggle="collapse" data-bs-target="#sortCollapse{% if mode %}_{{ mode }}{% endif %}" aria-expanded="true">
         <span class="icon"><i class="fas fa-sort"></i></span>
         <span class="fs-5 text-uppercase">Sort By...</span>
     </a>
 </div>
-<div class="collapse show" id="sortCollapse" data-applied-sort="{{ applied_sort }}">
+<div class="collapse show" id="sortCollapse{% if mode %}_{{ mode }}{% endif %}" data-applied-sort="{{ applied_sort }}">
     <hr>
     {% for option in sort_options.list %}
         <div class="form-check">
-            <input class="form-check-input sort-radio" type="radio" name="sortRadios" id="sort_{{ option.a.value }}" value="{{ option.a.value }}" disabled>
-            <label class="form-check-label" for="sort_{{ option.a.value }}">
+            <input class="form-check-input sort-radio" type="radio" name="sortRadios{% if mode %}_{{ mode }}{% endif %}" id="sort_{{ option.a.value }}{% if mode %}_{{ mode }}{% endif %}" value="{{ option.a.value }}" disabled>
+            <label class="form-check-label" for="sort_{{ option.a.value }}{% if mode %}_{{ mode }}{% endif %}">
                 {{ option.a.text }}
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input sort-radio" type="radio" name="sortRadios" id="sort_{{ option.b.value }}" value="{{ option.b.value }}" disabled>
-            <label class="form-check-label" for="sort_{{ option.b.value }}">
+            <input class="form-check-input sort-radio" type="radio" name="sortRadios{% if mode %}_{{ mode }}{% endif %}" id="sort_{{ option.b.value }}{% if mode %}_{{ mode }}{% endif %}" value="{{ option.b.value }}" disabled>
+            <label class="form-check-label" for="sort_{{ option.b.value }}{% if mode %}_{{ mode }}{% endif %}">
                 {{ option.b.text }}
             </label>
         </div>

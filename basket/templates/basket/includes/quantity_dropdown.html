@@ -3,10 +3,10 @@
     {% if item.product.stock > 0 %}
         <div class="dropdown-wrapper qty-dropdown d-inline-block">
             <div class="dropdown qty-border position-relative d-inline-block mb-2">
-                <a class="text-dark dropdown-toggle text-decoration-none{% if item.quantity > item.product.stock %} text-red{% endif %}" href="#" id="productQty{{ item.product.id }}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="text-dark dropdown-toggle text-decoration-none{% if item.quantity > item.product.stock %} text-red{% endif %}" href="#" id="productQty{{ item.product.id }}{% if mode %}_{{ mode }}{% endif %}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {{ item.quantity }}
                 </a>
-                <div class="dropdown-menu bg-light text-dark shadow-lg" aria-labelledby="productQty{{ item.product.id }}">
+                <div class="dropdown-menu bg-light text-dark shadow-lg" aria-labelledby="productQty{{ item.product.id }}{% if mode %}_{{ mode }}{% endif %}">
                     {% if item.product.stock > 0 %}
                         {% for num in "n"|ljust:item.max_per_purchase %}
                             <a href="#" data-value="{{ forloop.counter }}" class="dropdown-item{% if forloop.counter == item.quantity %} active{% endif %}">{{ forloop.counter }}</a>

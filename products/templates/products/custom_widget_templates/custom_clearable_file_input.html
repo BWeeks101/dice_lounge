@@ -1,7 +1,7 @@
 {% if widget.is_initial %}
     <p>{{ widget.initial_text }}:</p>
     <a href="{{ widget.value.url }}">
-        <img width="96" height="96" class="shadow-sm img-fluid" src="{{ widget.value.url }}">
+        <img width="96" height="96" class="shadow-sm img-fluid" src="{{ widget.value.url }}" alt="Product Image Thumbnail">
     </a>
     {% if not widget.required %}
         <div class="form-check mt-2">
@@ -12,18 +12,20 @@
     <br>
     {{ widget.input_text }}
 {% endif %}
-<button class="btn btn-dark hover-background-red" id="new-image-button">Select Image</button>
-<input class="d-none" id="new-image" type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
-<small><p class="text-muted" id="filename"></p></small>
-<script type="text/javascript">
+<div id="newImageWrapper">
+    <button class="btn btn-dark hover-background-red" id="newImageButton">Select Image</button>
+    <input class="d-none new-image-input" type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
+</div>
+<p><small class="text-muted" id="filename"></small></p>
+<script>
     $(() => {
-        $('#new-image-button').on('click', (e) => {
+        $('#newImageButton').on('click', (e) => {
             e.preventDefault();
-            $('#new-image').click();
+            $('#newImageWrapper > .new-image-input').click();
         });
 
-        $('#new-image').change(() => {
-            let file = $('#new-image')[0].files[0];
+        $('#newImageWrapper > .new-image-input').change((e) => {
+            let file = $(e.currentTarget)[0].files[0];
             $('#filename').text(`Image will be set to: ${file.name}`);
         });
     });

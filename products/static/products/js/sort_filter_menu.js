@@ -481,57 +481,9 @@ function addSortFilterListeners() {
     });
 }
 
-/* Update unique property values for offcanvas elems to prevent duplication */
-/* and set the active radio */
+/* Set active radio, init sticky button positioning and add listeners */
 // eslint-disable-next-line no-unused-vars
 function initSortFilterMenus() {
-
-    /* Adjust unique attributes of .form-check-input elems within the */
-    /* #sortFilterOffCanvas mobile sort/filter menu */
-    $('#sortFilterOffCanvas .form-check-input').each((i, elem) => {
-        // get the element id
-        let elemid = $(elem).attr('id');
-
-        // If the elemid has already been updated, return
-        if (elemid.indexOf('_offcanvas') > -1) {
-            return;
-        }
-
-        // Update the checkbox/radio id, and label 'for' attribute
-        elemid += '_offcanvas';
-        $(elem).attr('id', elemid);
-        $(elem).next().
-            attr('for', elemid);
-
-        // If the element is a radio, update the name attribute of
-        // the radio and the label
-        if ($(elem).hasClass('sort-radio')) {
-            $(elem).attr('name', 'sortRadiosOffCanvas');
-            $(elem).next().
-                attr('name', 'sortRadiosOffCanvas');
-        }
-    });
-
-    // Adjust ids/targets of offcanvas collapse and apply/remove button elements
-    $('#sortFilterOffCanvas #filterCollapse').
-        attr('id', 'filterCollapse_offcanvas');
-    $('#sortFilterOffCanvas #filterCollapseToggler').
-        attr('id', 'filterCollapseToggler_offcanvas').
-            attr('data-bs-target', '#filterCollapse_offcanvas');
-
-    $('#sortFilterOffCanvas #filterButtonRow').
-        attr('id', 'filterButtonRow_offcanvas');
-
-    $('#sortFilterOffCanvas #applyFilters').
-        attr('id', '#applyFilters_offcanvas');
-    $('#sortFilterOffCanvas #removeFilters').
-        attr('id', '#removeFilters_offcanvas');
-
-    $('#sortFilterOffCanvas #sortCollapse').
-        attr('id', 'sortCollapse_offcanvas');
-    $('#sortFilterOffCanvas #sortCollapseToggler').
-        attr('id', 'sortCollapseToggler_offcanvas').
-            attr('data-bs-target', '#sortCollapse_offcanvas');
 
     // Iterate over radio buttons where the value matches the applied_sort
     // django template context value, and ensure the element is checked

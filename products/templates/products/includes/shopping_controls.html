@@ -11,7 +11,7 @@
                         <a class="text-dark dropdown-toggle text-decoration-none " href="#" id="productQty{{ product.id }}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             1
                         </a>
-                        <div class="dropdown-menu bg-light text-dark shadow-lg" aria-labelledby="productQty{{ item.product.id }}">
+                        <div class="dropdown-menu bg-light text-dark shadow-lg" aria-labelledby="productQty{{ product.id }}">
                             {% for num in "n"|ljust:product.max_per_purchase %}
                                 <a href="#" data-value="{{ forloop.counter }}" class="dropdown-item">{{ forloop.counter }}</a>
                             {% endfor %}

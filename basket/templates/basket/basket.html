@@ -38,22 +38,24 @@
                                 <p class="text-muted mb-3 small">Basket contents below.</p>
                             </div>
                         </div>
-                        {% for item in basket.items %}
-                            <div class="row w-100 checkout-product-row">
-                                <div class="col-12 col-sm-6 mb-2 text-center">
-                                    {% include "basket/includes/product_image.html" %}
-                                </div>
-                                <div class="col-12 col-sm-6 mb-2">
-                                    {% include "basket/includes/product_info.html" %}
-                                    <div class="mb-0 mt-2">
-                                        {% include "basket/includes/quantity_dropdown.html" %}
+                        {% with mode='mobile' %}
+                            {% for item in basket.items %}
+                                <div class="row w-100 checkout-product-row">
+                                    <div class="col-12 col-sm-6 mb-2 text-center">
+                                        {% include "basket/includes/product_image.html" %}
                                     </div>
-                                    <p class="mb-0 mt-2">Price Each: £{{ item.product.get_price.price }}</p>
-                                    <p{% if item.quantity > item.product.stock %} class="text-red"{% endif %}><strong>Subtotal: </strong>£{{ item.subtotal }}</p>
+                                    <div class="col-12 col-sm-6 mb-2">
+                                        {% include "basket/includes/product_info.html" %}
+                                        <div class="mb-0 mt-2">
+                                            {% include "basket/includes/quantity_dropdown.html" %}
+                                        </div>
+                                        <p class="mb-0 mt-2">Price Each: £{{ item.product.get_price.price }}</p>
+                                        <p{% if item.quantity > item.product.stock %} class="text-red"{% endif %}><strong>Subtotal: </strong>£{{ item.subtotal }}</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row w-100 checkout-product-row"><div class="col"><hr class="border-dark"></div></div>
-                        {% endfor %}
+                                <div class="row w-100 checkout-product-row"><div class="col"><hr class="border-dark"></div></div>
+                            {% endfor %}
+                        {% endwith %}
                     </div>
                     <div class="table-responsive d-none d-md-block overflow-visible">
                         <table class="table table-sm table-borderless">
