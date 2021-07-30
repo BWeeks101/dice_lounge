@@ -598,9 +598,16 @@ def checkout_success(request, order_number):
                     if user_profile_form.is_valid():
                         user_profile_form.save()
                     # Create a user data object from the order name details
+                    # Set the profile email address to it's current value!
+                    # (If we update the email here, we'll have to send an
+                    # email change confirmation request.  Which one do we
+                    # email the order confirmation to!?  The timings are
+                    # messy).  For now, do this and come up with a better
+                    # solution later.
                     user_data = {
                         'first_name': order.first_name,
-                        'last_name': order.last_name
+                        'last_name': order.last_name,
+                        'email': profile.user.email
                     }
                     # Create an instance of the UserForm using the user data
                     # object

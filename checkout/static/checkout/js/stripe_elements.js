@@ -97,6 +97,33 @@ function initStripeElements() {
 /* with payment form submission itself */
 function initPaymentForm(stripeObjs) {
 
+    // Email address change requires confirmation.  Allowing users to change
+    // Email at the order stage is messy.  This is disabled on the back end.
+    // Mask the email input with a disabled input, that will display a
+    // Notification if clicked
+    const noEmailChangeFromCheckout = () => {
+        let form = document.getElementById('payment-form');
+
+        let email = $.trim(form.email.value);
+        if (email.length > 0) {
+            $('#id_email').attr('type', 'hidden');
+            $('#id_email').wrap('<span id="email_wrapper"></span>');
+            $('#email_wrapper').append('<input id="fake_email" ' +
+                'class="stripe-style-input emailinput form-control ' +
+                'border-muted text-muted" ' +
+                `value="${email}" type="email" disabled>`);
+            $('#email_wrapper').append('<div class="mb-3 text-info d-none" ' +
+                'id="fake_email_notification">*' +
+                'If you wish to change your Email address, please do so ' +
+                'from your Profile before ordering</div>');
+            $('#email_wrapper').on('click', () => {
+                $('#fake_email_notification').removeClass('d-none');
+            });
+        }
+    };
+
+    noEmailChangeFromCheckout();
+
     /* Enable/disable card/submit button, fade payment form/loading overlay */
     const disableAndFadeElems = (disabled = true) => {
         const cardAndSubmitButton = () => {
