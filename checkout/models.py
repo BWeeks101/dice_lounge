@@ -105,8 +105,8 @@ class OrderLineItem(models.Model):
         on_delete=models.CASCADE,
         related_name='lineitems'
     )
-    product_id = models.CharField(
-        max_length=254, blank=False, null=False)
+    product_id = models.IntegerField(
+        null=True, blank=False, default=-1)
     product = models.CharField(
         max_length=254, blank=False, null=False)
     sub_product_line = models.CharField(
@@ -119,7 +119,8 @@ class OrderLineItem(models.Model):
         max_digits=6,
         decimal_places=2,
         null=False,
-        blank=False
+        blank=False,
+        default=0.00
     )
     lineitem_total = models.DecimalField(
         max_digits=6,
