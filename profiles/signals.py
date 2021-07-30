@@ -19,7 +19,7 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 
 # ...............................................End Modified Boutique-Ado Code
 
-
+# https://stackoverflow.com/questions/19755102/django-allauth-change-user-email-with-without-verification#29661871
 @receiver(email_confirmed)
 def update_user_email(sender, request, email_address, **kwargs):
     email_address.set_as_primary()

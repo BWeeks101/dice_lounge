@@ -89,6 +89,7 @@ def profile(request):
         'selected_country': selected_country
     }
 
+    # https://stackoverflow.com/questions/19755102/django-allauth-change-user-email-with-without-verification#29661871
     if email_address_change_pending is True:
         pending_email_addresses = list(
             EmailAddress.objects.filter(

@@ -31,6 +31,7 @@ class UserProfile(models.Model):
 
 # ...............................................End Modified Boutique-Ado Code
 
+    # https://stackoverflow.com/questions/19755102/django-allauth-change-user-email-with-without-verification#29661871
     def add_email_address(self, request, new_email):
         return EmailAddress.objects.add_email(
             request, self.user, new_email, confirm=True)
