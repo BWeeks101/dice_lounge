@@ -89,7 +89,7 @@ class StripeWH_Handler:
 
         order_exists = False
         attempt = 1
-        while attempt <= 5:
+        while attempt <= 10:
             try:
                 order = Order.objects.get(
                     first_name__iexact=billing_first_name,
