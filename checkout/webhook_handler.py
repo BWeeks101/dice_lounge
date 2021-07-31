@@ -89,6 +89,7 @@ class StripeWH_Handler:
 
         order_exists = False
         attempt = 1
+        # Check for the order for 10 seconds
         while attempt <= 10:
             try:
                 order = Order.objects.get(
@@ -122,6 +123,7 @@ class StripeWH_Handler:
                 attempt += 1
                 time.sleep(1)
 
+        # If the order was found, send a 200 response
         if order_exists:
             self._send_confirmation_email(order)
             success_msg = 'SUCCESS: Verified order already in database'
@@ -129,6 +131,7 @@ class StripeWH_Handler:
                 content=f'Webhook received: {event["type"]} | {success_msg}',
                 status=200
             )
+        # Otherwise, create an order
         else:
             order = None
             try:
@@ -157,6 +160,7 @@ class StripeWH_Handler:
                     original_basket=basket,
                     stripe_pid=pid,
                 )
+                # create the order line items
                 for product_id, quantity in json.loads(basket).items():
                     product_obj = Product.objects.get(id=product_id)
                     product = product_obj.name
@@ -174,6 +178,8 @@ class StripeWH_Handler:
                         item_price=item_price
                     )
                     order_line_item.save()
+            # There was an error creating the order, so delete it and return
+            # a 500 error
             except Exception as e:
                 if order:
                     order.delete()
@@ -182,6 +188,7 @@ class StripeWH_Handler:
                     status=500
                 )
 
+        # Otherwise we created the order, so send a 200 response
         self._send_confirmation_email(order)
         wh_success_msg = 'SUCCESS: Created order in webhook'
         return HttpResponse(

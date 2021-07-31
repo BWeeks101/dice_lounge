@@ -1,6 +1,8 @@
+<!-- display item details -->
 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
 <p class="my-0 small text-muted d-inline-block">ID: {{ item.product.id|upper }}</p>
 <div class="{% if item.product.stock > 0 %}d-block{% else %}d-none d-md-block{% endif %}">
+    <!-- style the text color based on stock availability, and show the stock level whilst it is greater than 0 -->
     <p class="my-0 small {% if item.product.stock > 0 %}text-success{% else %}text-red{% endif %} d-inline-block">
         {% if item.product.stock > 0 %}{{ item.product.stock }} {% endif %}
         {{ item.product.stock_state }}

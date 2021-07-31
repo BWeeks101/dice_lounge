@@ -5,6 +5,8 @@ from products.models import Product
 from products.views import is_product_hidden, set_product_instance_unavailable
 
 
+# Get the contents of the basket and render it into the context for each view
+# This keeps the basket data available on every page
 def basket_contents(request):
     basket_items = []
     errors = 0

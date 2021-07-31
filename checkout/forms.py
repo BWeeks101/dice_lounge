@@ -53,9 +53,11 @@ class OrderForm(forms.ModelForm):
             'delivery_postcode': 'Post Code'
         }
 
+        # Give focus to the first_name input
         self.fields['first_name'].widget.attrs['autofocus'] = True
 
         for field in self.fields:
+            # If the country/delivery country field, set it to required
             if field != 'country' and field != 'delivery_country':
                 if self.fields[field].required:
                     placeholder = f'{placeholders[field]} *'
@@ -66,6 +68,8 @@ class OrderForm(forms.ModelForm):
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
 
+            # If we have a delivery input, set it to disabled and give it the
+            # d-none class to prevent display
             if field.startswith("delivery_"):
                 self.fields[field].widget.attrs['class'] += ' d-none'
                 self.fields[field].widget.attrs['disabled'] = True

@@ -3,6 +3,7 @@
 
 /* call the server to ensure we have a valid country selection */
 function submitCountry(countryInput, callback) {
+    // No countryInput, so fire the callback (if it exists), or return.
     if ($(countryInput).length === 0) {
         if (callback) {
             return callback();
@@ -10,6 +11,10 @@ function submitCountry(countryInput, callback) {
         return;
     }
 
+    // If the country input is disabled, set the isvalid data attribute to true,
+    // then fire the callback or return.
+    // (If the countryInput is disabled it won't be submitted, so no need to
+    // validate)
     if ($(countryInput).attr('disabled')) {
         $(countryInput).attr('data-isvalid', true);
         if (callback) {
@@ -18,18 +23,23 @@ function submitCountry(countryInput, callback) {
         return;
     }
 
+    // Get the error div for the input in question
     let errorDiv = $(countryInput).closest('.dropdown-wrapper').
         parent().
             next();
 
+    // Setup the post data object.  Contains the csrf token and country_code to
+    // be checked.
     let data = {
         'csrfmiddlewaretoken': $('input[name="csrfmiddlewaretoken"]').val(),
         'country_code': $(countryInput).val()
     };
+
     // Validate the selection against the server
     $.post(`/checkout/validate_country/`, data, (response) => {
         $(errorDiv).html('');
         $(countryInput).attr('data-isvalid', true);
+        // If the server did not return a response of true, display an error.
         if (response.result !== true) {
             $(countryInput).attr('data-isvalid', false);
             let msg = 'Your selected country is not in our list of ' +
@@ -41,25 +51,36 @@ function submitCountry(countryInput, callback) {
             });
             $(errorDiv).html(getValidationErrorHtml(msg));
         }
+        // Otherwise, fire the callback or return
         if (callback) {
             return callback();
         }
     });
 }
 
-/* Ensure the value of the dropdowns are set per the value of the */
-/* respective hidden input */
+/* Ensure the initial selected value of the dropdowns are set per the value */
+/* of the respective hidden input */
 function setCountryDropdownValues() {
+    // Get the dropdowns
     let dropdowns = $('.country-dropdown');
+
+    // Iterate over the dropdowns
     $(dropdowns).each((i, elem) => {
+        // Get the associated hidden input
         let input = $(elem).find('input[type=hidden]');
+        // Get the value of the hidden input
         let val = $(input).val();
+        // Get dropdown items with a data-value attribute that matches the
+        // value of the input
         let item = $(elem).find(`.dropdown-item[data-value=${val}]`);
+        // If the items exist, look for one with the active class and click it
         if ($(item).length === 0) {
             $(elem).find('.dropdown-item.active').
                 click();
             return;
         }
+        // Otherwise, there is no active item, so click the returned item to
+        // make sure at least one is active.
         $(item).click();
     });
 }

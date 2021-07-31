@@ -14,9 +14,9 @@
                 <hr>
             </div>
         </div>
-
         <div class="row">
             <div class="col">
+                <!-- If there are basket items, display the contents -->
                 {% if basket.items %}
                     <div class="d-block d-md-none d-flex flex-column align-items-center">
                         <div class="row w-100 g-0">
@@ -91,6 +91,7 @@
                             </tbody>
                         </table>
                     </div>
+                    <!-- desktop back to top button -->
                     <div class="row position-sticky btt-row d-none d-md-flex pe-none">
                         <div class="col-12 text-end">
                             {% include "includes/btt_button.html" %}
@@ -106,6 +107,7 @@
                             {% include "basket/includes/basket_buttons.html" %}
                         </div>
                     </div>
+                <!-- Otherwise display a message and a keep shopping button -->
                 {% else %}
                     <p class="lead mb-3">Your basket is empty.</p>
                     <a href="{% url 'all_games' %}" class="btn btn-outline-dark text-dark hover-background-red btn-lg">
@@ -118,7 +120,7 @@
             </div>
         </div>
     </div>
-
+    <!-- mobile back to top button -->
     <div class="d-inline d-md-none pe-none">
         {% include "includes/btt_button.html" %}
     </div>

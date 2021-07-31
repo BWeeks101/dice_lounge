@@ -1,5 +1,7 @@
+<!-- Customised bootstrap 5 dropdown used for item quantity selection -->
 <form class="form qty-form" method="POST" action="{% url 'adjust_basket' item.product.id %}" data-product-id="{{ item.product.id }}">
     {% csrf_token %}
+    <!-- If there is stock, build the dropdown -->
     {% if item.product.stock > 0 %}
         <div class="dropdown-wrapper qty-dropdown d-inline-block">
             <div class="dropdown qty-border position-relative d-inline-block mb-2">
@@ -8,6 +10,7 @@
                 </a>
                 <div class="dropdown-menu bg-light text-dark shadow-lg" aria-labelledby="productQty{{ item.product.id }}{% if mode %}_{{ mode }}{% endif %}">
                     {% if item.product.stock > 0 %}
+                        <!-- as long as there is stock, loop a number of times = the max_per_purchase value, adding a dropdown-item on each iteration -->
                         {% for num in "n"|ljust:item.max_per_purchase %}
                             <a href="#" data-value="{{ forloop.counter }}" class="dropdown-item{% if forloop.counter == item.quantity %} active{% endif %}">{{ forloop.counter }}</a>
                         {% endfor %}
@@ -16,12 +19,14 @@
                     {% endif %}
                 </div>
             </div>
+            <!-- If the user has selected more of an item than is available, display a warning -->
             {% if item.quantity > item.product.stock %}
                 <span class="d-inline-block pagination-mt-1 align-top text-red small pagination-py py-md-0 stock-warning stock-warning-break">Insufficient Stock
                     ({{ item.product.stock }} left)
                 </span>
             {% endif %}
         </div>
+    <!-- otherwise no stock, so display a message instead of the dropdown -->
     {% else %}
         <p class="my-0 text-red out-of-stock">Out of Stock</p>
     {% endif %}

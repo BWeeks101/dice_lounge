@@ -7,10 +7,12 @@ from .models import (
 )
 
 
+# Helper function for setting active field
 def setFocus(field):
     field.widget.attrs['autofocus'] = True
 
 
+# Shortcut function for setting form control styling
 def setStyling(fields, placeholders):
     for field in fields:
         field_type = str(type(fields[field]).__name__).lower()

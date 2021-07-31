@@ -5,6 +5,7 @@
         </span>
         <span class="text-uppercase">Keep Shopping</span>
     </a>
+    <!-- Chekcout button is disabled if there are any errors with the basket contents -->
     <a {% if basket.errors == 0 %}href="{% url 'checkout' %}"{% endif %} class="btn btn-dark text-light hover-background-red position-relative icon-end{% if basket.errors > 0 %} disabled{% endif %}">
         <span class="text-uppercase">Checkout</span>
         <span class="icon">
