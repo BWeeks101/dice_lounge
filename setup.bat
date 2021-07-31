@@ -1,0 +1,19 @@
+@echo off
+@echo Making Migrations (DRY RUN)...
+python manage.py makemigrations --dry-run
+pause
+@echo Making Migrations...
+python manage.py makemigrations
+pause
+@echo Migrating (PLAN)...
+python manage.py migrate --plan
+pause
+@echo Migrating...
+python manage.py migrate
+pause
+@echo Loading Fixtures...
+call load_product_data.bat
+pause
+@echo Creating SuperUser...
+python manage.py createsuperuser
+@echo DONE!
