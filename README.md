@@ -319,10 +319,18 @@ ___
 		* Used to handle login/account security
 	- [Django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/) and [crispy-bootstrap5](https://github.com/django-crispy-forms/crispy-bootstrap5)
 		* Used to handle default form element styling
+* [SQLite](https://sqlite.org/index.html)
+	- A SQLite database was used during development
+* [Heroku](https://www.heroku.com/)
+	- Heroku is used to host the live site
+* [Heroku Postgres](https://www.heroku.com/postgres)
+	- Heroku's Postgres implementation is used to host the live DB
+* [Amazon S3](https://aws.amazon.com/s3/)
+	- S3 is used to host live static and media files
 * [HTML5](https://en.wikipedia.org/wiki/HTML5/)
-	- HTML was validated using [validator.w3.org](https://validator.w3.org/nu/)
+	- HTML was validated using [validator.w3.org](https://validator.w3.org/nu/) with no errors or warnings.
 * [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets/)
-	- CSS was validated using [CSSTree validator](https://marketplace.visualstudio.com/items?itemName=smelukov.vscode-csstree)
+	- CSS was validated using [CSSTree validator](https://marketplace.visualstudio.com/items?itemName=smelukov.vscode-csstree) with no errors or warnings.
 * [JavaScript](https://javascript.com)
 	- JavaScript was linted with [ESLint](https://eslint.org/) within **VSCode**.
 	- [jQuery](https://jquery.com)
