@@ -1,0 +1,34 @@
+[
+  {
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+      "identifier": "card",
+      "name": "Card Games"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+      "identifier": "tabletop",
+      "name": "Tabletop Battle Games"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+      "identifier": "skirmish",
+      "name": "Tabletop Skirmish Games"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+      "identifier": "supplies",
+      "name": "Hobby Supplies"
+    }
+  }
+]

@@ -1,0 +1,3638 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 1,
+      "identifier": "beasts_of_chaos_battletome",
+      "name": "Beasts of Chaos Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/beasts_of_chaos/beasts_of_chaos_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 1,
+      "identifier": "beasts_of_chaos_endless_spells",
+      "name": "Beasts of Chaos Endless Spells",
+      "description": "Powerful spells unique to this faction.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/beasts_of_chaos/beasts_of_chaos_endless_spells.webp",
+      "price": 21.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 1,
+      "identifier": "beasts_of_chaos_gors",
+      "name": "Gors",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/beasts_of_chaos/beasts_of_chaos_gors.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 1,
+      "identifier": "beasts_of_chaos_start_collecting_beasts_of_chaos",
+      "name": "Start Collecting: Beasts of Chaos",
+      "description": "Faction Starter Set.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/beasts_of_chaos/beasts_of_chaos_start_collecting_beasts_of_chaos.webp",
+      "price": 60.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 2,
+      "identifier": "blades_of_khorne_battletome",
+      "name": "Blades of Khorne Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/blades_of_khorne/blades_of_khorne_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 2,
+      "identifier": "blades_of_khorne_blood_warriors",
+      "name": "Blood Warriors",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/blades_of_khorne/blades_of_khorne_blood_warriors.webp",
+      "price": 37.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 2,
+      "identifier": "blades_of_khorne_bloodletters",
+      "name": "Bloodletters",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/blades_of_khorne/blades_of_khorne_bloodletters.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 2,
+      "identifier": "blades_of_khorne_bloodmaster_herald_of_khorne",
+      "name": "Bloodmaster - Herald of Khorne",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/blades_of_khorne/blades_of_khorne_bloodmaster_herald_of_khorne.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 2,
+      "identifier": "blades_of_khorne_bloodreavers",
+      "name": "Bloodreavers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/blades_of_khorne/blades_of_khorne_bloodreavers.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 2,
+      "identifier": "blades_of_khorne_bloodthirster",
+      "name": "Bloodthirster",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/blades_of_khorne/blades_of_khorne_bloodthirster.webp",
+      "price": 85.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 2,
+      "identifier": "blades_of_khorne_endless_spells",
+      "name": "Blades of Khorne Endless Spells",
+      "description": "Powerful spells unique to this faction.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/blades_of_khorne/blades_of_khorne_endless_spells.webp",
+      "price": 21.5,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 2,
+      "identifier": "blades_of_khorne_flesh_hounds",
+      "name": "Flesh Hounds",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/blades_of_khorne/blades_of_khorne_flesh_hounds.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 2,
+      "identifier": "blades_of_khorne_karanak_the_hound_of_vengeance",
+      "name": "Karanak - The Hound of Vengeance",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/blades_of_khorne/blades_of_khorne_karanak_the_hound_of_vengeance.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 2,
+      "identifier": "blades_of_khorne_skarbrand_the_bloodthirster",
+      "name": "Skarbrand the Bloodthirster",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/blades_of_khorne/blades_of_khorne_skarbrand_the_bloodthirster.webp",
+      "price": 85.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 2,
+      "identifier": "blades_of_khorne_skulltaker",
+      "name": "Skulltaker",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/blades_of_khorne/blades_of_khorne_skulltaker.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 2,
+      "identifier": "blades_of_khorne_wrathmongers",
+      "name": "Wrathmongers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/blades_of_khorne/blades_of_khorne_wrathmongers.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 3,
+      "identifier": "daughters_of_khaine_battletome",
+      "name": "Daughters of Khaine Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/daughters_of_khaine/daughters_of_khaine_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 3,
+      "identifier": "daughters_of_khaine_dice",
+      "name": "Daughters of Khaine Dice",
+      "description": "Faction themed dice set",
+      "image": "age_of_sigmar/daughters_of_khaine/daughters_of_khaine_dice.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 3,
+      "identifier": "daughters_of_khaine_doomfire_warlocks",
+      "name": "Doomfire Warlocks",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/daughters_of_khaine/daughters_of_khaine_doomfire_warlocks.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 3,
+      "identifier": "daughters_of_khaine_endless_spells",
+      "name": "Daughters of Khaine Endless Spells",
+      "description": "Powerful spells unique to this faction.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/daughters_of_khaine/daughters_of_khaine_endless_spells.webp",
+      "price": 21.5,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 3,
+      "identifier": "daughters_of_khaine_khinerai",
+      "name": "Khinerai",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/daughters_of_khaine/daughters_of_khaine_khinerai.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 3,
+      "identifier": "daughters_of_khaine_melusai",
+      "name": "Melusai",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/daughters_of_khaine/daughters_of_khaine_melusai.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 3,
+      "identifier": "daughters_of_khaine_morathi",
+      "name": "Morathi",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/daughters_of_khaine/daughters_of_khaine_morathi.webp",
+      "price": 85.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 3,
+      "identifier": "daughters_of_khaine_start_collecting_daughters_of_khaine",
+      "name": "Start Collecting: Daughters of Khaine",
+      "description": "Faction starter set.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/daughters_of_khaine/daughters_of_khaine_start_collecting_daughters_of_khaine.webp",
+      "price": 60.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 3,
+      "identifier": "daughters_of_khaine_witch_aelves",
+      "name": "Witch Aelves",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/daughters_of_khaine/daughters_of_khaine_witch_aelves.webp",
+      "price": 35.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 4,
+      "identifier": "disciples_of_tzeentch_blue_horrors",
+      "name": "Blue Horrors",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/disciples_of_tzeentch/disciples_of_tzeentch_blue_horrors.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 4,
+      "identifier": "disciples_of_tzeentch_flamers_of_tzeentch",
+      "name": "Flamers of Tzeentch",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/disciples_of_tzeentch/disciples_of_tzeentch_flamers_of_tzeentch.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 4,
+      "identifier": "disciples_of_tzeentch_herald_of_tzeentch_on_burning_chariot",
+      "name": "Herald of Tzeentch on Burning Chariot",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/disciples_of_tzeentch/disciples_of_tzeentch_herald_of_tzeentch_on_burning_chariot.webp",
+      "price": 27.5,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 4,
+      "identifier": "disciples_of_tzeentch_kairic_acolytes",
+      "name": "Kairic Acolytes",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/disciples_of_tzeentch/disciples_of_tzeentch_kairic_acolytes.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 4,
+      "identifier": "disciples_of_tzeentch_lord_of_change",
+      "name": "Lord of Change",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/disciples_of_tzeentch/disciples_of_tzeentch_lord_of_change.webp",
+      "price": 85.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 4,
+      "identifier": "disciples_of_tzeentch_magister_on_disc_of_tzeentch",
+      "name": "Magister on Disc of Tzeentch",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/disciples_of_tzeentch/disciples_of_tzeentch_magister_on_disc_of_tzeentch.webp",
+      "price": 23.5,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 4,
+      "identifier": "disciples_of_tzeentch_pink_horrors",
+      "name": "Pink Horrors",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/disciples_of_tzeentch/disciples_of_tzeentch_pink_horrors.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 4,
+      "identifier": "disciples_of_tzeentch_the_changeling",
+      "name": "The Changeling",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/disciples_of_tzeentch/disciples_of_tzeentch_the_changeling.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 4,
+      "identifier": "disciples_of_tzeentch_tzaangor_enlightened",
+      "name": "Tzaangor Enlightened",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/disciples_of_tzeentch/disciples_of_tzeentch_tzaangor_enlightened.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 4,
+      "identifier": "disciples_of_tzeentch_tzaangor_shaman",
+      "name": "Tzaangor Shaman",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/disciples_of_tzeentch/disciples_of_tzeentch_tzaangor_shaman.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 4,
+      "identifier": "disciples_of_tzeentch_tzaangors",
+      "name": "Tzaangors",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/disciples_of_tzeentch/disciples_of_tzeentch_tzaangors.webp",
+      "price": 27.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 5,
+      "identifier": "flesh-eater_courts_abhorrant_archregent",
+      "name": "Abhorrant Archregent",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/flesh-eater_courts/flesh-eater_courts_abhorrant_archregent.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 5,
+      "identifier": "flesh-eater_courts_battletome",
+      "name": "flesh-eater_courts_Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/flesh-eater_courts/flesh-eater_courts_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 39,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 5,
+      "identifier": "flesh-eater_courts_crypt_flayers",
+      "name": "Crypt Flayers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/flesh-eater_courts/flesh-eater_courts_crypt_flayers.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 5,
+      "identifier": "flesh-eater_courts_crypt_ghouls",
+      "name": "Crypt Ghouls",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/flesh-eater_courts/flesh-eater_courts_crypt_ghouls.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 41,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 5,
+      "identifier": "flesh-eater_courts_endless_spells",
+      "name": "Flesh-Eater Courts Endless Spells",
+      "description": "Powerful spells unique to this faction.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/flesh-eater_courts/flesh-eater_courts_endless_spells.webp",
+      "price": 21.5,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 42,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 5,
+      "identifier": "flesh-eater_courts_terrorgheist",
+      "name": "Terrorgheist",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/flesh-eater_courts/flesh-eater_courts_terrorgheist.webp",
+      "price": 37.5,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 44,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 6,
+      "identifier": "fyreslayers_battletome",
+      "name": "Fyreslayers Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/fyreslayers/fyreslayers_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 45,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 6,
+      "identifier": "fyreslayers_dice",
+      "name": "Fyreslayers Dice",
+      "description": "Faction themed dice set",
+      "image": "age_of_sigmar/fyreslayers/fyreslayers_dice.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 46,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 6,
+      "identifier": "fyreslayers_endless_spells",
+      "name": "Fyreslayers Endless Spells",
+      "description": "Powerful spells unique to this faction.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/fyreslayers/fyreslayers_endless_spells.webp",
+      "price": 21.5,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 47,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 6,
+      "identifier": "fyreslayers_hearthguard",
+      "name": "Hearthguard",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/fyreslayers/fyreslayers_hearthguard.webp",
+      "price": 27.5,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 48,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 6,
+      "identifier": "fyreslayers_start_collecting_fyreslayers",
+      "name": "Start Collecting: Fyreslayers",
+      "description": "Faction starter set.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/fyreslayers/fyreslayers_start_collecting_fyreslayers.webp",
+      "price": 60.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 49,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 6,
+      "identifier": "fyreslayers_vulkite_berzerkers",
+      "name": "Vulkite Berzerkers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/fyreslayers/fyreslayers_vulkite_berzerkers.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 50,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 7,
+      "identifier": "gloomspite_gitz_battletome",
+      "name": "Gloomspite Gitz Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/gloomspite_gitz/gloomspite_gitz_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 51,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 7,
+      "identifier": "gloomspite_gitz_dankhold_troggoth",
+      "name": "Dankhold Troggoth",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/gloomspite_gitz/gloomspite_gitz_dankhold_troggoth.webp",
+      "price": 40.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 52,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 7,
+      "identifier": "gloomspite_gitz_endless_spells",
+      "name": "Gloomspite Gitz Endless Spells",
+      "description": "Powerful spells unique to this faction.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/gloomspite_gitz/gloomspite_gitz_endless_spells.webp",
+      "price": 21.5,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 53,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 7,
+      "identifier": "gloomspite_gitz_fanatics",
+      "name": "Fanatics",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/gloomspite_gitz/gloomspite_gitz_fanatics.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 54,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 7,
+      "identifier": "gloomspite_gitz_grots",
+      "name": "Grots",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/gloomspite_gitz/gloomspite_gitz_grots.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 55,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 7,
+      "identifier": "gloomspite_gitz_loonboss_on_giant_cave_squig",
+      "name": "Loonboss on Giant Cave Squig",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/gloomspite_gitz/gloomspite_gitz_loonboss_on_giant_cave_squig.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 56,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 7,
+      "identifier": "gloomspite_gitz_mangler_squigs",
+      "name": "Mangler Squigs",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/gloomspite_gitz/gloomspite_gitz_mangler_squigs.webp",
+      "price": 50.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 57,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 7,
+      "identifier": "gloomspite_gitz_skragrott_the_loonking",
+      "name": "Skragrott the Loonking",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/gloomspite_gitz/gloomspite_gitz_skragrott_the_loonking.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 58,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 7,
+      "identifier": "gloomspite_gitz_squig_herd",
+      "name": "Squig Herd",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/gloomspite_gitz/gloomspite_gitz_squig_herd.webp",
+      "price": 27.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 59,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 7,
+      "identifier": "gloomspite_gitz_squig_hoppers",
+      "name": "Squig Hoppers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/gloomspite_gitz/gloomspite_gitz_squig_hoppers.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 60,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 7,
+      "identifier": "gloomspite_gitz_start_collecting_gloomspite_gitz",
+      "name": "Start Collecting: Gloomspite Gitz",
+      "description": "Faction Starter Set.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/gloomspite_gitz/gloomspite_gitz_start_collecting_gloomspite_gitz.webp",
+      "price": 60.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 61,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 8,
+      "identifier": "hedonites_of_slaanesh_battletome",
+      "name": "Hedonites of Slaanesh Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/hedonites_of_slaanesh/hedonites_of_slaanesh_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 62,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 8,
+      "identifier": "hedonites_of_slaanesh_blissbarb_archers",
+      "name": "Blissbarb Archers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/hedonites_of_slaanesh/hedonites_of_slaanesh_blissbarb_archers.webp",
+      "price": 31.5,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 63,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 8,
+      "identifier": "hedonites_of_slaanesh_daemonettes",
+      "name": "Daemonettes",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/hedonites_of_slaanesh/hedonites_of_slaanesh_daemonettes.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 64,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 8,
+      "identifier": "hedonites_of_slaanesh_dice",
+      "name": "Hedonites of Slaanesh Dice",
+      "description": "Faction themed dice set",
+      "image": "age_of_sigmar/hedonites_of_slaanesh/hedonites_of_slaanesh_dice.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 65,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 8,
+      "identifier": "hedonites_of_slaanesh_endless_spells",
+      "name": "Hedonites of Slaanesh Endless Spells",
+      "description": "Powerful spells unique to this faction.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/hedonites_of_slaanesh/hedonites_of_slaanesh_endless_spells.webp",
+      "price": 21.5,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 66,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 8,
+      "identifier": "hedonites_of_slaanesh_fiends",
+      "name": "Fiends",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/hedonites_of_slaanesh/hedonites_of_slaanesh_fiends.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 67,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 8,
+      "identifier": "hedonites_of_slaanesh_glutos_orscollion_lord_of_gluttony",
+      "name": "Glutos Orscollion - Lord of Gluttony",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/hedonites_of_slaanesh/hedonites_of_slaanesh_glutos_orscollion_lord_of_gluttony.webp",
+      "price": 74.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 68,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 8,
+      "identifier": "hedonites_of_slaanesh_infernal_enrapturess",
+      "name": "Infernal Enrapturess",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/hedonites_of_slaanesh/hedonites_of_slaanesh_infernal_enrapturess.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 69,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 8,
+      "identifier": "hedonites_of_slaanesh_keeper_of_secrets",
+      "name": "Keeper of Secrets",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/hedonites_of_slaanesh/hedonites_of_slaanesh_keeper_of_secrets.webp",
+      "price": 85.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 70,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 8,
+      "identifier": "hedonites_of_slaanesh_lord_of_pain",
+      "name": "Lord of Pain",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/hedonites_of_slaanesh/hedonites_of_slaanesh_lord_of_pain.webp",
+      "price": 18.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 71,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 8,
+      "identifier": "hedonites_of_slaanesh_myrmidesh_painbringers",
+      "name": "Myrmidesh Painbringers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/hedonites_of_slaanesh/hedonites_of_slaanesh_myrmidesh_painbringers.webp",
+      "price": 36.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 72,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 9,
+      "identifier": "idoneth_deepkin_akhelian_allopex",
+      "name": "Akhelian Allopex",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/idoneth_deepkin/idoneth_deepkin_akhelian_allopex.webp",
+      "price": 27.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 73,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 9,
+      "identifier": "idoneth_deepkin_akhelian_guard",
+      "name": "Akhelian Guard",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/idoneth_deepkin/idoneth_deepkin_akhelian_guard.webp",
+      "price": 30.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 74,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 9,
+      "identifier": "idoneth_deepkin_battletome",
+      "name": "Idoneth Deepkin Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/idoneth_deepkin/idoneth_deepkin_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 75,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 9,
+      "identifier": "idoneth_deepkin_eidolon_of_mathlann",
+      "name": "Eidolon of Mathlann",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/idoneth_deepkin/idoneth_deepkin_eidolon_of_mathlann.webp",
+      "price": 75.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 76,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 9,
+      "identifier": "idoneth_deepkin_isharann_soulrender",
+      "name": "Isharann Soulrender",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/idoneth_deepkin/idoneth_deepkin_isharann_soulrender.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 77,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 9,
+      "identifier": "idoneth_deepkin_isharann_soulscryer",
+      "name": "Isharann Soulscryer",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/idoneth_deepkin/idoneth_deepkin_isharann_soulscryer.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 78,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 9,
+      "identifier": "idoneth_deepkin_isharann_tidecaster",
+      "name": "Isharann Tidecaster",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/idoneth_deepkin/idoneth_deepkin_isharann_tidecaster.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 79,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 9,
+      "identifier": "idoneth_deepkin_lotann_warden_of_the_soul_ledgers",
+      "name": "Lotann Warden of the Soul Ledgers",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/idoneth_deepkin/idoneth_deepkin_lotann_warden_of_the_soul_ledgers.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 80,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 9,
+      "identifier": "idoneth_deepkin_namarti_reavers",
+      "name": "Namarti Reavers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/idoneth_deepkin/idoneth_deepkin_namarti_reavers.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 81,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 9,
+      "identifier": "idoneth_deepkin_volturnos_high_king_of_the_deep",
+      "name": "Volturnos - High King of the Deep",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/idoneth_deepkin/idoneth_deepkin_volturnos_high_king_of_the_deep.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 82,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 10,
+      "identifier": "kharadron_overlords_arkanaut_company",
+      "name": "Arkanaut Company",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/kharadron_overlords/kharadron_overlords_arkanaut_company.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 83,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 10,
+      "identifier": "kharadron_overlords_arkanaut_frigate",
+      "name": "Arkanaut Frigate",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/kharadron_overlords/kharadron_overlords_arkanaut_frigate.webp",
+      "price": 50.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 84,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 10,
+      "identifier": "kharadron_overlords_battletome",
+      "name": "Kharadron Overlords Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/kharadron_overlords/kharadron_overlords_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 85,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 10,
+      "identifier": "kharadron_overlords_brokk_grungsson",
+      "name": "Brokk Grungsson",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/kharadron_overlords/kharadron_overlords_brokk_grungsson.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 86,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 10,
+      "identifier": "kharadron_overlords_endrin_master_with_dirigible_suit",
+      "name": "Endrin Master with Dirigible Suit",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/kharadron_overlords/kharadron_overlords_endrin_master_with_dirigible_suit.webp",
+      "price": 23.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 87,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 10,
+      "identifier": "kharadron_overlords_grundstok_thunderers",
+      "name": "Grundstok Thunderers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/kharadron_overlords/kharadron_overlords_grundstok_thunderers.webp",
+      "price": 27.5,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 88,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 10,
+      "identifier": "kharadron_overlords_skyriggers",
+      "name": "Skyriggers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/kharadron_overlords/kharadron_overlords_skyriggers.webp",
+      "price": 27.5,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 89,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 10,
+      "identifier": "kharadron_overlords_start_collecting_kharadron_overlords",
+      "name": "Start Collecting: Kharadron Overlords",
+      "description": "Faction Starter Set.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/kharadron_overlords/kharadron_overlords_start_collecting_kharadron_overlords.webp",
+      "price": 60.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 90,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 11,
+      "identifier": "lumineth_realm-lords_alarith_stoneguard",
+      "name": "Alarith Stoneguard",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/lumineth_realm-lords/lumineth_realm-lords_alarith_stoneguard.webp",
+      "price": 36.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 91,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 11,
+      "identifier": "lumineth_realm-lords_alarith_stonemage",
+      "name": "Alarith Stonemage",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/lumineth_realm-lords/lumineth_realm-lords_alarith_stonemage.webp",
+      "price": 26.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 92,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 11,
+      "identifier": "lumineth_realm-lords_archmage_teclis_and_celennar_spirit_of_hysh",
+      "name": "Archmage Teclis and Celennar - Spirit of Hysh",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/lumineth_realm-lords/lumineth_realm-lords_archmage_teclis_and_celennar_spirit_of_hysh.webp",
+      "price": 105.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 93,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 11,
+      "identifier": "lumineth_realm-lords_avalenor_the_stoneheart_king",
+      "name": "Avalenor the Stoneheart King",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/lumineth_realm-lords/lumineth_realm-lords_avalenor_the_stoneheart_king.webp",
+      "price": 68.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 94,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 11,
+      "identifier": "lumineth_realm-lords_battletome",
+      "name": "Lumineth Realm-Lords Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/lumineth_realm-lords/lumineth_realm-lords_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 95,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 11,
+      "identifier": "lumineth_realm-lords_dice",
+      "name": "Lumineth Realm-Lords Dice",
+      "description": "Faction themed dice set",
+      "image": "age_of_sigmar/lumineth_realm-lords/lumineth_realm-lords_dice.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 96,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 11,
+      "identifier": "lumineth_realm-lords_ellania_and_ellathor_eclipsian_warsages",
+      "name": "Ellania and Ellathor - Eclipsian Warsages",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/lumineth_realm-lords/lumineth_realm-lords_ellania_and_ellathor_eclipsian_warsages.webp",
+      "price": 29.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 97,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 11,
+      "identifier": "lumineth_realm-lords_endless_spells",
+      "name": "Lumineth Realm-Lords Endless Spells",
+      "description": "Powerful spells unique to this faction.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/lumineth_realm-lords/lumineth_realm-lords_endless_spells.webp",
+      "price": 21.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 98,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 11,
+      "identifier": "lumineth_realm-lords_hurakan_windchargers",
+      "name": "Hurakan Windchargers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/lumineth_realm-lords/lumineth_realm-lords_hurakan_windchargers.webp",
+      "price": 39.5,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 99,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 11,
+      "identifier": "lumineth_realm-lords_hurakan_windmage",
+      "name": "Hurakan Windmage",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/lumineth_realm-lords/lumineth_realm-lords_hurakan_windmage.webp",
+      "price": 23.5,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 100,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 12,
+      "identifier": "maggotkin_of_nurgle_battletome",
+      "name": "Maggotkin of Nurgle Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/maggotkin_of_nurgle/maggotkin_of_nurgle_battletome.webp",
+      "price": 25.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 101,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 12,
+      "identifier": "maggotkin_of_nurgle_beast_of_nurgle",
+      "name": "Beast of Nurgle",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/maggotkin_of_nurgle/maggotkin_of_nurgle_beast_of_nurgle.webp",
+      "price": 27.5,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 102,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 12,
+      "identifier": "maggotkin_of_nurgle_great_unclean_one",
+      "name": "Great Unclean One",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/maggotkin_of_nurgle/maggotkin_of_nurgle_great_unclean_one.webp",
+      "price": 85.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 103,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 12,
+      "identifier": "maggotkin_of_nurgle_horticulous_slimux_the_grand_cultivator",
+      "name": "Horticulous Slimux the Grand Cultivator",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/maggotkin_of_nurgle/maggotkin_of_nurgle_horticulous_slimux_the_grand_cultivator.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 104,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 12,
+      "identifier": "maggotkin_of_nurgle_lord_of_blights",
+      "name": "Lord of Blights",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/maggotkin_of_nurgle/maggotkin_of_nurgle_lord_of_blights.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 105,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 12,
+      "identifier": "maggotkin_of_nurgle_lord_of_plagues",
+      "name": "Lord of Plagues",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/maggotkin_of_nurgle/maggotkin_of_nurgle_lord_of_plagues.webp",
+      "price": 10.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 106,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 12,
+      "identifier": "maggotkin_of_nurgle_nurglings",
+      "name": "nurglings",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/maggotkin_of_nurgle/maggotkin_of_nurgle_nurglings.webp",
+      "price": 20.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 107,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 12,
+      "identifier": "maggotkin_of_nurgle_plaguebearers",
+      "name": "Plaguebearers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/maggotkin_of_nurgle/maggotkin_of_nurgle_plaguebearers.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 108,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 12,
+      "identifier": "maggotkin_of_nurgle_poxbringer",
+      "name": "Poxbringer",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/maggotkin_of_nurgle/maggotkin_of_nurgle_poxbringer.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 109,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 13,
+      "identifier": "nighthaunt_battletome",
+      "name": "Nighthaunt Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/nighthaunt/nighthaunt_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 110,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 13,
+      "identifier": "nighthaunt_bladegheist_revenants",
+      "name": "Bladegheist Revenants",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/nighthaunt/nighthaunt_bladegheist_revenants.webp",
+      "price": 27.5,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 111,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 13,
+      "identifier": "nighthaunt_cairn_wraith",
+      "name": "Cairn Wraith",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/nighthaunt/nighthaunt_cairn_wraith.webp",
+      "price": 10.0,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 112,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 13,
+      "identifier": "nighthaunt_crawlocke_the_jailor",
+      "name": "Crawlocke the Jailor",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/nighthaunt/nighthaunt_crawlocke_the_jailor.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 113,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 13,
+      "identifier": "nighthaunt_dreadscythe_harridans",
+      "name": "Dreadscythe Harridans",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/nighthaunt/nighthaunt_dreadscythe_harridans.webp",
+      "price": 27.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 114,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 13,
+      "identifier": "nighthaunt_grimghast_reapers",
+      "name": "Grimghast Reapers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/nighthaunt/nighthaunt_grimghast_reapers.webp",
+      "price": 27.5,
+      "stock_state": 3,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 115,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 13,
+      "identifier": "nighthaunt_hexwraiths",
+      "name": "Hexwraiths",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/nighthaunt/nighthaunt_hexwraiths.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 116,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 13,
+      "identifier": "nighthaunt_krulghast_cruciator",
+      "name": "Krulghast Cruciator",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/nighthaunt/nighthaunt_krulghast_cruciator.webp",
+      "price": 23.5,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 117,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 13,
+      "identifier": "nighthaunt_kurdoss_valentian_the_craven_king",
+      "name": "Kurdoss Valentian the Craven King",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/nighthaunt/nighthaunt_kurdoss_valentian_the_craven_king.webp",
+      "price": 27.5,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 118,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 13,
+      "identifier": "nighthaunt_lady_olynder_mortarch_of_grief",
+      "name": "Lady Olynder - Mortarch of Grief",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/nighthaunt/nighthaunt_lady_olynder_mortarch_of_grief.webp",
+      "price": 27.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 119,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 14,
+      "identifier": "ogor_mawtribes_battletome",
+      "name": "Ogor Mawtribes Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/ogor_mawtribes/ogor_mawtribes_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 120,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 14,
+      "identifier": "ogor_mawtribes_ogors",
+      "name": "Ogors",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/ogor_mawtribes/ogor_mawtribes_ogors.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 121,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 14,
+      "identifier": "ogor_mawtribes_tyrant",
+      "name": "tyrant",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/ogor_mawtribes/ogor_mawtribes_tyrant.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 122,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 15,
+      "identifier": "orruk_warclans_battletome",
+      "name": "Orruk Warclans Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/orruk_warclans/orruk_warclans_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 123,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 15,
+      "identifier": "orruk_warclans_orruk_ardboyz",
+      "name": "Orruk Ardboyz",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/orruk_warclans/orruk_warclans_orruk_ardboyz.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 124,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 15,
+      "identifier": "orruk_warclans_orruk_brutes",
+      "name": "Orruk Brutes",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/orruk_warclans/orruk_warclans_orruk_brutes.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 125,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 15,
+      "identifier": "orruk_warclans_orruk_maw_krusha",
+      "name": "Orruk Maw Krusha",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/orruk_warclans/orruk_warclans_orruk_maw_krusha.webp",
+      "price": 70.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 126,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 15,
+      "identifier": "orruk_warclans_orruk_megaboss",
+      "name": "Orruk Megaboss",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/orruk_warclans/orruk_warclans_orruk_megaboss.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 127,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 15,
+      "identifier": "orruk_warclans_orruk_weirdnob_shaman",
+      "name": "Orruk Weirdnob Shaman",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/orruk_warclans/orruk_warclans_orruk_weirdnob_shaman.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 128,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 15,
+      "identifier": "orruk_warclans_savage_boarboys",
+      "name": "Savage Boarboys",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/orruk_warclans/orruk_warclans_savage_boarboys.webp",
+      "price": 32.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 129,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 15,
+      "identifier": "orruk_warclans_savage_orruks",
+      "name": "Savage Orruks",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/orruk_warclans/orruk_warclans_savage_orruks.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 130,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 16,
+      "identifier": "ossiarch_bonereapers_arch-kavalos_zandtos",
+      "name": "Arch-Kavalos Zandtos",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/ossiarch_bonereapers/ossiarch_bonereapers_arch-kavalos_zandtos.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 131,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 16,
+      "identifier": "ossiarch_bonereapers_battletome",
+      "name": "Ossiarch Bonereapers Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/ossiarch_bonereapers/ossiarch_bonereapers_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 132,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 16,
+      "identifier": "ossiarch_bonereapers_black_coach",
+      "name": "Black Coach",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/ossiarch_bonereapers/ossiarch_bonereapers_black_coach.webp",
+      "price": 75.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 133,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 16,
+      "identifier": "ossiarch_bonereapers_dice",
+      "name": "Ossiarch Bonereapers Dice",
+      "description": "Faction themed dice set",
+      "image": "age_of_sigmar/ossiarch_bonereapers/ossiarch_bonereapers_dice.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 134,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 16,
+      "identifier": "ossiarch_bonereapers_endless_spells",
+      "name": "Ossiarch Bonereapers Endless Spells",
+      "description": "Powerful spells unique to this faction.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/ossiarch_bonereapers/ossiarch_bonereapers_endless_spells.webp",
+      "price": 21.5,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 135,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 16,
+      "identifier": "ossiarch_bonereapers_gothizzar_harvester",
+      "name": "Gothizzar Harvester",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/ossiarch_bonereapers/ossiarch_bonereapers_gothizzar_harvester.webp",
+      "price": 30.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 136,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 16,
+      "identifier": "ossiarch_bonereapers_katakros_mortarch_of_the_necropolis",
+      "name": "Katakros - Mortarch of the Necropolis",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/ossiarch_bonereapers/ossiarch_bonereapers_katakros_mortarch_of_the_necropolis.webp",
+      "price": 65.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 137,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 16,
+      "identifier": "ossiarch_bonereapers_kavalos_deathriders",
+      "name": "Kavalos Deathriders",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/ossiarch_bonereapers/ossiarch_bonereapers_kavalos_deathriders.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 138,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 16,
+      "identifier": "ossiarch_bonereapers_mortek_crawler",
+      "name": "Mortek Crawler",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/ossiarch_bonereapers/ossiarch_bonereapers_mortek_crawler.webp",
+      "price": 50.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 139,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 17,
+      "identifier": "beasts_of_chaos_herdstone",
+      "name": "Beasts of Chaos Herdstone",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "age_of_sigmar/scenics_and_terrain/beasts_of_chaos_herdstone.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 140,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 17,
+      "identifier": "blades_of_khorne_skull_alter",
+      "name": "Blades of Khorne Skull Alter",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "age_of_sigmar/scenics_and_terrain/blades_of_khorne_skull_alter.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 141,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 17,
+      "identifier": "flesh-eater_courts_charnel_throne",
+      "name": "Flesh-Eater Courts Charnel Throne",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "age_of_sigmar/scenics_and_terrain/flesh-eater_courts_charnel_throne.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 142,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 17,
+      "identifier": "fyreslayers_magmic_battleforge",
+      "name": "Fyreslayers Magmic Battleforge",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "age_of_sigmar/scenics_and_terrain/fyreslayers_magmic_battleforge.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 143,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 17,
+      "identifier": "gloomspite_gitz_bad_moon_loonshrine",
+      "name": "Gloomspite Gitz Bad Moon Loonshrine",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "age_of_sigmar/scenics_and_terrain/gloomspite_gitz_bad_moon_loonshrine.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 144,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 17,
+      "identifier": "lumineth_realm-lords_shrine_luminor",
+      "name": "Lumineth Realm-Lords Shrine Luminor",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "age_of_sigmar/scenics_and_terrain/lumineth_realm-lords_shrine_luminor.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 145,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 17,
+      "identifier": "maggotkin_of_nurgle_feculent_gnarlmaw",
+      "name": "Maggotkin of Nurgle Feculent Gnarlmaw",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "age_of_sigmar/scenics_and_terrain/maggotkin_of_nurgle_feculent_gnarlmaw.webp",
+      "price": 25.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 146,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 17,
+      "identifier": "ogor_mawtribes_great_mawpot",
+      "name": "Ogor Mawtribes Great Mawpot",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "age_of_sigmar/scenics_and_terrain/ogor_mawtribes_great_mawpot.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 147,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 17,
+      "identifier": "skaven_gnawholes",
+      "name": "Skaven Gnawholes",
+      "description": "Multi-part plastic models.  Assembly and Painting required.",
+      "image": "age_of_sigmar/scenics_and_terrain/skaven_gnawholes.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 148,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 18,
+      "identifier": "seraphon_battletome",
+      "name": "Seraphon Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/seraphon/seraphon_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 149,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 18,
+      "identifier": "seraphon_saurus_guard",
+      "name": "Saurus Guard",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/seraphon/seraphon_saurus_guard.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 150,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 18,
+      "identifier": "seraphon_skink_starpriest",
+      "name": "Skink Starpriest",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/seraphon/seraphon_skink_starpriest.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 151,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 18,
+      "identifier": "seraphon_skinks",
+      "name": "Skinks",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/seraphon/seraphon_skinks.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 152,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 18,
+      "identifier": "seraphon_start_collecting_seraphon",
+      "name": "Start Collecting: Seraphon",
+      "description": "Faction Starter Set.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/seraphon/seraphon_start_collecting_seraphon.webp",
+      "price": 60.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 153,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 19,
+      "identifier": "skaven_battletome",
+      "name": "Skaven Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/skaven/skaven_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 154,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 19,
+      "identifier": "skaven_clanrats",
+      "name": "Clanrats",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/skaven/skaven_clanrats.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 155,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 19,
+      "identifier": "skaven_endless_spells",
+      "name": "Skaven Endless Spells",
+      "description": "Powerful spells unique to this faction.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/skaven/skaven_endless_spells.webp",
+      "price": 21.5,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 156,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 19,
+      "identifier": "skaven_plague_monks",
+      "name": "Plague Monks",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/skaven/skaven_plague_monks.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 157,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 19,
+      "identifier": "skaven_start_collecting_skaven_pestilens",
+      "name": "Start Collecting: Skaven Pestilens",
+      "description": "Faction Starter Set.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/skaven/skaven_start_collecting_skaven_pestilens.webp",
+      "price": 60.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 158,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 19,
+      "identifier": "skaven_stormfiends",
+      "name": "Stormfiends",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/skaven/skaven_stormfiends.webp",
+      "price": 40.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 159,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 19,
+      "identifier": "skaven_verminlord_corruptor",
+      "name": "Verminlord Corruptor",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/skaven/skaven_verminlord_corruptor.webp",
+      "price": 65.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 160,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 19,
+      "identifier": "skaven_warlock_bombardier",
+      "name": "Warlock Bombardier",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/skaven/skaven_warlock_bombardier.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 161,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 20,
+      "identifier": "slaves_to_darkness_battletome",
+      "name": "Slaves to Darkness Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/slaves_to_darkness/slaves_to_darkness_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 162,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 20,
+      "identifier": "slaves_to_darkness_belakor_the_dark_master",
+      "name": "Be'lakor the Dark Master",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/slaves_to_darkness/slaves_to_darkness_belakor_the_dark_master.webp",
+      "price": 89.0,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 163,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 20,
+      "identifier": "slaves_to_darkness_chaos_warriors",
+      "name": "Chaos Warriors",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/slaves_to_darkness/slaves_to_darkness_chaos_warriors.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 164,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 20,
+      "identifier": "slaves_to_darkness_corvus_cabal",
+      "name": "Corvus Cabal",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/slaves_to_darkness/slaves_to_darkness_corvus_cabal.webp",
+      "price": 40.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 165,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 20,
+      "identifier": "slaves_to_darkness_cypher_lords",
+      "name": "Cypher Lords",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/slaves_to_darkness/slaves_to_darkness_cypher_lords.webp",
+      "price": 40.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 166,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 20,
+      "identifier": "slaves_to_darkness_iron_golem",
+      "name": "Iron Golem",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/slaves_to_darkness/slaves_to_darkness_iron_golem.webp",
+      "price": 40.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 167,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 20,
+      "identifier": "slaves_to_darkness_splintered_fang",
+      "name": "Splintered Fang",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/slaves_to_darkness/slaves_to_darkness_splintered_fang.webp",
+      "price": 40.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 168,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 20,
+      "identifier": "slaves_to_darkness_start_collecting_slaves_to_darkness",
+      "name": "Start Collecting: Slaves to Darkness",
+      "description": "Faction Starter Set.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/slaves_to_darkness/slaves_to_darkness_start_collecting_slaves_to_darkness.webp",
+      "price": 60.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 169,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 20,
+      "identifier": "slaves_to_darkness_the_unmade",
+      "name": "The Unmade",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/slaves_to_darkness/slaves_to_darkness_the_unmade.webp",
+      "price": 40.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 170,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 20,
+      "identifier": "slaves_to_darkness_varanguard_knights_of_ruin",
+      "name": "Varanguard - Knights of Ruin",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/slaves_to_darkness/slaves_to_darkness_varanguard_knights_of_ruin.webp",
+      "price": 60.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 171,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 21,
+      "identifier": "sons_of_behemat_mancrusher_gargants",
+      "name": "Mancrusher Gargants",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/sons_of_behemat/sons_of_behemat_mancrusher_gargants.webp",
+      "price": 75.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 172,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 21,
+      "identifier": "sons_of_behemat_battletome",
+      "name": "Sons of Behemat Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/sons_of_behemat/sons_of_behemat_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 173,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 21,
+      "identifier": "sons_of_behemat_mega_gargant",
+      "name": "Mega Gargant",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/sons_of_behemat/sons_of_behemat_mega_gargant.webp",
+      "price": 120.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 174,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 22,
+      "identifier": "soulblight_gravelords_battletome",
+      "name": "Soulblight Gravelords Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/soulblight_gravelords/soulblight_gravelords_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 175,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 22,
+      "identifier": "soulblight_gravelords_belladamma_volga_first_of_the_vyrkos",
+      "name": "Belladamma Volga, First of the Vyrkos",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/soulblight_gravelords/soulblight_gravelords_belladamma_volga_first_of_the_vyrkos.webp",
+      "price": 31.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 176,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 22,
+      "identifier": "soulblight_gravelords_blood_knights",
+      "name": "Blood Knights",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/soulblight_gravelords/soulblight_gravelords_blood_knights.webp",
+      "price": 39.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 177,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 22,
+      "identifier": "soulblight_gravelords_deadwalker_zombies",
+      "name": "Deadwalker Zombies",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/soulblight_gravelords/soulblight_gravelords_deadwalker_zombies.webp",
+      "price": 34.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 178,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 22,
+      "identifier": "soulblight_gravelords_deathrattle_skeletons",
+      "name": "Deathrattle Skeletons",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/soulblight_gravelords/soulblight_gravelords_deathrattle_skeletons.webp",
+      "price": 36.5,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 179,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 22,
+      "identifier": "soulblight_gravelords_dice",
+      "name": "Soulblight Gravelords Dice",
+      "description": "Faction themed dice set",
+      "image": "age_of_sigmar/soulblight_gravelords/soulblight_gravelords_dice.webp",
+      "price": 20.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 180,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 22,
+      "identifier": "soulblight_gravelords_dire_wolves",
+      "name": "Dire Wolves",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/soulblight_gravelords/soulblight_gravelords_dire_wolves.webp",
+      "price": 31.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 181,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 22,
+      "identifier": "soulblight_gravelords_fell_bats",
+      "name": "Fell Bats",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/soulblight_gravelords/soulblight_gravelords_fell_bats.webp",
+      "price": 31.5,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 182,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 22,
+      "identifier": "soulblight_gravelords_morghasts",
+      "name": "Morghasts",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/soulblight_gravelords/soulblight_gravelords_morghasts.webp",
+      "price": 37.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 183,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 22,
+      "identifier": "soulblight_gravelords_nagash_supreme_lord_of_the_undead",
+      "name": "Nagash - Supreme Lord of the Undead",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/soulblight_gravelords/soulblight_gravelords_nagash_supreme_lord_of_the_undead.webp",
+      "price": 75.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 184,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 23,
+      "identifier": "stormcast_eternals_aventis_firestrike_magister_of_hammerhal",
+      "name": "Aventis Firestrike - Magister of Hammerhal",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/stormcast_eternals/stormcast_eternals_aventis_firestrike_magister_of_hammerhal.webp",
+      "price": 70.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 185,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 23,
+      "identifier": "stormcast_eternals_battletome",
+      "name": "Stormcast Eternals Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/stormcast_eternals/stormcast_eternals_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 186,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 23,
+      "identifier": "stormcast_eternals_dracothian_guard",
+      "name": "Dracothian Guard",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/stormcast_eternals/stormcast_eternals_dracothian_guard.webp",
+      "price": 40.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 187,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 23,
+      "identifier": "stormcast_eternals_evocators",
+      "name": "Evocators",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/stormcast_eternals/stormcast_eternals_evocators.webp",
+      "price": 35.0,
+      "stock_state": 3,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 188,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 23,
+      "identifier": "stormcast_eternals_gardus_steel_soul",
+      "name": "Gardus Steel Soul",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/stormcast_eternals/stormcast_eternals_gardus_steel_soul.webp",
+      "price": 23.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 189,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 23,
+      "identifier": "stormcast_eternals_gryph-hounds",
+      "name": "Gryph-Hounds",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/stormcast_eternals/stormcast_eternals_gryph-hounds.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 190,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 23,
+      "identifier": "stormcast_eternals_judicators",
+      "name": "Judicators",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/stormcast_eternals/stormcast_eternals_judicators.webp",
+      "price": 37.5,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 191,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 23,
+      "identifier": "stormcast_eternals_knight_vexillor",
+      "name": "Knight Vexillor",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/stormcast_eternals/stormcast_eternals_knight_vexillor.webp",
+      "price": 18.0,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 192,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 23,
+      "identifier": "stormcast_eternals_knight-azyros",
+      "name": "Knight-Azyros",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/stormcast_eternals/stormcast_eternals_knight-azyros.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 193,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 23,
+      "identifier": "stormcast_eternals_liberators",
+      "name": "Liberators",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/stormcast_eternals/stormcast_eternals_liberators.webp",
+      "price": 37.5,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 194,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 24,
+      "identifier": "sylvaneth_alarielle_the_everqueen",
+      "name": "Alarielle the Everqueen",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/sylvaneth/sylvaneth_alarielle_the_everqueen.webp",
+      "price": 85.0,
+      "stock_state": 4,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 195,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 24,
+      "identifier": "sylvaneth_battletome",
+      "name": "Sylvaneth Battletome",
+      "description": "Warscolls, Allegiance Abilities, Battleplans, and Pitched Battle Profiles for this faction.",
+      "image": "age_of_sigmar/sylvaneth/sylvaneth_battletome.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 196,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 24,
+      "identifier": "sylvaneth_druanti_the_arch-revenant",
+      "name": "Druanti the Arch-Revenant",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/sylvaneth/sylvaneth_druanti_the_arch-revenant.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 197,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 24,
+      "identifier": "sylvaneth_dryads",
+      "name": "Dryads",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/sylvaneth/sylvaneth_dryads.webp",
+      "price": 27.5,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 198,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 24,
+      "identifier": "sylvaneth_drycha_hamadreth",
+      "name": "Drycha Hamadreth",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/sylvaneth/sylvaneth_drycha_hamadreth.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 199,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 24,
+      "identifier": "sylvaneth_endless_spells",
+      "name": "Sylvaneth Endless Spells",
+      "description": "Powerful spells unique to this faction.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/sylvaneth/sylvaneth_endless_spells.webp",
+      "price": 21.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 200,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 24,
+      "identifier": "sylvaneth_kurnoth_hunters",
+      "name": "Kurnoth Hunters",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/sylvaneth/sylvaneth_kurnoth_hunters.webp",
+      "price": 35.0,
+      "stock_state": 4,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 201,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 24,
+      "identifier": "sylvaneth_start_collecting_sylvaneth",
+      "name": "Start Collecting: Sylvaneth",
+      "description": "Faction Starter Set.  Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/sylvaneth/sylvaneth_start_collecting_sylvaneth.webp",
+      "price": 60.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 202,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 24,
+      "identifier": "sylvaneth_treelord",
+      "name": "Treelord",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "age_of_sigmar/sylvaneth/sylvaneth_treelord.webp",
+      "price": 40.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 203,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 24,
+      "identifier": "sylvaneth_tree-revenants",
+      "name": "Tree-Revenants",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "age_of_sigmar/sylvaneth/sylvaneth_tree-revenants.webp",
+      "price": 27.5,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  }
+]

@@ -1,0 +1,974 @@
+[
+  {
+    "pk": 203,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 25,
+      "identifier": "arcane_maelstrom_commander_deck",
+      "name": "Arcane Maelstrom Commander Deck",
+      "description": "",
+      "image": "magic_the_gathering/commander/arcane_maelstrom_commander_deck.webp",
+      "price": 32.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 204,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 25,
+      "identifier": "enhanced_evolution_commander_deck",
+      "name": "Enhanced Evolution Commander Deck",
+      "description": "",
+      "image": "magic_the_gathering/commander/enhanced_evolution_commander_deck.webp",
+      "price": 32.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 205,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 25,
+      "identifier": "ruthless_regiment_commander_deck",
+      "name": "Ruthless Regiment Commander Deck",
+      "description": "",
+      "image": "magic_the_gathering/commander/ruthless_regiment_commander_deck.webp",
+      "price": 32.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 206,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 25,
+      "identifier": "symbiotic_swarm_commander_deck",
+      "name": "Symbiotic Swarm Commander Deck",
+      "description": "",
+      "image": "magic_the_gathering/commander/symbiotic_swarm_commander_deck.webp",
+      "price": 32.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 207,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 25,
+      "identifier": "timeless_wisdom_commander_deck",
+      "name": "Timeless Wisdom Commander Deck",
+      "description": "",
+      "image": "magic_the_gathering/commander/timeless_wisdom_commander_deck.webp",
+      "price": 32.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 208,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 26,
+      "identifier": "core_set_2021_booster_box",
+      "name": "Core Set 2021 Booster Box",
+      "description": "",
+      "image": "magic_the_gathering/core_set_2021/core_set_2021_booster_box.webp",
+      "price": 93.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 209,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 26,
+      "identifier": "core_set_2021_booster_pack",
+      "name": "Core Set 2021 Booster Pack",
+      "description": "",
+      "image": "magic_the_gathering/core_set_2021/core_set_2021_booster_pack.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 21,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 210,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 26,
+      "identifier": "core_set_2021_bundle",
+      "name": "Core Set 2021 Bundle",
+      "description": "",
+      "image": "magic_the_gathering/core_set_2021/core_set_2021_bundle.webp",
+      "price": 40.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 211,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 27,
+      "identifier": "ikoria_lair_of_behemoths_black_theme_booster",
+      "name": "Black Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/ikoria_lair_of_behemoths/ikoria_lair_of_behemoths_black_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 212,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 27,
+      "identifier": "ikoria_lair_of_behemoths_blue_theme_booster",
+      "name": "Blue Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/ikoria_lair_of_behemoths/ikoria_lair_of_behemoths_blue_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 30,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 213,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 27,
+      "identifier": "ikoria_lair_of_behemoths_booster_box",
+      "name": "Booster Box",
+      "description": "",
+      "image": "magic_the_gathering/ikoria_lair_of_behemoths/ikoria_lair_of_behemoths_booster_box.webp",
+      "price": 93.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 214,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 27,
+      "identifier": "ikoria_lair_of_behemoths_booster_pack",
+      "name": "Booster",
+      "description": "",
+      "image": "magic_the_gathering/ikoria_lair_of_behemoths/ikoria_lair_of_behemoths_booster_pack.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 215,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 27,
+      "identifier": "ikoria_lair_of_behemoths_bundle",
+      "name": "Booster Box",
+      "description": "",
+      "image": "magic_the_gathering/ikoria_lair_of_behemoths/ikoria_lair_of_behemoths_bundle.webp",
+      "price": 40.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 216,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 27,
+      "identifier": "ikoria_lair_of_behemoths_green_theme_booster",
+      "name": "Green Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/ikoria_lair_of_behemoths/ikoria_lair_of_behemoths_green_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 217,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 27,
+      "identifier": "ikoria_lair_of_behemoths_monsters_theme_booster",
+      "name": "Monsters Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/ikoria_lair_of_behemoths/ikoria_lair_of_behemoths_monsters_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 23,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 218,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 27,
+      "identifier": "ikoria_lair_of_behemoths_red_theme_booster",
+      "name": "Red Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/ikoria_lair_of_behemoths/ikoria_lair_of_behemoths_red_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 31,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 219,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 28,
+      "identifier": "kaldheim_black_theme_booster",
+      "name": "Black Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/kaldheim/kaldheim_black_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 220,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 28,
+      "identifier": "kaldheim_blue_theme_booster",
+      "name": "Blue Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/kaldheim/kaldheim_blue_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 26,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 221,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 28,
+      "identifier": "kaldheim_booster_box",
+      "name": "Booster Box",
+      "description": "",
+      "image": "magic_the_gathering/kaldheim/kaldheim_booster_box.webp",
+      "price": 93.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 222,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 28,
+      "identifier": "kaldheim_bundle",
+      "name": "Booster Box",
+      "description": "",
+      "image": "magic_the_gathering/kaldheim/kaldheim_bundle.webp",
+      "price": 40.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 223,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 28,
+      "identifier": "kaldheim_green_theme_booster",
+      "name": "Green Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/kaldheim/kaldheim_green_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 47,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 224,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 28,
+      "identifier": "kaldheim_red_theme_booster",
+      "name": "Red Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/kaldheim/kaldheim_red_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 36,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 225,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 28,
+      "identifier": "kaldheim_viking_theme_booster",
+      "name": "Viking Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/kaldheim/kaldheim_viking_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 27,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 226,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 28,
+      "identifier": "kaldheim_white_theme_booster",
+      "name": "White Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/kaldheim/kaldheim_white_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 30,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 227,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 29,
+      "identifier": "theros_beyond_death_booster_box",
+      "name": "Booster Box",
+      "description": "",
+      "image": "magic_the_gathering/theros_beyond_death/theros_beyond_death_booster_box.webp",
+      "price": 93.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 228,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 29,
+      "identifier": "theros_beyond_death_booster_pack",
+      "name": "Booster",
+      "description": "",
+      "image": "magic_the_gathering/theros_beyond_death/theros_beyond_death_booster_pack.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 18,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 229,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 30,
+      "identifier": "throne_of_eldraine_black_theme_booster",
+      "name": "Black Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/throne_of_eldraine/throne_of_eldraine_black_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 37,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 230,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 30,
+      "identifier": "throne_of_eldraine_blue_theme_booster",
+      "name": "Blue Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/throne_of_eldraine/throne_of_eldraine_blue_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 28,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 231,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 30,
+      "identifier": "throne_of_eldraine_booster_box",
+      "name": "Booster Box",
+      "description": "",
+      "image": "magic_the_gathering/throne_of_eldraine/throne_of_eldraine_booster_box.webp",
+      "price": 93.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 232,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 30,
+      "identifier": "throne_of_eldraine_booster_pack",
+      "name": "Booster",
+      "description": "",
+      "image": "magic_the_gathering/throne_of_eldraine/throne_of_eldraine_booster_pack.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 24,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 233,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 30,
+      "identifier": "throne_of_eldraine_bundle",
+      "name": "Booster Box",
+      "description": "",
+      "image": "magic_the_gathering/throne_of_eldraine/throne_of_eldraine_bundle.webp",
+      "price": 40.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 234,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 30,
+      "identifier": "throne_of_eldraine_green_theme_booster",
+      "name": "Green Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/throne_of_eldraine/throne_of_eldraine_green_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 19,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 235,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 30,
+      "identifier": "throne_of_eldraine_oko_planeswalker_deck",
+      "name": "Oko Planeswalker Deck",
+      "description": "",
+      "image": "magic_the_gathering/throne_of_eldraine/throne_of_eldraine_oko_planeswalker_deck.webp",
+      "price": 12.95,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 236,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 30,
+      "identifier": "throne_of_eldraine_red_theme_booster",
+      "name": "Red Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/throne_of_eldraine/throne_of_eldraine_red_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 33,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 237,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 30,
+      "identifier": "throne_of_eldraine_rowan_planeswalker_deck",
+      "name": "Rowan Planeswalker Deck",
+      "description": "",
+      "image": "magic_the_gathering/throne_of_eldraine/throne_of_eldraine_rowan_planeswalker_deck.webp",
+      "price": 12.95,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 238,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 30,
+      "identifier": "throne_of_eldraine_white_theme_booster",
+      "name": "White Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/throne_of_eldraine/throne_of_eldraine_white_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 239,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 31,
+      "identifier": "war_of_the_spark_black_theme_booster",
+      "name": "Black Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/war_of_the_spark/war_of_the_spark_black_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 26,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 240,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 31,
+      "identifier": "war_of_the_spark_blue_theme_booster",
+      "name": "Blue Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/war_of_the_spark/war_of_the_spark_blue_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 34,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 241,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 31,
+      "identifier": "war_of_the_spark_booster_box",
+      "name": "Booster Box",
+      "description": "",
+      "image": "magic_the_gathering/war_of_the_spark/war_of_the_spark_booster_box.webp",
+      "price": 93.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 242,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 31,
+      "identifier": "war_of_the_spark_booster_pack",
+      "name": "Booster",
+      "description": "",
+      "image": "magic_the_gathering/war_of_the_spark/war_of_the_spark_booster_pack.webp",
+      "price": 3.45,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 243,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 31,
+      "identifier": "war_of_the_spark_gideon_planeswalker_deck",
+      "name": "Gideon Planeswalker Deck",
+      "description": "",
+      "image": "magic_the_gathering/war_of_the_spark/war_of_the_spark_gideon_planeswalker_deck.webp",
+      "price": 12.95,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 244,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 31,
+      "identifier": "war_of_the_spark_green_theme_booster",
+      "name": "Green Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/war_of_the_spark/war_of_the_spark_green_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 245,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 31,
+      "identifier": "war_of_the_spark_jace_planeswalker_deck",
+      "name": "Jace Planeswalker Deck",
+      "description": "",
+      "image": "magic_the_gathering/war_of_the_spark/war_of_the_spark_jace_planeswalker_deck.webp",
+      "price": 12.95,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 246,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 31,
+      "identifier": "war_of_the_spark_red_theme_booster",
+      "name": "Red Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/war_of_the_spark/war_of_the_spark_red_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 247,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 31,
+      "identifier": "war_of_the_spark_white_theme_booster",
+      "name": "White Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/war_of_the_spark/war_of_the_spark_white_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 20,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 248,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 32,
+      "identifier": "zendikar_rising_black_theme_booster",
+      "name": "Black Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/zendikar_rising/zendikar_rising_black_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 249,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 32,
+      "identifier": "zendikar_rising_blue_theme_booster",
+      "name": "Blue Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/zendikar_rising/zendikar_rising_blue_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 18,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 250,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 32,
+      "identifier": "zendikar_rising_booster_box",
+      "name": "Booster Box",
+      "description": "",
+      "image": "magic_the_gathering/zendikar_rising/zendikar_rising_booster_box.webp",
+      "price": 93.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 251,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 32,
+      "identifier": "zendikar_rising_booster_pack",
+      "name": "Booster",
+      "description": "",
+      "image": "magic_the_gathering/zendikar_rising/zendikar_rising_booster_pack.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 41,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 252,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 32,
+      "identifier": "zendikar_rising_bundle",
+      "name": "Booster Box",
+      "description": "",
+      "image": "magic_the_gathering/zendikar_rising/zendikar_rising_bundle.webp",
+      "price": 40.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 253,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 32,
+      "identifier": "zendikar_rising_green_theme_booster",
+      "name": "Green Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/zendikar_rising/zendikar_rising_green_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 33,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 254,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 32,
+      "identifier": "zendikar_rising_party_theme_booster",
+      "name": "Party Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/zendikar_rising/zendikar_rising_party_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 20,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 255,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 32,
+      "identifier": "zendikar_rising_red_theme_booster",
+      "name": "Red Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/zendikar_rising/zendikar_rising_red_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 43,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 256,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 32,
+      "identifier": "zendikar_rising_white_theme_booster",
+      "name": "White Theme Booster",
+      "description": "",
+      "image": "magic_the_gathering/zendikar_rising/zendikar_rising_white_theme_booster.webp",
+      "price": 3.45,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  }
+]

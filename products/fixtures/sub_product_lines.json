@@ -1,0 +1,1432 @@
+[
+  {
+    "pk": 1,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "beasts_of_chaos",
+      "name": "Beasts of Chaos",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "blades_of_khorne",
+      "name": "Blades of Khorne",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "daughters_of_khaine",
+      "name": "Daughters of Khaine",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "disciples_of_tzeentch",
+      "name": "Disciples of Tzeentch",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "flesh-eater_courts",
+      "name": "Flesh-Eater Courts",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "fyreslayers",
+      "name": "Fyreslayers",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "gloomspite_gitz",
+      "name": "Gloomspite Gitz",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "hedonites_of_slaanesh",
+      "name": "Hedonites of Slaanesh",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "idoneth_deepkin",
+      "name": "Idoneth Deepkin",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "kharadron_overlords",
+      "name": "Kharadron Overlords",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "lumineth_realm-lords",
+      "name": "Lumineth Realm-Lords",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "maggotkin_of_nurgle",
+      "name": "Maggotkin of Nurgle",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "nighthaunt",
+      "name": "Nighthaunt",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "ogor_mawtribes",
+      "name": "Ogor Mawtribes",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "orruk_warclans",
+      "name": "Orruk Warclans",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "ossiarch_bonereapers",
+      "name": "Ossiarch Bonereapers",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "aos_scenics_and_terrain",
+      "name": "Scenics and Terrain",
+      "description": "",
+      "core_set": false,
+      "scenics": true,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "seraphon",
+      "name": "Seraphon",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "skaven",
+      "name": "Skaven",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "slaves_to_darkness",
+      "name": "Slaves to Darkness",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "sons_of_behemat",
+      "name": "Sons of Behemat",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "soulblight_gravelords",
+      "name": "Soulblight Gravelords",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "stormcast_eternals",
+      "name": "Stormcast Eternals",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 1,
+      "identifier": "sylvaneth",
+      "name": "Sylvaneth",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 2,
+      "identifier": "commander",
+      "name": "Commander",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 2,
+      "identifier": "core_set_2021",
+      "name": "Core Set 2021",
+      "description": "",
+      "core_set": true,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 2,
+      "identifier": "ikoria_lair_of_behemoths",
+      "name": "Ikoria: Lair of Behemoths",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 2,
+      "identifier": "kaldheim",
+      "name": "Kaldheim",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 29,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 2,
+      "identifier": "theros_beyond_death",
+      "name": "Theros: Beyond Death",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 2,
+      "identifier": "throne_of_eldraine",
+      "name": "Throne of Eldraine",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 31,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 2,
+      "identifier": "war_of_the_spark",
+      "name": "War of the Spark",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 32,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 2,
+      "identifier": "zendikar_rising",
+      "name": "Zendikar Rising",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 33,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 3,
+      "identifier": "marvel_champions_campaign_expansions",
+      "name": "Campaign Expansions",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 34,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 3,
+      "identifier": "marvel_champions_core_set",
+      "name": "Marvel Champions Core Set",
+      "description": "",
+      "core_set": true,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 35,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 3,
+      "identifier": "marvel_champions_hero_packs",
+      "name": "Hero Packs",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 36,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 3,
+      "identifier": "marvel_champions_scenario_packs",
+      "name": "Scenario Packs",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 37,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 4,
+      "identifier": "cawdor",
+      "name": "Cawdor",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 38,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 4,
+      "identifier": "necromunda_core_rules_and_starter_sets",
+      "name": "Core Rules and Starter Sets",
+      "description": "",
+      "core_set": true,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 39,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 4,
+      "identifier": "corpse_grinder_cult",
+      "name": "Corpse Grinder Cult",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 40,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 4,
+      "identifier": "delaque",
+      "name": "Delaque",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 41,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 4,
+      "identifier": "escher",
+      "name": "Escher",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 42,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 4,
+      "identifier": "goliath",
+      "name": "Goliath",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 43,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 4,
+      "identifier": "necromunda_neutral",
+      "name": "Neutral",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 44,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 4,
+      "identifier": "orlock",
+      "name": "Orlock",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 45,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 4,
+      "identifier": "palanite_enforcers",
+      "name": "Palanite Enforcers",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 46,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 4,
+      "identifier": "necromunda_scenics_and_terrain",
+      "name": "Scenics and Terrain",
+      "description": "",
+      "core_set": false,
+      "scenics": true,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 47,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 4,
+      "identifier": "slave_ogryn_gang",
+      "name": "Slave Ogryn Gang",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 48,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 4,
+      "identifier": "van_saar",
+      "name": "Van Saar",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 49,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 5,
+      "identifier": "star_wars_legion_core_set",
+      "name": "Core Sets and Accessories",
+      "description": "",
+      "core_set": true,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 50,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 5,
+      "identifier": "star_wars_legion_galactic_empire",
+      "name": "Galactic Empire",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 51,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 5,
+      "identifier": "star_wars_legion_galactic_republic",
+      "name": "Galactic Republic",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 52,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 5,
+      "identifier": "star_wars_legion_rebel_alliance",
+      "name": "Rebel Alliance",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 53,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 5,
+      "identifier": "star_wars_legion_scenics_and_terrain",
+      "name": "Scenics and Terrain",
+      "description": "",
+      "core_set": false,
+      "scenics": true,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 54,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 5,
+      "identifier": "star_wars_legion_separatist_alliance",
+      "name": "Separatist Alliance",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 55,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 6,
+      "identifier": "star_wars_x-wing_core_set",
+      "name": "Core Sets and Accessories",
+      "description": "",
+      "core_set": true,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 56,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 6,
+      "identifier": "star_wars_x-wing_first_order",
+      "name": "First Order",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 57,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 6,
+      "identifier": "star_wars_x-wing_galactic_empire",
+      "name": "Galactic Empire",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 58,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 6,
+      "identifier": "star_wars_x-wing_galactic_republic",
+      "name": "Galactic Republic",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 59,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 6,
+      "identifier": "star_wars_x-wing_neutral",
+      "name": "Neutral",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 60,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 6,
+      "identifier": "star_wars_x-wing_rebel_alliance",
+      "name": "Rebel Alliance",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 61,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 6,
+      "identifier": "star_wars_x-wing_resistance",
+      "name": "Resistance",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 62,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 6,
+      "identifier": "star_wars_x-wing_scum_and_villainy",
+      "name": "Scum and Villainy",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 63,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 6,
+      "identifier": "star_wars_x-wing_separatist_alliance",
+      "name": "Separatist Alliance",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 64,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 7,
+      "identifier": "agents_of_chaos",
+      "name": "Agents of Chaos",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 65,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 7,
+      "identifier": "bringers_of_death",
+      "name": "Bringers of Death",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 66,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 7,
+      "identifier": "warcry_core_set",
+      "name": "Core Sets, Rules and Accessories",
+      "description": "",
+      "core_set": true,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 67,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 7,
+      "identifier": "harbingers_of_destruction",
+      "name": "Harbingers of Destruction",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 68,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 7,
+      "identifier": "monsters_and_mercenaries",
+      "name": "Monsters and Mercenaries",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 69,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 7,
+      "identifier": "warcry_scenics_and_terrain",
+      "name": "Scenics and Terrain",
+      "description": "",
+      "core_set": false,
+      "scenics": true,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 70,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 7,
+      "identifier": "sentinels_of_order",
+      "name": "Sentinels of Order",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 71,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "adepta_sororitas",
+      "name": "Adepta Sororitas",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 72,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "adeptus_custodes",
+      "name": "Adeptus Custodes",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 73,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "adeptus_mechanicus",
+      "name": "Adeptus Mechanicus",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 74,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "astra_militarum",
+      "name": "Astra Militarum",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 75,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "blood_angels",
+      "name": "Blood Angels",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 76,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "chaos_space_marines",
+      "name": "Chaos Space Marines",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 77,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "warhammer_40000_core_set",
+      "name": "Core Sets, Rules and Accessories",
+      "description": "",
+      "core_set": true,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 78,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "craftworlds",
+      "name": "Craftworlds",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 79,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "dark_angels",
+      "name": "Dark Angels",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 80,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "death_guard",
+      "name": "Death Guard",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 81,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "deathwatch",
+      "name": "Deathwatch",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 82,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "drukhari",
+      "name": "Drukhari",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 83,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "grey_knights",
+      "name": "Grey Knights",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 84,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "harlequins",
+      "name": "Harlequins",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 85,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "imperial_fists",
+      "name": "Imperial Fists",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 86,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "iron_hands",
+      "name": "Iron Hands",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 87,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "necrons",
+      "name": "Necrons",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 88,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "orks",
+      "name": "Orks",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 89,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "raven_guard",
+      "name": "Raven Guard",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 90,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "salamanders",
+      "name": "Salamanders",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 91,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "warhammer_40000_scenics_and_terrain",
+      "name": "Scenics and Terrain",
+      "description": "",
+      "core_set": false,
+      "scenics": true,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 92,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "space_marines",
+      "name": "Space Marines",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 93,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "space_wolves",
+      "name": "Space Wolves",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 94,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "tau_empire",
+      "name": "T'au Empire",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 95,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "thousand_sons",
+      "name": "Thousand Sons",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 96,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "tyranids",
+      "name": "Tyranids",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 97,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "ultramarines",
+      "name": "Ultramarines",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 98,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 8,
+      "identifier": "white_scars",
+      "name": "White Scars",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 99,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 9,
+      "identifier": "hobby_essentials_glue",
+      "name": "Glue",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 100,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 9,
+      "identifier": "hobby_essentials_scenics",
+      "name": "Scenics",
+      "description": "",
+      "core_set": false,
+      "scenics": true,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 101,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 9,
+      "identifier": "hobby_essentials_tools",
+      "name": "Tools",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 102,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 10,
+      "identifier": "brushes_and_paint_air",
+      "name": "Air Paints",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 103,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 10,
+      "identifier": "brushes_and_paint_base",
+      "name": "Base Paints",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 104,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 10,
+      "identifier": "brushes_and_paint_brushes",
+      "name": "Paint Brushes",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 105,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 10,
+      "identifier": "brushes_and_paint_contrast",
+      "name": "Contrast Paints",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 106,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 10,
+      "identifier": "brushes_and_paint_dry",
+      "name": "Dry Paints",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 107,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 10,
+      "identifier": "brushes_and_paint_layer",
+      "name": "Layer Paints",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 108,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 10,
+      "identifier": "brushes_and_paint_shade",
+      "name": "Shades",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 109,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 10,
+      "identifier": "brushes_and_paint_spray",
+      "name": "Spray Paints",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 110,
+    "model": "products.sub_product_line",
+    "fields": {
+      "product_line": 10,
+      "identifier": "brushes_and_paint_technical",
+      "name": "Technical Paints",
+      "description": "",
+      "core_set": false,
+      "scenics": false,
+      "image": "noimage.png"
+    }
+  }
+]

@@ -1,0 +1,380 @@
+[
+  {
+    "pk": 257,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 33,
+      "identifier": "campaign_expansion_the_galaxys_most_wanted",
+      "name": "The Galaxy's Most Wanted",
+      "description": "",
+      "image": "marvel_champions/campaign_expansions/campaign_expansion_the_galaxys_most_wanted.webp",
+      "price": 39.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 258,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 33,
+      "identifier": "campaign_expansion_the_mad_titan",
+      "name": "The Mad Titan's Shadow",
+      "description": "",
+      "image": "marvel_champions/campaign_expansions/campaign_expansion_the_mad_titans_shadow.webp",
+      "price": 39.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 259,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 33,
+      "identifier": "campaign_expansion_the_rise_of_red_skull",
+      "name": "The Rise of Red Skull",
+      "description": "",
+      "image": "marvel_champions/campaign_expansions/campaign_expansion_the_rise_of_red_skull.webp",
+      "price": 39.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 260,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 34,
+      "identifier": "marvel_champions_the_card_game",
+      "name": "Marvel Champions - The Card Game",
+      "description": "",
+      "image": "marvel_champions/core_set/marvel_champions_the_card_game.webp",
+      "price": 59.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 261,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 35,
+      "identifier": "hero_pack_ant-man",
+      "name": "Ant-Man",
+      "description": "",
+      "image": "marvel_champions/hero_packs/hero_pack_ant-man.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 262,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 35,
+      "identifier": "hero_pack_black_widow",
+      "name": "Black Widow",
+      "description": "",
+      "image": "marvel_champions/hero_packs/hero_pack_black_widow.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 263,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 35,
+      "identifier": "hero_pack_captain_america",
+      "name": "Captain America",
+      "description": "",
+      "image": "marvel_champions/hero_packs/hero_pack_captain_america.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 264,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 35,
+      "identifier": "hero_pack_doctor_strange",
+      "name": "Doctor Strange",
+      "description": "",
+      "image": "marvel_champions/hero_packs/hero_pack_doctor_strange.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 265,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 35,
+      "identifier": "hero_pack_drax",
+      "name": "Drax",
+      "description": "",
+      "image": "marvel_champions/hero_packs/hero_pack_drax.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 266,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 35,
+      "identifier": "hero_pack_gamora",
+      "name": "Gamora",
+      "description": "",
+      "image": "marvel_champions/hero_packs/hero_pack_gamora.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 267,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 35,
+      "identifier": "hero_pack_hulk",
+      "name": "Hulk",
+      "description": "",
+      "image": "marvel_champions/hero_packs/hero_pack_hulk.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 268,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 35,
+      "identifier": "hero_pack_ms_marvel",
+      "name": "Ms. Marvel",
+      "description": "",
+      "image": "marvel_champions/hero_packs/hero_pack_ms_marvel.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 269,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 35,
+      "identifier": "hero_pack_quicksilver",
+      "name": "Quicksilver",
+      "description": "",
+      "image": "marvel_champions/hero_packs/hero_pack_quicksilver.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 270,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 35,
+      "identifier": "hero_pack_scarlet_witch",
+      "name": "Scarlet Witch",
+      "description": "",
+      "image": "marvel_champions/hero_packs/hero_pack_scarlet_witch.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 271,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 35,
+      "identifier": "hero_pack_star_lord",
+      "name": "Star Lord",
+      "description": "",
+      "image": "marvel_champions/hero_packs/hero_pack_star_lord.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 272,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 35,
+      "identifier": "hero_pack_thor",
+      "name": "Thor",
+      "description": "",
+      "image": "marvel_champions/hero_packs/hero_pack_thor.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 273,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 35,
+      "identifier": "hero_pack_venom",
+      "name": "Venom",
+      "description": "",
+      "image": "marvel_champions/hero_packs/hero_pack_venom.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 274,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 35,
+      "identifier": "hero_pack_wasp",
+      "name": "Wasp",
+      "description": "",
+      "image": "marvel_champions/hero_packs/hero_pack_wasp.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 275,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 36,
+      "identifier": "scenario_pack_the_green_goblin",
+      "name": "The Green Goblin",
+      "description": "",
+      "image": "marvel_champions/scenario_packs/scenario_pack_the_green_goblin.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 276,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 36,
+      "identifier": "scenario_pack_the_once_and_future_kang",
+      "name": "The Once and Future Kang",
+      "description": "",
+      "image": "marvel_champions/scenario_packs/scenario_pack_the_once_and_future_kang.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 277,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 36,
+      "identifier": "scenario_pack_the_wrecking_crew",
+      "name": "The Wrecking Crew",
+      "description": "",
+      "image": "marvel_champions/scenario_packs/scenario_pack_the_wrecking_crew.webp",
+      "price": 19.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  }
+]

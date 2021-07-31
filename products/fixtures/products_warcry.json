@@ -1,0 +1,1118 @@
+[
+  {
+    "pk": 489,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "agents_of_chaos",
+      "name": "Agents of Chaos",
+      "description": "Chaos faction rules supplement.",
+      "image": "warcry/agents_of_chaos/agents_of_chaos.webp",
+      "price": 20,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 490,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "agents_of_chaos_dice",
+      "name": "Agents of Chaos Dice",
+      "description": "Faction themed dice set.",
+      "image": "warcry/agents_of_chaos/agents_of_chaos_dice.webp",
+      "price": 16.0,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 491,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "beasts_of_chaos_cards",
+      "name": "Beasts of Chaos Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/agents_of_chaos/beasts_of_chaos_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 492,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "blades_of_khorne_bloodbound_cards",
+      "name": "Blades of Khorne - Bloodbound Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/agents_of_chaos/blades_of_khorne_bloodbound_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 493,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "blades_of_khorne_daemons_cards",
+      "name": "Blades of Khorne - Daemons Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/agents_of_chaos/blades_of_khorne_daemons_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 494,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "corvus_cabal",
+      "name": "Corvus Cabal",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/agents_of_chaos/corvus_cabal.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 495,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "cypher_lords",
+      "name": "Cypher Lords",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/agents_of_chaos/cypher_lords.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 496,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "disciples_of_tzeentch_daemons_cards",
+      "name": "Disciples of Tzeentch - Daemons Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/agents_of_chaos/disciples_of_tzeentch_daemons_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 497,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "hedonites_of_slaanesh_cards",
+      "name": "Hedonites of Slaanesh Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/agents_of_chaos/hedonites_of_slaanesh_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 498,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "iron_golem",
+      "name": "Iron Golem",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/agents_of_chaos/iron_golem.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 499,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "maggotkin_of_nurgle_daemons_cards",
+      "name": "Maggotkin of Nurgle - Daemons Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/agents_of_chaos/maggotkin_of_nurgle_daemons_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 500,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "maggotkin_of_nurgle_rotbringers_cards",
+      "name": "Maggotkin of Nurgle - Rotbringers Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/agents_of_chaos/maggotkin_of_nurgle_rotbringers_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 501,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "scions_of_the_flame",
+      "name": "Scions of the Flame",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/agents_of_chaos/scions_of_the_flame.webp",
+      "price": 32.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 502,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "skaven",
+      "name": "Skaven",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/agents_of_chaos/skaven.webp",
+      "price": 36.0,
+      "stock_state": 3,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 503,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "skaven_cards",
+      "name": "Skaven Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/agents_of_chaos/skaven_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 504,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "slaves_to_darkness_cards",
+      "name": "Slaves to Darkness Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/agents_of_chaos/slaves_to_darkness_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 19,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 505,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "spire_tyrants",
+      "name": "Spire Tyrants",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/agents_of_chaos/spire_tyrants.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 506,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "splintered_fang",
+      "name": "Splintered Fang",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/agents_of_chaos/splintered_fang.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 507,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "the_unmade",
+      "name": "The Unmade",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/agents_of_chaos/the_unmade.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 508,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "tzeentch_arcanites_cards",
+      "name": "Tzeentch Arcanites Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/agents_of_chaos/tzeentch_arcanites_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 18,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 509,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 64,
+      "identifier": "untamed_beasts",
+      "name": "Untamed Beasts",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/agents_of_chaos/untamed_beasts.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 510,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 65,
+      "identifier": "bringers_of_death",
+      "name": "Bringers of Death",
+      "description": "Death faction rules supplement.",
+      "image": "warcry/bringers_of_death/bringers_of_death.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 511,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 65,
+      "identifier": "bringers_of_death_dice",
+      "name": "Bringers of Death Dice",
+      "description": "Faction themed dice set.",
+      "image": "warcry/bringers_of_death/bringers_of_death_dice.webp",
+      "price": 16.0,
+      "stock_state": 3,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 512,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 65,
+      "identifier": "flesh-eater_courts",
+      "name": "Flesh-Eater Courts",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/bringers_of_death/flesh-eater_courts.webp",
+      "price": 36.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 513,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 65,
+      "identifier": "legions_of_nagash",
+      "name": "Legions of Nagash",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/bringers_of_death/legions_of_nagash.webp",
+      "price": 36.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 514,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 65,
+      "identifier": "nighthaunt",
+      "name": "Nighthaunt",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/bringers_of_death/nighthaunt.webp",
+      "price": 36.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 515,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 65,
+      "identifier": "ossiarch_bonereapers_cards",
+      "name": "Ossiarch Bonereapers Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/bringers_of_death/ossiarch_bonereapers_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 516,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 66,
+      "identifier": "battleplan_cards",
+      "name": "Battleplan Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/core/battleplan_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 517,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 66,
+      "identifier": "ruler",
+      "name": "Ruler",
+      "description": "Warcry themed range ruler.",
+      "image": "warcry/core/ruler.webp",
+      "price": 10.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 518,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 66,
+      "identifier": "tome_of_champions_2019",
+      "name": "Tome of Champions 2019",
+      "description": "Annual rules supplement.",
+      "image": "warcry/core/tome_of_champions_2019.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 519,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 66,
+      "identifier": "tome_of_champions_2020",
+      "name": "Tome of Champions 2020",
+      "description": "Annual rules supplement.",
+      "image": "warcry/core/tome_of_champions_2020.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 520,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 66,
+      "identifier": "warcry_catacombs",
+      "name": "Warcry Catacombs",
+      "description": "Warcry starter and Catacombs supplement.",
+      "image": "warcry/core/warcry_catacombs.webp",
+      "price": 125.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 521,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 66,
+      "identifier": "warcry_core_book",
+      "name": "Warcry Core Book",
+      "description": "Warcry core rules.",
+      "image": "warcry/core/warcry_core_book.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 522,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 66,
+      "identifier": "warcry_starter_set",
+      "name": "Warcry Starter Set",
+      "description": "Warcry starter set.",
+      "image": "warcry/core/warcry_starter_set.webp",
+      "price": 100,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 523,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 67,
+      "identifier": "gloomspite_gitz",
+      "name": "Gloomspite Gitz",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/harbingers_of_destruction/gloomspite_gitz.webp",
+      "price": 36.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 524,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 67,
+      "identifier": "harbingers_of_destruction",
+      "name": "harbingers_of_destruction",
+      "description": "Destruction faction rules supplement.",
+      "image": "warcry/harbingers_of_destruction/harbingers_of_destruction.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 525,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 67,
+      "identifier": "harbingers_of_destruction_dice",
+      "name": "harbingers_of_destruction_Dice",
+      "description": "Faction themed dice set.",
+      "image": "warcry/harbingers_of_destruction/harbingers_of_destruction_dice.webp",
+      "price": 16.0,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 526,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 67,
+      "identifier": "ironjawz",
+      "name": "Ironjawz",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/harbingers_of_destruction/ironjawz.webp",
+      "price": 36.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 527,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 67,
+      "identifier": "ogor_mawtribes_cards",
+      "name": "Ogor Mawtribes Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/harbingers_of_destruction/ogor_mawtribes_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 19,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 528,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 68,
+      "identifier": "chaotic_beasts",
+      "name": "Chaotic Beasts",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/monsters_and_mercenaries/chaotic_beasts.webp",
+      "price": 27.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 529,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 68,
+      "identifier": "chimera",
+      "name": "Chimera",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warcry/monsters_and_mercenaries/chimera.webp",
+      "price": 25.5,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 530,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 68,
+      "identifier": "fomoroid_crusher",
+      "name": "Fomoroid Crusher",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warcry/monsters_and_mercenaries/fomoroid_crusher.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 531,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 68,
+      "identifier": "mindstealer_sphiranx",
+      "name": "Mindstealer Sphiranx",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warcry/monsters_and_mercenaries/mindstealer_sphiranx.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 532,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 68,
+      "identifier": "monsters_and_mercenaries",
+      "name": "Monsters and Mercenaries",
+      "description": "Monsters and mercenaries rules supplement.",
+      "image": "warcry/monsters_and_mercenaries/monsters_and_mercenaries.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 533,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 68,
+      "identifier": "ogroid_myrmidon",
+      "name": "Ogroid Myrmidon",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warcry/monsters_and_mercenaries/ogroid_myrmidon.webp",
+      "price": 36.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 534,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 69,
+      "identifier": "ravaged_lands_corpsewrack_mausoleum",
+      "name": "Ravaged Lands - Corpsewrack Mausoleum",
+      "description": "Multi-part plastic models.  Assembly and Painting required.",
+      "image": "warcry/scenics_and_terrain/ravaged_lands_corpsewrack_mausoleum.webp",
+      "price": 60.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 535,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 69,
+      "identifier": "ravaged_lands_defiled_ruins",
+      "name": "Ravaged Lands - Defiled Ruins",
+      "description": "Multi-part plastic models.  Assembly and Painting required.",
+      "image": "warcry/scenics_and_terrain/ravaged_lands_defiled_ruins.webp",
+      "price": 55.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 536,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 69,
+      "identifier": "ravaged_lands_shattered_stormvault",
+      "name": "Ravaged Lands - Shattered Stormvault",
+      "description": "Multi-part plastic models.  Assembly and Painting required.",
+      "image": "warcry/scenics_and_terrain/ravaged_lands_shattered_stormvault.webp",
+      "price": 55.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 537,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 69,
+      "identifier": "ravaged_lands_souldrain_forest",
+      "name": "Ravaged Lands - Souldrain Forest",
+      "description": "Multi-part plastic models.  Assembly and Painting required.",
+      "image": "warcry/scenics_and_terrain/ravaged_lands_souldrain_forest.webp",
+      "price": 60.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 538,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 69,
+      "identifier": "warcry_catacombs_board_pack",
+      "name": "Warcry Catacombs Board Pack",
+      "description": "Additional boards for Warcry Catacombs.",
+      "image": "warcry/scenics_and_terrain/warcry_catacombs_board_pack.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 539,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 70,
+      "identifier": "idoneth_deepkin_cards",
+      "name": "Idoneth Deepkin Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/sentinels_of_order/idoneth_deepkin_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 540,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 70,
+      "identifier": "khainite_shadowstalkers",
+      "name": "Khainite Shadowstalkers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/sentinels_of_order/khainite_shadowstalkers.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 541,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 70,
+      "identifier": "kharadron_overlords",
+      "name": "Kharadron Overlords",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/sentinels_of_order/kharadron_overlords.webp",
+      "price": 36.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 542,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 70,
+      "identifier": "kharadron_overlords_cards",
+      "name": "Kharadron Overlords Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/sentinels_of_order/kharadron_overlords_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 18,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 543,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 70,
+      "identifier": "sentinels_of_order",
+      "name": "Sentinels of Order",
+      "description": "Order faction rules supplement.",
+      "image": "warcry/sentinels_of_order/sentinels_of_order.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 544,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 70,
+      "identifier": "sentinels_of_order_dice",
+      "name": "Sentinels of Order Dice",
+      "description": "Faction themed dice set.",
+      "image": "warcry/sentinels_of_order/sentinels_of_order_dice.webp",
+      "price": 16.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 545,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 70,
+      "identifier": "seraphon_cards",
+      "name": "Seraphon Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/sentinels_of_order/seraphon_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 546,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 70,
+      "identifier": "stormcast_eternals",
+      "name": "Stormcast Eternals",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/sentinels_of_order/stormcast_eternals.webp",
+      "price": 36.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 547,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 70,
+      "identifier": "stormcast_eternals_sacrosanct_chamber_cards",
+      "name": "Stormcast Eternals Sacrosanct Chamber Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/sentinels_of_order/stormcast_eternals_sacrosanct_chamber_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 20,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 548,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 70,
+      "identifier": "stormcast_eternals_warrior_chamber_cards",
+      "name": "Stormcast Eternals Warrior Chamber Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/sentinels_of_order/stormcast_eternals_warrior_chamber_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 549,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 70,
+      "identifier": "sylvaneth",
+      "name": "Sylvaneth",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warcry/sentinels_of_order/sylvaneth.webp",
+      "price": 36.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 550,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 70,
+      "identifier": "sylvaneth_cards",
+      "name": "Sylvaneth Cards",
+      "description": "Faction themed fighter and ability cards.",
+      "image": "warcry/sentinels_of_order/sylvaneth_cards.webp",
+      "price": 6.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  }
+]

@@ -1,0 +1,6500 @@
+[
+  {
+    "pk": 863,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_abaddon_black",
+      "name": "Abaddon Black",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_abaddon_black.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 23,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 864,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_administratum_grey",
+      "name": "Administratum Grey",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_administratum_grey.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 16,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 865,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_air_caste_thinner",
+      "name": "Caste Thinner",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_air_caste_thinner.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 866,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_angron_red_clear",
+      "name": "Angron Red Clear",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_angron_red_clear.webp",
+      "price": 4.75,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 867,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_averland_sunset",
+      "name": "Averland Sunset",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_averland_sunset.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 16,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 868,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_balor_brown",
+      "name": "Balor Brown",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_balor_brown.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 19,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 869,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_balthasar_gold",
+      "name": "Balthasar Gold",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_balthasar_gold.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 870,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_baneblade_brown",
+      "name": "Baneblade Brown",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_baneblade_brown.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 871,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_caledor_sky",
+      "name": "Caledor Sky",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_caledor_sky.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 20,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 872,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_calgar_blue",
+      "name": "Calgar Blue",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_calgar_blue.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 19,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 873,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_caliban_green",
+      "name": "Caliban Green",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_caliban_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 874,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_calth_blue_clear",
+      "name": "Calth Blue Clear",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_calth_blue_clear.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 875,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_castellan_green",
+      "name": "Castellan Green",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_castellan_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 876,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_castellax_bronze",
+      "name": "Castellax Bronze",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_castellax_bronze.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 21,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 877,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_chemos_purple",
+      "name": "Chemos Purple",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_chemos_purple.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 878,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_cleaner",
+      "name": "Cleaner",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_cleaner.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 879,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_corvus_black",
+      "name": "Corvus Black",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_corvus_black.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 880,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_dawnstone",
+      "name": "Dawnstone",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_dawnstone.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 881,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_death_korps_drab",
+      "name": "Death Korps Drab",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_death_korps_drab.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 882,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_death_world_forest",
+      "name": "Death World Forest",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_death_world_forest.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 883,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_deathclaw_brown",
+      "name": "Deathclaw Brown",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_deathclaw_brown.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 24,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 884,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_deathshroud_clear",
+      "name": "Deathshroud Clear",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_deathshroud_clear.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 23,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 885,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_dryad_bark",
+      "name": "Dryad Bark",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_dryad_bark.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 886,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_eidolon_purple_clear",
+      "name": "Eidolon Purple Clear",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_eidolon_purple_clear.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 887,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_elysian_green",
+      "name": "Elysian Green",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_elysian_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 888,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_evil_sunz_scarlet",
+      "name": "Evil Sunz Scarlet",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_evil_sunz_scarlet.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 889,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_the_fang",
+      "name": "The Fang",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_the_fang.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 890,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_fenrisian_grey",
+      "name": "Fenrisian Grey",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_fenrisian_grey.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 891,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_flash_gitz_yellow",
+      "name": "Flash Gitz Yellow",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_flash_gitz_yellow.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 892,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_gal_vorbak_red",
+      "name": "Gal Vorbak Red",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_gal_vorbak_red.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 893,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_genestealer_purple",
+      "name": "Genestealer Purple",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_genestealer_purple.webp",
+      "price": 4.75,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 894,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_grey_knights_steel",
+      "name": "Grey Knights Steel",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_grey_knights_steel.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 21,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 895,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_iron_hands_steel",
+      "name": "Iron Hands Steel",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_iron_hands_steel.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 896,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_ironbreaker",
+      "name": "Ironbreaker",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_ironbreaker.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 897,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_kakophoni_purple",
+      "name": "Kakophoni Purple",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_kakophoni_purple.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 898,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_kantor_blue",
+      "name": "Kantor Blue",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_kantor_blue.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 899,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_karak_stone",
+      "name": "Karak Stone",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_karak_stone.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 19,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 900,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_khorne_red",
+      "name": "Khorne Red",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_khorne_red.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 23,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 901,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_kislev_flesh",
+      "name": "Kislev Flesh",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_kislev_flesh.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 902,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_leadbelcher",
+      "name": "Leadbelcher",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_leadbelcher.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 903,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_lothern_blue",
+      "name": "Lothern Blue",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_lothern_blue.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 20,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 904,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_lupercal_green",
+      "name": "Lupercal Green",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_lupercal_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 25,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 905,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_macragge_blue",
+      "name": "Macragge Blue",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_macragge_blue.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 906,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_mechanicus_std_grey",
+      "name": "Mechanicus Standard Grey",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_mechanicus_std_grey.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 907,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_mephiston_red",
+      "name": "Mephiston Red",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_mephiston_red.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 908,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_moot_green",
+      "name": "Moot Green",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_moot_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 909,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_mortarion_green_clear",
+      "name": "Mortarion Green Clear",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_mortarion_green_clear.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 910,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_mournfang_brown",
+      "name": "Mournfang Brown",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_mournfang_brown.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 911,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_night_lords_blue",
+      "name": "Night Lords Blue",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_night_lords_blue.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 912,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_nocturne_green",
+      "name": "Nocturne Green",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_nocturne_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 913,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_ogryn_camo",
+      "name": "Ogryn Camo",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_ogryn_camo.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 914,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_phalanx_yellow",
+      "name": "Phalanx Yellow",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_phalanx_yellow.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 915,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_phoenician_purple",
+      "name": "Phoenician Purple",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_phoenician_purple.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 916,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_pyroclast_orange_clear",
+      "name": "Pyroclast Orange Clear",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_pyroclast_orange_clear.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 917,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_relictor_gold",
+      "name": "Relictor Gold",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_relictor_gold.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 25,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 918,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_runefang_steel",
+      "name": "Runefang Steel",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_runefang_steel.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 16,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 919,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_russ_grey",
+      "name": "Russ Grey",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_russ_grey.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 20,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 920,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_sigismund_yellow_clear",
+      "name": "Sigismund Yellow Clear",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_sigismund_yellow_clear.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 921,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_sons_of_horus_green",
+      "name": "Sons Of Horus Green",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_sons_of_horus_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 19,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 922,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_steel_legion_drab",
+      "name": "Steel Legion Drab",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_steel_legion_drab.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 22,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 923,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_straken_green",
+      "name": "Straken Green",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_straken_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 924,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_sybarite_green",
+      "name": "Sybarite Green",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_sybarite_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 23,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 925,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_tallarn_sand",
+      "name": "Tallarn Sand",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_tallarn_sand.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 926,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_tau_light_ochre",
+      "name": "Tau Light Ochre",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_tau_light_ochre.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 22,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 927,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_temple_guard_blue",
+      "name": "Temple Guard Blue",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_temple_guard_blue.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 928,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_terminatus_stone",
+      "name": "Terminatus Stone",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_terminatus_stone.webp",
+      "price": 4.75,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 929,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_thallax_gold",
+      "name": "Thallax Gold",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_thallax_gold.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 16,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 930,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_troll_slayer_orange",
+      "name": "Troll Slayer Orange",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_troll_slayer_orange.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 931,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_tuskgor_fur",
+      "name": "Tuskgor Fur",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_tuskgor_fur.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 932,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_typhon_ash",
+      "name": "Typhon Ash",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_typhon_ash.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 933,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_ulthuan_grey",
+      "name": "Ulthuan Grey",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_ulthuan_grey.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 934,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_ushabti_bone",
+      "name": "Ushabti Bone",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_ushabti_bone.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 23,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 935,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_valador_gold",
+      "name": "Valador Gold",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_valador_gold.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 936,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_vulkan_green",
+      "name": "Vulkan Green",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_vulkan_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 937,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_warboss_green",
+      "name": "Warboss Green",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_warboss_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 938,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_white_scar",
+      "name": "White Scar",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_white_scar.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 24,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 939,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_word_bearers_red",
+      "name": "Word Bearers Red",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_word_bearers_red.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 940,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_xv-88",
+      "name": "XV-88",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_xv-88.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 21,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 941,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 102,
+      "identifier": "air_zandri_dust",
+      "name": "Zandri Dust",
+      "description": "Air Paint",
+      "image": "brushes_and_paints/air/air_zandri_dust.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 942,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_abaddon_black",
+      "name": "Abaddon Black",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_abaddon_black.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 18,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 943,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_averland_sunset",
+      "name": "Averland Sunset",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_averland_sunset.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 944,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_balthasar_gold",
+      "name": "Balthasar Gold",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_balthasar_gold.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 945,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_barak_nar_burgundy",
+      "name": "Barak Nar Burgundy",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_barak_nar_burgundy.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 26,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 946,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_bugmans_glow",
+      "name": "Bugman's Glow",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_bugmans_glow.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 47,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 947,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_caledor_sky",
+      "name": "Caledor Sky",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_caledor_sky.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 29,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 948,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_caliban_green",
+      "name": "Caliban Green",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_caliban_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 49,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 949,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_castellan_green",
+      "name": "Castellan Green",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_castellan_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 950,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_catachan_fleshtone",
+      "name": "Catachan Fleshtone",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_catachan_fleshtone.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 26,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 951,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_celestra_grey",
+      "name": "Celestra Grey",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_celestra_grey.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 34,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 952,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_corax_white",
+      "name": "Corax White",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_corax_white.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 42,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 953,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_corvus_black",
+      "name": "Corvus Black",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_corvus_black.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 954,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_daemonette_hide",
+      "name": "Daemonette Hide",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_daemonette_hide.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 48,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 955,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_death_guard_green",
+      "name": "Death Guard Green",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_death_guard_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 35,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 956,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_death_korps_drab",
+      "name": "Death Korps Drab",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_death_korps_drab.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 957,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_deathworld_forest",
+      "name": "Deathworld Forest",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_deathworld_forest.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 958,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_dryad_bark",
+      "name": "Dryad Bark",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_dryad_bark.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 959,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_gal_vorbak_red",
+      "name": "Gal Vorbak Red",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_gal_vorbak_red.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 43,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 960,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_grey_knights_steel",
+      "name": "Grey Knights Steel",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_grey_knights_steel.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 961,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_grey_seer",
+      "name": "Grey Seer",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_grey_seer.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 46,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 962,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_incubi_darkness",
+      "name": "Incubi Darkness",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_incubi_darkness.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 963,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_ionrach_skin",
+      "name": "Ionrach Skin",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_ionrach_skin.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 36,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 964,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_iron_hands_steel",
+      "name": "Iron Hands Steel",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_iron_hands_steel.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 46,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 965,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_iron_warriors",
+      "name": "Iron Warriors",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_iron_warriors.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 25,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 966,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_jokaero_orange",
+      "name": "Jokaero Orange",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_jokaero_orange.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 38,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 967,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_kantor_blue",
+      "name": "Kantor Blue",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_kantor_blue.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 39,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 968,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_khorne_red",
+      "name": "Khorne Red",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_khorne_red.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 969,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_leadbelcher",
+      "name": "Leadbelcher",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_leadbelcher.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 38,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 970,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_lupercal_green",
+      "name": "Lupercal Green",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_lupercal_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 41,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 971,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_macragge_blue",
+      "name": "Macragge Blue",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_macragge_blue.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 972,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_mechanicus_standard_grey",
+      "name": "Mechanicus Standard Grey",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_mechanicus_standard_grey.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 973,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_mephiston_red",
+      "name": "Mephiston Red",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_mephiston_red.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 44,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 974,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_morghast_bone",
+      "name": "Morghast Bone",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_morghast_bone.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 975,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_mournfang_brown",
+      "name": "Mournfang Brown",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_mournfang_brown.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 23,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 976,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_naggaroth_night",
+      "name": "Naggaroth Night",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_naggaroth_night.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 977,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_night_lords_blue",
+      "name": "Night Lords Blue",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_night_lords_blue.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 47,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 978,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_nocturne_green",
+      "name": "Nocturne Green",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_nocturne_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 39,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 979,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_phoenician_purple",
+      "name": "Phoenician Purple",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_phoenician_purple.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 22,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 980,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_rakarth_flesh",
+      "name": "Rakarth Flesh",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_rakarth_flesh.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 22,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 981,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_ratskin_flesh",
+      "name": "Ratskin Flesh",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_ratskin_flesh.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 20,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 982,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_retributor_armour",
+      "name": "Retributor Armour",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_retributor_armour.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 16,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 983,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_rhinox_hide",
+      "name": "Rhinox Hide",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_rhinox_hide.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 22,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 984,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_screamer_pink",
+      "name": "Screamer Pink",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_screamer_pink.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 26,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 985,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_screaming_bell",
+      "name": "Screaming Bell",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_screaming_bell.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 986,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_steel_legion_drab",
+      "name": "Steel Legion Drab",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_steel_legion_drab.webp",
+      "price": 3.7,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 987,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_stegadon_scale_green",
+      "name": "Stegadon Scale Green",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_stegadon_scale_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 988,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_the_fang",
+      "name": "The Fang",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_the_fang.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 22,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 989,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_thousand_sons_blue",
+      "name": "Thousand Sons Blue",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_thousand_sons_blue.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 33,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 990,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_waaagh_flesh",
+      "name": "Waaagh Flesh",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_waaagh_flesh.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 991,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_warplock_bronze",
+      "name": "Warplock Bronze",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_warplock_bronze.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 992,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_wraithbone",
+      "name": "Wraithbone",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_wraithbone.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 993,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_xv-88",
+      "name": "XV-88",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_xv-88.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 38,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 994,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 103,
+      "identifier": "base_zandri_dust",
+      "name": "Zandri Dust",
+      "description": "Base Paint",
+      "image": "brushes_and_paints/base/base_zandri_dust.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 44,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 995,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_l_base",
+      "name": "L Base",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_l_base.webp",
+      "price": 5.45,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 996,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_l_dry",
+      "name": "L Dry",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_l_dry.webp",
+      "price": 5.75,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 997,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_l_scenery",
+      "name": "L Scenery",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_l_scenery.webp",
+      "price": 5.95,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 998,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_l_shade",
+      "name": "L Shade",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_l_shade.webp",
+      "price": 7.25,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 999,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_m_artificer_layer",
+      "name": "M Artificer Layer",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_m_artificer_layer.webp",
+      "price": 17.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1000,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_m_base",
+      "name": "M Base",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_m_base.webp",
+      "price": 4.9,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1001,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_m_dry",
+      "name": "M Dry",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_m_dry.webp",
+      "price": 4.1,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1002,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_m_glaze",
+      "name": "M Glaze",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_m_glaze.webp",
+      "price": 4.4,
+      "stock_state": 1,
+      "stock": 24,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1003,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_m_layer",
+      "name": "M Layer",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_m_layer.webp",
+      "price": 4.9,
+      "stock_state": 1,
+      "stock": 24,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1004,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_m_scenery",
+      "name": "M Scenery",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_m_scenery.webp",
+      "price": 5.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1005,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_m_shade",
+      "name": "M Shade",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_m_shade.webp",
+      "price": 5.35,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1006,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_s_artificer_layer",
+      "name": "S Artificer Layer",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_s_artificer_layer.webp",
+      "price": 14.95,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1007,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_s_base",
+      "name": "S Base",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_s_base.webp",
+      "price": 4.15,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1008,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_s_dry",
+      "name": "S Dry",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_s_dry.webp",
+      "price": 3.85,
+      "stock_state": 1,
+      "stock": 46,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1009,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_s_layer",
+      "name": "S Layer",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_s_layer.webp",
+      "price": 4.6,
+      "stock_state": 1,
+      "stock": 25,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1010,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_xl_base",
+      "name": "Xl Base",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_xl_base.webp",
+      "price": 6.3,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1011,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 104,
+      "identifier": "brush_xs_artificer_layer",
+      "name": "Xs Artificer Layer",
+      "description": "Paint Brush",
+      "image": "brushes_and_paints/brushes/brush_xs_artificer_layer.webp",
+      "price": 12.95,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1012,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_aetermatic_blue",
+      "name": "Aetermatic Blue",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_aetermatic_blue.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1013,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_aggaros_dunes",
+      "name": "Aggaros Dunes",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_aggaros_dunes.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 23,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1014,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_akhelion_green",
+      "name": "Akhelion Green",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_akhelion_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1015,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_apothecary_white",
+      "name": "Apothecary White",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_apothecary_white.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1016,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_basilicum_grey",
+      "name": "Basilicum Grey",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_basilicum_grey.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1017,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_black_templar",
+      "name": "Black Templar",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_black_templar.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1018,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_blood_angels_red",
+      "name": "Blood Angels Red",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_blood_angels_red.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 24,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1019,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_creed_camo",
+      "name": "Creed Camo",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_creed_camo.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1020,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_cygor_brown",
+      "name": "Cygor Brown",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_cygor_brown.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1021,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_dark_angels_green",
+      "name": "Dark Angels Green",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_dark_angels_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1022,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_dark_oath_flesh",
+      "name": "Dark Oath Flesh",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_dark_oath_flesh.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1023,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_flesh_tearers_red",
+      "name": "Flesh Tearers Red",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_flesh_tearers_red.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1024,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_fyreslayer_flesh",
+      "name": "Fyreslayer Flesh",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_fyreslayer_flesh.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1025,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_gore_grunta_fur",
+      "name": "Gore Grunta Fur",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_gore_grunta_fur.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1026,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_gryph_charger_grey",
+      "name": "Gryph Charger Grey",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_gryph_charger_grey.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1027,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_gryph_hound_orange",
+      "name": "Gryph Hound Orange",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_gryph_hound_orange.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1028,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_guilliman_flesh",
+      "name": "Guilliman Flesh",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_guilliman_flesh.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1029,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_ilyanden_yellow",
+      "name": "Ilyanden Yellow",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_ilyanden_yellow.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1030,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_leviadon_blue",
+      "name": "Leviadon Blue",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_leviadon_blue.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1031,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_magos_purple",
+      "name": "Magos Purple",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_magos_purple.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 23,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1032,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_militarum_green",
+      "name": "Militarum Green",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_militarum_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 18,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1033,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_nazdreg_yellow",
+      "name": "Nazdreg Yellow",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_nazdreg_yellow.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1034,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_ork_flesh",
+      "name": "Ork Flesh",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_ork_flesh.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1035,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_plaguebearer_flesh",
+      "name": "Plaguebearer Flesh",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_plaguebearer_flesh.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1036,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_shyish_purple",
+      "name": "Shyish Purple",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_shyish_purple.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1037,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_skeleton_horde",
+      "name": "Skeleton Horde",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_skeleton_horde.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1038,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_snakebite_leather",
+      "name": "Snakebite Leather",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_snakebite_leather.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 18,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1039,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_space_wolves_grey",
+      "name": "Space Wolves Grey",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_space_wolves_grey.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1040,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_talassar_blue",
+      "name": "Talassar Blue",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_talassar_blue.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1041,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_terradon_turquoise",
+      "name": "Terradon Turquoise",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_terradon_turquoise.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 22,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1042,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_ultramarines_blue",
+      "name": "Ultramarines Blue",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_ultramarines_blue.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1043,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_volpus_pink",
+      "name": "Volpus Pink",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_volpus_pink.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1044,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_warp_lightning",
+      "name": "Warp Lightning",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_warp_lightning.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1045,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 105,
+      "identifier": "contrast_wyldwood",
+      "name": "Wyldwood",
+      "description": "Contrast Paint",
+      "image": "brushes_and_paints/contrast/contrast_wyldwood.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1046,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_astorath_red",
+      "name": "Astorath Red",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_astorath_red.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1047,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_changeling_pink",
+      "name": "Changeling Pink",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_changeling_pink.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 19,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1048,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_chronus_blue",
+      "name": "Chronus Blue",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_chronus_blue.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1049,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_dawnstone",
+      "name": "Dawnstone",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_dawnstone.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1050,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_eldar_flesh",
+      "name": "Eldar Flesh",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_eldar_flesh.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1051,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_etherium_blue",
+      "name": "Etherium Blue",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_etherium_blue.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1052,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_golden_griffon",
+      "name": "Golden Griffon",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_golden_griffon.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 28,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1053,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_golgfag_brown",
+      "name": "Golgfag Brown",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_golgfag_brown.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 23,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1054,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_hellion_green",
+      "name": "Hellion Green",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_hellion_green.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1055,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_hexos_palesun",
+      "name": "Hexos Palesun",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_hexos_palesun.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1056,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_hoeth_blue",
+      "name": "Hoeth Blue",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_hoeth_blue.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 21,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1057,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_imrik_blue",
+      "name": "Imrik Blue",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_imrik_blue.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1058,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_kindleflame",
+      "name": "Kindleflame",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_kindleflame.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 25,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1059,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_longbeard_grey",
+      "name": "Longbeard Grey",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_longbeard_grey.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 41,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1060,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_lucius_lilac",
+      "name": "Lucius Lilac",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_lucius_lilac.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 35,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1061,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_necron_compound",
+      "name": "Necron Compound",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_necron_compound.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 35,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1062,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_niblet_green",
+      "name": "Niblet Green",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_niblet_green.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 25,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1063,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_nurgling_green",
+      "name": "Nurgling Green",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_nurgling_green.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 16,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1064,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_praxeti_white",
+      "name": "Praxeti White",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_praxeti_white.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 42,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1065,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_ryza_rust",
+      "name": "Ryza Rust",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_ryza_rust.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 47,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1066,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_sigmarite",
+      "name": "Sigmarite",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_sigmarite.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1067,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_skink_blue",
+      "name": "Skink Blue",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_skink_blue.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 50,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1068,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_slaanesh_grey",
+      "name": "Slaanesh Grey",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_slaanesh_grey.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 37,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1069,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_stormfang",
+      "name": "Stormfang",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_stormfang.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 27,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1070,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_sylvaneth_bark",
+      "name": "Sylvaneth Bark",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_sylvaneth_bark.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 44,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1071,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_terminatus_stone",
+      "name": "Terminatus Stone",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_terminatus_stone.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 19,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1072,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_thunderhawk_blue",
+      "name": "Thunderhawk Blue",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_thunderhawk_blue.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 48,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1073,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_tyrant_skull",
+      "name": "Tyrant Skull",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_tyrant_skull.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 28,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1074,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_underhive_ash",
+      "name": "Underhive Ash",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_underhive_ash.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 46,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1075,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_verminlord_hide",
+      "name": "Verminlord Hide",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_verminlord_hide.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 29,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1076,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 106,
+      "identifier": "dry_wrack_white",
+      "name": "Wrack White",
+      "description": "Dry Paint",
+      "image": "brushes_and_paints/dry/dry_wrack_white.webp",
+      "price": 2.75,
+      "stock_state": 1,
+      "stock": 25,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1077,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_administratum_grey",
+      "name": "Administratum Grey",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_administratum_grey.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1078,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_ahriman_blue",
+      "name": "Ahriman Blue",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_ahriman_blue.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1079,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_alaitoc_blue",
+      "name": "Alaitoc Blue",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_alaitoc_blue.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 41,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1080,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_altdorf_guard_blue",
+      "name": "Altdorf Guard Blue",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_altdorf_guard_blue.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 40,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1081,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_auric_armour_gold",
+      "name": "Auric Armour Gold",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_auric_armour_gold.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 30,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1082,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_baharroth_blue",
+      "name": "Baharroth Blue",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_baharroth_blue.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 26,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1083,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_balor_brown",
+      "name": "Balor Brown",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_balor_brown.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 31,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1084,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_baneblade_brown",
+      "name": "Baneblade Brown",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_baneblade_brown.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 43,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1085,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_bestigor_flesh",
+      "name": "Bestigor Flesh",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_bestigor_flesh.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 44,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1086,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_bloodreaver_flesh",
+      "name": "Bloodreaver Flesh",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_bloodreaver_flesh.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 41,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1087,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_blue_horror",
+      "name": "Blue Horror",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_blue_horror.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 36,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1088,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_brass_scorpion",
+      "name": "Brass Scorpion",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_brass_scorpion.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1089,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_cadian_fleshtone",
+      "name": "Cadian Fleshtone",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_cadian_fleshtone.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 16,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1090,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_calgar_blue",
+      "name": "Calgar Blue",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_calgar_blue.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 18,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1091,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_castellax_bronze",
+      "name": "Castellax Bronze",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_castellax_bronze.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 44,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1092,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_dark_reaper",
+      "name": "Dark Reaper",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_dark_reaper.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 34,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1093,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_dawnstone",
+      "name": "Dawnstone",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_dawnstone.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 24,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1094,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_deathclaw_brown",
+      "name": "Deathclaw Brown",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_deathclaw_brown.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1095,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_dechala_lilac",
+      "name": "Dechala Lilac",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_dechala_lilac.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1096,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_deepkin_flesh",
+      "name": "Deepkin Flesh",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_deepkin_flesh.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 37,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1097,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_doombull_brown",
+      "name": "Doombull Brown",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_doombull_brown.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 45,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1098,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_dorn_yellow",
+      "name": "Dorn Yellow",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_dorn_yellow.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 29,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1099,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_elysian_green",
+      "name": "Elysian Green",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_elysian_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 47,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1100,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_emperors_children",
+      "name": "Emperor's Children",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_emperors_children.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 26,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1101,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_eshin_grey",
+      "name": "Eshin Grey",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_eshin_grey.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 19,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1102,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_evil_sunz_scarlet",
+      "name": "Evil Sunz Scarlet",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_evil_sunz_scarlet.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1103,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_fenrisian_grey",
+      "name": "Fenrisian Grey",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_fenrisian_grey.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1104,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_fire_dragon_bright",
+      "name": "Fire Dragon Bright",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_fire_dragon_bright.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 50,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1105,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_flash_gitz_yellow",
+      "name": "Flash Gitz Yellow",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_flash_gitz_yellow.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 25,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1106,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_flayed_one_flesh",
+      "name": "Flayed One Flesh",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_flayed_one_flesh.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1107,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_fulgrim_pink",
+      "name": "Fulgrim Pink",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_fulgrim_pink.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 30,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1108,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_fulgrite_copper",
+      "name": "Fulgrite Copper",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_fulgrite_copper.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 31,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1109,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_gauss_blaster_green",
+      "name": "Gauss Blaster Green",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_gauss_blaster_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 26,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1110,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_gehennas_gold",
+      "name": "Gehenna's Gold",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_gehennas_gold.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1111,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_genestealer_purple",
+      "name": "Genestealer Purple",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_genestealer_purple.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 43,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1112,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_gorthor_brown",
+      "name": "Gorthor Brown",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_gorthor_brown.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1113,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_hashut_copper",
+      "name": "Hashut Copper",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_hashut_copper.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1114,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_hoeth_blue",
+      "name": "Hoeth Blue",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_hoeth_blue.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1115,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_ironbreaker",
+      "name": "Ironbreaker",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_ironbreaker.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1116,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_kabalite_green",
+      "name": "Kabalite Green",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_kabalite_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 25,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1117,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_kakophoni_purple",
+      "name": "Kakophoni Purple",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_kakophoni_purple.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1118,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_karak_stone",
+      "name": "Karak Stone",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_karak_stone.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 45,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1119,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_kislev_flesh",
+      "name": "Kislev Flesh",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_kislev_flesh.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 42,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1120,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_knight_questor_flesh",
+      "name": "Knight Questor Flesh",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_knight_questor_flesh.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 16,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1121,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_krieg_khaki",
+      "name": "Krieg Khaki",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_krieg_khaki.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1122,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_liberator_gold",
+      "name": "Liberator Gold",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_liberator_gold.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 26,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1123,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_loren_forest",
+      "name": "Loren Forest",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_loren_forest.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 25,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1124,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_lothern_blue",
+      "name": "Lothern Blue",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_lothern_blue.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 40,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1125,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_lugganath_orange",
+      "name": "Lugganath Orange",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_lugganath_orange.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1126,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_moot_green",
+      "name": "Moot Green",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_moot_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 44,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1127,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_nurgling_green",
+      "name": "Nurgling Green",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_nurgling_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 44,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1128,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_ogryn_camo",
+      "name": "Ogryn Camo",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_ogryn_camo.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 32,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1129,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_pallid_wych_flesh",
+      "name": "Pallid Wych Flesh",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_pallid_wych_flesh.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 18,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1130,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_phalanx_yellow",
+      "name": "Phalanx Yellow",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_phalanx_yellow.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 42,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1131,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_pink_horror",
+      "name": "Pink Horror",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_pink_horror.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1132,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_runefang_steel",
+      "name": "Runefang Steel",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_runefang_steel.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 28,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1133,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_runelord_brass",
+      "name": "Runelord Brass",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_runelord_brass.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1134,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_russ_grey",
+      "name": "Russ Grey",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_russ_grey.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 21,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1135,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_screaming_skull",
+      "name": "Screaming Skull",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_screaming_skull.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1136,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_skarsnik_green",
+      "name": "Skarsnik Green",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_skarsnik_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 22,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1137,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_skavenblight_dinge",
+      "name": "Skavenblight Dinge",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_skavenblight_dinge.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 41,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1138,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_skrag_brown",
+      "name": "Skrag Brown",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_skrag_brown.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 36,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1139,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_skullcrusher_brass",
+      "name": "Skullcrusher Brass",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_skullcrusher_brass.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 37,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1140,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_slaanesh_grey",
+      "name": "Slaanesh Grey",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_slaanesh_grey.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1141,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_sons_of_horus_green",
+      "name": "Sons Of Horus Green",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_sons_of_horus_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 21,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1142,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_sotek_green",
+      "name": "Sotek Green",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_sotek_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1143,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_squig_orange",
+      "name": "Squig Orange",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_squig_orange.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 41,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1144,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_stormhost_silver",
+      "name": "Stormhost Silver",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_stormhost_silver.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 30,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1145,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_stormvermin_fur",
+      "name": "Stormvermin Fur",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_stormvermin_fur.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 21,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1146,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_straken_green",
+      "name": "Straken Green",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_straken_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 38,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1147,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_sybarite_green",
+      "name": "Sybarite Green",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_sybarite_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 18,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1148,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_sycorax_bronze",
+      "name": "Sycorax Bronze",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_sycorax_bronze.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 33,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1149,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_tallarn_sand",
+      "name": "Tallarn Sand",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_tallarn_sand.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1150,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_tau_light_ochre",
+      "name": "Tau Light Ochre",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_tau_light_ochre.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 29,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1151,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_teclis_blue",
+      "name": "Teclis Blue",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_teclis_blue.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 30,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1152,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_temple_guard_blue",
+      "name": "Temple Guard Blue",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_temple_guard_blue.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 46,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1153,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_thunderhawk_blue",
+      "name": "Thunderhawk Blue",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_thunderhawk_blue.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1154,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_troll_slayer_orange",
+      "name": "Troll Slayer Orange",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_troll_slayer_orange.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 37,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1155,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_tuskgor_fur",
+      "name": "Tuskgor Fur",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_tuskgor_fur.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1156,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_ulthuan_grey",
+      "name": "Ulthuan Grey",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_ulthuan_grey.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 23,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1157,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_ungor_flesh",
+      "name": "Ungor Flesh",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_ungor_flesh.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1158,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_ushabti_bone",
+      "name": "Ushabti Bone",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_ushabti_bone.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 44,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1159,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_vulkan_green",
+      "name": "Vulkan Green",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_vulkan_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 25,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1160,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_warboss_green",
+      "name": "Warboss Green",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_warboss_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 19,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1161,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_warpfiend_grey",
+      "name": "Warpfiend Grey",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_warpfiend_grey.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1162,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_warpstone_green",
+      "name": "Warpstone Green",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_warpstone_green.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 29,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1163,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_wazdakka_red",
+      "name": "Wazdakka Red",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_wazdakka_red.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 28,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1164,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_white_scar",
+      "name": "White Scar",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_white_scar.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1165,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_wild_rider_red",
+      "name": "Wild Rider Red",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_wild_rider_red.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 16,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1166,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_word_bearers_red",
+      "name": "Word Bearers Red",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_word_bearers_red.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 48,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1167,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_xereus_purple",
+      "name": "Xereus Purple",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_xereus_purple.webp",
+      "price": 3.7,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1168,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_yriel_yellow",
+      "name": "Yriel Yellow",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_yriel_yellow.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1169,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 107,
+      "identifier": "layer_zamesi_desert",
+      "name": "Zamesi Desert",
+      "description": "Layer Paint",
+      "image": "brushes_and_paints/layer/layer_zamesi_desert.webp",
+      "price": 3.7,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1170,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 108,
+      "identifier": "shade_agrax_earthshade",
+      "name": "Agrax Earthshade",
+      "description": "Shade Paint",
+      "image": "brushes_and_paints/shade/shade_agrax_earthshade.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 23,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1171,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 108,
+      "identifier": "shade_agrax_earthshade_gloss",
+      "name": "Agrax Earthshade Gloss",
+      "description": "Shade Paint",
+      "image": "brushes_and_paints/shade/shade_agrax_earthshade_gloss.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1172,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 108,
+      "identifier": "shade_athonian_camoshade",
+      "name": "Athonian Camoshade",
+      "description": "Shade Paint",
+      "image": "brushes_and_paints/shade/shade_athonian_camoshade.webp",
+      "price": 4.75,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1173,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 108,
+      "identifier": "shade_biel_tan_green",
+      "name": "Biel Tan Green",
+      "description": "Shade Paint",
+      "image": "brushes_and_paints/shade/shade_biel_tan_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1174,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 108,
+      "identifier": "shade_carroburg_crimson",
+      "name": "Carroburg Crimson",
+      "description": "Shade Paint",
+      "image": "brushes_and_paints/shade/shade_carroburg_crimson.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1175,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 108,
+      "identifier": "shade_cassandora_yellow",
+      "name": "Cassandora Yellow",
+      "description": "Shade Paint",
+      "image": "brushes_and_paints/shade/shade_cassandora_yellow.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 19,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1176,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 108,
+      "identifier": "shade_coelia_greenshade",
+      "name": "Coelia Greenshade",
+      "description": "Shade Paint",
+      "image": "brushes_and_paints/shade/shade_coelia_greenshade.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1177,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 108,
+      "identifier": "shade_drakenhof_nightshade",
+      "name": "Drakenhof Nightshade",
+      "description": "Shade Paint",
+      "image": "brushes_and_paints/shade/shade_drakenhof_nightshade.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 16,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1178,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 108,
+      "identifier": "shade_druchii_violet",
+      "name": "Druchii Violet",
+      "description": "Shade Paint",
+      "image": "brushes_and_paints/shade/shade_druchii_violet.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1179,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 108,
+      "identifier": "shade_fuegan_orange",
+      "name": "Fuegan Orange",
+      "description": "Shade Paint",
+      "image": "brushes_and_paints/shade/shade_fuegan_orange.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1180,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 108,
+      "identifier": "shade_nuln_oil",
+      "name": "Nuln Oil",
+      "description": "Shade Paint",
+      "image": "brushes_and_paints/shade/shade_nuln_oil.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 24,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1181,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 108,
+      "identifier": "shade_nuln_oil_gloss",
+      "name": "Nuln Oil Gloss",
+      "description": "Shade Paint",
+      "image": "brushes_and_paints/shade/shade_nuln_oil_gloss.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 23,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1182,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 108,
+      "identifier": "shade_reikland_fleshshade",
+      "name": "Reikland Fleshshade",
+      "description": "Shade Paint",
+      "image": "brushes_and_paints/shade/shade_reikland_fleshshade.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1183,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 108,
+      "identifier": "shade_reikland_fleshshade_gloss",
+      "name": "Reikland Fleshshade Gloss",
+      "description": "Shade Paint",
+      "image": "brushes_and_paints/shade/shade_reikland_fleshshade_gloss.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1184,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 108,
+      "identifier": "shade_seraphim_sepia",
+      "name": "Seraphim Sepia",
+      "description": "Shade Paint",
+      "image": "brushes_and_paints/shade/shade_seraphim_sepia.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1185,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 109,
+      "identifier": "spray_chaos_black",
+      "name": "Chaos Black",
+      "description": "Spray Paint",
+      "image": "brushes_and_paints/spray/spray_chaos_black.webp",
+      "price": 11.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1186,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 109,
+      "identifier": "spray_contrast_grey_seer",
+      "name": "Contrast Grey Seer",
+      "description": "Spray Paint",
+      "image": "brushes_and_paints/spray/spray_contrast_grey_seer.webp",
+      "price": 12.5,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1187,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 109,
+      "identifier": "spray_contrast_wraith_bone",
+      "name": "Contrast Wraith Bone",
+      "description": "Spray Paint",
+      "image": "brushes_and_paints/spray/spray_contrast_wraith_bone.webp",
+      "price": 12.5,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1188,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 109,
+      "identifier": "spray_corax_white",
+      "name": "Corax White",
+      "description": "Spray Paint",
+      "image": "brushes_and_paints/spray/spray_corax_white.webp",
+      "price": 11.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1189,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 109,
+      "identifier": "spray_death_guard_green",
+      "name": "Death Guard Green",
+      "description": "Spray Paint",
+      "image": "brushes_and_paints/spray/spray_death_guard_green.webp",
+      "price": 12.5,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1190,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 109,
+      "identifier": "spray_leadbelcher",
+      "name": "Leadbelcher",
+      "description": "Spray Paint",
+      "image": "brushes_and_paints/spray/spray_leadbelcher.webp",
+      "price": 12.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1191,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 109,
+      "identifier": "spray_macragge_blue",
+      "name": "Macragge Blue",
+      "description": "Spray Paint",
+      "image": "brushes_and_paints/spray/spray_macragge_blue.webp",
+      "price": 12.5,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1192,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 109,
+      "identifier": "spray_mechanicus_standard",
+      "name": "Mechanicus Standard",
+      "description": "Spray Paint",
+      "image": "brushes_and_paints/spray/spray_mechanicus_standard.webp",
+      "price": 12.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1193,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 109,
+      "identifier": "spray_mephiston_red",
+      "name": "Mephiston Red",
+      "description": "Spray Paint",
+      "image": "brushes_and_paints/spray/spray_mephiston_red.webp",
+      "price": 12.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1194,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 109,
+      "identifier": "spray_munitorum_varnish",
+      "name": "Munitorum Varnish",
+      "description": "Spray Paint",
+      "image": "brushes_and_paints/spray/spray_munitorum_varnish.webp",
+      "price": 12.5,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1195,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 109,
+      "identifier": "spray_retributor_armour",
+      "name": "Retributor Armour",
+      "description": "Spray Paint",
+      "image": "brushes_and_paints/spray/spray_retributor_armour.webp",
+      "price": 18.0,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1196,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 109,
+      "identifier": "spray_runelord_brass",
+      "name": "Runelord Brass",
+      "description": "Spray Paint",
+      "image": "brushes_and_paints/spray/spray_runelord_brass.webp",
+      "price": 18.0,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1197,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 109,
+      "identifier": "spray_the_fang",
+      "name": "The Fang",
+      "description": "Spray Paint",
+      "image": "brushes_and_paints/spray/spray_the_fang.webp",
+      "price": 12.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1198,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 109,
+      "identifier": "spray_zandri_dust",
+      "name": "Zandri Dust",
+      "description": "Spray Paint",
+      "image": "brushes_and_paints/spray/spray_zandri_dust.webp",
+      "price": 12.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1199,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_agrellan_badland",
+      "name": "Agrellan Badland",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_agrellan_badland.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1200,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_agrellan_earth",
+      "name": "Agrellan Earth",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_agrellan_earth.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1201,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_ardcoat",
+      "name": "Ardcoat",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_ardcoat.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 25,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1202,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_armageddon_dunes",
+      "name": "Armageddon Dunes",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_armageddon_dunes.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1203,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_armageddon_dust",
+      "name": "Armageddon Dust",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_armageddon_dust.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1204,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_astrogranite",
+      "name": "Astrogranite",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_astrogranite.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1205,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_astrogranite_debris",
+      "name": "Astrogranite Debris",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_astrogranite_debris.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 25,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1206,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_blood_for_the_blood_god",
+      "name": "Blood For The Blood God",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_blood_for_the_blood_god.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1207,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_contrast_medium",
+      "name": "Contrast Medium",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_contrast_medium.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 18,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1208,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_hexwraith_flame",
+      "name": "Hexwraith Flame",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_hexwraith_flame.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1209,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_lahmian_medium",
+      "name": "Lahmian Medium",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_lahmian_medium.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 20,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1210,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_martian_ironcrust",
+      "name": "Martian Ironcrust",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_martian_ironcrust.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1211,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_martian_ironearth",
+      "name": "Martian Ironearth",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_martian_ironearth.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1212,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_mordant_earth",
+      "name": "Mordant Earth",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_mordant_earth.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1213,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_nighthaunt_gloom",
+      "name": "Nighthaunt Gloom",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_nighthaunt_gloom.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1214,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_nihilakh_oxide",
+      "name": "Nihilakh Oxide",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_nihilakh_oxide.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1215,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_nurgles_rot",
+      "name": "Nurgles Rot",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_nurgles_rot.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1216,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_soulstone_blue",
+      "name": "Soulstone Blue",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_soulstone_blue.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1217,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_spiritstone_red",
+      "name": "Spiritstone Red",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_spiritstone_red.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 19,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1218,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_stirland_battlemire",
+      "name": "Stirland Battlemire",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_stirland_battlemire.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1219,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_stirland_mud",
+      "name": "Stirland Mud",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_stirland_mud.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1220,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_stormshield",
+      "name": "Stormshield",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_stormshield.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 24,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1221,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_typhus_corrosion",
+      "name": "Typhus Corrosion",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_typhus_corrosion.webp",
+      "price": 4.75,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1222,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_valhallan_blizzard",
+      "name": "Valhallan Blizzard",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_valhallan_blizzard.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 23,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 1223,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 110,
+      "identifier": "technical_waystone_green",
+      "name": "Waystone Green",
+      "description": "Technical Paint",
+      "image": "brushes_and_paints/technical/technical_waystone_green.webp",
+      "price": 4.75,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  }
+]

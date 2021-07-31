@@ -1,0 +1,308 @@
+[
+  {
+    "pk": 746,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 99,
+      "identifier": "plastic_glue",
+      "name": "Plastic Glue",
+      "description": "",
+      "image": "hobby_essentials/glue/plastic_glue.webp",
+      "price": 4.5,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 747,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 99,
+      "identifier": "super_glue",
+      "name": "Super Glue",
+      "description": "",
+      "image": "hobby_essentials/glue/super_glue.webp",
+      "price": 4.5,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 748,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 100,
+      "identifier": "scenics_barbed_bracken",
+      "name": "Barbed Bracken",
+      "description": "Basing material.",
+      "image": "hobby_essentials/scenics/scenics_barbed_bracken.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 749,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 100,
+      "identifier": "scenics_creeping_vines",
+      "name": "Creeping Vines",
+      "description": "Basing material.",
+      "image": "hobby_essentials/scenics/scenics_creeping_vines.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 750,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 100,
+      "identifier": "scenics_middenland_tufts",
+      "name": "Middenland Tufts",
+      "description": "Basing material.",
+      "image": "hobby_essentials/scenics/scenics_middenland_tufts.webp",
+      "price": 10.0,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 751,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 101,
+      "identifier": "drill",
+      "name": "Drill",
+      "description": "Hand drill and bits.",
+      "image": "hobby_essentials/tools/drill.webp",
+      "price": 21.0,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 752,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 101,
+      "identifier": "file_set",
+      "name": "File Set",
+      "description": "Set of two files.",
+      "image": "hobby_essentials/tools/file_set.webp",
+      "price": 13.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 753,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 101,
+      "identifier": "fine_detail_cutters",
+      "name": "Fine Detail Cutters",
+      "description": "",
+      "image": "hobby_essentials/tools/fine_detail_cutters.webp",
+      "price": 21.0,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 754,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 101,
+      "identifier": "knife",
+      "name": "Hobby Knife",
+      "description": "",
+      "image": "hobby_essentials/tools/knife.webp",
+      "price": 11.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 755,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 101,
+      "identifier": "liquid_green_stuff",
+      "name": "Liquid Green Stuff",
+      "description": "Gap filling material.",
+      "image": "hobby_essentials/tools/liquid_green_stuff.webp",
+      "price": 4.0,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 756,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 101,
+      "identifier": "mouldline_remover",
+      "name": "Mouldline Remover",
+      "description": "",
+      "image": "hobby_essentials/tools/mouldline_remover.webp",
+      "price": 11.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 757,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 101,
+      "identifier": "paint_box",
+      "name": "Citadel Paint Box",
+      "description": "Holds 28 paints. Includes 2 racks which each hold 21 paints.",
+      "image": "hobby_essentials/tools/paint_box.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 758,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 101,
+      "identifier": "painting_mat",
+      "name": "Painting Mat",
+      "description": "",
+      "image": "hobby_essentials/tools/painting_mat.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 759,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 101,
+      "identifier": "palette_pad",
+      "name": "Palette Pad",
+      "description": "",
+      "image": "hobby_essentials/tools/palette_pad.webp",
+      "price": 6.5,
+      "stock_state": 1,
+      "stock": 18,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 760,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 101,
+      "identifier": "saw",
+      "name": "Hobby Saw",
+      "description": "",
+      "image": "hobby_essentials/tools/saw.webp",
+      "price": 11.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 761,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 101,
+      "identifier": "tape_measure",
+      "name": "Tape Measure",
+      "description": "",
+      "image": "hobby_essentials/tools/tape_measure.webp",
+      "price": 5.5,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 762,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 101,
+      "identifier": "texture_spreader",
+      "name": "Texture Paint Spreader",
+      "description": "",
+      "image": "hobby_essentials/tools/texture_spreader.webp",
+      "price": 5.15,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  }
+]

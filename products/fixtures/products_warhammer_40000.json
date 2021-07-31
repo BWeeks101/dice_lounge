@@ -1,0 +1,3674 @@
+[
+  {
+    "pk": 551,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 71,
+      "identifier": "adepta_sororitas_battle_sisters_squad",
+      "name": "Battle Sisters Squad",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/adepta_sororitas/adepta_sororitas_battle_sisters_squad.webp",
+      "price": 35.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 552,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 71,
+      "identifier": "adepta_sororitas_celestine_the_living_saint",
+      "name": "Celestine the Living Saint",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/adepta_sororitas/adepta_sororitas_celestine_the_living_saint.webp",
+      "price": 32.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 553,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 71,
+      "identifier": "adepta_sororitas_codex",
+      "name": "Adepta Sororitas Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/adepta_sororitas/adepta_sororitas_codex.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 554,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 71,
+      "identifier": "adepta_sororitas_datacards",
+      "name": "Adepta Sororitas Datacards",
+      "description": "Faction stratagems and ability cards.",
+      "image": "warhammer_40000/adepta_sororitas/adepta_sororitas_datacards.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 555,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 71,
+      "identifier": "adepta_sororitas_exorcist",
+      "name": "Exorcist",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "warhammer_40000/adepta_sororitas/adepta_sororitas_exorcist.webp",
+      "price": 50.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 556,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 71,
+      "identifier": "adepta_sororitas_hospitaller",
+      "name": "Hospitaller",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/adepta_sororitas/adepta_sororitas_hospitaller.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 557,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 71,
+      "identifier": "adepta_sororitas_immolator",
+      "name": "Immolator",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "warhammer_40000/adepta_sororitas/adepta_sororitas_immolator.webp",
+      "price": 45.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 558,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 71,
+      "identifier": "adepta_sororitas_penitent_engines",
+      "name": "Penitent Engines",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/adepta_sororitas/adepta_sororitas_penitent_engines.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 559,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 71,
+      "identifier": "adepta_sororitas_repentia",
+      "name": "Repentia",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/adepta_sororitas/adepta_sororitas_repentia.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 560,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 71,
+      "identifier": "adepta_sororitas_retributor_squad",
+      "name": "Retributor Squad",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/adepta_sororitas/adepta_sororitas_retributor_squad.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 561,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 71,
+      "identifier": "adepta_sororitas_rhino",
+      "name": "Adepta Sororitas Rhino",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "warhammer_40000/adepta_sororitas/adepta_sororitas_rhino.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 562,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 71,
+      "identifier": "adepta_sororitas_seraphim",
+      "name": "Seraphim",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/adepta_sororitas/adepta_sororitas_seraphim.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 563,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 72,
+      "identifier": "adeptus_custodes_allarus_custodians",
+      "name": "Allarus Custodians",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/adeptus_custodes/adeptus_custodes_allarus_custodians.webp",
+      "price": 30.0,
+      "stock_state": 3,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 564,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 72,
+      "identifier": "adeptus_custodes_captain-general_trajann_valoris",
+      "name": "Captain-General Trajann Valoris",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/adeptus_custodes/adeptus_custodes_captain-general_trajann_valoris.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 565,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 72,
+      "identifier": "adeptus_custodes_codex",
+      "name": "Adeptus Custodes Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/adeptus_custodes/adeptus_custodes_codex.webp",
+      "price": 30.0,
+      "stock_state": 4,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 566,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 72,
+      "identifier": "adeptus_custodes_custodian_guard_squad",
+      "name": "Custodian Guard Squad",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/adeptus_custodes/adeptus_custodes_custodian_guard_squad.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 567,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 72,
+      "identifier": "adeptus_custodes_custodian_wardens",
+      "name": "Custodian Wardens",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/adeptus_custodes/adeptus_custodes_custodian_wardens.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 568,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 72,
+      "identifier": "adeptus_custodes_datacards",
+      "name": "Adeptus Custodes Datacards",
+      "description": "Faction stratagems and ability cards.",
+      "image": "warhammer_40000/adeptus_custodes/adeptus_custodes_datacards.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 569,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 72,
+      "identifier": "adeptus_custodes_vertus_praetors",
+      "name": "Vertus Praetors",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/adeptus_custodes/adeptus_custodes_vertus_praetors.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 570,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 73,
+      "identifier": "adeptus_mechanicus_archaeopter",
+      "name": "Archaeopter",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/adeptus_mechanicus/adeptus_mechanicus_archaeopter.webp",
+      "price": 60.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 571,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 73,
+      "identifier": "adeptus_mechanicus_codex",
+      "name": "Adeptus Mechanicus Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/adeptus_mechanicus/adeptus_mechanicus_codex.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 572,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 73,
+      "identifier": "adeptus_mechanicus_combat_patrol",
+      "name": "Adeptus Mechanicus Combat Patrol",
+      "description": "Faction starter set.",
+      "image": "warhammer_40000/adeptus_mechanicus/adeptus_mechanicus_combat_patrol.webp",
+      "price": 85.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 573,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 73,
+      "identifier": "adeptus_mechanicus_datacards",
+      "name": "Adeptus Mechanicus Datacards",
+      "description": "Faction stratagems and ability cards.",
+      "image": "warhammer_40000/adeptus_mechanicus/adeptus_mechanicus_datacards.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 574,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 73,
+      "identifier": "adeptus_mechanicus_dice",
+      "name": "Adeptus Mechanicus Dice",
+      "description": "Faction themed dice set.",
+      "image": "warhammer_40000/adeptus_mechanicus/adeptus_mechanicus_dice.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 575,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 73,
+      "identifier": "adeptus_mechanicus_electro-priests",
+      "name": "Electro-Priests",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/adeptus_mechanicus/adeptus_mechanicus_electro-priests.webp",
+      "price": 27.5,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 576,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 73,
+      "identifier": "adeptus_mechanicus_ironstrider",
+      "name": "Ironstrider",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/adeptus_mechanicus/adeptus_mechanicus_ironstrider.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 577,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 73,
+      "identifier": "adeptus_mechanicus_kastelan_robots",
+      "name": "Kastelan Robots",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/adeptus_mechanicus/adeptus_mechanicus_kastelan_robots.webp",
+      "price": 45.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 578,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 73,
+      "identifier": "adeptus_mechanicus_pteraxii",
+      "name": "Pteraxii",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/adeptus_mechanicus/adeptus_mechanicus_pteraxii.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 579,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 73,
+      "identifier": "adeptus_mechanicus_serberys_raiders",
+      "name": "Serberys Raiders",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/adeptus_mechanicus/adeptus_mechanicus_serberys_raiders.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 570,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 74,
+      "identifier": "astra_militarum_baneblade",
+      "name": "Baneblade",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "warhammer_40000/astra_militarum/astra_militarum_baneblade.webp",
+      "price": 85.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 571,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 74,
+      "identifier": "astra_militarum_cadian_command_squad",
+      "name": "Cadian Command Squad",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/astra_militarum/astra_militarum_cadian_command_squad.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 572,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 74,
+      "identifier": "astra_militarum_cadian_heavy_weapon_squad",
+      "name": "Cadian Heavy Weapon Squad",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/astra_militarum/astra_militarum_cadian_heavy_weapon_squad.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 573,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 74,
+      "identifier": "astra_militarum_cadian_shock_troops",
+      "name": "Cadian Shock Troops",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/astra_militarum/astra_militarum_cadian_shock_troops.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 574,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 74,
+      "identifier": "astra_militarum_codex",
+      "name": "Astra Militarum Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/astra_militarum/astra_militarum_codex.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 575,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 74,
+      "identifier": "astra_militarum_hydra",
+      "name": "Hydra",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "warhammer_40000/astra_militarum/astra_militarum_hydra.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 576,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 74,
+      "identifier": "astra_militarum_officio_prefectus_commissar",
+      "name": "Officio Prefectus Commissar",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/astra_militarum/astra_militarum_officio_prefectus_commissar.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 577,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 74,
+      "identifier": "astra_militarum_sentinel",
+      "name": "Sentinel",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/astra_militarum/astra_militarum_sentinel.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 578,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 74,
+      "identifier": "astra_militarum_leman_russ_battle_tank",
+      "name": "Leman Russ Battle Tank",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "warhammer_40000/astra_militarum/astra_militarum_leman_russ_battle_tank.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 579,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 74,
+      "identifier": "astra_militarum_leman_russ_demolisher",
+      "name": "Leman Russ Demolisher",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "warhammer_40000/astra_militarum/astra_militarum_leman_russ_demolisher.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 580,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 75,
+      "identifier": "blood_angels_codex",
+      "name": "Blood Angels Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/blood_angels/blood_angels_codex.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 581,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 75,
+      "identifier": "blood_angels_combat_patrol",
+      "name": "Blood Angels Combat Patrol",
+      "description": "Faction starter set.",
+      "image": "warhammer_40000/blood_angels/blood_angels_combat_patrol.webp",
+      "price": 85.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 582,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 75,
+      "identifier": "blood_angels_datacards",
+      "name": "Blood Angels Datacards",
+      "description": "Faction stratagems and ability cards.",
+      "image": "warhammer_40000/blood_angels/blood_angels_datacards.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 583,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 75,
+      "identifier": "blood_angels_death_company",
+      "name": "Death Company",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/blood_angels/blood_angels_death_company.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 584,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 75,
+      "identifier": "blood_angels_dice",
+      "name": "Blood Angels Dice",
+      "description": "Faction themed dice set.",
+      "image": "warhammer_40000/blood_angels/blood_angels_dice.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 585,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 75,
+      "identifier": "blood_angels_furioso_dreadnought",
+      "name": "Furioso Dreadnought",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/blood_angels/blood_angels_furioso_dreadnought.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 586,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 75,
+      "identifier": "blood_angels_mephiston_lord_of_death",
+      "name": "Mephiston - Lord of Death",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/blood_angels/blood_angels_mephiston_lord_of_death.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 587,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 75,
+      "identifier": "blood_angels_primaris_upgrades",
+      "name": "Blood Angels Primaris Upgrades",
+      "description": "Faction upgrade sprues.",
+      "image": "warhammer_40000/blood_angels/blood_angels_primaris_upgrades.webp",
+      "price": 9.0,
+      "stock_state": 1,
+      "stock": 20,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 588,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 75,
+      "identifier": "blood_angels_sanguinary_guard",
+      "name": "Sanguinary Guard",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/blood_angels/blood_angels_sanguinary_guard.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 589,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 75,
+      "identifier": "blood_angels_sanguinary_priest",
+      "name": "Sanguinary Priest",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/blood_angels/blood_angels_sanguinary_priest.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 591,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 76,
+      "identifier": "chaos_space_marines_abaddon_the_despoiler",
+      "name": "Abaddon the Despoiler",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/chaos_space_marines/chaos_space_marines_abaddon_the_despoiler.webp",
+      "price": 37.5,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 592,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 76,
+      "identifier": "chaos_space_marines_bikers",
+      "name": "Chaos Space Marine Bikers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/chaos_space_marines/chaos_space_marines_bikers.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 593,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 76,
+      "identifier": "chaos_space_marines_chaos_lord",
+      "name": "Chaos Lord",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/chaos_space_marines/chaos_space_marines_chaos_lord.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 594,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 76,
+      "identifier": "chaos_space_marines_chaos_lord_in_terminator_armour",
+      "name": "Chaos Lord in Terminator Armour",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/chaos_space_marines/chaos_space_marines_chaos_lord_in_terminator_armour.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 595,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 76,
+      "identifier": "chaos_space_marines_codex",
+      "name": "Chaos Space Marines Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/chaos_space_marines/chaos_space_marines_codex.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 596,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 76,
+      "identifier": "chaos_space_marines_dark_apostle",
+      "name": "Dark Apostle",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/chaos_space_marines/chaos_space_marines_dark_apostle.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 597,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 76,
+      "identifier": "chaos_space_marines_heldrake",
+      "name": "Heldrake",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/chaos_space_marines/chaos_space_marines_heldrake.webp",
+      "price": 45.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 598,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 76,
+      "identifier": "chaos_space_marines_possessed",
+      "name": "Possessed",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/chaos_space_marines/chaos_space_marines_possessed.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 599,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 76,
+      "identifier": "chaos_space_marines_raptors",
+      "name": "Raptors",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/chaos_space_marines/chaos_space_marines_raptors.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 600,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 76,
+      "identifier": "chaos_space_marines_squad",
+      "name": "Chaos Space Marines Squad",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/chaos_space_marines/chaos_space_marines_squad.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 601,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 77,
+      "identifier": "chapter_approved_mission_pack_tactical_deployment",
+      "name": "Chapter Approved Mission Pack - Tactical Deployment",
+      "description": "Additional missions supplement.",
+      "image": "warhammer_40000/core/chapter_approved_mission_pack_tactical_deployment.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 602,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 77,
+      "identifier": "crusade_mission_pack_beyond_the_veil",
+      "name": "Crusade Mission Pack - Beyond the Veil",
+      "description": "Additional missions supplement.",
+      "image": "warhammer_40000/core/crusade_mission_pack_beyond_the_veil.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 603,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 77,
+      "identifier": "crusade_mission_pack_plague_purge",
+      "name": "Crusade Mission Pack - Plague Purge",
+      "description": "Additional missions supplement.",
+      "image": "warhammer_40000/core/crusade_mission_pack_plague_purge.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 604,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 77,
+      "identifier": "warhammer_40000_core_book",
+      "name": "Warhammer 40,000 Core Book",
+      "description": "Core rule book.",
+      "image": "warhammer_40000/core/warhammer_40000_core_book.webp",
+      "price": 40.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 605,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 77,
+      "identifier": "warhammer_40000_elite_edition",
+      "name": "Warhammer 40,000 Elite Edition",
+      "description": "Starter set.",
+      "image": "warhammer_40000/core/warhammer_40000_elite_edition.webp",
+      "price": 65.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 606,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 77,
+      "identifier": "warhammer_40000_recruit_edition",
+      "name": "Warhammer 40,000 Recruit Edition",
+      "description": "Starter set.",
+      "image": "warhammer_40000/core/warhammer_40000_recruit_edition.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 607,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 77,
+      "identifier": "warhammer_40000_command_edition",
+      "name": "Warhammer 40,000 Command Edition",
+      "description": "Starter set.",
+      "image": "warhammer_40000/core/warhammer_40000_command_edition.webp",
+      "price": 105.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 608,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 78,
+      "identifier": "craftworlds_codex",
+      "name": "Craftworlds Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/craftworlds/craftworlds_codex.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 609,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 78,
+      "identifier": "craftworlds_eldrad_ulthran",
+      "name": "Eldrad Ulthran",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/craftworlds/craftworlds_eldrad_ulthran.webp",
+      "price": 20.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 610,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 78,
+      "identifier": "craftworlds_howling_banshees",
+      "name": "Howling Banshees",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/craftworlds/craftworlds_howling_banshees.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 611,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 78,
+      "identifier": "craftworlds_jain_zar",
+      "name": "Jain Zar",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/craftworlds/craftworlds_jain_zar.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 612,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 78,
+      "identifier": "craftworlds_start_collecting_craftworlds",
+      "name": "Start Collecting: Craftworlds",
+      "description": "Faction starter set.",
+      "image": "warhammer_40000/craftworlds/craftworlds_start_collecting_craftworlds.webp",
+      "price": 55.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 613,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 78,
+      "identifier": "craftworlds_farseer",
+      "name": "Farseer",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/craftworlds/craftworlds_farseer.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 614,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 78,
+      "identifier": "craftworlds_guardians",
+      "name": "Guardians",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/craftworlds/craftworlds_guardians.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 615,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 78,
+      "identifier": "craftworlds_war-walker",
+      "name": "War-Walker",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/craftworlds/craftworlds_war-walker.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 616,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 78,
+      "identifier": "craftworlds_wave-serpent",
+      "name": "Wave-Serpent",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/craftworlds/craftworlds_wave-serpent.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 617,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 78,
+      "identifier": "craftworlds_windriders",
+      "name": "Windriders",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/craftworlds/craftworlds_windriders.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 618,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 79,
+      "identifier": "dark_angels_codex",
+      "name": "Dark Angels Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/dark_angels/dark_angels_codex.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 619,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 79,
+      "identifier": "dark_angels_combat_patrol",
+      "name": "Dark Angels Combat Patrol",
+      "description": "Faction starter set.",
+      "image": "warhammer_40000/dark_angels/dark_angels_combat_patrol.webp",
+      "price": 85.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 620,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 79,
+      "identifier": "dark_angels_datacards",
+      "name": "Dark Angels Datacards",
+      "description": "Faction stratagems and ability cards.",
+      "image": "warhammer_40000/dark_angels/dark_angels_datacards.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 621,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 79,
+      "identifier": "dark_angels_master_lazarus",
+      "name": "Master Lazarus",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/dark_angels/dark_angels_master_lazarus.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 622,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 79,
+      "identifier": "dark_angels_primaris_upgrades",
+      "name": "Dark Angels Primaris Upgrades",
+      "description": "Faction upgrade sprues.",
+      "image": "warhammer_40000/dark_angels/dark_angels_primaris_upgrades.webp",
+      "price": 9.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 623,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 79,
+      "identifier": "dark_angels_ravenwing_command_squad",
+      "name": "Ravenwing Command Squad",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/dark_angels/dark_angels_ravenwing_command_squad.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 624,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 79,
+      "identifier": "dark_angels_deathwing_command_squad",
+      "name": "Deathwing Command Squad",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/dark_angels/dark_angels_deathwing_command_squad.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 625,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 80,
+      "identifier": "death_guard_blightlord_terminators",
+      "name": "Blightlord Terminators",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/death_guard/death_guard_blightlord_terminators.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 626,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 80,
+      "identifier": "death_guard_codex",
+      "name": "Death Guard Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/death_guard/death_guard_codex.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 627,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 80,
+      "identifier": "death_guard_combat_patrol",
+      "name": "Death Guard Combat Patrol",
+      "description": "Faction starter set.",
+      "image": "warhammer_40000/death_guard/death_guard_combat_patrol.webp",
+      "price": 85.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 628,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 80,
+      "identifier": "death_guard_datacards",
+      "name": "Death Guard Datacards",
+      "description": "Faction stratagems and ability cards.",
+      "image": "warhammer_40000/death_guard/death_guard_datacards.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 629,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 80,
+      "identifier": "death_guard_deathshroud_bodyguard",
+      "name": "Deathshroud Bodyguard",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/death_guard/death_guard_deathshroud_bodyguard.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 630,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 80,
+      "identifier": "death_guard_plague_burst_crawler",
+      "name": "Plague Burst Crawler",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "warhammer_40000/death_guard/death_guard_plague_burst_crawler.webp",
+      "price": 40.0,
+      "stock_state": 3,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 631,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 80,
+      "identifier": "death_guard_plague_marines",
+      "name": "Plague Marines",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/death_guard/death_guard_plague_marines.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 632,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 80,
+      "identifier": "death_guard_typhus_herald_of_the_plague_god",
+      "name": "Typhus - Herald of the Plague God",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/death_guard/death_guard_typhus_herald_of_the_plague_god.webp",
+      "price": 25.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 633,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 80,
+      "identifier": "death_guard_mortarion_daemon_primarch_of_nurgle",
+      "name": "Mortarion - Daemon Primarch of Nurgle",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/death_guard/death_guard_mortarion_daemon_primarch_of_nurgle.webp",
+      "price": 90.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 634,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 81,
+      "identifier": "deathwatch_codex",
+      "name": "Deathwatch Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/deathwatch/deathwatch_codex.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 635,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 81,
+      "identifier": "deathwatch_combat_patrol",
+      "name": "Deathwatch Combat Patrol",
+      "description": "Faction starter set.",
+      "image": "warhammer_40000/deathwatch/deathwatch_combat_patrol.webp",
+      "price": 85.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 636,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 81,
+      "identifier": "deathwatch_corvus_blackstar",
+      "name": "Corvus Blackstar",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/deathwatch/deathwatch_corvus_blackstar.webp",
+      "price": 50.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 637,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 81,
+      "identifier": "deathwatch_datacards",
+      "name": "Deathwatch Datacards",
+      "description": "Faction stratagems and ability cards.",
+      "image": "warhammer_40000/deathwatch/deathwatch_datacards.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 638,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 81,
+      "identifier": "deathwatch_upgrades",
+      "name": "Deathwatch Upgrades",
+      "description": "Faction upgrade sprues",
+      "image": "warhammer_40000/deathwatch/deathwatch_upgrades.webp",
+      "price": 9.0,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 639,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 81,
+      "identifier": "deathwatch_veterans",
+      "name": "Deathwatch Veterans",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/deathwatch/deathwatch_veterans.webp",
+      "price": 31.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 640,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 81,
+      "identifier": "deathwatch_watch_master",
+      "name": "Watch Master",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/deathwatch/deathwatch_watch_master.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 641,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 82,
+      "identifier": "drukhari_codex",
+      "name": "Drukhari Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/drukhari/drukhari_codex.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 642,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 82,
+      "identifier": "drukhari_combat_patrol",
+      "name": "Drukhari Combat Patrol",
+      "description": "Faction starter set.",
+      "image": "warhammer_40000/drukhari/drukhari_combat_patrol.webp",
+      "price": 85.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 643,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 82,
+      "identifier": "drukhari_datacards",
+      "name": "Drukhari Datacards",
+      "description": "Faction stratagems and ability cards.",
+      "image": "warhammer_40000/drukhari/drukhari_datacards.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 644,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 82,
+      "identifier": "drukhari_dice",
+      "name": "Drukhari Dice",
+      "description": "Faction themed dice set.",
+      "image": "warhammer_40000/drukhari/drukhari_dice.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 645,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 82,
+      "identifier": "drukhari_drazhar",
+      "name": "Drazhar",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/drukhari/drukhari_drazhar.webp",
+      "price": 25.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 646,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 82,
+      "identifier": "drukhari_incubi",
+      "name": "Incubi",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/drukhari/drukhari_incubi.webp",
+      "price": 32.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 647,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 82,
+      "identifier": "drukhari_kabalite_warriors",
+      "name": "Kabalite Warriors",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/drukhari/drukhari_kabalite_warriors.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 648,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 82,
+      "identifier": "drukhari_lelith_hesperax",
+      "name": "Lelith Hesperax",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/drukhari/drukhari_lelith_hesperax.webp",
+      "price": 26.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 649,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 82,
+      "identifier": "drukhari_raider",
+      "name": "Raider",
+      "description": "Multi-part plastic model with bases  Assembly and Painting required.",
+      "image": "warhammer_40000/drukhari/drukhari_raider.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 650,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 82,
+      "identifier": "drukhari_talos",
+      "name": "Talos",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/drukhari/drukhari_talos.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 651,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 83,
+      "identifier": "grey_knights_codex",
+      "name": "Grey Knights Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/grey_knights/grey_knights_codex.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 652,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 83,
+      "identifier": "grey_knights_grandmaster_voldus",
+      "name": "Grandmaster Voldus",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/grey_knights/grey_knights_grandmaster_voldus.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 653,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 83,
+      "identifier": "grey_knights_nemesis_dreadknight",
+      "name": "Nemesis Dreadknight",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/grey_knights/grey_knights_nemesis_dreadknight.webp",
+      "price": 37.5,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 654,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 83,
+      "identifier": "grey_knights_paladin_squad",
+      "name": "Paladin Squad",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/grey_knights/grey_knights_paladin_squad.webp",
+      "price": 32.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 655,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 83,
+      "identifier": "grey_knights_strike_squad",
+      "name": "Strike Squad",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/grey_knights/grey_knights_strike_squad.webp",
+      "price": 37.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 656,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 84,
+      "identifier": "harlequins_codex",
+      "name": "Harlequins Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/harlequins/harlequins_codex.webp",
+      "price": 30.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 657,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 84,
+      "identifier": "harlequins_harlequin_death_jester",
+      "name": "Harlequin Death Jester",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/harlequins/harlequins_harlequin_death_jester.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 658,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 84,
+      "identifier": "harlequins_harlequin_shadowseer",
+      "name": "Harlequin Shadowseer",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/harlequins/harlequins_harlequin_shadowseer.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 659,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 84,
+      "identifier": "harlequins_harlequin_skyweavers",
+      "name": "Harlequin Skyweavers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/harlequins/harlequins_harlequin_skyweavers.webp",
+      "price": 27.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 660,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 84,
+      "identifier": "harlequins_harlequin_starweaver",
+      "name": "Harlequin Starweaver",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/harlequins/harlequins_harlequin_starweaver.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 661,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 84,
+      "identifier": "harlequins_harlequin_troupe",
+      "name": "Harlequin Troupe",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/harlequins/harlequins_harlequin_troupe.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 662,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 85,
+      "identifier": "imperial_fists_codex",
+      "name": "Imperial Fists Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/imperial_fists/imperial_fists_codex.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 663,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 85,
+      "identifier": "imperial_fists_primaris_upgrades_and_transfers",
+      "name": "Imperial Fists Primaris Upgrades and Transfers",
+      "description": "Faction upgrade sprues and transfers.",
+      "image": "warhammer_40000/imperial_fists/imperial_fists_primaris_upgrades_and_transfers.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 664,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 85,
+      "identifier": "imperial_fists_tor_garadon",
+      "name": "Tor Garadon",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/imperial_fists/imperial_fists_tor_garadon.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 665,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 86,
+      "identifier": "iron_hands_codex",
+      "name": "Iron Hands Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/iron_hands/iron_hands_codex.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 666,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 86,
+      "identifier": "iron_hands_feirros",
+      "name": "Iron Father Feirros",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/iron_hands/iron_hands_feirros.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 667,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 86,
+      "identifier": "iron_hands_primaris_upgrades_and_transfers",
+      "name": "Iron Hands Primaris Upgrades and Transfers",
+      "description": "Faction upgrade sprues and transfers.",
+      "image": "warhammer_40000/iron_hands/iron_hands_primaris_upgrades_and_transfers.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 668,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 87,
+      "identifier": "necrons_codex",
+      "name": "Necrons Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/necrons/necrons_codex.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 669,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 87,
+      "identifier": "necrons_combat_patrol",
+      "name": "Necrons Combat Patrol",
+      "description": "Faction starter set.",
+      "image": "warhammer_40000/necrons/necrons_combat_patrol.webp",
+      "price": 85.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 670,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 87,
+      "identifier": "necrons_datacards",
+      "name": "Necrons Datacards",
+      "description": "Faction stratagems and ability cards.",
+      "image": "warhammer_40000/necrons/necrons_datacards.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 671,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 87,
+      "identifier": "necrons_dice",
+      "name": "Necrons Dice",
+      "description": "Faction themed dice set.",
+      "image": "warhammer_40000/necrons/necrons_dice.webp",
+      "price": 20.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 672,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 87,
+      "identifier": "necrons_immortals",
+      "name": "Immortals",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/necrons/necrons_immortals.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 673,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 87,
+      "identifier": "necrons_ophydian_destroyers",
+      "name": "Ophydian Destroyers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/necrons/necrons_ophydian_destroyers.webp",
+      "price": 34.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 674,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 87,
+      "identifier": "necrons_overlord",
+      "name": "Overlord",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/necrons/necrons_overlord.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 675,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 87,
+      "identifier": "necrons_skorpekh_destroyers",
+      "name": "Skorpekh Destroyers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/necrons/necrons_skorpekh_destroyers.webp",
+      "price": 34.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 676,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 87,
+      "identifier": "necrons_tomb_blades",
+      "name": "Tomb Blades",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/necrons/necrons_tomb_blades.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 677,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 87,
+      "identifier": "necrons_warriors",
+      "name": "Necron Warriors",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/necrons/necrons_warriors.webp",
+      "price": 29.0,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 678,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 88,
+      "identifier": "orks_codex",
+      "name": "Orks Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/orks/orks_codex.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 679,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 88,
+      "identifier": "orks_ghazghkull_thraka",
+      "name": "Ghazghkull Thraka",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/orks/orks_ghazghkull_thraka.webp",
+      "price": 42.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 680,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 88,
+      "identifier": "orks_ork_boyz",
+      "name": "Ork Boyz",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/orks/orks_ork_boyz.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 681,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 88,
+      "identifier": "orks_ork_flash_gitz",
+      "name": "Ork Flash Gitz",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/orks/orks_ork_flash_gitz.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 682,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 88,
+      "identifier": "orks_ork_meganobz",
+      "name": "Ork Meganobz",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/orks/orks_ork_meganobz.webp",
+      "price": 38.0,
+      "stock_state": 4,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 683,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 88,
+      "identifier": "orks_ork_nobz",
+      "name": "Ork Nobz",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/orks/orks_ork_nobz.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 684,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 88,
+      "identifier": "orks_ork_warbiker_mob",
+      "name": "Ork Warbiker Mob",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/orks/orks_ork_warbiker_mob.webp",
+      "price": 27.5,
+      "stock_state": 4,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 685,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 88,
+      "identifier": "orks_rukkatrukk_squigbuggy",
+      "name": "Rukkatrukk Squigbuggy",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/orks/orks_rukkatrukk_squigbuggy.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 686,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 88,
+      "identifier": "orks_shokkjump_dragsta",
+      "name": "Shokkjump Dragsta",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/orks/orks_shokkjump_dragsta.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 687,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 88,
+      "identifier": "orks_painboy",
+      "name": "Painboy",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/orks/orks_painboy.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 688,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 89,
+      "identifier": "raven_guard_codex",
+      "name": "Raven Guard Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/raven_guard/raven_guard_codex.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 689,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 89,
+      "identifier": "raven_guard_kayvaan_shrike",
+      "name": "Kayvaan Shrike",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/raven_guard/raven_guard_kayvaan_shrike.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 690,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 89,
+      "identifier": "raven_guard_primaris_upgrades_and_transfers",
+      "name": "Raven Guard Primaris Upgrades and Transfers",
+      "description": "Faction upgrade sprues and transfers.",
+      "image": "warhammer_40000/raven_guard/raven_guard_primaris_upgrades_and_transfers.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 691,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 90,
+      "identifier": "salamanders_adrax_agatone",
+      "name": "Adrax Agatone",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/salamanders/salamanders_adrax_agatone.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 692,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 90,
+      "identifier": "salamanders_codex",
+      "name": "Salamanders Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/salamanders/salamanders_codex.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 693,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 90,
+      "identifier": "salamanders_primaris_upgrades_and_transfers",
+      "name": "Salamanders Primaris Upgrades and Transfers",
+      "description": "Faction upgrade sprues and transfers.",
+      "image": "warhammer_40000/salamanders/salamanders_primaris_upgrades_and_transfers.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 694,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 91,
+      "identifier": "battlezone_manufactorum_sanctum_administratus",
+      "name": "Battlezone Manufactorum - Sanctum Administratus",
+      "description": "Multi-part plastic models.  Assembly and Painting required.",
+      "image": "warhammer_40000/scenics_and_terrain/battlezone_manufactorum_sanctum_administratus.webp",
+      "price": 50.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 695,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 91,
+      "identifier": "battlezone_manufactorum_sub-cloister_and_storage_fane",
+      "name": "Battlezone Manufactorum - Sub-Cloister and Storage Fane",
+      "description": "Multi-part plastic models.  Assembly and Painting required.",
+      "image": "warhammer_40000/scenics_and_terrain/battlezone_manufactorum_sub-cloister_and_storage_fane.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 696,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 91,
+      "identifier": "battlezone_manufactorum_vertigus",
+      "name": "Battlezone Manufactorum - Vertigus",
+      "description": "Multi-part plastic models.  Assembly and Painting required.",
+      "image": "warhammer_40000/scenics_and_terrain/battlezone_manufactorum_vertigus.webp",
+      "price": 90.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 697,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 91,
+      "identifier": "sector_imperialis_basilicanum",
+      "name": "Sector Imperialis - Basilicanum",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "warhammer_40000/scenics_and_terrain/sector_imperialis_basilicanum.webp",
+      "price": 60.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 698,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 91,
+      "identifier": "sector_imperialis_sanctum",
+      "name": "Sector Imperialis - Sanctum",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "warhammer_40000/scenics_and_terrain/sector_imperialis_sanctum.webp",
+      "price": 45.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 699,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 91,
+      "identifier": "sector_mechanicus_forgeshrine",
+      "name": "Sector Mechanicus - Forgeshrine",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "warhammer_40000/scenics_and_terrain/sector_mechanicus_forgeshrine.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 700,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 91,
+      "identifier": "sector_mechanicus_tectonic_fragdrill",
+      "name": "Sector Mechanicus - Tectonic Fragdrill",
+      "description": "Multi-part plastic model.  Assembly and Painting required.",
+      "image": "warhammer_40000/scenics_and_terrain/sector_mechanicus_tectonic_fragdrill.webp",
+      "price": 40.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 701,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 92,
+      "identifier": "space_marines_codex",
+      "name": "Space Marines Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/space_marines/space_marines_codex.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 702,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 92,
+      "identifier": "space_marines_combat_patrol",
+      "name": "Space Marines Combat Patrol",
+      "description": "Faction starter set.",
+      "image": "warhammer_40000/space_marines/space_marines_combat_patrol.webp",
+      "price": 85.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 703,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 92,
+      "identifier": "space_marines_datacards",
+      "name": "Space Marines Datacards",
+      "description": "Faction stratagems and ability cards.",
+      "image": "warhammer_40000/space_marines/space_marines_datacards.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 704,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 92,
+      "identifier": "space_marines_gladiator",
+      "name": "Gladiator",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/space_marines/space_marines_gladiator.webp",
+      "price": 52.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 705,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 92,
+      "identifier": "space_marines_heavy_intercessors",
+      "name": "Heavy Intercessors",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/space_marines/space_marines_heavy_intercessors.webp",
+      "price": 39.5,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 706,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 92,
+      "identifier": "space_marines_outriders",
+      "name": "Outriders",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/space_marines/space_marines_outriders.webp",
+      "price": 36.5,
+      "stock_state": 3,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 707,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 92,
+      "identifier": "space_marines_primaris_chaplain_on_bike",
+      "name": "Primaris Chaplain on Bike",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/space_marines/space_marines_primaris_chaplain_on_bike.webp",
+      "price": 29.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 708,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 92,
+      "identifier": "space_marines_primaris_eradicators",
+      "name": "Primaris Eradicators",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/space_marines/space_marines_primaris_eradicators.webp",
+      "price": 31.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 709,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 92,
+      "identifier": "space_marines_primaris_intercessors",
+      "name": "Primaris Intercessors",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/space_marines/space_marines_primaris_intercessors.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 710,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 92,
+      "identifier": "space_marines_storm_speeder",
+      "name": "Storm Speeder",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/space_marines/space_marines_storm_speeder.webp",
+      "price": 42.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 711,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 93,
+      "identifier": "space_wolves_codex",
+      "name": "Space Wolves Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/space_wolves/space_wolves_codex.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 712,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 93,
+      "identifier": "space_wolves_combat_patrol",
+      "name": "Space Wolves Combat Patrol",
+      "description": "Faction starter set.",
+      "image": "warhammer_40000/space_wolves/space_wolves_combat_patrol.webp",
+      "price": 85.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 713,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 93,
+      "identifier": "space_wolves_datacards",
+      "name": "Space Wolves Datacards",
+      "description": "Faction stratagems and ability cards.",
+      "image": "warhammer_40000/space_wolves/space_wolves_datacards.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 714,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 93,
+      "identifier": "space_wolves_dice",
+      "name": "Space Wolves Dice",
+      "description": "Faction themed dice set.",
+      "image": "warhammer_40000/space_wolves/space_wolves_dice.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 715,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 93,
+      "identifier": "space_wolves_grey_hunters",
+      "name": "Grey Hunters",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/space_wolves/space_wolves_grey_hunters.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 716,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 93,
+      "identifier": "space_wolves_hounds_of_morkai",
+      "name": "Hounds of Morkai",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/space_wolves/space_wolves_hounds_of_morkai.webp",
+      "price": 27.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 717,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 93,
+      "identifier": "space_wolves_primaris_upgrades",
+      "name": "Space Wolves Primaris Upgrades",
+      "description": "Faction upgrade sprues.",
+      "image": "warhammer_40000/space_wolves/space_wolves_primaris_upgrades.webp",
+      "price": 9.0,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 718,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 93,
+      "identifier": "space_wolves_ragnar_blackmane",
+      "name": "Ragnar Blackmane",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/space_wolves/space_wolves_ragnar_blackmane.webp",
+      "price": 26.5,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 719,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 93,
+      "identifier": "space_wolves_stormfang_gunship",
+      "name": "Stormfang Gunship",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/space_wolves/space_wolves_stormfang_gunship.webp",
+      "price": 50.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 720,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 93,
+      "identifier": "space_wolves_venerable_dreadnought",
+      "name": "Venerable Dreadnought",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/space_wolves/space_wolves_venerable_dreadnought.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 721,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 94,
+      "identifier": "tau_empire_codex",
+      "name": "T'au Empire Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/tau_empire/tau_empire_codex.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 722,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 94,
+      "identifier": "tau_empire_fire_warriors",
+      "name": "Fire Warriors",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/tau_empire/tau_empire_fire_warriors.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 723,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 94,
+      "identifier": "tau_empire_pathfinders",
+      "name": "Pathfinders",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/tau_empire/tau_empire_pathfinders.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 724,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 94,
+      "identifier": "tau_empire_xv88_broadside_battlesuit",
+      "name": "XV88 Broadside Battlesuit",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/tau_empire/tau_empire_xv88_broadside_battlesuit.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 725,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 94,
+      "identifier": "tau_empire_xv95_ghostkeel_battlesuit",
+      "name": "XV95 Ghostkeel Battlesuit",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/tau_empire/tau_empire_xv95_ghostkeel_battlesuit.webp",
+      "price": 50.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 726,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 94,
+      "identifier": "tau_empire_xv104_riptide",
+      "name": "XV104 Riptide",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/tau_empire/tau_empire_xv104_riptide.webp",
+      "price": 65.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 727,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 95,
+      "identifier": "thousand_sons_codex",
+      "name": "Thousand Sons Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/thousand_sons/thousand_sons_codex.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 728,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 95,
+      "identifier": "thousand_sons_exalted_sorcerers",
+      "name": "Exalted Sorcerers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/thousand_sons/thousand_sons_exalted_sorcerers.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 729,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 95,
+      "identifier": "thousand_sons_magnus_the_red_daemon_primarch_of_tzeentch",
+      "name": "Magnus the Red - Daemon Primarch of Tzeentch",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/thousand_sons/thousand_sons_magnus_the_red_daemon_primarch_of_tzeentch.webp",
+      "price": 90.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 730,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 95,
+      "identifier": "thousand_sons_rubric_marines",
+      "name": "Rubric Marines",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/thousand_sons/thousand_sons_rubric_marines.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 731,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 95,
+      "identifier": "thousand_sons_scarab_occult_terminators",
+      "name": "Scarab Occult Terminators",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/thousand_sons/thousand_sons_scarab_occult_terminators.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 732,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 96,
+      "identifier": "tyranids_codex",
+      "name": "Tyranids Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/tyranids/tyranids_codex.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 733,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 96,
+      "identifier": "tyranids_gargoyle_brood",
+      "name": "Gargoyle Brood",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/tyranids/tyranids_gargoyle_brood.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 734,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 96,
+      "identifier": "tyranids_genestealer_brood",
+      "name": "Genestealer Brood",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/tyranids/tyranids_genestealer_brood.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 735,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 96,
+      "identifier": "tyranids_hive_tyrant",
+      "name": "Hive Tyrant",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/tyranids/tyranids_hive_tyrant.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 736,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 96,
+      "identifier": "tyranids_hormagaunt_brood",
+      "name": "Hormagaunt Brood",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/tyranids/tyranids_hormagaunt_brood.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 737,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 96,
+      "identifier": "tyranids_termagant_brood",
+      "name": "Termagant Brood",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "warhammer_40000/tyranids/tyranids_termagant_brood.webp",
+      "price": 20.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 738,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 96,
+      "identifier": "tyranids_tyrannocyte",
+      "name": "Tyrannocyte",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/tyranids/tyranids_tyrannocyte.webp",
+      "price": 40.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 739,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 97,
+      "identifier": "ultramarines_chief_librarian_tigurius",
+      "name": "Chief Librarian Tigurius",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/ultramarines/ultramarines_chief_librarian_tigurius.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 740,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 97,
+      "identifier": "ultramarines_codex",
+      "name": "Ultramarines Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/ultramarines/ultramarines_codex.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 741,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 97,
+      "identifier": "ultramarines_marneus_calgar_ultramarines_chapter_master",
+      "name": "Marneus Calgar - Ultramarines Chapter Master",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/ultramarines/ultramarines_marneus_calgar_ultramarines_chapter_master.webp",
+      "price": 32.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 742,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 97,
+      "identifier": "ultramarines_primaris_upgrades",
+      "name": "Ultramarines Primaris Upgrades",
+      "description": "Faction upgrade sprues.",
+      "image": "warhammer_40000/ultramarines/ultramarines_primaris_upgrades.webp",
+      "price": 9.0,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 743,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 98,
+      "identifier": "white_scars_codex",
+      "name": "White Scars Codex",
+      "description": "Faction rules supplement.",
+      "image": "warhammer_40000/white_scars/white_scars_codex.webp",
+      "price": 17.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 744,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 98,
+      "identifier": "white_scars_korsarro_khan",
+      "name": "Kor'sarro Khan",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "warhammer_40000/white_scars/white_scars_korsarro_khan.webp",
+      "price": 25.0,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 745,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 98,
+      "identifier": "white_scars_primaris_upgrades_and_transfers",
+      "name": "Primaris Upgrades and Transfers",
+      "description": "Faction upgrade sprues and transfers.",
+      "image": "warhammer_40000/white_scars/white_scars_primaris_upgrades_and_transfers.webp",
+      "price": 15.0,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  }
+]

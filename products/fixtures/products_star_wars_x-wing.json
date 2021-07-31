@@ -1,0 +1,1388 @@
+[
+  {
+    "pk": 412,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 55,
+      "identifier": "deluxe_movement_tools_and_range_ruler",
+      "name": "Deluxe Movement Tools and Range Ruler",
+      "description": "Resilient movement and range ruler tools.",
+      "image": "star_wars_x-wing/core_set/deluxe_movement_tools_and_range_ruler.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 413,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 55,
+      "identifier": "x-wing_dice_pack",
+      "name": "X-Wing Dice Pack",
+      "description": "Additional dice.",
+      "image": "star_wars_x-wing/core_set/x-wing_dice_pack.webp",
+      "price": 7.99,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 414,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 55,
+      "identifier": "x-wing_second_edition",
+      "name": "X-Wing Second Edition",
+      "description": "Second edition starter set.",
+      "image": "star_wars_x-wing/core_set/x-wing_second_edition.webp",
+      "price": 39.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 415,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 56,
+      "identifier": "first_order_conversion_kit",
+      "name": "First Order Conversion Kit",
+      "description": "First to Second Edition card, token and maneuver dial upgrade kit.",
+      "image": "star_wars_x-wing/first_order/first_order_conversion_kit.webp",
+      "price": 27.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 416,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 56,
+      "identifier": "first_order_damage_deck",
+      "name": "First Order Damage Deck",
+      "description": "Faction themed damage deck.",
+      "image": "star_wars_x-wing/first_order/first_order_damage_deck.webp",
+      "price": 4.99,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 417,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 56,
+      "identifier": "first_order_major_vonregs_tie",
+      "name": "Major Vonreg's TIE",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/first_order/first_order_major_vonregs_tie.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 418,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 56,
+      "identifier": "first_order_maneuver_dial_upgrade_kit",
+      "name": "First Order Maneuver Dial Upgrade Kit",
+      "description": "Faction themed maneuver dial upgrade kit",
+      "image": "star_wars_x-wing/first_order/first_order_maneuver_dial_upgrade_kit.webp",
+      "price": 9.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 419,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 56,
+      "identifier": "first_order_tie_fo_fighter",
+      "name": "TIE/fo Fighter",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/first_order/first_order_tie_fo_fighter.webp",
+      "price": 18.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 420,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 56,
+      "identifier": "first_order_tie_sf_fighter",
+      "name": "TIE/sf Fighter",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/first_order/first_order_tie_sf_fighter.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 421,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 56,
+      "identifier": "first_order_tie_vn_silencer",
+      "name": "TIE/vn Silencer",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/first_order/first_order_tie_vn_silencer.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 422,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 56,
+      "identifier": "first_order_xi-class_light_shuttle",
+      "name": "Xi-Class Light Shuttle",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/first_order/first_order_xi-class_light_shuttle.webp",
+      "price": 29.99,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 423,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 57,
+      "identifier": "galactic_empire_conversion_kit",
+      "name": "Galactic Empire Conversion Kit",
+      "description": "First to Second Edition card, token and maneuver dial upgrade kit.",
+      "image": "star_wars_x-wing/galactic_empire/galactic_empire_conversion_kit.webp",
+      "price": 49.99,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 424,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 57,
+      "identifier": "galactic_empire_damage_deck",
+      "name": "Galactic Empire Damage Deck",
+      "description": "Faction themed damage deck.",
+      "image": "star_wars_x-wing/galactic_empire/galactic_empire_damage_deck.webp",
+      "price": 4.99,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 425,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 57,
+      "identifier": "galactic_empire_inquisitors_tie",
+      "name": "Inquisitors' TIE",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/galactic_empire/galactic_empire_inquisitors_tie.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 426,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 57,
+      "identifier": "galactic_empire_maneuver_dial_upgrade_kit",
+      "name": "Galactic Empire Maneuver Dial Upgrade Kit",
+      "description": "Faction themed maneuver dial upgrade kit",
+      "image": "star_wars_x-wing/galactic_empire/galactic_empire_maneuver_dial_upgrade_kit.webp",
+      "price": 9.99,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 427,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 57,
+      "identifier": "galactic_empire_tie_advanced_x1",
+      "name": "TIE Advanced x1",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/galactic_empire/galactic_empire_tie_advanced_x1.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 428,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 57,
+      "identifier": "galactic_empire_tie_d_defender",
+      "name": "TIE/D Defender",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/galactic_empire/galactic_empire_tie_d_defender.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 429,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 57,
+      "identifier": "galactic_empire_tie_in_interceptor",
+      "name": "TIE/IN Interceptor",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/galactic_empire/galactic_empire_tie_in_interceptor.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 430,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 57,
+      "identifier": "galactic_empire_tie_ln_fighter",
+      "name": "TIE/LN Fighter",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/galactic_empire/galactic_empire_tie_ln_fighter.webp",
+      "price": 18.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 431,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 57,
+      "identifier": "galactic_empire_tie_rb_heavy",
+      "name": "TIE/rb Heavy",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/galactic_empire/galactic_empire_tie_rb_heavy.webp",
+      "price": 29.99,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 432,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 57,
+      "identifier": "galactic_empire_tie_sk_striker",
+      "name": "TIE/sk Striker",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/galactic_empire/galactic_empire_tie_sk_striker.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 433,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 57,
+      "identifier": "galactic_empire_vt-49_decimator",
+      "name": "VT-49 Decimator",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/galactic_empire/galactic_empire_vt-49_decimator.webp",
+      "price": 39.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 434,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 58,
+      "identifier": "galactic_republic_arc-170_starfighter",
+      "name": "ARC-170 Starfighter",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/galactic_republic/galactic_republic_arc-170_starfighter.webp",
+      "price": 29.99,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 435,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 58,
+      "identifier": "galactic_republic_btl-b_y-wing",
+      "name": "BTL-B Y-Wing",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/galactic_republic/galactic_republic_btl-b_y-wing.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 436,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 58,
+      "identifier": "galactic_republic_damage_deck",
+      "name": "Galactic Republic Damage Deck",
+      "description": "Faction themed damage deck.",
+      "image": "star_wars_x-wing/galactic_republic/galactic_republic_damage_deck.webp",
+      "price": 4.99,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 437,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 58,
+      "identifier": "galactic_republic_delta-7_aethersprite",
+      "name": "Delta-7 Aethersprite",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/galactic_republic/galactic_republic_delta-7_aethersprite.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 438,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 58,
+      "identifier": "galactic_republic_eta-2_actis",
+      "name": "Eta-2 Actis",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/galactic_republic/galactic_republic_eta-2_actis.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 439,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 58,
+      "identifier": "galactic_republic_guardians_of_the_republic_squadron_pack",
+      "name": "Guardians of the Republic Squadron Pack",
+      "description": "Faction themed starter set.",
+      "image": "star_wars_x-wing/galactic_republic/galactic_republic_guardians_of_the_republic_squadron_pack.webp",
+      "price": 39.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 440,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 58,
+      "identifier": "galactic_republic_laat_i_gunship",
+      "name": "LAAT/i Gunship",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/galactic_republic/galactic_republic_laat_i_gunship.webp",
+      "price": 29.99,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 441,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 58,
+      "identifier": "galactic_republic_maneuver_dial_upgrade_kit",
+      "name": "Galactic Republic Maneuver Dial Upgrade Kit",
+      "description": "Faction themed maneuver dial upgrade kit",
+      "image": "star_wars_x-wing/galactic_republic/galactic_republic_maneuver_dial_upgrade_kit.webp",
+      "price": 9.99,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 442,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 58,
+      "identifier": "galactic_republic_naboo_royal_n-1_starfighter",
+      "name": "Naboo Royal N-1 Starfighter",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/galactic_republic/galactic_republic_naboo_royal_n-1_starfighter.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 443,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 58,
+      "identifier": "galactic_republic_nimbus-class_v-wing",
+      "name": "Nimbus-Class V-Wing",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/galactic_republic/galactic_republic_nimbus-class_v-wing.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 444,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 59,
+      "identifier": "epic_battles_multiplayer_expansion",
+      "name": "Epic Battles Multiplayer Expansion",
+      "description": "Rules supplement for 2-8 player games.",
+      "image": "star_wars_x-wing/neutral/epic_battles_multiplayer_expansion.webp",
+      "price": 24.99,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 445,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 59,
+      "identifier": "fully_loaded_devices_pack",
+      "name": "Fully Loaded Devices Pack",
+      "description": "Additional device and upgrade cards.",
+      "image": "star_wars_x-wing/neutral/fully_loaded_devices_pack.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 446,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 59,
+      "identifier": "hotshots_and_aces_reinforcements_pack",
+      "name": "Hotshots and Aces Reinforcements Pack",
+      "description": "Additional ship and upgrade cards for all factions.",
+      "image": "star_wars_x-wing/neutral/hotshots_and_aces_reinforcements_pack.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 447,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 59,
+      "identifier": "huge_ship_conversion_kit",
+      "name": "Huge Ship Conversion Kit",
+      "description": "First to Second Edition card, token and maneuver dial upgrade kit.",
+      "image": "star_wars_x-wing/neutral/huge_ship_conversion_kit.webp",
+      "price": 29.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 448,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 59,
+      "identifier": "never_tell_me_the_odds_obstacles_pack",
+      "name": "Never Tell Me the Odds Obstacles Pack",
+      "description": "Additional obstacles and environment cards",
+      "image": "star_wars_x-wing/neutral/never_tell_me_the_odds_obstacles_pack.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 449,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 60,
+      "identifier": "rebel_alliance_a_sf-01_b-wing",
+      "name": "A/SF-01 B-Wing",
+      "description": "",
+      "image": "star_wars_x-wing/rebel_alliance/rebel_alliance_a_sf-01_b-wing.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 450,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 60,
+      "identifier": "rebel_alliance_btl-a4_y-wing",
+      "name": "BTL-A4 Y-Wing",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/rebel_alliance/rebel_alliance_btl-a4_y-wing.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 451,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 60,
+      "identifier": "rebel_alliance_conversion_kit",
+      "name": "Rebel Alliance Conversion Kit",
+      "description": "First to Second Edition card, token and maneuver dial upgrade kit.",
+      "image": "star_wars_x-wing/rebel_alliance/rebel_alliance_conversion_kit.webp",
+      "price": 49.99,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 452,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 60,
+      "identifier": "rebel_alliance_damage_deck",
+      "name": "Rebel Alliance Damage Deck",
+      "description": "Faction themed damage deck.",
+      "image": "star_wars_x-wing/rebel_alliance/rebel_alliance_damage_deck.webp",
+      "price": 4.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 453,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 60,
+      "identifier": "rebel_alliance_ghost",
+      "name": "Ghost",
+      "description": "2x pre-painted miniatures, with cards and maneuver dials",
+      "image": "star_wars_x-wing/rebel_alliance/rebel_alliance_ghost.webp",
+      "price": 49.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 454,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 60,
+      "identifier": "rebel_alliance_maneuver_dial_upgrade_kit",
+      "name": "Rebel Alliance Maneuver Dial Upgrade Kit",
+      "description": "Faction themed maneuver dial upgrade kit",
+      "image": "star_wars_x-wing/rebel_alliance/rebel_alliance_maneuver_dial_upgrade_kit.webp",
+      "price": 9.99,
+      "stock_state": 1,
+      "stock": 17,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 455,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 60,
+      "identifier": "rebel_alliance_millenium_falcon",
+      "name": "Millenium Falcon",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/rebel_alliance/rebel_alliance_millenium_falcon.webp",
+      "price": 39.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 456,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 60,
+      "identifier": "rebel_alliance_rz-1_a-wing",
+      "name": "RZ-1 A-Wing",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/rebel_alliance/rebel_alliance_rz-1_a-wing.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 457,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 60,
+      "identifier": "rebel_alliance_t-65_x-wing",
+      "name": "T-65 X-Wing",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/rebel_alliance/rebel_alliance_t-65_x-wing.webp",
+      "price": 18.99,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 458,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 60,
+      "identifier": "rebel_alliance_tantive_iv",
+      "name": "Tantive IV",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/rebel_alliance/rebel_alliance_tantive_iv.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 459,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 61,
+      "identifier": "resistance_conversion_kit",
+      "name": "Resistance Conversion Kit",
+      "description": "First to Second Edition card, token and maneuver dial upgrade kit.",
+      "image": "star_wars_x-wing/resistance/resistance_conversion_kit.webp",
+      "price": 27.99,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 460,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 61,
+      "identifier": "resistance_damage_deck",
+      "name": "Resistance Damage Deck",
+      "description": "Faction themed damage deck.",
+      "image": "star_wars_x-wing/resistance/resistance_damage_deck.webp",
+      "price": 4.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 461,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 61,
+      "identifier": "resistance_fireball",
+      "name": "Fireball",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/resistance/resistance_fireball.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 462,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 61,
+      "identifier": "resistance_heralds_of_hope_squadron_pack",
+      "name": "Heralds of Hope Squadron Pack",
+      "description": "Faction themed starter set.",
+      "image": "star_wars_x-wing/resistance/resistance_heralds_of_hope_squadron_pack.webp",
+      "price": 49.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 463,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 61,
+      "identifier": "resistance_maneuver_dial_upgrade_kit",
+      "name": "Resistance Maneuver Dial Upgrade Kit",
+      "description": "Faction themed maneuver dial upgrade kit",
+      "image": "star_wars_x-wing/resistance/resistance_maneuver_dial_upgrade_kit.webp",
+      "price": 9.99,
+      "stock_state": 1,
+      "stock": 18,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 464,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 61,
+      "identifier": "resistance_rz-2_a-wing",
+      "name": "RZ-2 A-Wing",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/resistance/resistance_rz-2_a-wing.webp",
+      "price": 18.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 465,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 61,
+      "identifier": "resistance_t-70_x-wing",
+      "name": "T-70 X-Wing",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/resistance/resistance_t-70_x-wing.webp",
+      "price": 18.99,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 466,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 61,
+      "identifier": "resistance_resistance_transport",
+      "name": "Resistance Transport",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/resistance/resistance_resistance_transport.webp",
+      "price": 29.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 467,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 62,
+      "identifier": "scum_and_villainy_conversion_kit",
+      "name": "Scum and Villainy Conversion Kit",
+      "description": "First to Second Edition card, token and maneuver dial upgrade kit.",
+      "image": "star_wars_x-wing/scum_and_villainy/scum_and_villainy_conversion_kit.webp",
+      "price": 46.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 468,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 62,
+      "identifier": "scum_and_villainy_c-roc_cruiser",
+      "name": "C-ROC Cruiser",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/scum_and_villainy/scum_and_villainy_c-roc_cruiser.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 469,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 62,
+      "identifier": "scum_and_villainy_damage_deck",
+      "name": "Scum and Villainy Damage Deck",
+      "description": "Faction themed damage deck.",
+      "image": "star_wars_x-wing/scum_and_villainy/scum_and_villainy_damage_deck.webp",
+      "price": 4.99,
+      "stock_state": 1,
+      "stock": 24,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 470,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 62,
+      "identifier": "scum_and_villainy_fang_fighter",
+      "name": "Fang Fighter",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/scum_and_villainy/scum_and_villainy_fang_fighter.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 471,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 62,
+      "identifier": "scum_and_villainy_hounds_tooth",
+      "name": "Hound's Tooth",
+      "description": "2x pre-painted miniatures, with cards and maneuver dials",
+      "image": "star_wars_x-wing/scum_and_villainy/scum_and_villainy_hounds_tooth.webp",
+      "price": 49.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 472,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 62,
+      "identifier": "scum_and_villainy_landos_millenium_falcon",
+      "name": "Lando's Millenium Falcon",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/scum_and_villainy/scum_and_villainy_landos_millenium_falcon.webp",
+      "price": 39.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 473,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 62,
+      "identifier": "scum_and_villainy_m3-a_interceptor",
+      "name": "M3-A Interceptor",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/scum_and_villainy/scum_and_villainy_m3-a_interceptor.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 474,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 62,
+      "identifier": "scum_and_villainy_maneuver_dial_upgrade_kit",
+      "name": "Scum and Villainy Maneuver Dial Upgrade Kit",
+      "description": "Faction themed maneuver dial upgrade kit",
+      "image": "star_wars_x-wing/scum_and_villainy/scum_and_villainy_maneuver_dial_upgrade_kit.webp",
+      "price": 9.99,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 475,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 62,
+      "identifier": "scum_and_villainy_mining_guild_tie",
+      "name": "Mining Guild TIE",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/scum_and_villainy/scum_and_villainy_mining_guild_tie.webp",
+      "price": 18.99,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 476,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 62,
+      "identifier": "scum_and_villainy_punishing_one",
+      "name": "Punishing One",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/scum_and_villainy/scum_and_villainy_punishing_one.webp",
+      "price": 29.99,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 477,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 62,
+      "identifier": "scum_and_villainy_slave_i",
+      "name": "Slave I",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/scum_and_villainy/scum_and_villainy_slave_i.webp",
+      "price": 27.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 478,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 62,
+      "identifier": "scum_and_villainy_z-95_headhunter",
+      "name": "Z-95 Headhunter",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/scum_and_villainy/scum_and_villainy_z-95_headhunter.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 479,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 63,
+      "identifier": "separatist_alliance_damage_deck",
+      "name": "Separatist Alliance Damage Deck",
+      "description": "Faction themed damage deck.",
+      "image": "star_wars_x-wing/separatist_alliance/separatist_alliance_damage_deck.webp",
+      "price": 4.99,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 480,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 63,
+      "identifier": "separatist_alliance_droid_tri-fighter",
+      "name": "Droid Tri-Fighter",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/separatist_alliance/separatist_alliance_droid_tri-fighter.webp",
+      "price": 19.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 481,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 63,
+      "identifier": "separatist_alliance_hmp_droid_gunship",
+      "name": "HMP Droid Gunship",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/separatist_alliance/separatist_alliance_hmp_droid_gunship.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 482,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 63,
+      "identifier": "separatist_alliance_hyena-class_droid_bomber",
+      "name": "Hyena-Class Droid Bomber",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/separatist_alliance/separatist_alliance_hyena-class_droid_bomber.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 483,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 63,
+      "identifier": "separatist_alliance_jango_fetts_slave_i",
+      "name": "Jango Fett's Slave I",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/separatist_alliance/separatist_alliance_jango_fetts_slave_i.webp",
+      "price": 27.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 484,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 63,
+      "identifier": "separatist_alliance_maneuver_dial_upgrade_kit",
+      "name": "Separatist Alliance Maneuver Dial Upgrade Kit",
+      "description": "Faction themed maneuver dial upgrade kit",
+      "image": "star_wars_x-wing/separatist_alliance/separatist_alliance_maneuver_dial_upgrade_kit.webp",
+      "price": 9.99,
+      "stock_state": 1,
+      "stock": 16,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 485,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 63,
+      "identifier": "separatist_alliance_nantex-class_starfighter",
+      "name": "Nantex-Class Starfighter",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/separatist_alliance/separatist_alliance_nantex-class_starfighter.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 486,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 63,
+      "identifier": "separatist_alliance_servants_of_strife_squadron_pack",
+      "name": "Servants of Strife Squadron Pack",
+      "description": "Faction themed starter set.",
+      "image": "star_wars_x-wing/separatist_alliance/separatist_alliance_servants_of_strife_squadron_pack.webp",
+      "price": 39.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 487,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 63,
+      "identifier": "separatist_alliance_sith_infiltrator",
+      "name": "Sith Infiltrator",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/separatist_alliance/separatist_alliance_sith_infiltrator.webp",
+      "price": 39.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 488,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 63,
+      "identifier": "separatist_alliance_vulture-class_droid_fighter",
+      "name": "Vulture-Class Droid Fighter",
+      "description": "Single pre-painted miniature, with cards and maneuver dial.",
+      "image": "star_wars_x-wing/separatist_alliance/separatist_alliance_vulture-class_droid_fighter.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  }
+]

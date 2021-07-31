@@ -1,0 +1,1028 @@
+[
+  {
+    "pk": 278,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 37,
+      "identifier": "cawdor_gang",
+      "name": "Cawdor Gang",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/cawdor/cawdor_gang.webp",
+      "price": 26.0,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 279,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 37,
+      "identifier": "cawdor_gang_cards",
+      "name": "Cawdor Gang Cards",
+      "description": "Faction Tactics and Gang Roster Cards.",
+      "image": "necromunda/cawdor/cawdor_gang_cards.webp",
+      "price": 9.5,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 280,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 37,
+      "identifier": "cawdor_gang_dice",
+      "name": "Cawdor Gang Dice",
+      "description": "Faction themed dice set.",
+      "image": "necromunda/cawdor/cawdor_gang_dice.webp",
+      "price": 10.0,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 281,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 38,
+      "identifier": "gangs_of_the_underhive",
+      "name": "Gangs of the Underhive",
+      "description": "House Gang rules supplement.",
+      "image": "necromunda/core/gangs_of_the_underhive.webp",
+      "price": 30.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 282,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 38,
+      "identifier": "necromunda_hive_war",
+      "name": "Necromunda - Hive War.",
+      "description": "Necromunda starter set.",
+      "image": "necromunda/core/necromunda_hive_war.webp",
+      "price": 90.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 283,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 38,
+      "identifier": "necromunda_rulebook",
+      "name": "Necromunda Rulebook",
+      "description": "Core rule book.",
+      "image": "necromunda/core/necromunda_rulebook.webp",
+      "price": 35.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 284,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 38,
+      "identifier": "the_book_of_peril",
+      "name": "The Book of Peril",
+      "description": "Badzone scenery rules, scenarios and hired guns supplements.",
+      "image": "necromunda/core/the_book_of_peril.webp",
+      "price": 22.0,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 285,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 39,
+      "identifier": "corpse_grinder_cult",
+      "name": "Corpse Grinder Cult",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/corpse_grinder_cult/corpse_grinder_cult.webp",
+      "price": 26.0,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 286,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 39,
+      "identifier": "corpse_grinder_cult_gang_cards",
+      "name": "Corpse Grinder Cult Gang Cards",
+      "description": "Faction Tactics and Gang Roster Cards.",
+      "image": "necromunda/corpse_grinder_cult/corpse_grinder_cult_gang_cards.webp",
+      "price": 9.5,
+      "stock_state": 1,
+      "stock": 20,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 287,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 39,
+      "identifier": "the_book_of_ruin",
+      "name": "The Book of Ruin",
+      "description": "Cult Gang rules supplement.",
+      "image": "necromunda/corpse_grinder_cult/the_book_of_ruin.webp",
+      "price": 28.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 288,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 40,
+      "identifier": "delaque_gang",
+      "name": "Delaque Gang",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/delaque/delaque_gang.webp",
+      "price": 26.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 289,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 40,
+      "identifier": "delaque_gang_cards",
+      "name": "Delaque Gang Cards",
+      "description": "Faction Tactics and Gang Roster Cards.",
+      "image": "necromunda/delaque/delaque_gang_cards.webp",
+      "price": 9.5,
+      "stock_state": 1,
+      "stock": 18,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 290,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 40,
+      "identifier": "house_of_artifice",
+      "name": "House of Artifice",
+      "description": "Van Saar house rules supplement.",
+      "image": "necromunda/delaque/house_of_artifice.webp",
+      "price": 28.0,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 291,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 40,
+      "identifier": "house_of_artifice_dice",
+      "name": "House of Artifice Dice",
+      "description": "Faction themed dice set",
+      "image": "necromunda/delaque/house_of_artifice_dice.webp",
+      "price": 10.0,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 292,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 41,
+      "identifier": "escher_death-maidens_and_wyld_runners",
+      "name": "Escher Death-Maidens and Wyld Runners",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/escher/escher_death-maidens_and_wyld_runners.webp",
+      "price": 99.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 293,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 41,
+      "identifier": "escher_gang",
+      "name": "Escher Gang",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/escher/escher_gang.webp",
+      "price": 26.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 294,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 41,
+      "identifier": "escher_gang_cards",
+      "name": "Escher Gang Cards",
+      "description": "Faction Tactics and Gang Roster Cards.",
+      "image": "necromunda/escher/escher_gang_cards.webp",
+      "price": 9.5,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 295,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 41,
+      "identifier": "escher_gang_tactics_cards",
+      "name": "Escher Gang Tactics Cards",
+      "description": "Faction Tactics and Gang Roster Cards.",
+      "image": "necromunda/escher/escher_gang_tactics_cards.webp",
+      "price": 9.5,
+      "stock_state": 1,
+      "stock": 20,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 296,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 41,
+      "identifier": "escher_weapons_and_upgrades",
+      "name": "Escher Weapons and Upgrades",
+      "description": "Gang equipment upgrades.",
+      "image": "necromunda/escher/escher_weapons_and_upgrades.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 297,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 41,
+      "identifier": "house_of_blades",
+      "name": "House of Blades",
+      "description": "Escher house rules update.",
+      "image": "necromunda/escher/house_of_blades.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 298,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 41,
+      "identifier": "house_of_blades_dice",
+      "name": "House of Blades Dice",
+      "description": "Faction themed dice set",
+      "image": "necromunda/escher/house_of_blades_dice.webp",
+      "price": 10.0,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 299,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 42,
+      "identifier": "goliath_gang",
+      "name": "Goliath Gang",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/goliath/goliath_gang.webp",
+      "price": 26.0,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 300,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 42,
+      "identifier": "goliath_gang_dice",
+      "name": "Goliath Gang Dice",
+      "description": "Faction themed dice set",
+      "image": "necromunda/goliath/goliath_gang_dice.webp",
+      "price": 10.0,
+      "stock_state": 1,
+      "stock": 12,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 301,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 42,
+      "identifier": "goliath_gang_tactics_cards",
+      "name": "Goliath Gang Tactics Cards",
+      "description": "Faction Tactics and Gang Roster Cards.",
+      "image": "necromunda/goliath/goliath_gang_tactics_cards.webp",
+      "price": 9.5,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 302,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 42,
+      "identifier": "goliath_stimmers_and_forge-born",
+      "name": "Goliath Stimmers and Forge-Born",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/goliath/goliath_stimmers_and_forge-born.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 303,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 42,
+      "identifier": "goliath_weapons_and_upgrades",
+      "name": "Goliath Weapons and Upgrades",
+      "description": "Gang equipment upgrades.",
+      "image": "necromunda/goliath/goliath_weapons_and_upgrades.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 304,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 42,
+      "identifier": "house_of_chains",
+      "name": "House of Chains",
+      "description": "Goliath house rules supplement.",
+      "image": "necromunda/goliath/house_of_chains.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 305,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 42,
+      "identifier": "house_of_chains_dice",
+      "name": "House of Chains Dice",
+      "description": "Faction themed dice set",
+      "image": "necromunda/goliath/house_of_chains_dice.webp",
+      "price": 10.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 306,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 43,
+      "identifier": "jotunn_h-grade_servitor_ogryns",
+      "name": "Jotunn H-Grade Servitor Ogryns",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/neutral/jotunn_h-grade_servitor_ogryns.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 307,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 43,
+      "identifier": "kal_jericho_and_scabs",
+      "name": "Kal Jericho and Scabs",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/neutral/kal_jericho_and_scabs.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 308,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 43,
+      "identifier": "luther_pattern_excavation_automata_ambot",
+      "name": "Luther Pattern Excavation Automata 'Ambot'",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/neutral/luther_pattern_excavation_automata_ambot.webp",
+      "price": 99.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 309,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 44,
+      "identifier": "house_of_iron",
+      "name": "House of Iron",
+      "description": "Orlock house rules supplement.",
+      "image": "necromunda/orlock/house_of_iron.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 310,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 44,
+      "identifier": "house_of_iron_dice",
+      "name": "House of Iron_Dice",
+      "description": "Faction themed dice set",
+      "image": "necromunda/orlock/house_of_iron_dice.webp",
+      "price": 10.0,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 311,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 44,
+      "identifier": "orlock_arms_masters_and_wreckers",
+      "name": "Orlock Arms Masters and Wreckers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/orlock/orlock_arms_masters_and_wreckers.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 312,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 44,
+      "identifier": "orlock_gang",
+      "name": "Orlock Gang",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/orlock/orlock_gang.webp",
+      "price": 26.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 313,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 44,
+      "identifier": "orlock_gang_cards",
+      "name": "Orlock Gang Cards",
+      "description": "Faction Tactics and Gang Roster Cards.",
+      "image": "necromunda/orlock/orlock_gang_cards.webp",
+      "price": 9.5,
+      "stock_state": 1,
+      "stock": 19,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 314,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 44,
+      "identifier": "orlock_gang_dice",
+      "name": "Orlock Gang Dice",
+      "description": "Faction themed dice set",
+      "image": "necromunda/orlock/orlock_gang_dice.webp",
+      "price": 10.0,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 315,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 44,
+      "identifier": "orlock_gang_tactics_cards",
+      "name": "Orlock Gang Tactics Cards",
+      "description": "Faction Tactics and Gang Roster Cards.",
+      "image": "necromunda/orlock/orlock_gang_tactics_cards.webp",
+      "price": 9.5,
+      "stock_state": 1,
+      "stock": 18,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 316,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 45,
+      "identifier": "enforcer_tactics_cards",
+      "name": "Enforcer Tactics Cards",
+      "description": "Faction Tactics and Gang Roster Cards.",
+      "image": "necromunda/palanite_enforcers/enforcer_tactics_cards.webp",
+      "price": 9.5,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 317,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 45,
+      "identifier": "palanite_enforcer_patrol",
+      "name": "Palanite Enforcer Patrol",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/palanite_enforcers/palanite_enforcer_patrol.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 318,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 45,
+      "identifier": "palanite_subjugator_patrol",
+      "name": "Palanite Subjugator Patrol",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/palanite_enforcers/palanite_subjugator_patrol.webp",
+      "price": 99.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 319,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 45,
+      "identifier": "the_book_of_judgement",
+      "name": "The Book of Judgement",
+      "description": "Palanite Enforcer rules supplement.",
+      "image": "necromunda/palanite_enforcers/the_book_of_judgement.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 320,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 46,
+      "identifier": "badzone_delta-7_game_tiles",
+      "name": "Badzone Delta-7 Game Tiles.",
+      "description": "",
+      "image": "necromunda/scenics_and_terrain/badzone_delta-7_game_tiles.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 321,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 46,
+      "identifier": "barricades_and_objectives",
+      "name": "Barricades and Objectives",
+      "description": "Barricades and objective markers.",
+      "image": "necromunda/scenics_and_terrain/barricades_and_objectives.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 322,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 46,
+      "identifier": "bulkhead_doors",
+      "name": "Bulkhead Doors",
+      "description": "Bulkhead doors.",
+      "image": "necromunda/scenics_and_terrain/bulkhead_doors.webp",
+      "price": 22.5,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 323,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 46,
+      "identifier": "floor_tile_set",
+      "name": "Floor Tile Set",
+      "description": "Underhive floor tiles.",
+      "image": "necromunda/scenics_and_terrain/floor_tile_set.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 324,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 46,
+      "identifier": "zone_mortalis_columns_and_walls",
+      "name": "Zone Mortalis Columns and Walls",
+      "description": "Underhive columns and walls.",
+      "image": "necromunda/scenics_and_terrain/zone_mortalis_columns_and_walls.webp",
+      "price": 50.0,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 325,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 46,
+      "identifier": "zone_mortalis_gang_stronghold",
+      "name": "Zone Mortalis Gang Stronghold",
+      "description": "Gang stronghold terrain.",
+      "image": "necromunda/scenics_and_terrain/zone_mortalis_gang_stronghold.webp",
+      "price": 55.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 326,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 46,
+      "identifier": "zone_mortalis_hive_warzone",
+      "name": "Zone Mortalis Hive Warzone",
+      "description": "Underhive terrain bundle.",
+      "image": "necromunda/scenics_and_terrain/zone_mortalis_hive_warzone.webp",
+      "price": 110.0,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 327,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 46,
+      "identifier": "zone_mortalis_platforms_and_stairs",
+      "name": "Zone Mortalis Platforms and Stairs",
+      "description": "Underhive platforms and stairs.",
+      "image": "necromunda/scenics_and_terrain/zone_mortalis_platforms_and_stairs.webp",
+      "price": 37.5,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 328,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 47,
+      "identifier": "slave_ogryn_gang",
+      "name": "Slave Ogryn Gang",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/slave_ogryn_gang/slave_ogryn_gang.webp",
+      "price": 26.0,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 329,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 47,
+      "identifier": "slave_ogryn_gang_tactics_cards",
+      "name": "Slave Ogryn Gang Tactics Cards",
+      "description": "Faction Tactics and Gang Roster Cards.",
+      "image": "necromunda/slave_ogryn_gang/slave_ogryn_gang_tactics_cards.webp",
+      "price": 9.5,
+      "stock_state": 1,
+      "stock": 19,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 330,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 48,
+      "identifier": "van_saar_archeoteks_and_grav-cutters",
+      "name": "Van Saar Archeoteks and Grav-Cutters",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/van_saar/van_saar_archeoteks_and_grav-cutters.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 331,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 48,
+      "identifier": "van_saar_gang",
+      "name": "Van Saar Gang",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "necromunda/van_saar/van_saar_gang.webp",
+      "price": 26.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 332,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 48,
+      "identifier": "van_saar_gang_cards",
+      "name": "Van Saar Gang Cards",
+      "description": "Faction Tactics and Gang Roster Cards.",
+      "image": "necromunda/van_saar/van_saar_gang_cards.webp",
+      "price": 9.5,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 333,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 48,
+      "identifier": "van_saar_gang_dice",
+      "name": "Van Saar Gang Dice",
+      "description": "Faction themed dice set",
+      "image": "necromunda/van_saar/van_saar_gang_dice.webp",
+      "price": 10.0,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 334,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 48,
+      "identifier": "van_saar_gang_tactics_cards",
+      "name": "Van Saar Gang Tactics Cards",
+      "description": "Faction Tactics and Gang Roster Cards.",
+      "image": "necromunda/van_saar/van_saar_gang_tactics_cards.webp",
+      "price": 9.5,
+      "stock_state": 1,
+      "stock": 20,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  }
+]

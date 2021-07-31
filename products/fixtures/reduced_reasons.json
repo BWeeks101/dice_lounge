@@ -1,0 +1,18 @@
+[
+  {
+    "pk": 1,
+    "model": "products.reduced_reason",
+    "fields": {
+      "identifier": "on_sale",
+      "reason": "On Sale"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.reduced_reason",
+    "fields": {
+      "identifier": "end_of_line",
+      "reason": "End of line"
+    }
+  }
+]

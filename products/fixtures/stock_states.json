@@ -1,0 +1,47 @@
+[
+  {
+    "pk": 1,
+    "model": "products.stock_state",
+    "fields": {
+      "identifier": "no_longer_available",
+      "state": "No Longer Available",
+      "available": false
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.stock_state",
+    "fields": {
+      "identifier": "in_stock",
+      "state": "In Stock",
+      "available": true
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.stock_state",
+    "fields": {
+      "identifier": "out_of_stock",
+      "state": "Out of Stock",
+      "available": false
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.stock_state",
+    "fields": {
+      "identifier": "out_of_stock_with_supplier",
+      "state": "Out of Stock with Supplier",
+      "available": false
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.stock_state",
+    "fields": {
+      "identifier": "out_of_print",
+      "state": "Out of Print",
+      "available": false
+    }
+  }
+]

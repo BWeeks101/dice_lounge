@@ -1,0 +1,132 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product_line",
+    "fields": {
+      "identifier": "aos",
+      "name": "Age of Sigmar",
+      "description": "Fantasy tabletop war game.",
+      "category": 2,
+      "genre": 1,
+      "publisher": 2,
+      "image": "covers/gw/age_of_sigmar_cover_thumbnail.webp"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product_line",
+    "fields": {
+      "identifier": "mtg",
+      "name": "Magic: The Gathering",
+      "description": "Fantasy collectible card game.",
+      "category": 1,
+      "genre": 1,
+      "publisher": 3,
+      "image": "covers/wotc/magic_the_gathering_cover_thumbnail.webp"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product_line",
+    "fields": {
+      "identifier": "marvel_champions",
+      "name": "Marvel Champions: The Card Game",
+      "description": "Super hero collectible card game.",
+      "category": 1,
+      "genre": 1,
+      "publisher": 1,
+      "image": "covers/ffg/marvel_champions_cover_thumbnail.webp"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product_line",
+    "fields": {
+      "identifier": "n20",
+      "name": "Necromunda",
+      "description": "Dystopian sci-fi tabletop skirmish game.",
+      "category": 3,
+      "genre": 2,
+      "publisher": 2,
+      "image": "covers/gw/necromunda_cover_thumbnail.webp"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product_line",
+    "fields": {
+      "identifier": "sw_legion",
+      "name": "Star Wars: Legion",
+      "description": "Space-fantasy tabletop war game.",
+      "category": 2,
+      "genre": 2,
+      "publisher": 1,
+      "image": "covers/ffg/star_wars_legion_cover_thumbnail.webp"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product_line",
+    "fields": {
+      "identifier": "sw_x-wing",
+      "name": "Star Wars: X-Wing",
+      "description": "Tabletop skirmish game with space ships.",
+      "category": 3,
+      "genre": 2,
+      "publisher": 1,
+      "image": "covers/ffg/star_wars_x-wing_cover_thumbnail.webp"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product_line",
+    "fields": {
+      "identifier": "warcry",
+      "name": "Warcry",
+      "description": "Dark fantasy tabletop skirmish game.",
+      "category": 3,
+      "genre": 1,
+      "publisher": 2,
+      "image": "covers/gw/warcry_cover_thumbnail.webp"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product_line",
+    "fields": {
+      "identifier": "40k",
+      "name": "Warhammer 40,000",
+      "description": "Sci-fi tabletop war game.",
+      "category": 2,
+      "genre": 2,
+      "publisher": 2,
+      "image": "covers/gw/warhammer_40000_cover_thumbnail.webp"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product_line",
+    "fields": {
+      "identifier": "hobby_essentials",
+      "name": "Hobby Essentials",
+      "description": "Glue, scenics and tools.",
+      "category": 4,
+      "genre": 3,
+      "publisher": 2,
+      "image": "noimage.png"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product_line",
+    "fields": {
+      "identifier": "brushes_and_paint",
+      "name": "Brushes and Paint",
+      "description": "Paint brushes, paints, shades and sprays.",
+      "category": 4,
+      "genre": 3,
+      "publisher": 2,
+      "image": "noimage.png"
+    }
+  }
+]

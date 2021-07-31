@@ -1,0 +1,26 @@
+[
+  {
+    "pk": 1,
+    "model": "products.publisher",
+    "fields": {
+      "identifier": "ffg",
+      "name": "Fantasy Flight Games"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.publisher",
+    "fields": {
+      "identifier": "gw",
+      "name": "Games Workshop"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.publisher",
+    "fields": {
+      "identifier": "wotc",
+      "name": "Wizards of the Coast"
+    }
+  }
+]

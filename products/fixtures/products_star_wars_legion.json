@@ -1,0 +1,1388 @@
+[
+  {
+    "pk": 335,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 49,
+      "identifier": "movement_tools_and_range_ruler_pack",
+      "name": "Movement Tools and Range Ruler Pack",
+      "description": "Resilient movement and range ruler tools.",
+      "image": "star_wars_legion/core_set/movement_tools_and_range_ruler_pack.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 14,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 336,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 49,
+      "identifier": "star_wars_legion_clone_wars_core_set",
+      "name": "Star Wars Legion Clone Wars Core Set",
+      "description": "Starter Set.",
+      "image": "star_wars_legion/core_set/star_wars_legion_clone_wars_core_set.webp",
+      "price": 99.99,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 337,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 49,
+      "identifier": "star_wars_legion_core_set",
+      "name": "Star Wars Legion Core Set",
+      "description": "Starter Set.",
+      "image": "star_wars_legion/core_set/star_wars_legion_core_set.webp",
+      "price": 89.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 338,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 49,
+      "identifier": "upgrade_card_pack",
+      "name": "Upgrade Card Pack",
+      "description": "Additional unit upgrade cards.",
+      "image": "star_wars_legion/core_set/upgrade_card_pack.webp",
+      "price": 9.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 339,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_74-z_speeder_bikes",
+      "name": "74-Z Speeder Bikes",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_74-z_speeder_bikes.webp",
+      "price": 23.99,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 340,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_agent_kallus",
+      "name": "Agent Kallus",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_agent_kallus.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 341,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_at-st",
+      "name": "AT-ST",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_at-st.webp",
+      "price": 49.99,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 342,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_boba_fett",
+      "name": "Boba Fett",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_boba_fett.webp",
+      "price": 11.99,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 343,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_bossk",
+      "name": "Bossk",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_bossk.webp",
+      "price": 12.99,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 344,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_darth_vader",
+      "name": "Darth Vader",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_darth_vader.webp",
+      "price": 12.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 345,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_dewback_rider",
+      "name": "Dewback Rider",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_dewback_rider.webp",
+      "price": 24.99,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 346,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_director_orson_krennic",
+      "name": "Director Orson Krennic",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_director_orson_krennic.webp",
+      "price": 12.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 347,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_emperor_palpatine",
+      "name": "Emperor Palpatine",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_emperor_palpatine.webp",
+      "price": 12.99,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 348,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_e-web_heavy_blaster_team",
+      "name": "E-Web Heavy Blaster Team",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_e-web_heavy_blaster_team.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 349,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_general_veers",
+      "name": "General Veers",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_general_veers.webp",
+      "price": 11.99,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 350,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_iden_versio_and_id10",
+      "name": "Iden Versio and ID10",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_iden_versio_and_id10.webp",
+      "price": 19.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 351,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_imperial_death_troopers",
+      "name": "Imperial Death Troopers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_imperial_death_troopers.webp",
+      "price": 24.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 352,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_imperial_royal_guards",
+      "name": "Imperial Royal Guards",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_imperial_royal_guards.webp",
+      "price": 24.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 353,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_imperial_shoretroopers",
+      "name": "Imperial Shoretroopers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_imperial_shoretroopers.webp",
+      "price": 29.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 354,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_imperial_specialists",
+      "name": "Imperial Specialists",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_imperial_specialists.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 6,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 355,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_imperial_stormtroopers_upgrade",
+      "name": "Imperial Stormtroopers Upgrade",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_imperial_stormtroopers_upgrade.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 356,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_scout_troopers",
+      "name": "Scout Troopers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_scout_troopers.webp",
+      "price": 24.99,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 357,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_snowtroopers",
+      "name": "Snowtroopers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_snowtroopers.webp",
+      "price": 24.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 358,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_stormtroopers",
+      "name": "Stormtroopers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_stormtroopers.webp",
+      "price": 23.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 359,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_tx-225_gavw_occupier_combat_assault_tank",
+      "name": "TX-225 GAVw Occupier Combat Assault Tank",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_tx-225_gavw_occupier_combat_assault_tank.webp",
+      "price": 59.99,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 360,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 50,
+      "identifier": "galactic_empire_inferno_squad",
+      "name": "Inferno Squad",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_empire/galactic_empire_inferno_squad.webp",
+      "price": 34.99,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 361,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 51,
+      "identifier": "galactic_republic_anakin_skywalker",
+      "name": "Anakin Skywalker",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_republic/galactic_republic_anakin_skywalker.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 362,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 51,
+      "identifier": "galactic_republic_arc_troopers",
+      "name": "ARC Troopers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_republic/galactic_republic_arc_troopers.webp",
+      "price": 34.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 363,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 51,
+      "identifier": "galactic_republic_barc_speeder",
+      "name": "BARC Speeder",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_republic/galactic_republic_barc_speeder.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 364,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 51,
+      "identifier": "galactic_republic_clone_captain_rex",
+      "name": "Clone Captain Rex",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_republic/galactic_republic_clone_captain_rex.webp",
+      "price": 12.99,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 365,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 51,
+      "identifier": "galactic_republic_padme_amidala",
+      "name": "Padme Amidala",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_republic/galactic_republic_padme_amidala.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 366,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 51,
+      "identifier": "galactic_republic_phase_i_clone_troopers",
+      "name": "Phase I Clone Troopers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_republic/galactic_republic_phase_i_clone_troopers.webp",
+      "price": 24.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 367,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 51,
+      "identifier": "galactic_republic_phase_i_clone_troopers_upgrade",
+      "name": "Phase I Clone Troopers Upgrade",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_republic/galactic_republic_phase_i_clone_troopers_upgrade.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 368,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 51,
+      "identifier": "galactic_republic_phase_ii_clone_troopers",
+      "name": "Phase II Clone Troopers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_republic/galactic_republic_phase_ii_clone_troopers.webp",
+      "price": 34.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 369,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 51,
+      "identifier": "galactic_republic_republic_at-rt",
+      "name": "Republic AT-RT",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_republic/galactic_republic_republic_at-rt.webp",
+      "price": 29.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 370,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 51,
+      "identifier": "galactic_republic_republic_specialists",
+      "name": "Republic Specialists",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_republic/galactic_republic_republic_specialists.webp",
+      "price": 27.99,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 371,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 51,
+      "identifier": "galactic_republic_tx-130_saber-class_fighter_tank",
+      "name": "TX-130 Saber-Class Fighter Tank",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/galactic_republic/galactic_republic_tx-130_saber-class_fighter_tank.webp",
+      "price": 59.99,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 372,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_1_4_fd_laser_cannon_team",
+      "name": "1.4 FD Laser Cannon Team",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_1_4_fd_laser_cannon_team.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 15,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 373,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_a-a5_speeder_truck",
+      "name": "A-A5 Speeder Truck",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_a-a5_speeder_truck.webp",
+      "price": 59.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 374,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_at-rt",
+      "name": "AT-RT",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_at-rt.webp",
+      "price": 23.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 375,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_cassian_andor_and_k-2so",
+      "name": "Cassian Andor and K-2SO",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_cassian_andor_and_k-2so.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 7,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 376,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_chewbacca",
+      "name": "Chewbacca",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_chewbacca.webp",
+      "price": 11.99,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 377,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_clan_wren",
+      "name": "Clan Wren",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_clan_wren.webp",
+      "price": 34.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 378,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_fleet_troopers",
+      "name": "Fleet Troopers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_fleet_troopers.webp",
+      "price": 24.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 379,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_han_solo",
+      "name": "Han Solo",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_han_solo.webp",
+      "price": 12.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 380,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_jyn_erso",
+      "name": "Jyn Erso",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_jyn_erso.webp",
+      "price": 12.99,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 381,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_lando_calrissian",
+      "name": "Lando Calrissian",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_lando_calrissian.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 2,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 382,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_leia_organa",
+      "name": "Leia Organa",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_leia_organa.webp",
+      "price": 12.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 383,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_luke_skywalker",
+      "name": "Luke Skywalker",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_luke_skywalker.webp",
+      "price": 12.99,
+      "stock_state": 1,
+      "stock": 11,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 384,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_rebel_commandos",
+      "name": "Rebel Commandos",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_rebel_commandos.webp",
+      "price": 24.99,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 385,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_rebel_pathfinders",
+      "name": "Rebel Pathfinders",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_rebel_pathfinders.webp",
+      "price": 24.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 386,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_rebel_specialists",
+      "name": "Rebel Specialists",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_rebel_specialists.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 387,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_rebel_troopers",
+      "name": "Rebel Troopers",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_rebel_troopers.webp",
+      "price": 23.99,
+      "stock_state": 1,
+      "stock": 10,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 388,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_rebel_troopers_upgrade",
+      "name": "Rebel Troopers Upgrade",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_rebel_troopers_upgrade.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 13,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 389,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_rebel_veterans",
+      "name": "Rebel Veterans",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_rebel_veterans.webp",
+      "price": 29.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 390,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_sabine_wren",
+      "name": "Sabine Wren",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_sabine_wren.webp",
+      "price": 12.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 391,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_t-47_airspeeder",
+      "name": "T-47 Airspeeder",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_t-47_airspeeder.webp",
+      "price": 28.99,
+      "stock_state": 1,
+      "stock": 8,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 392,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_tauntaun_riders",
+      "name": "Tauntaun Riders",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_tauntaun_riders.webp",
+      "price": 24.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 393,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_wookie_warriors",
+      "name": "Wookie Warriors",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_wookie_warriors.webp",
+      "price": 24.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 394,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 52,
+      "identifier": "rebel_alliance_x-34_landspeeder",
+      "name": "X-34 Landspeeder",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/rebel_alliance/rebel_alliance_x-34_landspeeder.webp",
+      "price": 49.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 395,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 53,
+      "identifier": "barricades_pack",
+      "name": "Barricades pack",
+      "description": "Multi-part plastic models.  Assembly and Painting required.",
+      "image": "star_wars_legion/scenics_and_terrain/barricades_pack.webp",
+      "price": 13.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 396,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 53,
+      "identifier": "crashed_escape_pod",
+      "name": "Crashed Escape Pod",
+      "description": "Multi-part plastic models.  Assembly and Painting required.",
+      "image": "star_wars_legion/scenics_and_terrain/crashed_escape_pod.webp",
+      "price": 39.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 397,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 53,
+      "identifier": "downed_at-st",
+      "name": "Downed AT-ST",
+      "description": "Multi-part plastic models.  Assembly and Painting required.",
+      "image": "star_wars_legion/scenics_and_terrain/downed_at-st.webp",
+      "price": 49.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 398,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 53,
+      "identifier": "imperial_bunker",
+      "name": "Imperial Bunker",
+      "description": "Multi-part plastic models.  Assembly and Painting required.",
+      "image": "star_wars_legion/scenics_and_terrain/imperial_bunker.webp",
+      "price": 79.99,
+      "stock_state": 2,
+      "stock": 0,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 399,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 53,
+      "identifier": "priority_supplies",
+      "name": "Priority Supplies",
+      "description": "Multi-part plastic models.  Assembly and Painting required.",
+      "image": "star_wars_legion/scenics_and_terrain/priority_supplies.webp",
+      "price": 24.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 400,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 53,
+      "identifier": "vital_assets",
+      "name": "Vital Assets",
+      "description": "Multi-part plastic models.  Assembly and Painting required.",
+      "image": "star_wars_legion/scenics_and_terrain/vital_assets.webp",
+      "price": 34.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 401,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 54,
+      "identifier": "separatist_alliance_aat_trade_federation_battle_tank",
+      "name": "AAT Trade Federation Battle Tank",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/separatist_alliance/separatist_alliance_aat_trade_federation_battle_tank.webp",
+      "price": 57.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 402,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 54,
+      "identifier": "separatist_alliance_b1_battle_droids",
+      "name": "B1 Battle Droids",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/separatist_alliance/separatist_alliance_b1_battle_droids.webp",
+      "price": 24.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 403,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 54,
+      "identifier": "separatist_alliance_b1_battle_droids_upgrade",
+      "name": "B1 Battle Droids Upgrade",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/separatist_alliance/separatist_alliance_b1_battle_droids_upgrade.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 404,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 54,
+      "identifier": "separatist_alliance_b2_super_battle_droids",
+      "name": "B2 Super Battle Droids",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/separatist_alliance/separatist_alliance_b2_super_battle_droids.webp",
+      "price": 34.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 405,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 54,
+      "identifier": "separatist_alliance_bx-series_droid_commandos",
+      "name": "BX Series Droid Commandos",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/separatist_alliance/separatist_alliance_bx-series_droid_commandos.webp",
+      "price": 34.99,
+      "stock_state": 1,
+      "stock": 1,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 406,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 54,
+      "identifier": "separatist_alliance_cad_bane",
+      "name": "Cad Bane",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/separatist_alliance/separatist_alliance_cad_bane.webp",
+      "price": 14.99,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 407,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 54,
+      "identifier": "separatist_alliance_count_dooku",
+      "name": "Count Dooku",
+      "description": "Multi-part plastic model with base.  Assembly and Painting required.",
+      "image": "star_wars_legion/separatist_alliance/separatist_alliance_count_dooku.webp",
+      "price": 12.99,
+      "stock_state": 1,
+      "stock": 3,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 408,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 54,
+      "identifier": "separatist_alliance_darth_maul_and_sith_probe_droids",
+      "name": "Darth Maul and Sith Probe Droids",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/separatist_alliance/separatist_alliance_darth_maul_and_sith_probe_droids.webp",
+      "price": 19.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 409,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 54,
+      "identifier": "separatist_alliance_droidekas",
+      "name": "Droidekas",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/separatist_alliance/separatist_alliance_droidekas.webp",
+      "price": 29.99,
+      "stock_state": 1,
+      "stock": 5,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 410,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 54,
+      "identifier": "separatist_alliance_separatist_specialists",
+      "name": "Separatist Specialists",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/separatist_alliance/separatist_alliance_separatist_specialists.webp",
+      "price": 27.99,
+      "stock_state": 1,
+      "stock": 9,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  },
+  {
+    "pk": 411,
+    "model": "products.product",
+    "fields": {
+      "sub_product_line": 54,
+      "identifier": "separatist_alliance_stap_riders",
+      "name": "STAP Riders",
+      "description": "Multi-part plastic models with bases.  Assembly and Painting required.",
+      "image": "star_wars_legion/separatist_alliance/separatist_alliance_stap_riders.webp",
+      "price": 29.99,
+      "stock_state": 1,
+      "stock": 4,
+      "reduced": false,
+      "reduced_percentage": 0,
+      "reduced_reason": null,
+      "max_per_purchase": 10
+    }
+  }
+]

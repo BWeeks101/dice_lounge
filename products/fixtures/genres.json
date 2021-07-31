@@ -1,0 +1,26 @@
+[
+  {
+    "pk": 1,
+    "model": "products.genre",
+    "fields": {
+      "identifier": "n_a",
+      "name": "Not Applicable"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.genre",
+    "fields": {
+      "identifier": "fantasy",
+      "name": "Fantasy"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.genre",
+    "fields": {
+      "identifier": "sci-fi",
+      "name": "Science Fiction"
+    }
+  }
+]
