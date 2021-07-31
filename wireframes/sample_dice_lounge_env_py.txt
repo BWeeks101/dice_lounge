@@ -1,0 +1,28 @@
+import os
+
+# Development
+os.environ.setdefault("DEVELOPMENT", "True")
+os.environ.setdefault("development_host", "<IP ADDRESS>")
+
+# Django
+os.environ.setdefault("DJANGO_SECRET_KEY", "<DJANGO SECRET KEY>")
+
+# Stripe
+# os.environ.setdefault("STRIPE_PUBLIC_KEY", "<STRIPE PUBLIC KEY>")
+# os.environ.setdefault("STRIPE_SECRET_KEY", "<STRIPE SECRET KEY>")
+# os.environ.setdefault("STRIPE_WH_SECRET", "<STRIPE WH SECRET>")
+
+# Heroku Postgres
+os.environ.setdefault("DATABASE_URL", "<DATABASE URL>")
+
+# Amazon S3
+# os.environ.setdefault("USE_AWS", "True")
+# os.environ.setdefault("AWS_STORAGE_BUCKET_NAME", '<AWS STORAGE BUCKET NAME>')
+# os.environ.setdefault("AWS_S3_REGION_NAME", '<AWS S3 REGION NAME>')
+# os.environ.setdefault("AWS_ACCESS_KEY_ID", "<AWS ACCESS KEY>")
+# os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "<AWS SECRET ACCESS KEY>")
+
+# GMail
+# os.environ.setdefault("USE_GMAIL", "True")
+# os.environ.setdefault("EMAIL_HOST_USER", '<GMail Address>')
+# os.environ.setdefault("EMAIL_HOST_PASS", '<16 CHARACTER GMAIL APP PASS>')
